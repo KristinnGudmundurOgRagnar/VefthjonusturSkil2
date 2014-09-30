@@ -30,6 +30,7 @@ namespace CoursesAPI.Services.Services
 			_persons              = _uow.GetRepository<Person>();
 		}
 
+		#region Language methods
         public LanguageViewModel GetLanguageByName(string name)
         {
 
@@ -58,7 +59,9 @@ namespace CoursesAPI.Services.Services
 
             return model;
         }
+		#endregion Language methods
 
+		#region Course methods
 		public List<Person> GetCourseTeachers(int courseInstanceID)
 		{
 			// TODO:
@@ -114,5 +117,12 @@ namespace CoursesAPI.Services.Services
 
             return result.OrderBy(c => c.Name).ToList();
 		}
+		#endregion
+
+		#region project and grading methods
+
+
+
+		#endregion
 	}
 }

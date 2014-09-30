@@ -19,7 +19,7 @@ PUT /project/grade
 //*********************************************************
 
 GET /project/grade
-(int personID)
+(GradeViewModel viewModel)
 //Get a student's grade for the project
 
 GET /finalGrade

@@ -126,3 +126,57 @@ OK - Content-type='application/xml; charset=utf-8', content-length=unknown
 0 - 
 0 - 
 0 - 
+0 - 
+0 - 
+0 - http://localhost:12298/api/courses/1/project
+0 - 
+0 - Route='MS_SubRoutes:System.Web.Http.Routing.IHttpRouteData[]'
+0 - Project
+0 - 
+0 - 
+0 - CoursesAPI.Controllers.ProjectController
+0 - CoursesAPI.Controllers.ProjectController
+0 - 
+0 - 
+0 - Type='HttpError', formatters=[JsonMediaTypeFormatterTracer, XmlMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer]
+0 - Obtaining formatter of type 'XmlMediaTypeFormatter' for type='HttpError', mediaType='application/xml; charset=utf-8'
+0 - Will use same 'XmlMediaTypeFormatter' formatter
+0 - Selected formatter='XmlMediaTypeFormatter', content-type='application/xml; charset=utf-8'
+MethodNotAllowed - UserMessage='The requested resource does not support http method 'GET'.'
+MethodNotAllowed - UserMessage='The requested resource does not support http method 'GET'.'
+MethodNotAllowed - 
+MethodNotAllowed - Content-type='application/xml; charset=utf-8', content-length=unknown
+0 - Value='System.Web.Http.HttpError', type='HttpError', content-type='application/xml; charset=utf-8'
+0 - 
+0 - 
+0 - 
+0 - http://localhost:12298/api/courses/1/project
+0 - 
+0 - Route='MS_SubRoutes:System.Web.Http.Routing.IHttpRouteData[]'
+0 - Project
+0 - 
+0 - 
+0 - CoursesAPI.Controllers.ProjectController
+0 - CoursesAPI.Controllers.ProjectController
+0 - 
+0 - 
+0 - Selected action 'AddProject(Int32 courseInstanceID)'
+0 - 
+0 - Binding parameter 'courseInstanceID'
+0 - Parameter 'courseInstanceID' bound to the value '1'
+0 - Model state is valid. Values: courseInstanceID=1
+0 - Action='AddProject(courseInstanceID=1)'
+0 - Invoking action 'AddProject(courseInstanceID=1)'
+0 - Action returned 'System.Collections.Generic.List`1[System.Int32]'
+0 - Type='List`1', formatters=[JsonMediaTypeFormatterTracer, XmlMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer]
+0 - Obtaining formatter of type 'JsonMediaTypeFormatter' for type='List`1', mediaType='application/json; charset=utf-8'
+0 - Will use same 'JsonMediaTypeFormatter' formatter
+0 - Selected formatter='JsonMediaTypeFormatter', content-type='application/json; charset=utf-8'
+OK - 
+OK - 
+OK - 
+OK - Content-type='application/json; charset=utf-8', content-length=unknown
+0 - Value='System.Collections.Generic.List`1[System.Int32]', type='List`1', content-type='application/json; charset=utf-8'
+0 - 
+0 - 
+0 - 

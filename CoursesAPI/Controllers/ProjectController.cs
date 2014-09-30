@@ -21,11 +21,22 @@ namespace CoursesAPI.Controllers
 			_service = new CoursesServiceProvider(new UnitOfWork<AppDataContext>());
 		}
 
+		//TODO: Add ProjectViewModel
+		[HttpPut]
 		[Route("project")]
-		public List<int> GetProjects(int courseInstanceID)
+		public List<int> AddProject(int courseInstanceID)
 		{
 
 			return new List<int> { 1,2,3,4,5,6,7};
+		}
+
+		//TODO: Add GradeViewModel
+		[HttpPut]
+		[Route("project/grade")]
+		public List<int> AddGrade(int courseInstanceID)
+		{
+
+			return new List<int> { 1, 2, 3, 4, 5, 6, 7 };
 		}
     }
 }

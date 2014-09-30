@@ -15,3 +15,20 @@ C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\Cou
 C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI.Services\bin\Debug\Newtonsoft.Json.dll
 C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI.Services\bin\Debug\System.Web.Http.xml
 C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI.Services\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Services\bin\Debug\CoursesAPI.Services.dll.config
+C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Services\bin\Debug\CoursesAPI.Services.dll
+C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Services\bin\Debug\CoursesAPI.Services.pdb
+C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Services\bin\Debug\CoursesAPI.Models.dll
+C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Services\bin\Debug\EntityFramework.dll
+C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Services\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Services\bin\Debug\System.Web.Http.dll
+C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Services\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Services\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Services\bin\Debug\CoursesAPI.Models.pdb
+C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Services\bin\Debug\EntityFramework.xml
+C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Services\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Services\bin\Debug\System.Web.Http.xml
+C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Services\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Services\obj\Debug\CoursesAPI.Services.csprojResolveAssemblyReference.cache
+C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Services\obj\Debug\CoursesAPI.Services.dll
+C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Services\obj\Debug\CoursesAPI.Services.pdb

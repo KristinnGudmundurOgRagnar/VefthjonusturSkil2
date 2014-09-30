@@ -21,7 +21,7 @@ namespace CoursesAPI.Controllers
 			_service = new CoursesServiceProvider(new UnitOfWork<AppDataContext>());
 		}
 
-		//TODO: Add ProjectViewModel
+		//TODO: Add ProjectViewModel and correct return type
 		[HttpPut]
 		[Route("project")]
 		public List<int> AddProject(int courseInstanceID)
@@ -30,13 +30,30 @@ namespace CoursesAPI.Controllers
 			return new List<int> { 1,2,3,4,5,6,7};
 		}
 
-		//TODO: Add GradeViewModel
+		//TODO: Add GradeViewModel and correct return type
 		[HttpPut]
 		[Route("project/grade")]
 		public List<int> AddGrade(int courseInstanceID)
 		{
 
 			return new List<int> { 1, 2, 3, 4, 5, 6, 7 };
+		}
+
+		//TODO: Add correct return type
+		[HttpGet]
+		[Route("project/{projectID}/grade")]
+		public int GetGrade(int courseInstanceId, int projectId, int personId)
+		{
+			return 0;
+		}
+
+
+		//TODO: Add correct return type
+		[HttpGet]
+		[Route("finalGrade")]
+		public int GetFinalGrade(int courseInstanceId, int personId)
+		{
+			return 0;
 		}
     }
 }

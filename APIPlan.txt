@@ -9,7 +9,7 @@ PUT /project
 //Adds a new project to the course
 
 PUT /project/grade
-(int personID)
+(GradeViewModel viewModel)
 //Set the grade for a project
 
 
@@ -18,8 +18,8 @@ PUT /project/grade
 	Students
 //*********************************************************
 
-GET /project/grade
-(GradeViewModel viewModel)
+GET /project/{projectID}/grade
+(int personID)
 //Get a student's grade for the project
 
 GET /finalGrade

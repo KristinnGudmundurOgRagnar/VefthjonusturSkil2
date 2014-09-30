@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "CallService 1";
+}
+
+<h2>Call Service 1 Result</h2>
+
+<h3>@ViewBag.Message</h3>
+
+<ul>
+    @foreach (var item in @ViewBag.Result)
+    {
+        <li style="list-style-type:none;">@item</li>
+    }
+</ul>

@@ -1,0 +1,102 @@
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\CoursesAPI.dll.config
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\CoursesAPI.dll
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\CoursesAPI.pdb
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\Antlr3.Runtime.dll
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\CoursesAPI.Models.dll
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\CoursesAPI.Services.dll
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\EntityFramework.dll
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\EntityFramework.SqlServer.dll
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\Newtonsoft.Json.dll
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\System.Web.Helpers.dll
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\System.Web.Http.dll
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\System.Web.Mvc.dll
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\System.Web.Optimization.dll
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\System.Web.Razor.dll
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\System.Web.WebPages.dll
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\System.Web.WebPages.Razor.dll
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\WebGrease.dll
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\CoursesAPI.Models.pdb
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\CoursesAPI.Services.pdb
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\EntityFramework.xml
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\EntityFramework.SqlServer.xml
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\Newtonsoft.Json.xml
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\System.Web.Helpers.xml
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\System.Web.Http.xml
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\System.Web.Mvc.xml
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\System.Web.Optimization.xml
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\System.Web.Razor.xml
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\System.Web.WebPages.xml
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\System.Web.WebPages.Razor.xml
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\Antlr3.Runtime.pdb
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\obj\Debug\CoursesAPI.csprojResolveAssemblyReference.cache
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\obj\Debug\CoursesAPI.dll
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\obj\Debug\CoursesAPI.pdb
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\Resources.dll
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\Resources.pdb
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\es\Resources.resources.dll
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\fr-FR\Resources.resources.dll
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\Mindscape.Raygun4Net.dll
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\Mindscape.Raygun4Net.pdb
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\System.Web.Http.Tracing.dll
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\System.Web.Http.Tracing.xml
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\Microsoft.Owin.dll
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\Owin.dll
+C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI\bin\Microsoft.Owin.xml
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\CoursesAPI.dll.config
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\CoursesAPI.dll
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\CoursesAPI.pdb
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\Antlr3.Runtime.dll
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\CoursesAPI.Models.dll
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\CoursesAPI.Services.dll
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\EntityFramework.dll
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\EntityFramework.SqlServer.dll
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\Microsoft.Owin.dll
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\Mindscape.Raygun4Net.dll
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\Newtonsoft.Json.dll
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\Owin.dll
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\Resources.dll
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\System.Web.Helpers.dll
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\System.Web.Http.dll
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\System.Web.Http.Tracing.dll
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\System.Web.Mvc.dll
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\System.Web.Optimization.dll
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\System.Web.Razor.dll
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\System.Web.WebPages.dll
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\System.Web.WebPages.Razor.dll
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\WebGrease.dll
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\CoursesAPI.Models.pdb
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\CoursesAPI.Services.pdb
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\Resources.pdb
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\EntityFramework.xml
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\EntityFramework.SqlServer.xml
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\Microsoft.Owin.xml
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\Mindscape.Raygun4Net.pdb
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\Newtonsoft.Json.xml
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\System.Web.Helpers.xml
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\System.Web.Http.xml
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\System.Web.Http.Tracing.xml
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\System.Web.Mvc.xml
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\System.Web.Razor.xml
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\System.Web.WebPages.xml
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\System.Web.WebPages.Razor.xml
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\System.Web.Optimization.xml
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\Antlr3.Runtime.pdb
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\es\Resources.resources.dll
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\bin\fr-FR\Resources.resources.dll
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\obj\Debug\CoursesAPI.csprojResolveAssemblyReference.cache
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\obj\Debug\CoursesAPI.dll
+C:\Users\Gvendur Stefáns\Desktop\Veffthjonustur_20143\CoursesAPI\obj\Debug\CoursesAPI.pdb

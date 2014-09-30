@@ -1,0 +1,64 @@
+0 - 
+0 - 
+0 - http://localhost:12298/api/language
+0 - 
+0 - Route='MS_SubRoutes:System.Web.Http.Routing.IHttpRouteData[]'
+0 - Language
+0 - 
+0 - 
+0 - CoursesAPI.Controllers.LanguageController
+0 - CoursesAPI.Controllers.LanguageController
+0 - 
+0 - 
+0 - Selected action 'Get()'
+0 - 
+0 - 
+0 - Action='Get()'
+0 - Invoking action 'Get()'
+0 - Get the list of LanguageViewModel.
+0 - Action returned 'CoursesAPI.Models.LanguageViewModel[]'
+0 - Type='IEnumerable`1', formatters=[JsonMediaTypeFormatterTracer, XmlMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer]
+0 - Obtaining formatter of type 'XmlMediaTypeFormatter' for type='IEnumerable`1', mediaType='application/xml; charset=utf-8'
+0 - Will use same 'XmlMediaTypeFormatter' formatter
+0 - Selected formatter='XmlMediaTypeFormatter', content-type='application/xml; charset=utf-8'
+OK - 
+OK - 
+OK - 
+OK - Content-type='application/xml; charset=utf-8', content-length=unknown
+0 - Value='CoursesAPI.Models.LanguageViewModel[]', type='IEnumerable`1', content-type='application/xml; charset=utf-8'
+0 - 
+0 - 
+0 - 
+0 - 
+0 - 
+0 - http://localhost:12298/api/language
+0 - 
+0 - Route='MS_SubRoutes:System.Web.Http.Routing.IHttpRouteData[]'
+0 - Language
+0 - 
+0 - 
+0 - CoursesAPI.Controllers.LanguageController
+0 - CoursesAPI.Controllers.LanguageController
+0 - 
+0 - 
+0 - Selected action 'Get()'
+0 - 
+0 - 
+0 - Action='Get()'
+0 - Invoking action 'Get()'
+0 - Get the list of LanguageViewModel.
+0 - Action returned 'CoursesAPI.Models.LanguageViewModel[]'
+0 - Type='IEnumerable`1', formatters=[JsonMediaTypeFormatterTracer, XmlMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer]
+0 - Obtaining formatter of type 'XmlMediaTypeFormatter' for type='IEnumerable`1', mediaType='application/xml; charset=utf-8'
+0 - Will use same 'XmlMediaTypeFormatter' formatter
+0 - Selected formatter='XmlMediaTypeFormatter', content-type='application/xml; charset=utf-8'
+OK - 
+OK - 
+OK - 
+OK - Content-type='application/xml; charset=utf-8', content-length=unknown
+0 - Value='CoursesAPI.Models.LanguageViewModel[]', type='IEnumerable`1', content-type='application/xml; charset=utf-8'
+0 - 
+0 - 
+0 - 
+0 - 
+0 - 

@@ -1,0 +1,27 @@
+api/courses/{courseInstanceID}
+
+//*********************************************************
+	Teachers
+//*********************************************************
+
+PUT /project
+(ProjectViewModel viewModel)
+//Adds a new project to the course
+
+PUT /project/grade
+(int personID)
+//Set the grade for a project
+
+
+
+//*********************************************************
+	Students
+//*********************************************************
+
+GET /project/grade
+(int personID)
+//Get a student's grade for the project
+
+GET /finalGrade
+(int personID)
+//Get a student's final grade

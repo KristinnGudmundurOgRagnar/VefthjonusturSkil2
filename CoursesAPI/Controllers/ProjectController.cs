@@ -6,7 +6,7 @@ using System.Net.Http;
 using System.Web.Http;
 using CoursesAPI.Services.Services;
 using CoursesAPI.Models;
-using CoursesAPI.Services.Models;
+using CoursesAPI.Services.Models.Entities;
 using CoursesAPI.Services.DataAccess;
 
 namespace CoursesAPI.Controllers
@@ -21,7 +21,13 @@ namespace CoursesAPI.Controllers
 			_service = new CoursesServiceProvider(new UnitOfWork<AppDataContext>());
 		}
 
-		//TODO: Add ProjectViewModel and correct return type
+        [HttpGet]
+        [Route("project")]
+        public List<Project> GetProjects(int courseInstanceID)
+        {
+            return _service.GetProjectsForCourse(courseInstanceID);
+        }
+
 		[HttpPost]
 		[Route("project")]
         public HttpResponseMessage AddProject(int courseInstanceID, AddProjectViewModel model)

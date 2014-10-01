@@ -151,6 +151,10 @@ namespace CoursesAPI.Services.Services
             _uow.Save();
         }
 
+        public List<Project> GetProjectsForCourse(int id)
+        {
+            return _projects.All().ToList();
+        }
 		#endregion
 	}
 }

@@ -20,6 +20,7 @@ namespace CoursesAPI.Services.Services
 		private readonly IRepository<Person> _persons;
         private readonly IRepository<Semester> _semesters;
 
+		private readonly IRepository<PersonRegistration> _personRegistrations;
 		private readonly IRepository<ProjectGroup> _projectGroups;
 		private readonly IRepository<Project> _projects;
 		private readonly IRepository<Grade> _grades;
@@ -32,6 +33,8 @@ namespace CoursesAPI.Services.Services
 			_courseTemplates      = _uow.GetRepository<CourseTemplate>();
 			_teacherRegistrations = _uow.GetRepository<TeacherRegistration>();
 			_persons              = _uow.GetRepository<Person>();
+
+			_personRegistrations  = _uow.GetRepository<PersonRegistration>();
 			_projectGroups		  = _uow.GetRepository<ProjectGroup>();
 			_projects             = _uow.GetRepository<Project>();
 			_grades               = _uow.GetRepository<Grade>();

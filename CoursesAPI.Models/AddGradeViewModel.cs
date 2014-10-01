@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CoursesAPI.Models
 {
-	class AddGradeViewModel
+	public class AddGradeViewModel
 	{
 		public int GradeValue { get; set; }
 		public String PersonSSN { get; set; }

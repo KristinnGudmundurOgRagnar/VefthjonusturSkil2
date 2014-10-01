@@ -11,6 +11,10 @@ namespace CoursesAPI.Services.DataAccess
 		public DbSet<CourseInstance>      CourseInstances      { get; set; }
 		public DbSet<TeacherRegistration> TeacherRegistrations { get; set; }
 
+		public DbSet<ProjectGroup>        ProjectGroups        { get; set; }
+		public DbSet<Project>             Projects             { get; set; }
+		public DbSet<Grade>               Grades               { get; set; }
+
 		protected override void OnModelCreating(DbModelBuilder modelBuilder)
 		{
 			// modelBuilder.Configurations.Add(new CourseInstanceMap());

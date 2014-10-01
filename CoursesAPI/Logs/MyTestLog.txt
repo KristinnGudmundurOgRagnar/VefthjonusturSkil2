@@ -696,3 +696,41 @@ OK - Content-type='application/json; charset=utf-8', content-length=unknown
 0 - 
 0 - 
 0 - 
+0 - 
+0 - 
+0 - http://localhost:12298/api/courses/1/project/1/grade
+0 - 
+0 - Route='MS_SubRoutes:System.Web.Http.Routing.IHttpRouteData[]'
+0 - Project
+0 - 
+0 - 
+0 - CoursesAPI.Controllers.ProjectController
+0 - CoursesAPI.Controllers.ProjectController
+0 - 
+0 - 
+0 - Selected action 'AddGrade(Int32 courseInstanceID, Int32 projectID, AddGradeViewModel viewModel)'
+0 - 
+0 - Binding parameter 'courseInstanceID'
+0 - Parameter 'courseInstanceID' bound to the value '1'
+0 - Binding parameter 'projectID'
+0 - Parameter 'projectID' bound to the value '1'
+0 - Binding parameter 'viewModel'
+0 - Type='AddGradeViewModel', content-type='application/json'
+0 - Value read='CoursesAPI.Models.AddGradeViewModel'
+0 - Parameter 'viewModel' bound to the value 'CoursesAPI.Models.AddGradeViewModel'
+0 - Model state is valid. Values: courseInstanceID=1, projectID=1, viewModel=CoursesAPI.Models.AddGradeViewModel
+0 - Action='AddGrade(courseInstanceID=1, projectID=1, viewModel=CoursesAPI.Models.AddGradeViewModel)'
+0 - Invoking action 'AddGrade(courseInstanceID=1, projectID=1, viewModel=CoursesAPI.Models.AddGradeViewModel)'
+0 - Type='HttpError', formatters=[JsonMediaTypeFormatterTracer, XmlMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer]
+0 - Obtaining formatter of type 'JsonMediaTypeFormatter' for type='HttpError', mediaType='application/json; charset=utf-8'
+0 - Will use same 'JsonMediaTypeFormatter' formatter
+0 - Selected formatter='JsonMediaTypeFormatter', content-type='application/json; charset=utf-8'
+NotFound - 
+NotFound - 
+NotFound - 
+NotFound - 
+NotFound - Content-type='application/json; charset=utf-8', content-length=unknown
+0 - Value='System.Web.Http.HttpError', type='HttpError', content-type='application/json; charset=utf-8'
+0 - 
+0 - 
+0 - 

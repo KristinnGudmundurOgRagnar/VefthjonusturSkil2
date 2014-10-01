@@ -156,6 +156,10 @@ namespace CoursesAPI.Services.Services
 
 		public void AddGrade(int courseInstanceID, int projectID, AddGradeViewModel viewModel)
 		{
+			if(viewModel.GradeValue < 0 || viewModel.GradeValue > 100){
+				throw new ArgumentException("The grade must be an integer value  between 0 and 100");
+			}
+			
 			//See if the courseInstance exists
 			CourseInstance theCourse = _courseInstances.All().SingleOrDefault(c => c.ID == courseInstanceID);
 
@@ -173,7 +177,29 @@ namespace CoursesAPI.Services.Services
 			}
 
 			//See if the person is in the course
-			//Person thePerson = _persons.All().SingleOrDefault();
+			PersonRegistration thePerson = _personRegistrations.All().SingleOrDefault(p => p.PersonSSN == viewModel.PersonSSN 
+																						&& p.CourseInstanceId == courseInstanceID);
+
+			if(thePerson == null){
+				throw new KeyNotFoundException("The given person is not registered in the given course");
+			}
+
+			//See if the person already has a grade for the project
+			Grade theGrade = _grades.All().SingleOrDefault(g => g.ProjectId == projectID
+															&& g.PersonSSN == viewModel.PersonSSN);
+
+			if(theGrade == null){
+				//Add a new grade
+				_grades.Add(new Grade
+				{
+					ProjectId = projectID,
+					GradeValue = viewModel.GradeValue,
+					PersonSSN = viewModel.PersonSSN
+				});
+			}
+			else{
+				//TODO: Should the old one be overwritten, or should there be an error
+			}
 		}
 
         public List<Project> GetProjectsForCourse(int id)

@@ -48,22 +48,13 @@ namespace CoursesAPI.Controllers
 			//TODO: Handle different exceptions differently
 			catch (ArgumentException e)
 			{
-				HttpError theError = new HttpError();
-				theError.Add("Error message", e.Message);
-				HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.BadRequest, theError);
-				throw new HttpResponseException(response);
+				throwHttpResponse(HttpStatusCode.BadRequest, e.Message);
 			}
 			catch(KeyNotFoundException e){
-				HttpError theError = new HttpError();
-				theError.Add("Error message", e.Message);
-				HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.NotFound, theError);
-				throw new HttpResponseException(response);
+				throwHttpResponse(HttpStatusCode.NotFound, e.Message);
 			}
 			catch(Exception e){
-				HttpError theError = new HttpError();
-				theError.Add("Error message", e.Message);
-				HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.InternalServerError, theError);
-				throw new HttpResponseException(response);
+				throwHttpResponse(HttpStatusCode.InternalServerError, e.Message);
 			}
 		}
 
@@ -82,6 +73,15 @@ namespace CoursesAPI.Controllers
 		public int GetFinalGrade(int courseInstanceId, int personId)
 		{
 			return 0;
+		}
+
+
+		private HttpResponseException throwHttpResponse(HttpStatusCode status, String message)
+		{
+			HttpError theError = new HttpError();
+			theError.Add("Error message", message);
+			HttpResponseMessage response = Request.CreateResponse(status, theError);
+			throw new HttpResponseException(response);
 		}
     }
 }

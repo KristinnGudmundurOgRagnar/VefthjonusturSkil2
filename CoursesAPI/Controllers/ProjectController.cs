@@ -36,13 +36,23 @@ namespace CoursesAPI.Controllers
             return Request.CreateResponse(System.Net.HttpStatusCode.Created);
 		}
 
-		//TODO: Add GradeViewModel and correct return type
-		[HttpPut]
-		[Route("project/grade")]
-		public List<int> AddGrade(int courseInstanceID)
+		//TODO: Finish
+		[HttpPost]
+		[Route("project/{projectId}/grade")]
+		public void AddGrade(int courseInstanceID, int projectID, AddGradeViewModel viewModel)
 		{
-
-			return new List<int> { 1, 2, 3, 4, 5, 6, 7 };
+			try
+			{
+				_service.AddGrade(courseInstanceID, projectID, viewModel);
+			}
+			//TODO: Handle different exceptions differently
+			catch (Exception e)
+			{
+				HttpError theError = new HttpError();
+				theError.Add("Error message", e.Message);
+				HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.BadRequest, theError);
+				throw new HttpResponseException(response);
+			}
 		}
 
 		//TODO: Add correct return type

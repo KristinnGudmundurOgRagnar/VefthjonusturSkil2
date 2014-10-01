@@ -151,6 +151,28 @@ namespace CoursesAPI.Services.Services
             _uow.Save();
         }
 
+		public void AddGrade(int courseInstanceID, int projectID, AddGradeViewModel viewModel)
+		{
+			//See if the courseInstance exists
+			CourseInstance theCourse = _courseInstances.All().SingleOrDefault(c => c.ID == courseInstanceID);
+
+			if (theCourse == null)
+			{
+				throw new KeyNotFoundException("No course instance found with this ID");
+			}
+
+			//See if the project exist
+			Project theProject = _projects.All().SingleOrDefault(p => p.ID == projectID);
+
+			if (theProject == null)
+			{
+				throw new KeyNotFoundException("No project found with this ID in the given course instance");
+			}
+
+			//See if the person is in the course
+			//Person thePerson = _persons.All().SingleOrDefault();
+		}
+
         public List<Project> GetProjectsForCourse(int id)
         {
             return _projects.All().ToList();

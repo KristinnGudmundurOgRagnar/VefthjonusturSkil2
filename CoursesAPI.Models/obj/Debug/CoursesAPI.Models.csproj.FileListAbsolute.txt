@@ -16,3 +16,12 @@ C:\Users\Kristinn\Desktop\VefthjonusturSkil2\CoursesAPI.Models\bin\Debug\fr-FR\R
 C:\Users\Kristinn\Desktop\VefthjonusturSkil2\CoursesAPI.Models\obj\Debug\CoursesAPI.Models.csprojResolveAssemblyReference.cache
 C:\Users\Kristinn\Desktop\VefthjonusturSkil2\CoursesAPI.Models\obj\Debug\CoursesAPI.Models.dll
 C:\Users\Kristinn\Desktop\VefthjonusturSkil2\CoursesAPI.Models\obj\Debug\CoursesAPI.Models.pdb
+C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Models\bin\Debug\CoursesAPI.Models.dll
+C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Models\bin\Debug\CoursesAPI.Models.pdb
+C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Models\bin\Debug\Resources.dll
+C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Models\bin\Debug\Resources.pdb
+C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Models\bin\Debug\es\Resources.resources.dll
+C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Models\bin\Debug\fr-FR\Resources.resources.dll
+C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Models\obj\Debug\CoursesAPI.Models.csprojResolveAssemblyReference.cache
+C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Models\obj\Debug\CoursesAPI.Models.dll
+C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Models\obj\Debug\CoursesAPI.Models.pdb

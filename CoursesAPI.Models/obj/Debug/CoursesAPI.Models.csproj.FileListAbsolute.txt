@@ -7,3 +7,12 @@ C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\Cou
 C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI.Models\bin\Debug\es\Resources.resources.dll
 C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI.Models\obj\Debug\CoursesAPI.Models.csprojResolveAssemblyReference.cache
 C:\Users\patrekur\Documents\Visual Studio 2013\Projects\Veffthjonustur_20143\CoursesAPI.Models\bin\Debug\fr-FR\Resources.resources.dll
+C:\Users\Kristinn\Desktop\VefthjonusturSkil2\CoursesAPI.Models\bin\Debug\CoursesAPI.Models.dll
+C:\Users\Kristinn\Desktop\VefthjonusturSkil2\CoursesAPI.Models\bin\Debug\CoursesAPI.Models.pdb
+C:\Users\Kristinn\Desktop\VefthjonusturSkil2\CoursesAPI.Models\bin\Debug\Resources.dll
+C:\Users\Kristinn\Desktop\VefthjonusturSkil2\CoursesAPI.Models\bin\Debug\Resources.pdb
+C:\Users\Kristinn\Desktop\VefthjonusturSkil2\CoursesAPI.Models\bin\Debug\es\Resources.resources.dll
+C:\Users\Kristinn\Desktop\VefthjonusturSkil2\CoursesAPI.Models\bin\Debug\fr-FR\Resources.resources.dll
+C:\Users\Kristinn\Desktop\VefthjonusturSkil2\CoursesAPI.Models\obj\Debug\CoursesAPI.Models.csprojResolveAssemblyReference.cache
+C:\Users\Kristinn\Desktop\VefthjonusturSkil2\CoursesAPI.Models\obj\Debug\CoursesAPI.Models.dll
+C:\Users\Kristinn\Desktop\VefthjonusturSkil2\CoursesAPI.Models\obj\Debug\CoursesAPI.Models.pdb

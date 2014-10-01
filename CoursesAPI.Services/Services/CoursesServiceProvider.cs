@@ -128,7 +128,28 @@ namespace CoursesAPI.Services.Services
 
 		#region project and grading methods
 
+        public void AddProjectToCourse(int id, AddProjectViewModel model)
+        {
+            var course = _courseInstances.All().SingleOrDefault(c => c.ID == id);
 
+            if(course == null)
+            {
+                throw new ArgumentException("Invalid course instance id");
+            }
+
+            Project project = new Project
+            {
+                Name = model.Name,
+                ProjectGroupId = null,
+                CourseInstanceId = id,
+                OnlyHigherThanProjectId = null,
+                Weight = model.Weight,
+                MinGradeToPassCourse = model.MinGradeToPassCourse
+            };
+
+            _projects.Add(project);
+            _uow.Save();
+        }
 
 		#endregion
 	}

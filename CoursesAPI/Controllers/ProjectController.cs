@@ -22,12 +22,12 @@ namespace CoursesAPI.Controllers
 		}
 
 		//TODO: Add ProjectViewModel and correct return type
-		[HttpPut]
+		[HttpPost]
 		[Route("project")]
-		public List<int> AddProject(int courseInstanceID)
+        public HttpResponseMessage AddProject(int courseInstanceID, AddProjectViewModel model)
 		{
-
-			return new List<int> { 1,2,3,4,5,6,7};
+            _service.AddProjectToCourse(courseInstanceID, model);
+            return Request.CreateResponse(System.Net.HttpStatusCode.Created);
 		}
 
 		//TODO: Add GradeViewModel and correct return type

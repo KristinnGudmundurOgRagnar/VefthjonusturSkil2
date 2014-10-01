@@ -10,6 +10,7 @@ namespace CoursesAPI.Services.Models.Entities
 	[Table("Projects")]
 	public class Project
 	{
+
 		/// <summary>
 		/// A database-generated ID of the project
 		/// </summary>
@@ -43,6 +44,6 @@ namespace CoursesAPI.Services.Models.Entities
 		/// <summary>
 		/// The minimum grade needed to pass the course in which this project is. Optional
 		/// </summary>
-		public int? MinGradeToPass { get; set; }
+		public int? MinGradeToPassCourse { get; set; }
 	}
 }

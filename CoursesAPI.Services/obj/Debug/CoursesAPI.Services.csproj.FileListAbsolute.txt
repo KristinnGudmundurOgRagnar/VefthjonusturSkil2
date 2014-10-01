@@ -32,3 +32,20 @@ C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Service
 C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Services\obj\Debug\CoursesAPI.Services.csprojResolveAssemblyReference.cache
 C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Services\obj\Debug\CoursesAPI.Services.dll
 C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Services\obj\Debug\CoursesAPI.Services.pdb
+C:\Users\Kristinn\Desktop\VefthjonusturSkil2\CoursesAPI.Services\bin\Debug\CoursesAPI.Services.dll.config
+C:\Users\Kristinn\Desktop\VefthjonusturSkil2\CoursesAPI.Services\bin\Debug\CoursesAPI.Services.dll
+C:\Users\Kristinn\Desktop\VefthjonusturSkil2\CoursesAPI.Services\bin\Debug\CoursesAPI.Services.pdb
+C:\Users\Kristinn\Desktop\VefthjonusturSkil2\CoursesAPI.Services\bin\Debug\CoursesAPI.Models.dll
+C:\Users\Kristinn\Desktop\VefthjonusturSkil2\CoursesAPI.Services\bin\Debug\EntityFramework.dll
+C:\Users\Kristinn\Desktop\VefthjonusturSkil2\CoursesAPI.Services\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Kristinn\Desktop\VefthjonusturSkil2\CoursesAPI.Services\bin\Debug\System.Web.Http.dll
+C:\Users\Kristinn\Desktop\VefthjonusturSkil2\CoursesAPI.Services\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Kristinn\Desktop\VefthjonusturSkil2\CoursesAPI.Services\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Kristinn\Desktop\VefthjonusturSkil2\CoursesAPI.Services\bin\Debug\CoursesAPI.Models.pdb
+C:\Users\Kristinn\Desktop\VefthjonusturSkil2\CoursesAPI.Services\bin\Debug\EntityFramework.xml
+C:\Users\Kristinn\Desktop\VefthjonusturSkil2\CoursesAPI.Services\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Kristinn\Desktop\VefthjonusturSkil2\CoursesAPI.Services\bin\Debug\System.Web.Http.xml
+C:\Users\Kristinn\Desktop\VefthjonusturSkil2\CoursesAPI.Services\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Kristinn\Desktop\VefthjonusturSkil2\CoursesAPI.Services\obj\Debug\CoursesAPI.Services.csprojResolveAssemblyReference.cache
+C:\Users\Kristinn\Desktop\VefthjonusturSkil2\CoursesAPI.Services\obj\Debug\CoursesAPI.Services.dll
+C:\Users\Kristinn\Desktop\VefthjonusturSkil2\CoursesAPI.Services\obj\Debug\CoursesAPI.Services.pdb

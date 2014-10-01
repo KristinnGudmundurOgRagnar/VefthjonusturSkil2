@@ -8,7 +8,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace CoursesAPI.Services.Models.Entities
 {
 	[Table("ProjectGroup")]
-	class ProjectGroup
+	public class ProjectGroup
 	{
 		/// <summary>
 		/// A database generated Id of the project group

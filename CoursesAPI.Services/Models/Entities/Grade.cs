@@ -8,7 +8,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace CoursesAPI.Services.Models.Entities
 {
 	[Table("Grades")]
-	class Grade
+	public class Grade
 	{
 		/// <summary>
 		/// A database-generated ID of the grade
@@ -23,7 +23,7 @@ namespace CoursesAPI.Services.Models.Entities
 		/// <summary>
 		/// The grade (0 - 100)
 		/// </summary>
-		public int? Grade { get; set; }
+		public int? GradeValue { get; set; }
 
 		/// <summary>
 		/// The SSN of the person whose grade this is

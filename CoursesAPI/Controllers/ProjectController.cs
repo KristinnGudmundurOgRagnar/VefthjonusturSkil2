@@ -11,7 +11,7 @@ using CoursesAPI.Services.DataAccess;
 
 namespace CoursesAPI.Controllers
 {
-	[RoutePrefix("api/courses/{courseInstanceID}")]
+	[RoutePrefix("api/courses/{courseInstanceID:int}")]
     public class ProjectController : ApiController
     {
 		private readonly CoursesServiceProvider _service;
@@ -38,7 +38,7 @@ namespace CoursesAPI.Controllers
 
 		
 		[HttpPost]
-		[Route("project/{projectId}/grade")]
+		[Route("project/{projectId:int}/grade")]
 		public void AddGrade(int courseInstanceID, int projectID, AddGradeViewModel viewModel)
 		{
 			try
@@ -58,14 +58,23 @@ namespace CoursesAPI.Controllers
 			}
 		}
 
-		//TODO: Add correct return type
-		[HttpGet]
-		[Route("project/{projectID}/grade")]
-		public int GetGrade(int courseInstanceId, int projectId, int personId)
-		{
-			return 0;
-		}
+        //TODO: Need to decide about the SSN in route
+        // public List<int> GetGrade(int courseInstanceId, int projectId, ProjectViewModel personId)
+        [HttpGet]
+        [Route("project/{projectID:int}/grade/{ssn}")]
+        public HttpResponseMessage GetGrade(int courseInstanceId, int projectId, String ssn)
+        {
+            HttpResponseMessage response;
+            // Result could give us null so we need to take care of that
+            var result = _service.getProjectGrade(courseInstanceId, projectId, ssn);
 
+            if (result == null)
+                response = Request.CreateResponse(HttpStatusCode.NotFound);
+            else
+                response = Request.CreateResponse(HttpStatusCode.OK, result);
+
+            return response;
+        }
 
 		//TODO: Add correct return type
 		[HttpGet]

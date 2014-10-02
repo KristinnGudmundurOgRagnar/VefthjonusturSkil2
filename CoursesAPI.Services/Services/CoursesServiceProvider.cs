@@ -198,8 +198,20 @@ namespace CoursesAPI.Services.Services
 			}
 
 			//See if the person already has a grade for the project
-			Grade theGrade = _grades.All().SingleOrDefault(g => g.ProjectId == projectID
-															&& g.PersonSSN == viewModel.PersonSSN);
+
+			Grade theGrade = null;
+			try
+			{
+				theGrade = _grades.All().SingleOrDefault(g => g.ProjectId == projectID
+																&& g.PersonSSN == viewModel.PersonSSN);
+			}
+			catch(Exception e){
+				//There are more than one grade that fit the criteria
+				if(_grades.All().Count() != 0){
+					throw new Exception("The given person already has more than one grade for the given project");
+				}
+				//The collection is empty
+			}
 
 			if(theGrade == null){
 				//Add a new grade

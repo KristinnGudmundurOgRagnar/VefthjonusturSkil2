@@ -64,6 +64,7 @@
     <Compile Include="Models\Entities\Grade.cs" />
     <Compile Include="Models\Entities\Person.cs" />
     <Compile Include="Models\Entities\PersonRegistration.cs" />
+    <Compile Include="Models\Entities\PersonsGrade.cs" />
     <Compile Include="Models\Entities\Project.cs" />
     <Compile Include="Models\Entities\ProjectGroup.cs" />
     <Compile Include="Models\Entities\Semester.cs" />

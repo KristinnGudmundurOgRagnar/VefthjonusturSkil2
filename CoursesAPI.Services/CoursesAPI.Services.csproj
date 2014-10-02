@@ -61,6 +61,7 @@
     <Compile Include="Helpers\CourseAPIValidation.cs" />
     <Compile Include="Models\Entities\CourseInstance.cs" />
     <Compile Include="Models\Entities\CourseTemplate.cs" />
+    <Compile Include="Models\Entities\FinalGradeComposition.cs" />
     <Compile Include="Models\Entities\Grade.cs" />
     <Compile Include="Models\Entities\Person.cs" />
     <Compile Include="Models\Entities\PersonRegistration.cs" />

@@ -39,23 +39,24 @@ namespace CoursesAPI.Controllers
 		
 		[HttpPost]
 		[Route("project/{projectId:int}/grade")]
-		public void AddGrade(int courseInstanceID, int projectID, AddGradeViewModel viewModel)
+		public HttpResponseMessage AddGrade(int courseInstanceID, int projectID, AddGradeViewModel viewModel)
 		{
 			try
 			{
 				_service.AddGrade(courseInstanceID, projectID, viewModel);
 			}
-			//TODO: Handle different exceptions differently
 			catch (ArgumentException e)
 			{
-				throwHttpResponse(HttpStatusCode.BadRequest, e.Message);
+				return Request.CreateResponse(System.Net.HttpStatusCode.BadRequest, e.Message);
 			}
 			catch(KeyNotFoundException e){
-				throwHttpResponse(HttpStatusCode.NotFound, e.Message);
+				return Request.CreateResponse(System.Net.HttpStatusCode.NotFound, e.Message);
 			}
 			catch(Exception e){
-				throwHttpResponse(HttpStatusCode.InternalServerError, e.Message);
+				return Request.CreateResponse(System.Net.HttpStatusCode.InternalServerError, e.Message);
 			}
+
+			return Request.CreateResponse(System.Net.HttpStatusCode.Created, "Grade created");
 		}
 
         //TODO: Need to decide about the SSN in route
@@ -82,15 +83,6 @@ namespace CoursesAPI.Controllers
 		public int GetFinalGrade(int courseInstanceId, int personId)
 		{
 			return 0;
-		}
-
-
-		private HttpResponseException throwHttpResponse(HttpStatusCode status, String message)
-		{
-			HttpError theError = new HttpError();
-			theError.Add("Error message", message);
-			HttpResponseMessage response = Request.CreateResponse(status, theError);
-			throw new HttpResponseException(response);
 		}
     }
 }

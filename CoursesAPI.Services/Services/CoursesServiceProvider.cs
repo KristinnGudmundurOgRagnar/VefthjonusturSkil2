@@ -242,15 +242,20 @@ namespace CoursesAPI.Services.Services
         }
 
         // TODO: just a simple return with all grades without any other info
-        public List<int?> GetAllGrades(int projectId)
+        public List<PersonsGrade> GetAllGrades(int projectId)
         {
 
-            /*var result = from gr in _grades.All()
-                         where gr.ProjectId == projectId
-                         select gr.GradeValue;
-            */
-            var result = _grades.All().Where(c => c.ProjectId == projectId).Select(gv => gv.GradeValue);
-            return result.ToList();
+            var result = (from gr in _grades.All()
+                          join ps in _persons.All() on gr.PersonSSN equals ps.SSN
+                          where gr.ProjectId == projectId &&
+                          gr.GradeValue != null
+                          select new PersonsGrade
+                          {
+                              PersonSSN = ps.SSN,
+                              Name = ps.Name, 
+                              Grade = (gr.GradeValue != null ? (double)gr.GradeValue/10 : 0)
+                          }).ToList();
+            return result;
         }
 
 		#endregion

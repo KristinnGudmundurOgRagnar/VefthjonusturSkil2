@@ -84,15 +84,13 @@ namespace CoursesAPI.Controllers
         // public List<int> GetGrade(int courseInstanceId, int projectId, ProjectViewModel personId)
         [HttpGet]
         [Route("project/{projectID:int}/grade/{ssn}")]
-        public HttpResponseMessage GetGrade(int courseInstanceId, int projectId, String ssn)
+        public HttpResponseMessage GetProjectGrade(int courseInstanceId, int projectId, String ssn)
         {
-            HttpResponseMessage response;
+            HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.NotFound);
             // Result could give us null so we need to take care of that
-            var result = _service.getProjectGrade(courseInstanceId, projectId, ssn);
+            var result = _service.GetProjectGrade(courseInstanceId, projectId, ssn);
 
-            if (result == null)
-                response = Request.CreateResponse(HttpStatusCode.NotFound);
-            else
+            if (result != null)
                 response = Request.CreateResponse(HttpStatusCode.OK, result);
 
             return response;
@@ -105,5 +103,19 @@ namespace CoursesAPI.Controllers
 		{
 			return 0;
 		}
+
+        [HttpGet]
+        [Route("project/{projectId:int}/allGrades")]
+        public HttpResponseMessage GetAllGrades(int projectId)
+        {
+            HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.NotFound);
+
+            var result = _service.GetAllGrades(int projectId);
+
+            if(result != null)
+                response = Request.CreateResponse(HttpStatusCode.OK, result);
+
+            return response;
+        }
     }
 }

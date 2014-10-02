@@ -232,13 +232,24 @@ namespace CoursesAPI.Services.Services
             return _projects.All().ToList();
         }
 
-        public int? getProjectGrade(int courseInstanceId, int projectId, String ssn)
+        public int? GetProjectGrade(int courseInstanceId, int projectId, String ssn)
         {
             var result = (from gr in _grades.All()
                           where gr.ProjectId == projectId &&
                           gr.PersonSSN == ssn
                           select gr.GradeValue).FirstOrDefault();
             return result;
+        }
+
+        // TODO: just a simple return with all grades without any other info
+        public List<int?> GetAllGrades(int projectId)
+        {
+
+            var result = from gr in _grades.All()
+                         where gr.ProjectId == projectId
+                         select gr.GradeValue;
+
+            return result.ToList();
         }
 
 		#endregion

@@ -15,6 +15,7 @@ namespace CoursesAPI.Services.DataAccess
 		public DbSet<ProjectGroup>        ProjectGroups        { get; set; }
 		public DbSet<Project>             Projects             { get; set; }
 		public DbSet<Grade>               Grades               { get; set; }
+		public DbSet<FinalGradeComposition> FinalGradeCompositions { get; set; }
 
 		protected override void OnModelCreating(DbModelBuilder modelBuilder)
 		{

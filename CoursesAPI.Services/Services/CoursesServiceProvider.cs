@@ -25,6 +25,7 @@ namespace CoursesAPI.Services.Services
 		private readonly IRepository<ProjectGroup> _projectGroups;
 		private readonly IRepository<Project> _projects;
 		private readonly IRepository<Grade> _grades;
+		private readonly IRepository<FinalGradeComposition> _finalGradeComps;
 		#endregion Database collections
 
 		public CoursesServiceProvider(IUnitOfWork uow)
@@ -40,6 +41,7 @@ namespace CoursesAPI.Services.Services
 			_projectGroups		  = _uow.GetRepository<ProjectGroup>();
 			_projects             = _uow.GetRepository<Project>();
 			_grades               = _uow.GetRepository<Grade>();
+			_finalGradeComps      = _uow.GetRepository<FinalGradeComposition>();
 		}
 
 		#region Language methods
@@ -228,7 +230,7 @@ namespace CoursesAPI.Services.Services
 			}
 		}
 
-        public List<Project> GetProjectsForCourse(int id)
+		public List<Project> GetProjectsForCourse(int id)
         {
             return _projects.All().ToList();
         }
@@ -241,6 +243,73 @@ namespace CoursesAPI.Services.Services
                           select gr.GradeValue).FirstOrDefault();
             return result;
         }
+		
+		public FinalGradeDTO GetFinalGrade(int courseInstanceID, String personSSN)
+		{
+			if(personSSN == null){
+				throw new MissingFieldException("The field \"personSSN\" is required");
+			}
+
+			//See if the courseInstance exists
+			CourseInstance theCourse = _courseInstances.All().SingleOrDefault(c => c.ID == courseInstanceID);
+
+			if (theCourse == null)
+			{
+				throw new KeyNotFoundException("No course instance found with this ID");
+			}
+
+			//See if a FinalGradeComposition is registered for the course
+			List<FinalGradeComposition> theGradeComps = _finalGradeComps.All().Where(f => f.CourseInstanceId == courseInstanceID).ToList();
+
+			if(theGradeComps == null){
+				throw new KeyNotFoundException("The composition of the final grade has not been registered for this course");
+			}
+
+			FinalGradeDTO returnValue = new FinalGradeDTO
+			{
+				Grade = 0,
+				PercentageComplete = 0
+			};
+			
+			int totalPercentage = 0;
+
+			foreach(var comp in theGradeComps){
+				//TODO: Add handling for ProjectGroups and OnlyIfHigherThan
+				FinalGradeComposition currentComp = (FinalGradeComposition)comp;
+				Project currentProject = null;
+				try
+				{
+					currentProject = _projects.All().SingleOrDefault(p => p.ID == comp.ProjectId);
+				}
+				catch(Exception e){
+					if(_projects.All().Count() != 0){
+						throw new Exception("There are more than one projects with the given ID");
+					}
+					//The collection is empty
+				}
+
+				int? currentGrade = GetProjectGrade(courseInstanceID, currentComp.ProjectId, personSSN);
+
+				if(currentGrade != null){
+					returnValue.PercentageComplete += currentProject.Weight;
+					returnValue.Grade += (int)currentGrade / 1000.0 * currentProject.Weight;
+				}
+
+				totalPercentage += currentProject.Weight;
+			}
+
+			if(totalPercentage != 100){
+				throw new Exception("Total weight of the components of the final grade is " + totalPercentage + ", not 100 as it should be.");
+			}
+
+			return returnValue;
+		}
+
+
+		public List<FinalGradeDTO> GetAllFinalGrades(int courseInstanceId)
+		{
+			return null;
+		}
 
         // TODO: just a simple return with all grades without any other info
         public List<PersonsGrade> GetAllGrades(int projectId)

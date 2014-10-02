@@ -245,10 +245,11 @@ namespace CoursesAPI.Services.Services
         public List<int?> GetAllGrades(int projectId)
         {
 
-            var result = from gr in _grades.All()
+            /*var result = from gr in _grades.All()
                          where gr.ProjectId == projectId
                          select gr.GradeValue;
-
+            */
+            var result = _grades.All().Where(c => c.ProjectId == projectId).Select(gv => gv.GradeValue);
             return result.ToList();
         }
 

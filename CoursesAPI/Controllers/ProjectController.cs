@@ -21,6 +21,11 @@ namespace CoursesAPI.Controllers
 			_service = new CoursesServiceProvider(new UnitOfWork<AppDataContext>());
 		}
 
+		/// <summary>
+		/// Get a list of all the projects in a given course
+		/// </summary>
+		/// <param name="courseInstanceID">The Id of the courseInstance, gotten from the URL</param>
+		/// <returns>A list of all the projects in the course</returns>
         [HttpGet]
         [Route("project")]
         public List<Project> GetProjects(int courseInstanceID)
@@ -28,6 +33,12 @@ namespace CoursesAPI.Controllers
             return _service.GetProjectsForCourse(courseInstanceID);
         }
 
+		/// <summary>
+		/// Add a new project to the course
+		/// </summary>
+		/// <param name="courseInstanceID">The Id of the courseInstance, gotten from the URL</param>
+		/// <param name="model">The project that is to be added, gotten from the request payload</param>
+		/// <returns>Status code, depending on the correctness of the payload</returns>
 		[HttpPost]
 		[Route("project")]
         public HttpResponseMessage AddProject(int courseInstanceID, AddProjectViewModel model)
@@ -36,7 +47,13 @@ namespace CoursesAPI.Controllers
             return Request.CreateResponse(System.Net.HttpStatusCode.Created);
 		}
 
-		
+		/// <summary>
+		/// Add a grade for a given person for a given project
+		/// </summary>
+		/// <param name="courseInstanceID">The Id of the courseInstance, gotten from the URL</param>
+		/// <param name="projectID">The Id of the project, gotten from the URL</param>
+		/// <param name="viewModel">The grade that is to be added, gotten from the payload</param>
+		/// <returns>Status code, depending on the correctness of the payload</returns>
 		[HttpPost]
 		[Route("project/{projectId:int}/grade")]
 		public HttpResponseMessage AddGrade(int courseInstanceID, int projectID, AddGradeViewModel viewModel)
@@ -46,6 +63,10 @@ namespace CoursesAPI.Controllers
 				_service.AddGrade(courseInstanceID, projectID, viewModel);
 			}
 			catch (ArgumentException e)
+			{
+				return Request.CreateResponse(System.Net.HttpStatusCode.BadRequest, e.Message);
+			}
+			catch (MissingFieldException e)
 			{
 				return Request.CreateResponse(System.Net.HttpStatusCode.BadRequest, e.Message);
 			}

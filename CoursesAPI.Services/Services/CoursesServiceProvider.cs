@@ -12,6 +12,7 @@ namespace CoursesAPI.Services.Services
 {
 	public class CoursesServiceProvider
 	{
+		#region Database collections
 		private readonly IUnitOfWork _uow;
 
 		private readonly IRepository<CourseInstance> _courseInstances;
@@ -24,6 +25,7 @@ namespace CoursesAPI.Services.Services
 		private readonly IRepository<ProjectGroup> _projectGroups;
 		private readonly IRepository<Project> _projects;
 		private readonly IRepository<Grade> _grades;
+		#endregion Database collections
 
 		public CoursesServiceProvider(IUnitOfWork uow)
 		{
@@ -156,7 +158,18 @@ namespace CoursesAPI.Services.Services
 
 		public void AddGrade(int courseInstanceID, int projectID, AddGradeViewModel viewModel)
 		{
-			if(viewModel.GradeValue < 0 || viewModel.GradeValue > 100){
+			if(viewModel == null){
+				throw new MissingFieldException("The payload must contain \"Grade\" and \"PersonSSN\"");
+			}
+			if(viewModel.Grade == null){
+				throw new MissingFieldException("A \"Grade\" field is required");
+			}
+			if (viewModel.PersonSSN == null)
+			{
+				throw new MissingFieldException("A \"PersonSSN\" field is required");
+			}
+
+			if(viewModel.Grade < 0 || viewModel.Grade > 100){
 				throw new ArgumentException("The grade must be an integer value  between 0 and 100");
 			}
 			
@@ -193,7 +206,7 @@ namespace CoursesAPI.Services.Services
 				_grades.Add(new Grade
 				{
 					ProjectId = projectID,
-					GradeValue = viewModel.GradeValue,
+					GradeValue = viewModel.Grade,
 					PersonSSN = viewModel.PersonSSN
 				});
 			}

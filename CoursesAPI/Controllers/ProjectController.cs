@@ -110,7 +110,7 @@ namespace CoursesAPI.Controllers
         {
             HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.NotFound);
 
-            var result = _service.GetAllGrades(int projectId);
+            var result = _service.GetAllGrades(projectId);
 
             if(result != null)
                 response = Request.CreateResponse(HttpStatusCode.OK, result);

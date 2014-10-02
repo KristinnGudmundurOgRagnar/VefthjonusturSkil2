@@ -2169,3 +2169,64 @@ OK - Content-type='application/json; charset=utf-8', content-length=unknown
 0 - 
 0 - 
 0 - 
+0 - 
+0 - 
+0 - http://localhost:12298/api/courses/1/finalGrade
+0 - 
+0 - Route='MS_SubRoutes:System.Web.Http.Routing.IHttpRouteData[]'
+0 - Project
+0 - 
+0 - 
+0 - CoursesAPI.Controllers.ProjectController
+0 - CoursesAPI.Controllers.ProjectController
+0 - 
+0 - 
+0 - Type='HttpError', formatters=[JsonMediaTypeFormatterTracer, XmlMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer]
+0 - Obtaining formatter of type 'JsonMediaTypeFormatter' for type='HttpError', mediaType='application/json; charset=utf-8'
+0 - Will use same 'JsonMediaTypeFormatter' formatter
+0 - Selected formatter='JsonMediaTypeFormatter', content-type='application/json; charset=utf-8'
+NotFound - UserMessage='No HTTP resource was found that matches the request URI 'http://localhost:12298/api/courses/1/finalGrade'.', MessageDetail='No action was found on the controller 'Project' that matches the request.'
+NotFound - UserMessage='No HTTP resource was found that matches the request URI 'http://localhost:12298/api/courses/1/finalGrade'.', MessageDetail='No action was found on the controller 'Project' that matches the request.'
+NotFound - 
+NotFound - Content-type='application/json; charset=utf-8', content-length=unknown
+0 - Value='System.Web.Http.HttpError', type='HttpError', content-type='application/json; charset=utf-8'
+0 - 
+0 - 
+0 - 
+0 - 
+0 - 
+0 - http://localhost:12298/api/courses/1/finalGrade/2608922589
+0 - 
+0 - Route='MS_SubRoutes:System.Web.Http.Routing.IHttpRouteData[]'
+0 - Project
+0 - 
+0 - 
+0 - CoursesAPI.Controllers.ProjectController
+0 - CoursesAPI.Controllers.ProjectController
+0 - 
+0 - 
+0 - Selected action 'GetFinalGrade(Int32 courseInstanceId, String personSSN)'
+0 - 
+0 - Binding parameter 'courseInstanceId'
+0 - Parameter 'courseInstanceId' bound to the value '1'
+0 - Binding parameter 'personSSN'
+0 - Parameter 'personSSN' bound to the value '2608922589'
+0 - Model state is valid. Values: courseInstanceId=1, personSSN=2608922589
+0 - Action='GetFinalGrade(courseInstanceId=1, personSSN=2608922589)'
+0 - Invoking action 'GetFinalGrade(courseInstanceId=1, personSSN=2608922589)'
+0 - Type='FinalGradeDTO', formatters=[JsonMediaTypeFormatterTracer, XmlMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer]
+0 - Obtaining formatter of type 'JsonMediaTypeFormatter' for type='FinalGradeDTO', mediaType='application/json; charset=utf-8'
+0 - Will use same 'JsonMediaTypeFormatter' formatter
+0 - Selected formatter='JsonMediaTypeFormatter', content-type='application/json; charset=utf-8'
+0 - Action returned 'StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.ObjectContent`1[[CoursesAPI.Models.FinalGradeDTO, CoursesAPI.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}'
+OK - 
+OK - 
+OK - 
+OK - Content-type='application/json; charset=utf-8', content-length=unknown
+0 - Value='CoursesAPI.Models.FinalGradeDTO', type='FinalGradeDTO', content-type='application/json; charset=utf-8'
+0 - 
+0 - 
+0 - 

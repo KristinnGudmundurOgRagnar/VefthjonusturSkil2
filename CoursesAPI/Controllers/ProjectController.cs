@@ -98,11 +98,11 @@ namespace CoursesAPI.Controllers
 
 		//TODO: Add correct return type
 		[HttpGet]
-		[Route("finalGrade")]
-		//public HttpResponseMessage GetFinalGrade(int courseInstanceId, String personSSN)
-		public HttpResponseMessage GetFinalGrade(int courseInstanceId)
+		[Route("finalGrade/{personSSN}")]
+		public HttpResponseMessage GetFinalGrade(int courseInstanceId, String personSSN)
+		//public HttpResponseMessage GetFinalGrade(int courseInstanceId)
 		{
-			String personSSN = "2608922589";
+			//String personSSN = "2608922589";
 			FinalGradeDTO result;
 			try
 			{

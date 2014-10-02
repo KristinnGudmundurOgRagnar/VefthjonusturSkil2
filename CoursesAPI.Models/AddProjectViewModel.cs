@@ -8,15 +8,25 @@ namespace CoursesAPI.Models
 {
     public class AddProjectViewModel
     {
-        //Name of Course
+        /// <summary>
+        /// Name of Course
+        /// </summary>
         public String Name;
-        //Id of projectgroup
+		/// <summary>
+		/// Id of projectgroup
+		/// </summary>
         public int ProjectGroupId;
-        //Id of onlyhigherthan
-        public int OnlyHigherThanProjectId;
-        //weight of project
+        /// <summary>
+		/// Id of onlyhigherthan
+        /// </summary>
+		public int OnlyHigherThanProjectId;
+		/// <summary>
+		/// weight of project
+		/// </summary>
         public int Weight;
-        //Minimum grade to pass course
-        public int MinGradeToPassCourse;
+        /// <summary>
+		/// Minimum grade to pass course
+        /// </summary>
+		public int MinGradeToPassCourse;
     }
 }

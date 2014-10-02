@@ -99,9 +99,34 @@ namespace CoursesAPI.Controllers
 		//TODO: Add correct return type
 		[HttpGet]
 		[Route("finalGrade")]
-		public int GetFinalGrade(int courseInstanceId, int personId)
+		//public HttpResponseMessage GetFinalGrade(int courseInstanceId, String personSSN)
+		public HttpResponseMessage GetFinalGrade(int courseInstanceId)
 		{
-			return 0;
+			String personSSN = "2608922589";
+			FinalGradeDTO result;
+			try
+			{
+				result = _service.GetFinalGrade(courseInstanceId, personSSN);
+			}
+			catch (ArgumentException e)
+			{
+				return Request.CreateResponse(System.Net.HttpStatusCode.BadRequest, e.Message);
+			}
+			catch (MissingFieldException e)
+			{
+				return Request.CreateResponse(System.Net.HttpStatusCode.BadRequest, e.Message);
+			}
+			catch (KeyNotFoundException e)
+			{
+				return Request.CreateResponse(System.Net.HttpStatusCode.NotFound, e.Message);
+			}
+			catch (Exception e)
+			{
+				return Request.CreateResponse(System.Net.HttpStatusCode.InternalServerError, e.Message);
+			}
+
+
+			return Request.CreateResponse(HttpStatusCode.OK, result);
 		}
 
         [HttpGet]

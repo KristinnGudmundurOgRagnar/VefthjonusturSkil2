@@ -100,9 +100,7 @@ namespace CoursesAPI.Controllers
 		[HttpGet]
 		[Route("finalGrade/{personSSN}")]
 		public HttpResponseMessage GetFinalGrade(int courseInstanceId, String personSSN)
-		//public HttpResponseMessage GetFinalGrade(int courseInstanceId)
 		{
-			//String personSSN = "2608922589";
 			FinalGradeDTO result;
 			try
 			{
@@ -125,6 +123,16 @@ namespace CoursesAPI.Controllers
 				return Request.CreateResponse(System.Net.HttpStatusCode.InternalServerError, e.Message);
 			}
 
+
+			return Request.CreateResponse(HttpStatusCode.OK, result);
+		}
+
+		[HttpGet]
+		[Route("finalGrade/all")]
+		public HttpResponseMessage GetAllFinalGrades(int courseInstanceId)
+		{
+			//TODO: Implement
+			List<FinalGradeDTO> result = _service.GetAllFinalGrades(courseInstanceId);
 
 			return Request.CreateResponse(HttpStatusCode.OK, result);
 		}

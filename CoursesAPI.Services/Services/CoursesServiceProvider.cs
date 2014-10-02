@@ -229,7 +229,7 @@ namespace CoursesAPI.Services.Services
 				//TODO: Should the old one be overwritten, or should there be an error
 			}
 		}
-		#region temp
+
 		public List<Project> GetProjectsForCourse(int id)
         {
             return _projects.All().ToList();
@@ -243,7 +243,7 @@ namespace CoursesAPI.Services.Services
                           select gr.GradeValue).FirstOrDefault();
             return result;
         }
-#endregion temp
+		
 		public FinalGradeDTO GetFinalGrade(int courseInstanceID, String personSSN)
 		{
 			if(personSSN == null){
@@ -271,6 +271,8 @@ namespace CoursesAPI.Services.Services
 				PercentageComplete = 0
 			};
 			
+			int totalPercentage = 0;
+
 			foreach(var comp in theGradeComps){
 				//TODO: Add handling for ProjectGroups and OnlyIfHigherThan
 				FinalGradeComposition currentComp = (FinalGradeComposition)comp;
@@ -293,9 +295,20 @@ namespace CoursesAPI.Services.Services
 					returnValue.Grade += (int)currentGrade / 1000.0 * currentProject.Weight;
 				}
 
+				totalPercentage += currentProject.Weight;
+			}
+
+			if(totalPercentage != 100){
+				throw new Exception("Total weight of the components of the final grade is " + totalPercentage + ", not 100 as it should be.");
 			}
 
 			return returnValue;
+		}
+
+
+		public List<FinalGradeDTO> GetAllFinalGrades(int courseInstanceId)
+		{
+			return null;
 		}
 
         // TODO: just a simple return with all grades without any other info

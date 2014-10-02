@@ -142,6 +142,7 @@ namespace CoursesAPI.Services.Services
                 throw new ArgumentException("Invalid course instance id");
             }
 
+			//TODO: Support ProjectGroupId and OnlyHigherThanProjectId
             Project project = new Project
             {
                 Name = model.Name,

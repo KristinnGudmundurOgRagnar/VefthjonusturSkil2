@@ -23,6 +23,7 @@ namespace CoursesAPI.Services.Models.Entities
 		/// <summary>
 		/// The grade (0 - 100)
 		/// </summary>
+		[Column("Grade")]
 		public int? GradeValue { get; set; }
 
 		/// <summary>

@@ -469,7 +469,7 @@ namespace CoursesAPI.Services.Services
 				}
 
 				GradeDTO currentGrade = GetProjectGrade(courseInstanceID, currentComp.ProjectId, personSSN);
-				if(currentProject.MinGradeToPassCourse != null){
+				if(currentProject.MinGradeToPassCourse != null && currentGrade.Grade != null){
 					if(currentGrade.Grade < currentProject.MinGradeToPassCourse){
 						returnValue.Status = "FAILED";
 					}

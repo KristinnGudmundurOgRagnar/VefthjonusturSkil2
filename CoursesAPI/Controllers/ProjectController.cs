@@ -91,16 +91,24 @@ namespace CoursesAPI.Controllers
         // public List<int> GetGrade(int courseInstanceId, int projectId, ProjectViewModel personId)
         [HttpGet]
         [Route("project/{projectID:int}/grade/{ssn}")]
-        public HttpResponseMessage GetProjectGrade(int courseInstanceId, int projectId, String ssn)
+        public HttpResponseMessage GetProjectGrade(int projectId, String ssn)
         {
-            HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.NotFound);
-            // Result could give us null so we need to take care of that
-            var result = _service.GetProjectGrade(courseInstanceId, projectId, ssn);
+            int? result;
 
-            if (result != null)
-                response = Request.CreateResponse(HttpStatusCode.OK, result);
-
-            return response;
+            try
+            {
+                result = _service.GetProjectGrade(projectId, ssn);
+            }
+            catch (MissingFieldException e)
+            {
+                return Request.CreateResponse(System.Net.HttpStatusCode.BadRequest, e.Message); 
+            }
+            catch (KeyNotFoundException e)
+            {
+                return Request.CreateResponse(System.Net.HttpStatusCode.NotFound, e.Message);
+            }
+            
+            return Request.CreateResponse(System.Net.HttpStatusCode.OK, result);
         }
 
 		//TODO: Add correct return type
@@ -148,14 +156,21 @@ namespace CoursesAPI.Controllers
         [Route("project/{projectId:int}/allGrades")]
         public HttpResponseMessage GetAllGrades(int projectId)
         {
-            HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.NotFound);
+            List<PersonsGrade> result;
+            try
+            {
+                result = _service.GetAllGrades(projectId);
+            }
+            catch (MissingFieldException e)
+            {
+                return Request.CreateResponse(System.Net.HttpStatusCode.BadRequest, e.Message);
+            }
+            catch (KeyNotFoundException e)
+            {
+                return Request.CreateResponse(System.Net.HttpStatusCode.NotFound, e.Message);
+            }
 
-            var result = _service.GetAllGrades(projectId);
-
-            if(result != null)
-                response = Request.CreateResponse(HttpStatusCode.OK, result);
-
-            return response;
+            return Request.CreateResponse(HttpStatusCode.OK, result);
         }
     }
 }

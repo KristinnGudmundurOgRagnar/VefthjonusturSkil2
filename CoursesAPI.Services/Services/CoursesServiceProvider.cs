@@ -420,13 +420,6 @@ namespace CoursesAPI.Services.Services
 				
 				return returnValue;
 			}
-			/*
-			var result = (from gr in _grades.All()
-                          where gr.ProjectId == projectId &&
-                          gr.PersonSSN == ssn
-                          select gr.GradeValue).FirstOrDefault();
-            return result;
-			*/
         }
 		
 		private FinalGradeDTO GetFinalGrade(int courseInstanceID, String personSSN)
@@ -601,6 +594,10 @@ namespace CoursesAPI.Services.Services
         // TODO: just a simple return with all grades without any other info
         public List<PersonsGrade> GetAllGrades(int projectId)
         {
+            if(projectId == null)
+            {
+                throw new MissingFieldException("The id of the project is missing");
+            }
 
             var result = (from gr in _grades.All()
                           join ps in _persons.All() on gr.PersonSSN equals ps.SSN
@@ -612,6 +609,12 @@ namespace CoursesAPI.Services.Services
                               Name = ps.Name, 
                               Grade = (gr.GradeValue != null ? (double)gr.GradeValue/10 : 0)
                           }).ToList();
+
+            if(result == null)
+            {
+                throw new KeyNotFoundException("No grades have been made");
+            }
+
             return result;
         }
 

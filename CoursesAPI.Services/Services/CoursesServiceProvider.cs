@@ -301,7 +301,13 @@ namespace CoursesAPI.Services.Services
             _uow.Save();
         }
 
-
+		/// <summary>
+		/// Creates lines in the FinalGradeCompositions table to indicate which projects
+		/// should be used to calculate the final grade
+		/// Replaces the old lines
+		/// </summary>
+		/// <param name="courseInstanceId">The id of the course instance</param>
+		/// <param name="model">A list of projects that should be used</param>
 		public void MakeFinalGradeComp(int courseInstanceId, AddFinalGradeCompositionViewModel model)
 		{
 			if (model == null)

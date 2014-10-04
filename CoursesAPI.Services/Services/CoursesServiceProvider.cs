@@ -757,6 +757,10 @@ namespace CoursesAPI.Services.Services
 
 					if(currentGrade != null){
 						returnValue.PercentageComplete += currentProject.Weight;
+						//For some reason, this is not a given thing :/
+						if(currentGrade.Grade == null ){
+							throw new Exception("Student: " + personSSN + " has no grade for Project: " + currentProject.ID);
+						}
 						returnValue.Grade += (int)currentGrade.Grade / 1000.0 * currentProject.Weight;
 					}
 				}
@@ -790,9 +794,25 @@ namespace CoursesAPI.Services.Services
         /// percentage of completed projects, his position in the course and number of students</returns>
 		public FinalGradeDTO GetFinalGradeForOneStudent(int courseInstanceID, String personSSN)
 		{
+
+			PersonRegistration reg = null;
+			try{
+				reg = _personRegistrations.All().Single(r => r.CourseInstanceId == courseInstanceID
+																		&& r.PersonSSN == personSSN);
+			}
+			catch(Exception e){
+				if(_personRegistrations.All().Count() != 0){
+					throw new Exception("The given student is registered more than once into the given course");
+				}
+				//The collection is empty
+			}
+
+			if(reg == null){
+				throw new KeyNotFoundException("The student is not registered in the given course");
+			}
+
 			List<FinalGradeDTO> allFinalGrades = GetAllFinalGrades(courseInstanceID);
-
-
+			
 			return allFinalGrades.SingleOrDefault(f => f.PersonSSN == personSSN);
 		}
 

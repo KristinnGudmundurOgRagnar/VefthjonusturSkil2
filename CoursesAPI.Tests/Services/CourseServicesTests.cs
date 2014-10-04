@@ -16,8 +16,8 @@ namespace CoursesAPI.Tests.Services
 		private CoursesServiceProvider _service;
 		private int invalidCourseInstanceID = 6;
 		private String personSSN1 = "1234567890";
-		private String personSSN2 = "0987654321";
-		private String personSSN3 = "3216549870";
+		private String personSSN2 = "2234567890";
+		private String personSSN3 = "3234567890";
 		private String invalidPersonSSN = "0000000000";
 		private int projectGroupId1 = 1;
 		private int invalidProjectID = 666;
@@ -409,100 +409,72 @@ namespace CoursesAPI.Tests.Services
 			grades.Add(new Grade
 			{
 				ID = 15,
-				PersonSSN = personSSN1,
-				GradeValue = 10,
-				ProjectId = 15
+				PersonSSN = personSSN2,
+				GradeValue = 100,
+				ProjectId = 5
 			});
 			grades.Add(new Grade
 			{
 				ID = 16,
-				PersonSSN = personSSN1,
-				GradeValue = 10,
-				ProjectId = 16
+				PersonSSN = personSSN2,
+				GradeValue = 100,
+				ProjectId = 6
 			});
 			grades.Add(new Grade
 			{
 				ID = 17,
-				PersonSSN = personSSN1,
-				GradeValue = 10,
-				ProjectId = 17
+				PersonSSN = personSSN2,
+				GradeValue = 100,
+				ProjectId = 7
 			});
 			grades.Add(new Grade
 			{
 				ID = 18,
-				PersonSSN = personSSN1,
-				GradeValue = 10,
-				ProjectId = 18
+				PersonSSN = personSSN2,
+				GradeValue = 100,
+				ProjectId = 8
 			});
 			grades.Add(new Grade
 			{
 				ID = 19,
-				PersonSSN = personSSN1,
-				GradeValue = 10,
-				ProjectId = 19
+				PersonSSN = personSSN2,
+				GradeValue = 100,
+				ProjectId = 9
 			});
 			grades.Add(new Grade
 			{
 				ID = 20,
-				PersonSSN = personSSN1,
-				GradeValue = 10,
-				ProjectId = 20
+				PersonSSN = personSSN2,
+				GradeValue = 100,
+				ProjectId = 10
 			});
 			grades.Add(new Grade
 			{
 				ID = 21,
-				PersonSSN = personSSN1,
-				GradeValue = 10,
-				ProjectId = 21
+				PersonSSN = personSSN2,
+				GradeValue = 100,
+				ProjectId = 11
 			});
 			grades.Add(new Grade
 			{
 				ID = 22,
-				PersonSSN = personSSN1,
-				GradeValue = 10,
-				ProjectId = 22
+				PersonSSN = personSSN2,
+				GradeValue = 100,
+				ProjectId = 12
 			});
 			grades.Add(new Grade
 			{
 				ID = 23,
-				PersonSSN = personSSN1,
-				GradeValue = 10,
-				ProjectId = 23
+				PersonSSN = personSSN2,
+				GradeValue = 100,
+				ProjectId = 13
 			});
 			grades.Add(new Grade
 			{
 				ID = 24,
-				PersonSSN = personSSN1,
-				GradeValue = 10,
-				ProjectId = 24
-			});
-			grades.Add(new Grade
-			{
-				ID = 25,
-				PersonSSN = personSSN1,
-				GradeValue = 10,
-				ProjectId = 25
-			});
-			grades.Add(new Grade
-			{
-				ID = 26,
-				PersonSSN = personSSN1,
-				GradeValue = 10,
-				ProjectId = 26
-			});
-			grades.Add(new Grade
-			{
-				ID = 27,
-				PersonSSN = personSSN1,
-				GradeValue = 10,
-				ProjectId = 27
-			});
-			grades.Add(new Grade
-			{
-				ID = 28,
-				PersonSSN = personSSN1,
-				GradeValue = 10,
-				ProjectId = 28
+				PersonSSN = personSSN2,
+				GradeValue = 100,
+				ProjectId = 14
 			});
 
 			#endregion Person 2
@@ -693,7 +665,7 @@ namespace CoursesAPI.Tests.Services
 		/// Tests GET /finalGrade
 		/// </summary>
 		[TestMethod]
-		public void Test()
+		public void TestGetFinalGrade()
 		{
 			FinalGradeDTO finalGrade = null;
 			bool exceptionThrown = false;
@@ -728,6 +700,42 @@ namespace CoursesAPI.Tests.Services
 			Assert.AreEqual(finalGrade.PositionLower, 1);
 			Assert.AreEqual(finalGrade.PositionUpper, 1);
 			Assert.AreEqual(finalGrade.PersonSSN, personSSN1);
+			Assert.AreEqual(finalGrade.Status, "OK");
+			exceptionThrown = false;
+
+
+			//Try to get a final grade from a course with projects and a student who is not in the course
+			try
+			{
+				finalGrade = _service.GetFinalGradeForOneStudent(2, personSSN2);
+			}
+			catch (Exception e)
+			{
+				exceptionThrown = true;
+			}
+
+			Assert.IsTrue(exceptionThrown);
+			exceptionThrown = false;
+
+
+			//Try to get a final grade from a course with projects and a student with all 10 for grades
+			try
+			{
+				finalGrade = _service.GetFinalGradeForOneStudent(3, personSSN2);
+			}
+			catch (Exception e)
+			{
+				exceptionThrown = true;
+				Assert.AreEqual("", e.Message);
+			}
+
+			Assert.IsFalse(exceptionThrown);
+			Assert.AreEqual(finalGrade.Grade, 10);
+			Assert.AreEqual(finalGrade.NumberOfStudents, 3);
+			Assert.AreEqual(finalGrade.PercentageComplete, 100);
+			Assert.AreEqual(finalGrade.PositionLower, 1);
+			Assert.AreEqual(finalGrade.PositionUpper, 1);
+			Assert.AreEqual(finalGrade.PersonSSN, personSSN2);
 			Assert.AreEqual(finalGrade.Status, "OK");
 		}
 	}

@@ -183,12 +183,12 @@ namespace CoursesAPI.Controllers
 
         [HttpGet]
         [Route("project/{projectId:int}/allGrades")]
-        public HttpResponseMessage GetAllGrades(int projectId)
+        public HttpResponseMessage GetAllGrades(int courseInstanceId, int projectId)
         {
-            List<PersonsGrade> result;
+            List<GradeDTO> result;
             try
             {
-                result = _service.GetAllGrades(projectId);
+                result = _service.GetAllGrades(courseInstanceId, projectId);
             }
             catch (MissingFieldException e)
             {

@@ -218,17 +218,30 @@ namespace CoursesAPI.Services.Services
 		#endregion Language methods
 
 		#region Course methods
+
         /// <summary>
-        /// TODO
+        /// Gets all teachers in a given course
         /// </summary>
-        /// <param name="courseInstanceID"></param>
-        /// <returns></returns>
+        /// <param name="courseInstanceID">Id of the course</param>
+        /// <returns>All teachers in given course</returns>
 		public List<Person> GetCourseTeachers(int courseInstanceID)
 		{
 			// TODO:
+            if(courseInstanceID == null)
+            {
+                throw new MissingFieldException("Must provide id of the course");
+            }
+
+            CourseInstance theCourse = _courseInstances.All().SingleOrDefault(c => c.ID == courseInstanceID);
+
+            if(theCourse == null)
+            {
+                throw new KeyNotFoundException("There is no course with this id");
+            }
+
             var result = from tr in _teacherRegistrations.All()
                          join p in _persons.All() on tr.SSN equals p.SSN
-                         where tr.CourseInstanceID == courseInstanceID
+                         where tr.CourseInstanceID == theCourse.ID
                          select p;
 
             var result2 = result.ToList();
@@ -236,10 +249,10 @@ namespace CoursesAPI.Services.Services
 		}
 
         /// <summary>
-        /// TODO
+        /// Gets all courses on given semester
         /// </summary>
-        /// <param name="semester"></param>
-        /// <returns></returns>
+        /// <param name="semester">Semester name</param>
+        /// <returns>All courses on given semester</returns>
 		public List<CourseInstanceDTO> GetCourseInstancesOnSemester(string semester)
 		{
 			// TODO:
@@ -293,10 +306,10 @@ namespace CoursesAPI.Services.Services
 		#region project and grading methods
  
         /// <summary>
-        /// TODO
+        /// Adds project from a viewmodel to a given course
         /// </summary>
-        /// <param name="id"></param>
-        /// <param name="model"></param>
+        /// <param name="id">Id of the course</param>
+        /// <param name="model">Viewmodel containing objects to put in the current project</param>
         public void AddProjectToCourse(int id, AddProjectViewModel model)
         {
             var course = _courseInstances.All().SingleOrDefault(c => c.ID == id);
@@ -330,9 +343,11 @@ namespace CoursesAPI.Services.Services
         }
 
         /// <summary>
-        /// TODO
+        /// Creates a group for projects so the teacher could allow some number of projects to be 
+        /// evaluated for final grade, e.g. grades from top three projects and then the final grade is
+        /// the sum of the grades divided by their count.
         /// </summary>
-        /// <param name="model"></param>
+        /// <param name="model">A name of the group and number of projects to be evaluated</param>
         public void MakeProjectGroup(AddProjectGroupViewModel model)
         {
             if(model == null)
@@ -365,7 +380,7 @@ namespace CoursesAPI.Services.Services
         /// should be used to calculate the final grade
         /// Replaces the old lines
         /// </summary>
-        /// <param name="courseInstanceId">The id of the course instance</param>
+        /// <param name="courseInstanceId">Id of the course</param>
         /// <param name="model">A list of projects that should be used</param>
 		public void MakeFinalGradeComp(int courseInstanceId, AddFinalGradeCompositionViewModel model)
 		{
@@ -413,11 +428,12 @@ namespace CoursesAPI.Services.Services
 		}
 
         /// <summary>
-        /// TODO
+        /// Adds grade to a project based on information from the AddGradeViewModel containing
+        /// student id and his grade.
         /// </summary>
-        /// <param name="courseInstanceID"></param>
-        /// <param name="projectID"></param>
-        /// <param name="viewModel"></param>
+        /// <param name="courseInstanceID">Id of the course</param>
+        /// <param name="projectID">Id of the project</param>
+        /// <param name="viewModel">Contains student id to be evaluated and his grade</param>
 		public void AddGrade(int courseInstanceID, int projectID, AddGradeViewModel viewModel)
 		{
 			if(viewModel == null){
@@ -503,7 +519,7 @@ namespace CoursesAPI.Services.Services
         /// Get student grade in project and return his grade, position based on all students grades
         /// and how many students have been graded
         /// </summary>
-        /// <param name="courseInstanceId">The id of the course instance</param>
+        /// <param name="courseInstanceId">Id of the course</param>
         /// <param name="projectId">The ID of the project</param>
         /// <param name="ssn">The SSN of the student</param>
         /// <returns>List with grade, position and how many students are evaluated</returns>
@@ -559,11 +575,12 @@ namespace CoursesAPI.Services.Services
         }
 
         /// <summary>
-        /// TODO
+        /// Gets final grade of the course based on student id.
         /// </summary>
-        /// <param name="courseInstanceID"></param>
-        /// <param name="personSSN"></param>
-        /// <returns></returns>
+        /// <param name="courseInstanceID">Id of the course</param>
+        /// <param name="personSSN">Id of the student</param>
+        /// <returns>A list of student final grade with his status, as in \"Failed\" or \"OK\",
+        /// percentage of completed projects, his position in the course and number of students</returns>
 		private FinalGradeDTO GetFinalGrade(int courseInstanceID, String personSSN)
 		{
 			if(personSSN == null){
@@ -670,11 +687,12 @@ namespace CoursesAPI.Services.Services
 		}
 
         /// <summary>
-        /// TODO
+        /// Gets the final grade from the course of given student.
         /// </summary>
-        /// <param name="courseInstanceID"></param>
-        /// <param name="personSSN"></param>
-        /// <returns></returns>
+        /// <param name="courseInstanceID">Id of the course</param>
+        /// <param name="personSSN">Id of the student</param>
+        /// <returns>A list of student final grade with his status, as in \"Failed\" or \"OK\",
+        /// percentage of completed projects, his position in the course and number of students</returns>
 		public FinalGradeDTO GetFinalGradeForOneStudent(int courseInstanceID, String personSSN)
 		{
 			List<FinalGradeDTO> allFinalGrades = GetAllFinalGrades(courseInstanceID);
@@ -684,10 +702,11 @@ namespace CoursesAPI.Services.Services
 		}
 
         /// <summary>
-        /// TODO
+        /// Gets final grades of all student in given course
         /// </summary>
-        /// <param name="courseInstanceId"></param>
-        /// <returns></returns>
+        /// <param name="courseInstanceId">Id of the course</param>
+        /// <returns>A list of students final grades with their status, as in \"Failed\" or \"OK\",
+        /// percentage of completed projects, their position in the course and number of students</returns>
 		public List<FinalGradeDTO> GetAllFinalGrades(int courseInstanceId)
 		{
 			//See if the courseInstance exists
@@ -748,11 +767,31 @@ namespace CoursesAPI.Services.Services
         /// Get all students grades in projectID and return as List<PersonsGrade>
         /// </summary>
         /// <param name="projectId">A list of projects that should be used</param>
-        /// <param name="projectId"></param>
         /// <returns></returns>
-        public List<PersonsGrade> GetAllGrades(int projectId)
+        public List<GradeDTO> GetAllGrades(int courseInstanceId, int projectId)
         {
-            if(projectId == null)
+            //See if the courseInstance exists
+            CourseInstance theCourse = _courseInstances.All().SingleOrDefault(c => c.ID == courseInstanceId);
+
+            if (theCourse == null)
+            {
+                throw new KeyNotFoundException("No course instance found with this ID");
+            }
+
+            //Get a list of all persons in the course
+            List<String> personsRegistered = _personRegistrations.All().Where(r => r.CourseInstanceId == courseInstanceId).Select(f => f.PersonSSN).ToList();
+
+            // Create a new list containing all the grades from the project
+            List<GradeDTO> result = new List<GradeDTO>();
+
+            foreach(String reg in personsRegistered)
+            {
+                result.Add(GetProjectGrade(courseInstanceId, projectId, reg));
+            }
+
+            return result;
+            /*
+            if (projectId == null)
             {
                 throw new MissingFieldException("The id of the project is missing");
             }
@@ -773,7 +812,7 @@ namespace CoursesAPI.Services.Services
                 throw new KeyNotFoundException("No grades have been made");
             }
 
-            return result;
+            return result;*/
         }
 
 		#endregion

@@ -461,6 +461,9 @@ namespace CoursesAPI.Services.Services
         /// Get student grade in project and return his grade, position based on all students grades
         /// and how many students have been graded
         /// </summary>
+        /// <param name="courseInstanceId">The id of the course instance</param>
+        /// <param name="projectId">The ID of the project</param>
+        /// <param name="ssn">The SSN of the student</param>
         public GradeDTO GetProjectGrade(int courseInstanceId, int projectId, String ssn)
         {
 			//See if the courseInstance exists
@@ -693,6 +696,7 @@ namespace CoursesAPI.Services.Services
         /// <summary> 
         /// Get all students grades in projectID and return as List<PersonsGrade>
         /// </summary>
+        /// <param name="projectId">A list of projects that should be used</param>
         // TODO: just a simple return with all grades without any other info
         public List<PersonsGrade> GetAllGrades(int projectId)
         {

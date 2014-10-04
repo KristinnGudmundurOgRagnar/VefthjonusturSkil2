@@ -506,6 +506,8 @@ namespace CoursesAPI.Tests.Services
 			});
 
 			#endregion Person 2
+
+			((MockUnitOfWork<MockDataContext>)(_service._uow)).SetRepositoryData<Grade>(grades);
 			#endregion Add Grades
 
 
@@ -606,7 +608,7 @@ namespace CoursesAPI.Tests.Services
 		/// Tests GET /project
 		/// </summary>
 		[TestMethod]
-		public void TestMethod1()
+		public void TestGetProjects()
 		{
 			//Get projects from a course that does not exist
 			var theProjects = _service.GetProjectsForCourse(invalidCourseInstanceID);
@@ -685,6 +687,48 @@ namespace CoursesAPI.Tests.Services
 			theProjects = _service.GetProjectsForCourse(1);
 
 			Assert.AreEqual(1, theProjects.Count);
+		}
+
+		/// <summary>
+		/// Tests GET /finalGrade
+		/// </summary>
+		[TestMethod]
+		public void Test()
+		{
+			FinalGradeDTO finalGrade = null;
+			bool exceptionThrown = false;
+
+			//Try to get a final grade from a course with no projects
+			try
+			{
+				finalGrade = _service.GetFinalGradeForOneStudent(1, personSSN1);
+			}
+			catch(Exception e){
+				exceptionThrown = true;
+			}
+
+			Assert.IsTrue(exceptionThrown);
+			exceptionThrown = false;
+
+
+			//Try to get a final grade from a course with projects and a student with all 0 for grades
+			try
+			{
+				finalGrade = _service.GetFinalGradeForOneStudent(2, personSSN1);
+			}
+			catch (Exception e)
+			{
+				exceptionThrown = true;
+			}
+
+			Assert.IsFalse(exceptionThrown);
+			Assert.AreEqual(finalGrade.Grade, 0);
+			Assert.AreEqual(finalGrade.NumberOfStudents, 1);
+			Assert.AreEqual(finalGrade.PercentageComplete, 100);
+			Assert.AreEqual(finalGrade.PositionLower, 1);
+			Assert.AreEqual(finalGrade.PositionUpper, 1);
+			Assert.AreEqual(finalGrade.PersonSSN, personSSN1);
+			Assert.AreEqual(finalGrade.Status, "OK");
 		}
 	}
 }

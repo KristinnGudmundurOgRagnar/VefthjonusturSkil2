@@ -236,6 +236,9 @@ namespace CoursesAPI.Services.Services
 
 		#region project and grading methods
 
+        /// <summary> 
+        /// TODO
+        /// </summary>
         public void AddProjectToCourse(int id, AddProjectViewModel model)
         {
             var course = _courseInstances.All().SingleOrDefault(c => c.ID == id);
@@ -268,6 +271,9 @@ namespace CoursesAPI.Services.Services
             _uow.Save();
         }
 
+        /// <summary> 
+        /// TODO
+        /// </summary>
         public void MakeProjectGroup(AddProjectGroupViewModel model)
         {
             if(model == null)
@@ -294,6 +300,7 @@ namespace CoursesAPI.Services.Services
             _projectGroups.Add(group);
             _uow.Save();
         }
+
 
 		public void MakeFinalGradeComp(int courseInstanceId, AddFinalGradeCompositionViewModel model)
 		{
@@ -340,6 +347,9 @@ namespace CoursesAPI.Services.Services
 			_uow.Save();
 		}
 
+        /// <summary> 
+        /// TODO
+        /// </summary>
 		public void AddGrade(int courseInstanceID, int projectID, AddGradeViewModel viewModel)
 		{
 			if(viewModel == null){
@@ -411,11 +421,18 @@ namespace CoursesAPI.Services.Services
 			}
 		}
 
+        /// <summary> 
+        /// TODO
+        /// </summary>
 		public List<Project> GetProjectsForCourse(int id)
         {
             return _projects.All().ToList();
         }
 
+        /// <summary> 
+        /// Get student grade in project and return his grade, position based on all students grades
+        /// and how many students have been graded
+        /// </summary>
         public GradeDTO GetProjectGrade(int courseInstanceId, int projectId, String ssn)
         {
 			//See if the courseInstance exists
@@ -466,7 +483,10 @@ namespace CoursesAPI.Services.Services
 				return returnValue;
 			}
         }
-		
+
+        /// <summary> 
+        /// TODO
+        /// </summary>
 		private FinalGradeDTO GetFinalGrade(int courseInstanceID, String personSSN)
 		{
 			if(personSSN == null){
@@ -572,6 +592,9 @@ namespace CoursesAPI.Services.Services
 			return returnValue;
 		}
 
+        /// <summary> 
+        /// TODO
+        /// </summary>
 		public FinalGradeDTO GetFinalGradeForOneStudent(int courseInstanceID, String personSSN)
 		{
 			List<FinalGradeDTO> allFinalGrades = GetAllFinalGrades(courseInstanceID);
@@ -580,6 +603,9 @@ namespace CoursesAPI.Services.Services
 			return allFinalGrades.SingleOrDefault(f => f.PersonSSN == personSSN);
 		}
 
+        /// <summary> 
+        /// TODO
+        /// </summary>
 		public List<FinalGradeDTO> GetAllFinalGrades(int courseInstanceId)
 		{
 			//See if the courseInstance exists
@@ -636,6 +662,9 @@ namespace CoursesAPI.Services.Services
 			return finalGrades;
 		}
 
+        /// <summary> 
+        /// Get all students grades in projectID and return as List<PersonsGrade>
+        /// </summary>
         // TODO: just a simple return with all grades without any other info
         public List<PersonsGrade> GetAllGrades(int projectId)
         {

@@ -10,6 +10,7 @@ namespace CoursesAPI.Tests.Services
 		public void Setup()
 		{
 			// TODO: code which will be executed before each test!
+            
 		}
 
 		[TestMethod]

@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CoursesAPI.Services.Models.Entities
 {
-	[Table("ProjectGroup")]
+	[Table("ProjectGroups")]
 	public class ProjectGroup
 	{
 		/// <summary>

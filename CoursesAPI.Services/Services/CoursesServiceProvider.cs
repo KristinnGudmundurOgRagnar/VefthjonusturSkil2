@@ -32,17 +32,118 @@ namespace CoursesAPI.Services.Services
 		{
 			_uow = uow;
 
-			_courseInstances      = _uow.GetRepository<CourseInstance>();
-			_courseTemplates      = _uow.GetRepository<CourseTemplate>();
+			_courseInstances = _uow.GetRepository<CourseInstance>();
+			_courseTemplates = _uow.GetRepository<CourseTemplate>();
 			_teacherRegistrations = _uow.GetRepository<TeacherRegistration>();
-			_persons              = _uow.GetRepository<Person>();
+			_persons = _uow.GetRepository<Person>();
 
-			_personRegistrations  = _uow.GetRepository<PersonRegistration>();
-			_projectGroups		  = _uow.GetRepository<ProjectGroup>();
-			_projects             = _uow.GetRepository<Project>();
-			_grades               = _uow.GetRepository<Grade>();
-			_finalGradeComps      = _uow.GetRepository<FinalGradeComposition>();
+			_personRegistrations = _uow.GetRepository<PersonRegistration>();
+			_projectGroups = _uow.GetRepository<ProjectGroup>();
+			_projects = _uow.GetRepository<Project>();
+			_grades = _uow.GetRepository<Grade>();
+			_finalGradeComps = _uow.GetRepository<FinalGradeComposition>();
 		}
+
+		#region Private helper classes
+		private class ProjectGroupData{
+			public int ProjectGroupID { get; set; }
+			public int GradedProjectsCount { get; set; }
+			public List<ProjectData> TheProjects = new List<ProjectData>();
+
+
+			public ProjectGroupData(int ID, int GradedProjectsCount)
+			{
+				this.ProjectGroupID = ID;
+				this.GradedProjectsCount = GradedProjectsCount;
+			}
+
+			public void AddProject(int? Grade, int Weight)
+			{
+				//This causes a NullReferenceException if Grade == null
+				this.TheProjects.Add(new ProjectData { 
+										Grade = Grade,
+										Weight = Weight
+									});
+			}
+
+			public class ProjectData
+			{
+				public int? Grade { get; set; }
+				public int Weight { get; set; }
+			}
+
+			//Checks if all the weights are the same
+			public bool validate()
+			{
+				int theWeight;
+				if(TheProjects.Count() == 0){
+					return true;
+				}
+				else
+				{
+					theWeight = TheProjects[0].Weight;
+				}
+				foreach(ProjectData pd in TheProjects){
+					if(pd.Weight != theWeight){
+						return false;
+					}
+				}
+				return true;
+			}
+
+			public FinalGradeDTO getTotalGrade()
+			{
+				if(!validate()){
+					throw new Exception("The weights of the projects in the project group are not the same");
+				}
+
+				List<ProjectData> usedProjects = new List<ProjectData>();
+
+				//Find the grades that should be used
+				foreach(ProjectData pd in TheProjects){
+					if(usedProjects.Count < GradedProjectsCount){
+						if(pd.Grade != null){
+							usedProjects.Add(pd);
+						}
+					}
+					else
+					{
+						if (pd.Grade != null)
+						{
+							//Find the lowest grade
+							ProjectData lowest = pd;
+							bool stillLowest = true;
+							foreach (ProjectData p in usedProjects)
+							{
+								if (p.Grade < lowest.Grade)
+								{
+									lowest = p;
+									stillLowest = false;
+								}
+							}
+							if (!stillLowest)
+							{
+								usedProjects.Remove(lowest);
+								usedProjects.Add(pd);
+							}
+						}
+					}
+				}
+
+				FinalGradeDTO returnValue = new FinalGradeDTO();
+
+				//Calculate the grade
+				foreach(ProjectData pd in usedProjects){
+					returnValue.PercentageComplete += pd.Weight;
+					returnValue.Grade += (int)pd.Grade / 1000.0 * pd.Weight;
+				}
+
+				//returnValue.Grade *= returnValue.PercentageComplete;
+				return returnValue;
+			}
+		}
+
+		#endregion Private helper classes
 
 		#region Language methods
         public LanguageViewModel GetLanguageByName(string name)
@@ -272,6 +373,7 @@ namespace CoursesAPI.Services.Services
 			};
 			
 			int totalPercentage = 0;
+			Dictionary<int, ProjectGroupData> projectGroups = new Dictionary<int,ProjectGroupData>();
 
 			foreach(var comp in theGradeComps){
 				//TODO: Add handling for ProjectGroups and OnlyIfHigherThan
@@ -290,12 +392,49 @@ namespace CoursesAPI.Services.Services
 
 				int? currentGrade = GetProjectGrade(courseInstanceID, currentComp.ProjectId, personSSN);
 
-				if(currentGrade != null){
-					returnValue.PercentageComplete += currentProject.Weight;
-					returnValue.Grade += (int)currentGrade / 1000.0 * currentProject.Weight;
+				//Part of a ProjectGroup
+				if(currentProject.ProjectGroupId != null){
+					int currentID = (int)currentProject.ProjectGroupId;
+
+					ProjectGroup currentProjectGroup = null;
+					//See if the projectgroup exists
+					try{
+						currentProjectGroup = _projectGroups.All().SingleOrDefault(p => p.ID == currentID);
+					}
+					catch(Exception e){
+						if(_projectGroups.All().Count() != 0){
+							throw new KeyNotFoundException("No project group found with the given ID(" + currentID + ")");
+						}
+						//The collection is just empty
+					}
+
+					if(!projectGroups.ContainsKey(currentID)){
+						//There is no defined projectgroup with this id
+						projectGroups.Add(currentID, new ProjectGroupData(currentID, currentProjectGroup.GradedProjectsCount));
+					}
+					
+					projectGroups[currentID].AddProject(currentGrade, currentProject.Weight);
+				}
+				else
+				{
+					totalPercentage += currentProject.Weight;
+
+					if(currentGrade != null){
+						returnValue.PercentageComplete += currentProject.Weight;
+						returnValue.Grade += (int)currentGrade / 1000.0 * currentProject.Weight;
+					}
 				}
 
-				totalPercentage += currentProject.Weight;
+
+				
+			}
+
+			FinalGradeDTO temp;
+			foreach(ProjectGroupData pgd in projectGroups.Values){
+				temp = pgd.getTotalGrade();
+				returnValue.Grade += temp.Grade;
+				returnValue.PercentageComplete += temp.PercentageComplete;
+				totalPercentage += pgd.TheProjects[0].Weight * pgd.GradedProjectsCount;
 			}
 
 			if(totalPercentage != 100){

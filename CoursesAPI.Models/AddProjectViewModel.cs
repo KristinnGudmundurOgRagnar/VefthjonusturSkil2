@@ -15,7 +15,7 @@ namespace CoursesAPI.Models
 		/// <summary>
 		/// Id of projectgroup
 		/// </summary>
-        public int ProjectGroupId;
+        public int? ProjectGroupId;
         /// <summary>
 		/// Id of onlyhigherthan
         /// </summary>

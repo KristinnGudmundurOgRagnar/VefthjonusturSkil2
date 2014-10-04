@@ -43,10 +43,17 @@ namespace CoursesAPI.Controllers
 		[Route("project")]
         public HttpResponseMessage AddProject(int courseInstanceID, AddProjectViewModel model)
 		{
+
             _service.AddProjectToCourse(courseInstanceID, model);
             return Request.CreateResponse(System.Net.HttpStatusCode.Created);
 		}
 
+        [HttpPost]
+        [Route("projectgroup")]
+        public void MakeProjectGroup(int courseInstanceID, AddProjectGroupViewModel model)
+        {
+            _service.MakeProjectGroup(model);
+        }
 		/// <summary>
 		/// Add a grade for a given person for a given project
 		/// </summary>

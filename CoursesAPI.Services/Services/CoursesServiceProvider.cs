@@ -245,18 +245,53 @@ namespace CoursesAPI.Services.Services
                 throw new ArgumentException("Invalid course instance id");
             }
 
-			//TODO: Support ProjectGroupId and OnlyHigherThanProjectId
+            
+            var projectGroup = _projectGroups.All().SingleOrDefault(g => g.ID == model.ProjectGroupId);
+
+            if(projectGroup == null && model.ProjectGroupId != null)
+            {
+                throw new ArgumentException("Invalid project-group id");
+            }
+
+			//TODO: Suppor ProjectGroupId and OnlyHigherThanProjectId
             Project project = new Project
             {
                 Name = model.Name,
-                ProjectGroupId = null,
                 CourseInstanceId = id,
+                ProjectGroupId = model.ProjectGroupId,
                 OnlyHigherThanProjectId = null,
                 Weight = model.Weight,
                 MinGradeToPassCourse = model.MinGradeToPassCourse
             };
 
             _projects.Add(project);
+            _uow.Save();
+        }
+
+        public void MakeProjectGroup(AddProjectGroupViewModel model)
+        {
+            if(model == null)
+            {
+                throw new MissingFieldException("The payload must contain \"Name\" and \"GradedProjectsCount\"");
+            }
+
+            if (model.Name == null)
+            {
+                throw new MissingFieldException("A \"Name\" field is required");
+            }
+
+            if (!(model.GradedProjectsCount.HasValue))
+            {
+                throw new MissingFieldException("A \"GradedProjectsCount\" field is required");
+            }
+
+            ProjectGroup group = new ProjectGroup
+            {
+                Name = model.Name,
+                GradedProjectsCount = model.GradedProjectsCount.Value
+            };
+
+            _projectGroups.Add(group);
             _uow.Save();
         }
 

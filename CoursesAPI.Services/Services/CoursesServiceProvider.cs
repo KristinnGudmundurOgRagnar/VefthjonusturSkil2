@@ -50,18 +50,30 @@ namespace CoursesAPI.Services.Services
 		}
 
 		#region Private helper classes
+        /// <summary>
+        /// 
+        /// </summary>
 		private class ProjectGroupData{
 			public int ProjectGroupID { get; set; }
 			public int GradedProjectsCount { get; set; }
 			public List<ProjectData> TheProjects = new List<ProjectData>();
 
-
+            /// <summary>
+            /// 
+            /// </summary>
+            /// <param name="ID"></param>
+            /// <param name="GradedProjectsCount"></param>
 			public ProjectGroupData(int ID, int GradedProjectsCount)
 			{
 				this.ProjectGroupID = ID;
 				this.GradedProjectsCount = GradedProjectsCount;
 			}
 
+            /// <summary>
+            /// 
+            /// </summary>
+            /// <param name="Grade"></param>
+            /// <param name="Weight"></param>
 			public void AddProject(int? Grade, int Weight)
 			{
 				//This causes a NullReferenceException if Grade == null
@@ -71,13 +83,19 @@ namespace CoursesAPI.Services.Services
 									});
 			}
 
+            /// <summary>
+            /// 
+            /// </summary>
 			public class ProjectData
 			{
 				public int? Grade { get; set; }
 				public int Weight { get; set; }
 			}
 
-			//Checks if all the weights are the same
+            /// <summary>
+            /// Checks if all the weights are the same
+            /// </summary>
+            /// <returns></returns>
 			public bool validate()
 			{
 				int theWeight;
@@ -96,6 +114,10 @@ namespace CoursesAPI.Services.Services
 				return true;
 			}
 
+            /// <summary>
+            /// 
+            /// </summary>
+            /// <returns></returns>
 			public FinalGradeDTO getTotalGrade()
 			{
 				if(!validate()){
@@ -151,9 +173,12 @@ namespace CoursesAPI.Services.Services
 		#endregion Private helper classes
 
 		#region Language methods
-        /// <summary> 
-        /// TODO
+
+        /// <summary>
+        /// 
         /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
         public LanguageViewModel GetLanguageByName(string name)
         {
 
@@ -161,9 +186,11 @@ namespace CoursesAPI.Services.Services
             throw new CoursesAPIObjectNotFoundException(ErrorCodes.LanguageDoesNotExist);
         }
 
-        /// <summary> 
-        /// TODO
+        /// <summary>
+        /// 
         /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public LanguageViewModel GetLanguageById(int id)
         {
             return new LanguageViewModel
@@ -174,11 +201,11 @@ namespace CoursesAPI.Services.Services
             };            
         }
 
-
-        //Dummy function representing the method for creating a instance of Language
-        /// <summary> 
-        /// TODO
+        /// <summary>
+        /// Dummy function representing the method for creating a instance of Language
         /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         public LanguageViewModel CreateLanguage(LanguageViewModel model)
         {
             //Validate here!
@@ -191,9 +218,11 @@ namespace CoursesAPI.Services.Services
 		#endregion Language methods
 
 		#region Course methods
-        /// <summary> 
+        /// <summary>
         /// TODO
         /// </summary>
+        /// <param name="courseInstanceID"></param>
+        /// <returns></returns>
 		public List<Person> GetCourseTeachers(int courseInstanceID)
 		{
 			// TODO:
@@ -206,9 +235,11 @@ namespace CoursesAPI.Services.Services
             return result2;
 		}
 
-        /// <summary> 
+        /// <summary>
         /// TODO
         /// </summary>
+        /// <param name="semester"></param>
+        /// <returns></returns>
 		public List<CourseInstanceDTO> GetCourseInstancesOnSemester(string semester)
 		{
 			// TODO:
@@ -231,9 +262,11 @@ namespace CoursesAPI.Services.Services
             return result.OrderBy(c => c.Name).ToList();
 		}
 
-        /// <summary> 
+        /// <summary>
         /// TODO
         /// </summary>
+        /// <param name="semester"></param>
+        /// <returns></returns>
 		public List<CourseInstanceDTO> GetSemesterCourses(string semester)
 		{
 			// TODO
@@ -258,10 +291,12 @@ namespace CoursesAPI.Services.Services
 		#endregion
 
 		#region project and grading methods
-
-        /// <summary> 
+ 
+        /// <summary>
         /// TODO
         /// </summary>
+        /// <param name="id"></param>
+        /// <param name="model"></param>
         public void AddProjectToCourse(int id, AddProjectViewModel model)
         {
             var course = _courseInstances.All().SingleOrDefault(c => c.ID == id);
@@ -294,9 +329,10 @@ namespace CoursesAPI.Services.Services
             _uow.Save();
         }
 
-        /// <summary> 
+        /// <summary>
         /// TODO
         /// </summary>
+        /// <param name="model"></param>
         public void MakeProjectGroup(AddProjectGroupViewModel model)
         {
             if(model == null)
@@ -325,12 +361,12 @@ namespace CoursesAPI.Services.Services
         }
 
 		/// <summary>
-		/// Creates lines in the FinalGradeCompositions table to indicate which projects
-		/// should be used to calculate the final grade
-		/// Replaces the old lines
-		/// </summary>
-		/// <param name="courseInstanceId">The id of the course instance</param>
-		/// <param name="model">A list of projects that should be used</param>
+        /// Creates lines in the FinalGradeCompositions table to indicate which projects
+        /// should be used to calculate the final grade
+        /// Replaces the old lines
+        /// </summary>
+        /// <param name="courseInstanceId">The id of the course instance</param>
+        /// <param name="model">A list of projects that should be used</param>
 		public void MakeFinalGradeComp(int courseInstanceId, AddFinalGradeCompositionViewModel model)
 		{
 			if (model == null)
@@ -376,9 +412,12 @@ namespace CoursesAPI.Services.Services
 			_uow.Save();
 		}
 
-        /// <summary> 
+        /// <summary>
         /// TODO
         /// </summary>
+        /// <param name="courseInstanceID"></param>
+        /// <param name="projectID"></param>
+        /// <param name="viewModel"></param>
 		public void AddGrade(int courseInstanceID, int projectID, AddGradeViewModel viewModel)
 		{
 			if(viewModel == null){
@@ -450,21 +489,24 @@ namespace CoursesAPI.Services.Services
 			}
 		}
 
-        /// <summary> 
+        /// <summary>
         /// TODO
         /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
 		public List<Project> GetProjectsForCourse(int id)
         {
             return _projects.All().ToList();
         }
 
-        /// <summary> 
+        /// <summary>
         /// Get student grade in project and return his grade, position based on all students grades
         /// and how many students have been graded
         /// </summary>
         /// <param name="courseInstanceId">The id of the course instance</param>
         /// <param name="projectId">The ID of the project</param>
         /// <param name="ssn">The SSN of the student</param>
+        /// <returns>List with grade, position and how many students are evaluated</returns>
         public GradeDTO GetProjectGrade(int courseInstanceId, int projectId, String ssn)
         {
 			//See if the courseInstance exists
@@ -516,9 +558,12 @@ namespace CoursesAPI.Services.Services
 			}
         }
 
-        /// <summary> 
+        /// <summary>
         /// TODO
         /// </summary>
+        /// <param name="courseInstanceID"></param>
+        /// <param name="personSSN"></param>
+        /// <returns></returns>
 		private FinalGradeDTO GetFinalGrade(int courseInstanceID, String personSSN)
 		{
 			if(personSSN == null){
@@ -624,9 +669,12 @@ namespace CoursesAPI.Services.Services
 			return returnValue;
 		}
 
-        /// <summary> 
+        /// <summary>
         /// TODO
         /// </summary>
+        /// <param name="courseInstanceID"></param>
+        /// <param name="personSSN"></param>
+        /// <returns></returns>
 		public FinalGradeDTO GetFinalGradeForOneStudent(int courseInstanceID, String personSSN)
 		{
 			List<FinalGradeDTO> allFinalGrades = GetAllFinalGrades(courseInstanceID);
@@ -635,9 +683,11 @@ namespace CoursesAPI.Services.Services
 			return allFinalGrades.SingleOrDefault(f => f.PersonSSN == personSSN);
 		}
 
-        /// <summary> 
+        /// <summary>
         /// TODO
         /// </summary>
+        /// <param name="courseInstanceId"></param>
+        /// <returns></returns>
 		public List<FinalGradeDTO> GetAllFinalGrades(int courseInstanceId)
 		{
 			//See if the courseInstance exists
@@ -698,7 +748,8 @@ namespace CoursesAPI.Services.Services
         /// Get all students grades in projectID and return as List<PersonsGrade>
         /// </summary>
         /// <param name="projectId">A list of projects that should be used</param>
-        // TODO: just a simple return with all grades without any other info
+        /// <param name="projectId"></param>
+        /// <returns></returns>
         public List<PersonsGrade> GetAllGrades(int projectId)
         {
             if(projectId == null)

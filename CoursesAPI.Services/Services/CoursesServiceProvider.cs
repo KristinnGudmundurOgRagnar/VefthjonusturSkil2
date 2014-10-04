@@ -28,6 +28,10 @@ namespace CoursesAPI.Services.Services
 		private readonly IRepository<FinalGradeComposition> _finalGradeComps;
 		#endregion Database collections
 
+        /// <summary> 
+        /// Contructor for CoursesServiceProvider. 
+        /// Argument is IUnitOfWork
+        /// </summary>
 		public CoursesServiceProvider(IUnitOfWork uow)
 		{
 			_uow = uow;
@@ -146,6 +150,9 @@ namespace CoursesAPI.Services.Services
 		#endregion Private helper classes
 
 		#region Language methods
+        /// <summary> 
+        /// TODO
+        /// </summary>
         public LanguageViewModel GetLanguageByName(string name)
         {
 
@@ -153,6 +160,9 @@ namespace CoursesAPI.Services.Services
             throw new CoursesAPIObjectNotFoundException(ErrorCodes.LanguageDoesNotExist);
         }
 
+        /// <summary> 
+        /// TODO
+        /// </summary>
         public LanguageViewModel GetLanguageById(int id)
         {
             return new LanguageViewModel
@@ -165,6 +175,9 @@ namespace CoursesAPI.Services.Services
 
 
         //Dummy function representing the method for creating a instance of Language
+        /// <summary> 
+        /// TODO
+        /// </summary>
         public LanguageViewModel CreateLanguage(LanguageViewModel model)
         {
             //Validate here!
@@ -177,6 +190,9 @@ namespace CoursesAPI.Services.Services
 		#endregion Language methods
 
 		#region Course methods
+        /// <summary> 
+        /// TODO
+        /// </summary>
 		public List<Person> GetCourseTeachers(int courseInstanceID)
 		{
 			// TODO:
@@ -189,6 +205,9 @@ namespace CoursesAPI.Services.Services
             return result2;
 		}
 
+        /// <summary> 
+        /// TODO
+        /// </summary>
 		public List<CourseInstanceDTO> GetCourseInstancesOnSemester(string semester)
 		{
 			// TODO:
@@ -211,6 +230,9 @@ namespace CoursesAPI.Services.Services
             return result.OrderBy(c => c.Name).ToList();
 		}
 
+        /// <summary> 
+        /// TODO
+        /// </summary>
 		public List<CourseInstanceDTO> GetSemesterCourses(string semester)
 		{
 			// TODO

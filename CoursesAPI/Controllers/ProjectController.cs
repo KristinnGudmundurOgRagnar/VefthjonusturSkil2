@@ -39,14 +39,28 @@ namespace CoursesAPI.Controllers
 		/// <param name="courseInstanceID">The Id of the courseInstance, gotten from the URL</param>
 		/// <param name="model">The project that is to be added, gotten from the request payload</param>
 		/// <returns>Status code, depending on the correctness of the payload</returns>
-		[HttpPost]
-		[Route("project")]
+        [HttpPost]
+        [Route("project")]
         public HttpResponseMessage AddProject(int courseInstanceID, AddProjectViewModel model)
-		{
+        {
+
+            if ((_service.PrecentCompleted(courseInstanceID, model)) > 100)
+            {
+                throw new Exception("Cannot add project, total precent becomes: " +
+                                     (_service.PrecentCompleted(courseInstanceID, model)) + ", it cant be higher than 100");
+            }
 
             _service.AddProjectToCourse(courseInstanceID, model);
+
             return Request.CreateResponse(System.Net.HttpStatusCode.Created);
-		}
+        }
+
+        [HttpDelete]
+        [Route("project/{projectId:int}")]
+        public void DeleteProject(int courseInstanceId, int projectId)
+        {
+            _service.RemoveProjectFromCourse(courseInstanceId, projectId);
+        }
 
         [HttpPost]
         [Route("projectgroup")]

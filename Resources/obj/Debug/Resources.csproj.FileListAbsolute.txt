@@ -23,3 +23,16 @@ C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\Resources\obj\Debu
 C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\Resources\obj\Debug\fr-FR\Resources.resources.dll
 C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\Resources\obj\Debug\Resources.dll
 C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\Resources\obj\Debug\Resources.pdb
+C:\Users\Kristinn\Desktop\veffth2\VefthjonusturSkil2\Resources\bin\Debug\Resources.dll
+C:\Users\Kristinn\Desktop\veffth2\VefthjonusturSkil2\Resources\bin\Debug\Resources.pdb
+C:\Users\Kristinn\Desktop\veffth2\VefthjonusturSkil2\Resources\bin\Debug\es\Resources.resources.dll
+C:\Users\Kristinn\Desktop\veffth2\VefthjonusturSkil2\Resources\bin\Debug\fr-FR\Resources.resources.dll
+C:\Users\Kristinn\Desktop\veffth2\VefthjonusturSkil2\Resources\obj\Debug\Resources.csprojResolveAssemblyReference.cache
+C:\Users\Kristinn\Desktop\veffth2\VefthjonusturSkil2\Resources\obj\Debug\Resources.Resources.resources
+C:\Users\Kristinn\Desktop\veffth2\VefthjonusturSkil2\Resources\obj\Debug\Resources.Resources.es.resources
+C:\Users\Kristinn\Desktop\veffth2\VefthjonusturSkil2\Resources\obj\Debug\Resources.Resources.fr-FR.resources
+C:\Users\Kristinn\Desktop\veffth2\VefthjonusturSkil2\Resources\obj\Debug\Resources.csproj.GenerateResource.Cache
+C:\Users\Kristinn\Desktop\veffth2\VefthjonusturSkil2\Resources\obj\Debug\es\Resources.resources.dll
+C:\Users\Kristinn\Desktop\veffth2\VefthjonusturSkil2\Resources\obj\Debug\fr-FR\Resources.resources.dll
+C:\Users\Kristinn\Desktop\veffth2\VefthjonusturSkil2\Resources\obj\Debug\Resources.dll
+C:\Users\Kristinn\Desktop\veffth2\VefthjonusturSkil2\Resources\obj\Debug\Resources.pdb

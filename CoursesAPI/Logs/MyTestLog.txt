@@ -4409,3 +4409,141 @@ Created - Content-type='application/json; charset=utf-8', content-length=unknown
 0 - 
 0 - 
 0 - 
+0 - 
+0 - 
+0 - http://localhost:12298/api/courses/1/project
+0 - 
+0 - Route='MS_SubRoutes:System.Web.Http.Routing.IHttpRouteData[]'
+0 - Project
+0 - 
+0 - 
+0 - CoursesAPI.Controllers.ProjectController
+0 - CoursesAPI.Controllers.ProjectController
+0 - 
+0 - 
+0 - Selected action 'AddProject(Int32 courseInstanceID, AddProjectViewModel model)'
+0 - 
+0 - Binding parameter 'courseInstanceID'
+0 - Parameter 'courseInstanceID' bound to the value '1'
+0 - Binding parameter 'model'
+0 - Type='AddProjectViewModel', content-type='application/json'
+0 - Value read='CoursesAPI.Models.AddProjectViewModel'
+0 - Parameter 'model' bound to the value 'CoursesAPI.Models.AddProjectViewModel'
+0 - Model state is valid. Values: courseInstanceID=1, model=CoursesAPI.Models.AddProjectViewModel
+0 - Action='AddProject(courseInstanceID=1, model=CoursesAPI.Models.AddProjectViewModel)'
+0 - Invoking action 'AddProject(courseInstanceID=1, model=CoursesAPI.Models.AddProjectViewModel)'
+0 - 
+0 - 
+0 - 
+0 - 
+0 - 
+0 - 
+0 - 
+0 - 
+0 - 
+0 - http://localhost:12298/api/courses/1/project
+0 - 
+0 - Route='MS_SubRoutes:System.Web.Http.Routing.IHttpRouteData[]'
+0 - Project
+0 - 
+0 - 
+0 - CoursesAPI.Controllers.ProjectController
+0 - CoursesAPI.Controllers.ProjectController
+0 - 
+0 - 
+0 - Selected action 'AddProject(Int32 courseInstanceID, AddProjectViewModel model)'
+0 - 
+0 - Binding parameter 'courseInstanceID'
+0 - Parameter 'courseInstanceID' bound to the value '1'
+0 - Binding parameter 'model'
+0 - Type='AddProjectViewModel', content-type='application/json'
+0 - Value read='CoursesAPI.Models.AddProjectViewModel'
+0 - Parameter 'model' bound to the value 'CoursesAPI.Models.AddProjectViewModel'
+0 - Model state is valid. Values: courseInstanceID=1, model=CoursesAPI.Models.AddProjectViewModel
+0 - Action='AddProject(courseInstanceID=1, model=CoursesAPI.Models.AddProjectViewModel)'
+0 - Invoking action 'AddProject(courseInstanceID=1, model=CoursesAPI.Models.AddProjectViewModel)'
+0 - 
+0 - 
+0 - http://localhost:12298/api/courses/1/project
+0 - 
+0 - Route='MS_SubRoutes:System.Web.Http.Routing.IHttpRouteData[]'
+0 - Project
+0 - 
+0 - 
+0 - CoursesAPI.Controllers.ProjectController
+0 - CoursesAPI.Controllers.ProjectController
+0 - 
+0 - 
+0 - Selected action 'AddProject(Int32 courseInstanceID, AddProjectViewModel model)'
+0 - 
+0 - Binding parameter 'courseInstanceID'
+0 - Parameter 'courseInstanceID' bound to the value '1'
+0 - Binding parameter 'model'
+0 - Type='AddProjectViewModel', content-type='application/json'
+0 - Value read='CoursesAPI.Models.AddProjectViewModel'
+0 - Parameter 'model' bound to the value 'CoursesAPI.Models.AddProjectViewModel'
+0 - Model state is valid. Values: courseInstanceID=1, model=CoursesAPI.Models.AddProjectViewModel
+0 - Action='AddProject(courseInstanceID=1, model=CoursesAPI.Models.AddProjectViewModel)'
+0 - Invoking action 'AddProject(courseInstanceID=1, model=CoursesAPI.Models.AddProjectViewModel)'
+0 - 
+0 - 
+0 - 
+0 - 
+0 - 
+0 - 
+0 - 
+0 - 
+0 - 
+0 - http://localhost:12298/api/courses/1/project
+0 - 
+0 - Route='MS_SubRoutes:System.Web.Http.Routing.IHttpRouteData[]'
+0 - Project
+0 - 
+0 - 
+0 - CoursesAPI.Controllers.ProjectController
+0 - CoursesAPI.Controllers.ProjectController
+0 - 
+0 - 
+0 - Selected action 'AddProject(Int32 courseInstanceID, AddProjectViewModel model)'
+0 - 
+0 - Binding parameter 'courseInstanceID'
+0 - Parameter 'courseInstanceID' bound to the value '1'
+0 - Binding parameter 'model'
+0 - Type='AddProjectViewModel', content-type='application/json'
+0 - Value read='CoursesAPI.Models.AddProjectViewModel'
+0 - Parameter 'model' bound to the value 'CoursesAPI.Models.AddProjectViewModel'
+0 - Model state is valid. Values: courseInstanceID=1, model=CoursesAPI.Models.AddProjectViewModel
+0 - Action='AddProject(courseInstanceID=1, model=CoursesAPI.Models.AddProjectViewModel)'
+0 - Invoking action 'AddProject(courseInstanceID=1, model=CoursesAPI.Models.AddProjectViewModel)'
+0 - 
+0 - 
+0 - 
+0 - 
+0 - 
+0 - 
+0 - 
+0 - 
+0 - 
+0 - 
+0 - 
+0 - http://localhost:12298/api/courses/1/project
+0 - 
+0 - Route='MS_SubRoutes:System.Web.Http.Routing.IHttpRouteData[]'
+0 - Project
+0 - 
+0 - 
+0 - CoursesAPI.Controllers.ProjectController
+0 - CoursesAPI.Controllers.ProjectController
+0 - 
+0 - 
+0 - Selected action 'AddProject(Int32 courseInstanceID, AddProjectViewModel model)'
+0 - 
+0 - Binding parameter 'courseInstanceID'
+0 - Parameter 'courseInstanceID' bound to the value '1'
+0 - Binding parameter 'model'
+0 - Type='AddProjectViewModel', content-type='application/json'
+0 - Value read='CoursesAPI.Models.AddProjectViewModel'
+0 - Parameter 'model' bound to the value 'CoursesAPI.Models.AddProjectViewModel'
+0 - Model state is valid. Values: courseInstanceID=1, model=CoursesAPI.Models.AddProjectViewModel
+0 - Action='AddProject(courseInstanceID=1, model=CoursesAPI.Models.AddProjectViewModel)'
+0 - Invoking action 'AddProject(courseInstanceID=1, model=CoursesAPI.Models.AddProjectViewModel)'

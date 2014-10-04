@@ -329,6 +329,94 @@ namespace CoursesAPI.Services.Services
             _uow.Save();
         }
 
+        public void RemoveProjectFromCourse(int courseId, int projectId)
+        {
+            var course = _courseInstances.All().SingleOrDefault(c => c.ID == courseId);
+
+            if (course == null)
+            {
+                throw new ArgumentException("Invalid course instance id");
+            }
+
+            try
+            {
+                var project = _projects.All().SingleOrDefault(x => x.ID == projectId);
+
+                if (project == null)
+                {
+                    throw new Exception("no project found with that id");
+                }
+
+                _projects.Delete(project);
+                _uow.Save();
+            }
+            catch (Exception)
+            {
+                throw new Exception("found two projects with same id");
+            }
+        }
+
+        public int PrecentCompleted(int id, AddProjectViewModel model)
+        {
+            CourseInstance theCourse = _courseInstances.All().SingleOrDefault(c => c.ID == id);
+
+            if (theCourse == null)
+            {
+                throw new KeyNotFoundException("No course instance found with this ID");
+            }
+
+            int PrecentComplete = 0;
+
+            Dictionary<int, int> myLists =
+            new Dictionary<int, int>();
+
+            var projects = GetProjectsForCourse(id);
+
+            foreach (Project p in projects)
+            {
+                if (p.ProjectGroupId == null)
+                {
+                    PrecentComplete += p.Weight;
+                }
+                else
+                {
+                    if (!(myLists.ContainsKey(p.ProjectGroupId.Value)))
+                    {
+                        myLists.Add(p.ProjectGroupId.Value, p.Weight);
+                    }
+                }
+            }
+            bool groupexist = false;
+            foreach (KeyValuePair<int, int> pair in myLists)
+            {
+                var group = _projectGroups.All().SingleOrDefault(x => x.ID == pair.Key);
+
+                if (group == null)
+                {
+                    throw new Exception("something went wrong in weightleft()");
+                }
+                if (model.ProjectGroupId == pair.Key)
+                {
+                    groupexist = true;
+                }
+                PrecentComplete += group.GradedProjectsCount * pair.Value;
+            }
+
+            if (!groupexist && model.ProjectGroupId != null)
+            {
+                var group = _projectGroups.All().SingleOrDefault(x => x.ID == model.ProjectGroupId);
+
+                PrecentComplete += model.Weight * group.GradedProjectsCount;
+            }
+
+            if(model.ProjectGroupId == null)
+            {
+                PrecentComplete += model.Weight;
+            }
+
+            return PrecentComplete;
+        }
+
         /// <summary>
         /// TODO
         /// </summary>
@@ -494,9 +582,16 @@ namespace CoursesAPI.Services.Services
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-		public List<Project> GetProjectsForCourse(int id)
+        public List<Project> GetProjectsForCourse(int id)
         {
-            return _projects.All().ToList();
+
+            var result = from pro in _projects.All()
+                         where pro.CourseInstanceId == id
+                         select pro;
+
+            var resultlist = result.ToList();
+
+            return resultlist;
         }
 
         /// <summary>

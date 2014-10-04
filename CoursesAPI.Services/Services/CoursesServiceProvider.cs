@@ -295,6 +295,51 @@ namespace CoursesAPI.Services.Services
             _uow.Save();
         }
 
+		public void MakeFinalGradeComp(int courseInstanceId, AddFinalGradeCompositionViewModel model)
+		{
+			if (model == null)
+			{
+				throw new MissingFieldException("The payload must contain a \"Projects\" value as a list of integers");
+			}
+
+			//See if the courseInstance exists
+			CourseInstance theCourse = _courseInstances.All().SingleOrDefault(c => c.ID == courseInstanceId);
+
+			if (theCourse == null)
+			{
+				throw new KeyNotFoundException("No course instance found with this ID");
+			}
+
+			//TODO: Add validation
+
+
+			//Remove the old composition
+			List<FinalGradeComposition> currentComps = _finalGradeComps.All().Where(f => f.CourseInstanceId == courseInstanceId).ToList();
+			
+			foreach(FinalGradeComposition comp in currentComps){
+				_finalGradeComps.Delete(comp);
+			}
+
+			foreach(int projectId in model.Projects){
+				Project currentProject = null;
+				try
+				{
+					currentProject = _projects.All().SingleOrDefault(p => p.ID == projectId && p.CourseInstanceId == courseInstanceId);
+				}
+				catch(Exception e){
+					throw new Exception("More than one project found with the given ID");
+				}
+				if(currentProject == null){
+					throw new KeyNotFoundException("No project found with the given ID in the given course");
+				}
+				_finalGradeComps.Add(new FinalGradeComposition{
+									CourseInstanceId = courseInstanceId,
+									ProjectId = projectId});
+			}
+
+			_uow.Save();
+		}
+
 		public void AddGrade(int courseInstanceID, int projectID, AddGradeViewModel viewModel)
 		{
 			if(viewModel == null){

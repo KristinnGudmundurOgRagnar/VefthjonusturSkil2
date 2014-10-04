@@ -91,13 +91,13 @@ namespace CoursesAPI.Controllers
         // public List<int> GetGrade(int courseInstanceId, int projectId, ProjectViewModel personId)
         [HttpGet]
         [Route("project/{projectID:int}/grade/{ssn}")]
-        public HttpResponseMessage GetProjectGrade(int projectId, String ssn)
+        public HttpResponseMessage GetProjectGrade(int courseInstanceId, int projectId, String ssn)
         {
-            int? result;
+            GradeDTO result;
 
             try
             {
-                result = _service.GetProjectGrade(projectId, ssn);
+                result = _service.GetProjectGrade(courseInstanceId, projectId, ssn);
             }
             catch (MissingFieldException e)
             {

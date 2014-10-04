@@ -371,12 +371,28 @@ namespace CoursesAPI.Services.Services
             return _projects.All().ToList();
         }
 
-        public int? GetProjectGrade(int courseInstanceId, int projectId, String ssn)
+        // TODO: This need fixing, no ssn should be here
+        public int? GetProjectGrade(int projectId, String ssn)
         {
+            if(projectId == null)
+            {
+                throw new MissingFieldException("Invalid course instance id");
+            }
+
+            if(ssn == null)
+            {
+                throw new MissingFieldException("Invalid user id");
+            }
+
             var result = (from gr in _grades.All()
                           where gr.ProjectId == projectId &&
                           gr.PersonSSN == ssn
                           select gr.GradeValue).FirstOrDefault();
+
+            if(result == null)
+            {
+                throw new KeyNotFoundException("This project has not been evaluated");
+            }
             return result;
         }
 		
@@ -488,6 +504,10 @@ namespace CoursesAPI.Services.Services
         // TODO: just a simple return with all grades without any other info
         public List<PersonsGrade> GetAllGrades(int projectId)
         {
+            if(projectId == null)
+            {
+                throw new MissingFieldException("The id of the project is missing");
+            }
 
             var result = (from gr in _grades.All()
                           join ps in _persons.All() on gr.PersonSSN equals ps.SSN
@@ -499,6 +519,12 @@ namespace CoursesAPI.Services.Services
                               Name = ps.Name, 
                               Grade = (gr.GradeValue != null ? (double)gr.GradeValue/10 : 0)
                           }).ToList();
+
+            if(result == null)
+            {
+                throw new KeyNotFoundException("No grades have been made");
+            }
+
             return result;
         }
 

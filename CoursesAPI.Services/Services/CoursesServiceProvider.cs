@@ -13,7 +13,7 @@ namespace CoursesAPI.Services.Services
 	public class CoursesServiceProvider
 	{
 		#region Database collections
-		private readonly IUnitOfWork _uow;
+		public readonly IUnitOfWork _uow;
 
 		private readonly IRepository<CourseInstance> _courseInstances;
 		private readonly IRepository<TeacherRegistration> _teacherRegistrations;

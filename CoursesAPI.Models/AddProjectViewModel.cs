@@ -19,7 +19,7 @@ namespace CoursesAPI.Models
         /// <summary>
 		/// Id of onlyhigherthan
         /// </summary>
-		public int OnlyHigherThanProjectId;
+		public int ? OnlyHigherThanProjectId;
 		/// <summary>
 		/// weight of project
 		/// </summary>
@@ -27,6 +27,6 @@ namespace CoursesAPI.Models
         /// <summary>
 		/// Minimum grade to pass course
         /// </summary>
-		public int MinGradeToPassCourse;
+		public int ? MinGradeToPassCourse;
     }
 }

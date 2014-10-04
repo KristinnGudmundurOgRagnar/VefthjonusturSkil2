@@ -42,3 +42,14 @@ C:\Users\Ragnar\Desktop\VefthjonusturSkil2\CoursesAPI.Tests\bin\Debug\CoursesAPI
 C:\Users\Ragnar\Desktop\VefthjonusturSkil2\CoursesAPI.Tests\obj\Debug\CoursesAPI.Tests.csprojResolveAssemblyReference.cache
 C:\Users\Ragnar\Desktop\VefthjonusturSkil2\CoursesAPI.Tests\obj\Debug\CoursesAPI.Tests.dll
 C:\Users\Ragnar\Desktop\VefthjonusturSkil2\CoursesAPI.Tests\obj\Debug\CoursesAPI.Tests.pdb
+C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Tests\bin\Debug\CoursesAPI.Tests.dll
+C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Tests\bin\Debug\CoursesAPI.Tests.pdb
+C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Tests\bin\Debug\CoursesAPI.Models.dll
+C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Tests\bin\Debug\CoursesAPI.Services.dll
+C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Tests\bin\Debug\EntityFramework.dll
+C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Tests\bin\Debug\CoursesAPI.Models.pdb
+C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Tests\bin\Debug\CoursesAPI.Services.pdb
+C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Tests\bin\Debug\EntityFramework.xml
+C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Tests\obj\Debug\CoursesAPI.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Tests\obj\Debug\CoursesAPI.Tests.dll
+C:\Users\Gvendur Stefáns\Documents\GitHub\VefthjonusturSkil2\CoursesAPI.Tests\obj\Debug\CoursesAPI.Tests.pdb

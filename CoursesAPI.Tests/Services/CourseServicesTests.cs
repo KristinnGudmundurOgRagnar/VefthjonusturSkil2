@@ -16,12 +16,16 @@ namespace CoursesAPI.Tests.Services
 		private CoursesServiceProvider _service;
 		private int courseInstanceID1 = 1;
 		private int courseInstanceID2 = 2;
+		private int courseInstanceID3 = 3;
+		private int courseInstanceID4 = 4;
+		private int invalidCourseInstanceID = 6;
 		private String personSSN1 = "1234567890";
 		private String personSSN2 = "0987654321";
-		private int projectID1 = 1;
-		private int projectID2 = 2;
-		private int projectID3 = 3;
-		private int invalidCourseInstanceID = 4;
+		private String personSSN3 = "3216549870";
+		private String personSSN4 = "7894561230";
+		private String invalidPersonSSN = "0000000000";
+		private int projectGroupId1 = 1;
+		private int invalidProjectID = 666;
 
 		[TestInitialize]
 		public void Setup()
@@ -29,15 +33,19 @@ namespace CoursesAPI.Tests.Services
 			// TODO: code which will be executed before each test!
 			_service = new CoursesServiceProvider(new MockUnitOfWork<MockDataContext>());
 
-			//Add CourseInstances
+			#region Add CourseInstances
 			List<CourseInstance> courseInstances = new List<CourseInstance>();
 			courseInstances.Add(new CourseInstance { ID = courseInstanceID1, SemesterID = "20141" });
 			courseInstances.Add(new CourseInstance { ID = courseInstanceID2, SemesterID = "20141" });
+			courseInstances.Add(new CourseInstance { ID = courseInstanceID3, SemesterID = "20141" });
+			courseInstances.Add(new CourseInstance { ID = courseInstanceID4, SemesterID = "20141" });
 			((MockUnitOfWork<MockDataContext>)(_service._uow)).SetRepositoryData<CourseInstance>(courseInstances);
+			#endregion
 
 
-			//Add PersonRegistrations
+			#region Add PersonRegistrations
 			List<PersonRegistration> personRegistrations = new List<PersonRegistration>();
+			#region Course 1
 			personRegistrations.Add(new PersonRegistration
 			{
 				ID = 1,
@@ -53,16 +61,92 @@ namespace CoursesAPI.Tests.Services
 			personRegistrations.Add(new PersonRegistration
 			{
 				ID = 3,
+				CourseInstanceId = courseInstanceID3,
+				PersonSSN = personSSN3
+			});
+			#endregion Course 1
+
+
+			#region Course 2
+			personRegistrations.Add(new PersonRegistration
+			{
+				ID = 4,
 				CourseInstanceId = courseInstanceID2,
 				PersonSSN = personSSN1
 			});
+			#endregion Course 2
+
+
+			#region Course 3
+			personRegistrations.Add(new PersonRegistration
+			{
+				ID = 5,
+				CourseInstanceId = courseInstanceID3,
+				PersonSSN = personSSN1
+			});
+			personRegistrations.Add(new PersonRegistration
+			{
+				ID = 6,
+				CourseInstanceId = courseInstanceID3,
+				PersonSSN = personSSN2
+			});
+			personRegistrations.Add(new PersonRegistration
+			{
+				ID = 6,
+				CourseInstanceId = courseInstanceID3,
+				PersonSSN = personSSN3
+			});
+			#endregion Course 3
+
+
+			#region Course 4
+			personRegistrations.Add(new PersonRegistration
+			{
+				ID = 7,
+				CourseInstanceId = courseInstanceID4,
+				PersonSSN = personSSN1
+			});
+			personRegistrations.Add(new PersonRegistration
+			{
+				ID = 8,
+				CourseInstanceId = courseInstanceID4,
+				PersonSSN = personSSN2
+			});
+			personRegistrations.Add(new PersonRegistration
+			{
+				ID = 9,
+				CourseInstanceId = courseInstanceID4,
+				PersonSSN = personSSN3
+			});
+			#endregion Course 4
+
 			((MockUnitOfWork<MockDataContext>)(_service._uow)).SetRepositoryData<PersonRegistration>(personRegistrations);
+			#endregion Add PersonRegistrations
+
+			
+			#region Add ProjectGroups
+			List<ProjectGroup> projectGroups = new List<ProjectGroup>();
+
+			projectGroups.Add(new ProjectGroup
+			{
+				ID = projectGroupId1,
+				Name = "Web exams",
+				GradedProjectsCount = 2
+			});
+
+			((MockUnitOfWork<MockDataContext>)(_service._uow)).SetRepositoryData<ProjectGroup>(projectGroups);
+			#endregion Add ProjectGroups
 
 
-			//Add ProjectGroups
-
-			//Add Projects
+			#region Add Projects
 			List<Project> projects = new List<Project>();
+
+			#region Course 1
+			//Empty on purpose
+			#endregion Course 1
+
+
+			#region Course 2
 			projects.Add(new Project
 			{
 				ID = 1,
@@ -73,14 +157,454 @@ namespace CoursesAPI.Tests.Services
 				Weight = 50,
 				MinGradeToPassCourse = null
 			});
+			projects.Add(new Project
+			{
+				ID = 2,
+				Name = "Project 2",
+				ProjectGroupId = null,
+				CourseInstanceId = courseInstanceID1,
+				OnlyHigherThanProjectId = null,
+				Weight = 25,
+				MinGradeToPassCourse = null
+			});
+			projects.Add(new Project
+			{
+				ID = 3,
+				Name = "Project 3",
+				ProjectGroupId = null,
+				CourseInstanceId = courseInstanceID1,
+				OnlyHigherThanProjectId = null,
+				Weight = 25,
+				MinGradeToPassCourse = null
+			});
+			projects.Add(new Project
+			{
+				ID = 4,
+				Name = "Project 4",
+				ProjectGroupId = null,
+				CourseInstanceId = courseInstanceID1,
+				OnlyHigherThanProjectId = null,
+				Weight = 50,
+				MinGradeToPassCourse = 5
+			});
+			#endregion Course 2
+
+
+			#region Course 3
+			projects.Add(new Project
+			{
+				ID = 5,
+				Name = "Project 1",
+				ProjectGroupId = null,
+				CourseInstanceId = courseInstanceID1,
+				OnlyHigherThanProjectId = null,
+				Weight = 50,
+				MinGradeToPassCourse = null
+			});
+			projects.Add(new Project
+			{
+				ID = 6,
+				Name = "Project 2",
+				ProjectGroupId = null,
+				CourseInstanceId = courseInstanceID1,
+				OnlyHigherThanProjectId = null,
+				Weight = 25,
+				MinGradeToPassCourse = null
+			});
+			projects.Add(new Project
+			{
+				ID = 7,
+				Name = "Project 3",
+				ProjectGroupId = null,
+				CourseInstanceId = courseInstanceID1,
+				OnlyHigherThanProjectId = null,
+				Weight = 25,
+				MinGradeToPassCourse = null
+			});
+			projects.Add(new Project
+			{
+				ID = 8,
+				Name = "Project 4",
+				ProjectGroupId = null,
+				CourseInstanceId = courseInstanceID1,
+				OnlyHigherThanProjectId = null,
+				Weight = 50,
+				MinGradeToPassCourse = 5
+			});
+			#endregion Course 3
+
+
+			#region Course 4
+			projects.Add(new Project
+			{
+				ID = 9,
+				Name = "Project 1",
+				ProjectGroupId = null,
+				CourseInstanceId = courseInstanceID1,
+				OnlyHigherThanProjectId = 10,
+				Weight = 10,
+				MinGradeToPassCourse = null
+			});
+			projects.Add(new Project
+			{
+				ID = 10,
+				Name = "Project 2",
+				ProjectGroupId = null,
+				CourseInstanceId = courseInstanceID1,
+				OnlyHigherThanProjectId = null,
+				Weight = 60,
+				MinGradeToPassCourse = null
+			});
+			projects.Add(new Project
+			{
+				ID = 11,
+				Name = "Project 3",
+				ProjectGroupId = null,
+				CourseInstanceId = courseInstanceID1,
+				OnlyHigherThanProjectId = null,
+				Weight = 20,
+				MinGradeToPassCourse = null
+			});
+
+			//Three projects in the same project group
+			projects.Add(new Project
+			{
+				ID = 12,
+				Name = "Web Exam 1",
+				ProjectGroupId = projectGroupId1,
+				CourseInstanceId = courseInstanceID1,
+				OnlyHigherThanProjectId = null,
+				Weight = 5,
+				MinGradeToPassCourse = null
+			});
+			projects.Add(new Project
+			{
+				ID = 13,
+				Name = "Web Exam 2",
+				ProjectGroupId = projectGroupId1,
+				CourseInstanceId = courseInstanceID1,
+				OnlyHigherThanProjectId = null,
+				Weight = 5,
+				MinGradeToPassCourse = null
+			});
+			projects.Add(new Project
+			{
+				ID = 14,
+				Name = "Web Exam 3",
+				ProjectGroupId = projectGroupId1,
+				CourseInstanceId = courseInstanceID1,
+				OnlyHigherThanProjectId = null,
+				Weight = 5,
+				MinGradeToPassCourse = null
+			});
+
+			#endregion Course 4
+
 			((MockUnitOfWork<MockDataContext>)(_service._uow)).SetRepositoryData<Project>(projects);
+			#endregion Add Projects
 
 
+			#region Add Grades
+
+			List<Grade> grades = new List<Grade>();
+			#region Person 1
+			grades.Add(new Grade
+			{
+				ID = 1,
+				PersonSSN = personSSN1,
+				GradeValue = 0,
+				ProjectId = 1
+			});
+			grades.Add(new Grade
+			{
+				ID = 2,
+				PersonSSN = personSSN1,
+				GradeValue = 0,
+				ProjectId = 2
+			});
+			grades.Add(new Grade
+			{
+				ID = 3,
+				PersonSSN = personSSN1,
+				GradeValue = 0,
+				ProjectId = 3
+			});
+			grades.Add(new Grade
+			{
+				ID = 4,
+				PersonSSN = personSSN1,
+				GradeValue = 0,
+				ProjectId = 4
+			});
+			grades.Add(new Grade
+			{
+				ID = 5,
+				PersonSSN = personSSN1,
+				GradeValue = 0,
+				ProjectId = 5
+			});
+			grades.Add(new Grade
+			{
+				ID = 6,
+				PersonSSN = personSSN1,
+				GradeValue = 0,
+				ProjectId = 6
+			});
+			grades.Add(new Grade
+			{
+				ID = 7,
+				PersonSSN = personSSN1,
+				GradeValue = 0,
+				ProjectId = 7
+			});
+			grades.Add(new Grade
+			{
+				ID = 8,
+				PersonSSN = personSSN1,
+				GradeValue = 0,
+				ProjectId = 8
+			});
+			grades.Add(new Grade
+			{
+				ID = 9,
+				PersonSSN = personSSN1,
+				GradeValue = 0,
+				ProjectId = 9
+			});
+			grades.Add(new Grade
+			{
+				ID = 10,
+				PersonSSN = personSSN1,
+				GradeValue = 0,
+				ProjectId = 10
+			});
+			grades.Add(new Grade
+			{
+				ID = 11,
+				PersonSSN = personSSN1,
+				GradeValue = 0,
+				ProjectId = 11
+			});
+			grades.Add(new Grade
+			{
+				ID = 12,
+				PersonSSN = personSSN1,
+				GradeValue = 0,
+				ProjectId = 12
+			});
+			grades.Add(new Grade
+			{
+				ID = 13,
+				PersonSSN = personSSN1,
+				GradeValue = 0,
+				ProjectId = 13
+			});
+			grades.Add(new Grade
+			{
+				ID = 14,
+				PersonSSN = personSSN1,
+				GradeValue = 0,
+				ProjectId = 14
+			});
+
+			#endregion Person 1
+
+
+			#region Person 2
+			grades.Add(new Grade
+			{
+				ID = 15,
+				PersonSSN = personSSN1,
+				GradeValue = 10,
+				ProjectId = 15
+			});
+			grades.Add(new Grade
+			{
+				ID = 16,
+				PersonSSN = personSSN1,
+				GradeValue = 10,
+				ProjectId = 16
+			});
+			grades.Add(new Grade
+			{
+				ID = 17,
+				PersonSSN = personSSN1,
+				GradeValue = 10,
+				ProjectId = 17
+			});
+			grades.Add(new Grade
+			{
+				ID = 18,
+				PersonSSN = personSSN1,
+				GradeValue = 10,
+				ProjectId = 18
+			});
+			grades.Add(new Grade
+			{
+				ID = 19,
+				PersonSSN = personSSN1,
+				GradeValue = 10,
+				ProjectId = 19
+			});
+			grades.Add(new Grade
+			{
+				ID = 20,
+				PersonSSN = personSSN1,
+				GradeValue = 10,
+				ProjectId = 20
+			});
+			grades.Add(new Grade
+			{
+				ID = 21,
+				PersonSSN = personSSN1,
+				GradeValue = 10,
+				ProjectId = 21
+			});
+			grades.Add(new Grade
+			{
+				ID = 22,
+				PersonSSN = personSSN1,
+				GradeValue = 10,
+				ProjectId = 22
+			});
+			grades.Add(new Grade
+			{
+				ID = 23,
+				PersonSSN = personSSN1,
+				GradeValue = 10,
+				ProjectId = 23
+			});
+			grades.Add(new Grade
+			{
+				ID = 24,
+				PersonSSN = personSSN1,
+				GradeValue = 10,
+				ProjectId = 24
+			});
+			grades.Add(new Grade
+			{
+				ID = 25,
+				PersonSSN = personSSN1,
+				GradeValue = 10,
+				ProjectId = 25
+			});
+			grades.Add(new Grade
+			{
+				ID = 26,
+				PersonSSN = personSSN1,
+				GradeValue = 10,
+				ProjectId = 26
+			});
+			grades.Add(new Grade
+			{
+				ID = 27,
+				PersonSSN = personSSN1,
+				GradeValue = 10,
+				ProjectId = 27
+			});
+			grades.Add(new Grade
+			{
+				ID = 28,
+				PersonSSN = personSSN1,
+				GradeValue = 10,
+				ProjectId = 28
+			});
+
+			#endregion Person 2
+			#endregion Add Grades
+
+
+			#region Add FinalGradeCompositions
 			List<FinalGradeComposition> finalGradeComps = new List<FinalGradeComposition>();
-			finalGradeComps.Add(new FinalGradeComposition { ID = 1, CourseInstanceId = 1, ProjectId = 1 });
+			#region Course 1
+			//Empty on purpose
+			#endregion Course 1
 
+
+			#region Course 2
+			finalGradeComps.Add(new FinalGradeComposition
+			{ 
+				ID = 1, 
+				CourseInstanceId = 2, 
+				ProjectId = 1
+			});
+			finalGradeComps.Add(new FinalGradeComposition
+			{
+				ID = 2,
+				CourseInstanceId = 2,
+				ProjectId = 2
+			});
+			finalGradeComps.Add(new FinalGradeComposition
+			{
+				ID = 3,
+				CourseInstanceId = 2,
+				ProjectId = 3
+			});
+			#endregion course 2
+
+
+			#region Course 3
+			finalGradeComps.Add(new FinalGradeComposition
+			{
+				ID = 4,
+				CourseInstanceId = 3,
+				ProjectId = 5
+			});
+			finalGradeComps.Add(new FinalGradeComposition
+			{
+				ID = 5,
+				CourseInstanceId = 3,
+				ProjectId = 6
+			});
+			finalGradeComps.Add(new FinalGradeComposition
+			{
+				ID = 6,
+				CourseInstanceId = 3,
+				ProjectId = 7
+			});
+			#endregion Course 3
+
+
+			#region Course 4
+			finalGradeComps.Add(new FinalGradeComposition
+			{
+				ID = 7,
+				CourseInstanceId = 4,
+				ProjectId = 9
+			});
+			finalGradeComps.Add(new FinalGradeComposition
+			{
+				ID = 8,
+				CourseInstanceId = 4,
+				ProjectId = 10
+			});
+			finalGradeComps.Add(new FinalGradeComposition
+			{
+				ID = 9,
+				CourseInstanceId = 4,
+				ProjectId = 11
+			});
+			finalGradeComps.Add(new FinalGradeComposition
+			{
+				ID = 10,
+				CourseInstanceId = 4,
+				ProjectId = 12
+			});
+			finalGradeComps.Add(new FinalGradeComposition
+			{
+				ID = 11,
+				CourseInstanceId = 4,
+				ProjectId = 13
+			});
+			finalGradeComps.Add(new FinalGradeComposition
+			{
+				ID = 12,
+				CourseInstanceId = 4,
+				ProjectId = 14
+			});
+			#endregion Course 4
 			((MockUnitOfWork<MockDataContext>)(_service._uow)).SetRepositoryData<FinalGradeComposition>(finalGradeComps);
-
+			#endregion Add FinalGradeCompositions
 		}
 
 		/// <summary>

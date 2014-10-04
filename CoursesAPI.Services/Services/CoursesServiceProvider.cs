@@ -446,7 +446,8 @@ namespace CoursesAPI.Services.Services
 			FinalGradeDTO returnValue = new FinalGradeDTO
 			{
 				Grade = 0,
-				PercentageComplete = 0
+				PercentageComplete = 0,
+				Status = "OK"
 			};
 			
 			int totalPercentage = 0;
@@ -468,7 +469,11 @@ namespace CoursesAPI.Services.Services
 				}
 
 				GradeDTO currentGrade = GetProjectGrade(courseInstanceID, currentComp.ProjectId, personSSN);
-
+				if(currentProject.MinGradeToPassCourse != null && currentGrade.Grade != null){
+					if(currentGrade.Grade < currentProject.MinGradeToPassCourse){
+						returnValue.Status = "FAILED";
+					}
+				}
 				//Part of a ProjectGroup
 				if(currentProject.ProjectGroupId != null){
 					int currentID = (int)currentProject.ProjectGroupId;
@@ -584,37 +589,6 @@ namespace CoursesAPI.Services.Services
 			}
 
 			return finalGrades;
-
-
-
-			/*
-			returnValue.NumberOfStudents = allGrades.Count();
-			returnValue.Grade = myGrade;
-
-			if(myGrade == null){
-				returnValue.PositionLower = null;
-				returnValue.PositionUpper = null;
-				return returnValue;
-			}
-			else {
-				int greater = 0;
-				int equal = 0;
-				foreach(Grade g in allGrades){
-					if(g.GradeValue != null){
-						if(g.GradeValue > myGrade){
-							greater++;
-						}
-						else if(g.GradeValue == myGrade){
-							equal++;
-						}
-					}
-				}
-
-				returnValue.PositionUpper = 1 + greater;
-				returnValue.PositionLower = greater + equal;
-				
-				return returnValue;
-			*/
 		}
 
         // TODO: just a simple return with all grades without any other info

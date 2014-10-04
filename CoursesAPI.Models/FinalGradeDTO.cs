@@ -32,5 +32,10 @@ namespace CoursesAPI.Models
 		/// The total number of students in the course
 		/// </summary>
 		public int NumberOfStudents { get; set; }
+		/// <summary>
+		/// The status of the final grade
+		/// Whether or not the student has failed or not 
+		/// </summary>
+		public String Status { get; set; }
 	}
 }

@@ -54,6 +54,35 @@ namespace CoursesAPI.Controllers
         {
             _service.MakeProjectGroup(model);
         }
+
+
+		[HttpPut]
+		[Route("finalGradeComposition")]
+		public HttpResponseMessage MakeFinalGradeComposition(int courseInstanceId, AddFinalGradeCompositionViewModel model)
+		{
+			try
+			{
+				_service.MakeFinalGradeComp(courseInstanceId, model);
+			}
+			catch (ArgumentException e)
+			{
+				return Request.CreateResponse(System.Net.HttpStatusCode.BadRequest, e.Message);
+			}
+			catch (MissingFieldException e)
+			{
+				return Request.CreateResponse(System.Net.HttpStatusCode.BadRequest, e.Message);
+			}
+			catch (KeyNotFoundException e)
+			{
+				return Request.CreateResponse(System.Net.HttpStatusCode.NotFound, e.Message);
+			}
+			catch (Exception e)
+			{
+				return Request.CreateResponse(System.Net.HttpStatusCode.InternalServerError, e.Message);
+			}
+
+			return Request.CreateResponse(System.Net.HttpStatusCode.Created, "Final grade composition created");
+		}
 		/// <summary>
 		/// Add a grade for a given person for a given project
 		/// </summary>

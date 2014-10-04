@@ -371,32 +371,58 @@ namespace CoursesAPI.Services.Services
             return _projects.All().ToList();
         }
 
-        // TODO: This need fixing, no ssn should be here
-        public int? GetProjectGrade(int projectId, String ssn)
+        public GradeDTO GetProjectGrade(int courseInstanceId, int projectId, String ssn)
         {
-            if(projectId == null)
-            {
-                throw new MissingFieldException("Invalid course instance id");
-            }
+			//See if the courseInstance exists
+			CourseInstance theCourse = _courseInstances.All().SingleOrDefault(c => c.ID == courseInstanceId);
 
-            if(ssn == null)
-            {
-                throw new MissingFieldException("Invalid user id");
-            }
+			if (theCourse == null)
+			{
+				throw new KeyNotFoundException("No course instance found with this ID");
+			}
 
-            var result = (from gr in _grades.All()
-                          where gr.ProjectId == projectId &&
-                          gr.PersonSSN == ssn
-                          select gr.GradeValue).FirstOrDefault();
+			List<Grade> allGrades = (from gr in _grades.All()
+									join p in _projects.All() on gr.ProjectId equals p.ID
+									where p.CourseInstanceId == courseInstanceId && p.ID == projectId 
+									select gr).ToList();
 
-            if(result == null)
-            {
-                throw new KeyNotFoundException("This project has not been evaluated");
-            }
-            return result;
+
+			int? myGrade = (from gr in allGrades
+								where gr.PersonSSN == ssn && gr.ProjectId == projectId
+								select gr.GradeValue).SingleOrDefault();
+
+			GradeDTO returnValue = new GradeDTO();
+
+			returnValue.NumberOfStudents = allGrades.Count();
+			returnValue.Grade = myGrade;
+
+			if(myGrade == null){
+				returnValue.PositionLower = null;
+				returnValue.PositionUpper = null;
+				return returnValue;
+			}
+			else {
+				int greater = 0;
+				int equal = 0;
+				foreach(Grade g in allGrades){
+					if(g.GradeValue != null){
+						if(g.GradeValue > myGrade){
+							greater++;
+						}
+						else if(g.GradeValue == myGrade){
+							equal++;
+						}
+					}
+				}
+
+				returnValue.PositionUpper = 1 + greater;
+				returnValue.PositionLower = greater + equal;
+				
+				return returnValue;
+			}
         }
 		
-		public FinalGradeDTO GetFinalGrade(int courseInstanceID, String personSSN)
+		private FinalGradeDTO GetFinalGrade(int courseInstanceID, String personSSN)
 		{
 			if(personSSN == null){
 				throw new MissingFieldException("The field \"personSSN\" is required");
@@ -441,7 +467,7 @@ namespace CoursesAPI.Services.Services
 					//The collection is empty
 				}
 
-				int? currentGrade = GetProjectGrade(courseInstanceID, currentComp.ProjectId, personSSN);
+				GradeDTO currentGrade = GetProjectGrade(courseInstanceID, currentComp.ProjectId, personSSN);
 
 				//Part of a ProjectGroup
 				if(currentProject.ProjectGroupId != null){
@@ -464,7 +490,7 @@ namespace CoursesAPI.Services.Services
 						projectGroups.Add(currentID, new ProjectGroupData(currentID, currentProjectGroup.GradedProjectsCount));
 					}
 					
-					projectGroups[currentID].AddProject(currentGrade, currentProject.Weight);
+					projectGroups[currentID].AddProject(currentGrade.Grade, currentProject.Weight);
 				}
 				else
 				{
@@ -472,7 +498,7 @@ namespace CoursesAPI.Services.Services
 
 					if(currentGrade != null){
 						returnValue.PercentageComplete += currentProject.Weight;
-						returnValue.Grade += (int)currentGrade / 1000.0 * currentProject.Weight;
+						returnValue.Grade += (int)currentGrade.Grade / 1000.0 * currentProject.Weight;
 					}
 				}
 
@@ -492,13 +518,103 @@ namespace CoursesAPI.Services.Services
 				throw new Exception("Total weight of the components of the final grade is " + totalPercentage + ", not 100 as it should be.");
 			}
 
+			returnValue.PersonSSN = personSSN;
 			return returnValue;
 		}
 
+		public FinalGradeDTO GetFinalGradeForOneStudent(int courseInstanceID, String personSSN)
+		{
+			List<FinalGradeDTO> allFinalGrades = GetAllFinalGrades(courseInstanceID);
+
+
+			return allFinalGrades.SingleOrDefault(f => f.PersonSSN == personSSN);
+		}
 
 		public List<FinalGradeDTO> GetAllFinalGrades(int courseInstanceId)
 		{
-			return null;
+			//See if the courseInstance exists
+			CourseInstance theCourse = _courseInstances.All().SingleOrDefault(c => c.ID == courseInstanceId);
+
+			if (theCourse == null)
+			{
+				throw new KeyNotFoundException("No course instance found with this ID");
+			}
+
+			//See if a FinalGradeComposition is registered for the course
+			List<FinalGradeComposition> theGradeComps = _finalGradeComps.All().Where(f => f.CourseInstanceId == courseInstanceId).ToList();
+
+			if (theGradeComps == null)
+			{
+				throw new KeyNotFoundException("The composition of the final grade has not been registered for this course");
+			}
+
+			//Get a list of all persons in the course
+			List<String> personsRegistered = _personRegistrations.All().Where(r => r.CourseInstanceId == courseInstanceId).Select(f => f.PersonSSN).ToList();
+
+			List<FinalGradeDTO> finalGrades = new List<FinalGradeDTO>();
+			foreach(String reg in personsRegistered){
+				finalGrades.Add(GetFinalGrade(courseInstanceId, reg));
+			}
+
+			int count = finalGrades.Count();
+			
+			
+
+			foreach(FinalGradeDTO fdto in finalGrades){
+				fdto.NumberOfStudents = count;
+				if(fdto.Grade == null){
+					fdto.PositionUpper = null;
+					fdto.PositionLower = null;
+				}
+				else {
+					int equals = 0;
+					int greater = 0;
+					foreach(FinalGradeDTO f in finalGrades){
+						if(f.Grade > fdto.Grade){
+							greater++;
+						}
+						else if(f.Grade == fdto.Grade){
+							equals++;
+						}
+					}
+
+					fdto.PositionUpper = 1 + greater;
+					fdto.PositionLower = greater + equals;
+				}
+			}
+
+			return finalGrades;
+
+
+
+			/*
+			returnValue.NumberOfStudents = allGrades.Count();
+			returnValue.Grade = myGrade;
+
+			if(myGrade == null){
+				returnValue.PositionLower = null;
+				returnValue.PositionUpper = null;
+				return returnValue;
+			}
+			else {
+				int greater = 0;
+				int equal = 0;
+				foreach(Grade g in allGrades){
+					if(g.GradeValue != null){
+						if(g.GradeValue > myGrade){
+							greater++;
+						}
+						else if(g.GradeValue == myGrade){
+							equal++;
+						}
+					}
+				}
+
+				returnValue.PositionUpper = 1 + greater;
+				returnValue.PositionLower = greater + equal;
+				
+				return returnValue;
+			*/
 		}
 
         // TODO: just a simple return with all grades without any other info

@@ -119,7 +119,7 @@ namespace CoursesAPI.Controllers
 			FinalGradeDTO result;
 			try
 			{
-				result = _service.GetFinalGrade(courseInstanceId, personSSN);
+				result = _service.GetFinalGradeForOneStudent(courseInstanceId, personSSN);
 			}
 			catch (ArgumentException e)
 			{

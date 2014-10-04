@@ -6,20 +6,12 @@ using System.Threading.Tasks;
 
 namespace CoursesAPI.Models
 {
-	public class FinalGradeDTO
+	public class GradeDTO
 	{
 		/// <summary>
-		/// The accumulated grade
+		/// The grade of the student
 		/// </summary>
-		public double Grade { get; set; }
-		/// <summary>
-		/// The percentage of the final grade that the student has earned
-		/// </summary>
-		public int PercentageComplete { get; set; }
-		/// <summary>
-		/// The SSN of the student
-		/// </summary>
-		public String PersonSSN { get; set; }
+		public int? Grade { get; set; }
 		/// <summary>
 		/// The upper bounds of the position of the student
 		/// </summary>

@@ -32,6 +32,7 @@ namespace CoursesAPI.Services.Services
         /// Contructor for CoursesServiceProvider. 
         /// Argument is IUnitOfWork
         /// </summary>
+        /// <param name="uow">Unit of work</param>
 		public CoursesServiceProvider(IUnitOfWork uow)
 		{
 			_uow = uow;

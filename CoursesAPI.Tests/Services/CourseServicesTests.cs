@@ -14,15 +14,10 @@ namespace CoursesAPI.Tests.Services
 	public class CourseServicesTests
 	{
 		private CoursesServiceProvider _service;
-		private int courseInstanceID1 = 1;
-		private int courseInstanceID2 = 2;
-		private int courseInstanceID3 = 3;
-		private int courseInstanceID4 = 4;
 		private int invalidCourseInstanceID = 6;
 		private String personSSN1 = "1234567890";
 		private String personSSN2 = "0987654321";
 		private String personSSN3 = "3216549870";
-		private String personSSN4 = "7894561230";
 		private String invalidPersonSSN = "0000000000";
 		private int projectGroupId1 = 1;
 		private int invalidProjectID = 666;
@@ -35,10 +30,10 @@ namespace CoursesAPI.Tests.Services
 
 			#region Add CourseInstances
 			List<CourseInstance> courseInstances = new List<CourseInstance>();
-			courseInstances.Add(new CourseInstance { ID = courseInstanceID1, SemesterID = "20141" });
-			courseInstances.Add(new CourseInstance { ID = courseInstanceID2, SemesterID = "20141" });
-			courseInstances.Add(new CourseInstance { ID = courseInstanceID3, SemesterID = "20141" });
-			courseInstances.Add(new CourseInstance { ID = courseInstanceID4, SemesterID = "20141" });
+			courseInstances.Add(new CourseInstance { ID = 1, SemesterID = "20141" });
+			courseInstances.Add(new CourseInstance { ID = 2, SemesterID = "20141" });
+			courseInstances.Add(new CourseInstance { ID = 3, SemesterID = "20141" });
+			courseInstances.Add(new CourseInstance { ID = 4, SemesterID = "20141" });
 			((MockUnitOfWork<MockDataContext>)(_service._uow)).SetRepositoryData<CourseInstance>(courseInstances);
 			#endregion
 
@@ -49,19 +44,19 @@ namespace CoursesAPI.Tests.Services
 			personRegistrations.Add(new PersonRegistration
 			{
 				ID = 1,
-				CourseInstanceId = courseInstanceID1,
+				CourseInstanceId = 1,
 				PersonSSN = personSSN1
 			});
 			personRegistrations.Add(new PersonRegistration
 			{
 				ID = 2,
-				CourseInstanceId = courseInstanceID1,
+				CourseInstanceId = 1,
 				PersonSSN = personSSN2
 			});
 			personRegistrations.Add(new PersonRegistration
 			{
 				ID = 3,
-				CourseInstanceId = courseInstanceID3,
+				CourseInstanceId = 1,
 				PersonSSN = personSSN3
 			});
 			#endregion Course 1
@@ -71,7 +66,7 @@ namespace CoursesAPI.Tests.Services
 			personRegistrations.Add(new PersonRegistration
 			{
 				ID = 4,
-				CourseInstanceId = courseInstanceID2,
+				CourseInstanceId = 2,
 				PersonSSN = personSSN1
 			});
 			#endregion Course 2
@@ -81,19 +76,19 @@ namespace CoursesAPI.Tests.Services
 			personRegistrations.Add(new PersonRegistration
 			{
 				ID = 5,
-				CourseInstanceId = courseInstanceID3,
+				CourseInstanceId = 3,
 				PersonSSN = personSSN1
 			});
 			personRegistrations.Add(new PersonRegistration
 			{
 				ID = 6,
-				CourseInstanceId = courseInstanceID3,
+				CourseInstanceId = 3,
 				PersonSSN = personSSN2
 			});
 			personRegistrations.Add(new PersonRegistration
 			{
 				ID = 6,
-				CourseInstanceId = courseInstanceID3,
+				CourseInstanceId = 3,
 				PersonSSN = personSSN3
 			});
 			#endregion Course 3
@@ -103,19 +98,19 @@ namespace CoursesAPI.Tests.Services
 			personRegistrations.Add(new PersonRegistration
 			{
 				ID = 7,
-				CourseInstanceId = courseInstanceID4,
+				CourseInstanceId = 4,
 				PersonSSN = personSSN1
 			});
 			personRegistrations.Add(new PersonRegistration
 			{
 				ID = 8,
-				CourseInstanceId = courseInstanceID4,
+				CourseInstanceId = 4,
 				PersonSSN = personSSN2
 			});
 			personRegistrations.Add(new PersonRegistration
 			{
 				ID = 9,
-				CourseInstanceId = courseInstanceID4,
+				CourseInstanceId = 4,
 				PersonSSN = personSSN3
 			});
 			#endregion Course 4
@@ -152,7 +147,7 @@ namespace CoursesAPI.Tests.Services
 				ID = 1,
 				Name = "Project 1",
 				ProjectGroupId = null,
-				CourseInstanceId = courseInstanceID1,
+				CourseInstanceId = 2,
 				OnlyHigherThanProjectId = null,
 				Weight = 50,
 				MinGradeToPassCourse = null
@@ -162,7 +157,7 @@ namespace CoursesAPI.Tests.Services
 				ID = 2,
 				Name = "Project 2",
 				ProjectGroupId = null,
-				CourseInstanceId = courseInstanceID1,
+				CourseInstanceId = 2,
 				OnlyHigherThanProjectId = null,
 				Weight = 25,
 				MinGradeToPassCourse = null
@@ -172,7 +167,7 @@ namespace CoursesAPI.Tests.Services
 				ID = 3,
 				Name = "Project 3",
 				ProjectGroupId = null,
-				CourseInstanceId = courseInstanceID1,
+				CourseInstanceId = 2,
 				OnlyHigherThanProjectId = null,
 				Weight = 25,
 				MinGradeToPassCourse = null
@@ -182,7 +177,7 @@ namespace CoursesAPI.Tests.Services
 				ID = 4,
 				Name = "Project 4",
 				ProjectGroupId = null,
-				CourseInstanceId = courseInstanceID1,
+				CourseInstanceId = 2,
 				OnlyHigherThanProjectId = null,
 				Weight = 50,
 				MinGradeToPassCourse = 5
@@ -196,7 +191,7 @@ namespace CoursesAPI.Tests.Services
 				ID = 5,
 				Name = "Project 1",
 				ProjectGroupId = null,
-				CourseInstanceId = courseInstanceID1,
+				CourseInstanceId = 3,
 				OnlyHigherThanProjectId = null,
 				Weight = 50,
 				MinGradeToPassCourse = null
@@ -206,7 +201,7 @@ namespace CoursesAPI.Tests.Services
 				ID = 6,
 				Name = "Project 2",
 				ProjectGroupId = null,
-				CourseInstanceId = courseInstanceID1,
+				CourseInstanceId = 3,
 				OnlyHigherThanProjectId = null,
 				Weight = 25,
 				MinGradeToPassCourse = null
@@ -216,7 +211,7 @@ namespace CoursesAPI.Tests.Services
 				ID = 7,
 				Name = "Project 3",
 				ProjectGroupId = null,
-				CourseInstanceId = courseInstanceID1,
+				CourseInstanceId = 3,
 				OnlyHigherThanProjectId = null,
 				Weight = 25,
 				MinGradeToPassCourse = null
@@ -226,7 +221,7 @@ namespace CoursesAPI.Tests.Services
 				ID = 8,
 				Name = "Project 4",
 				ProjectGroupId = null,
-				CourseInstanceId = courseInstanceID1,
+				CourseInstanceId = 3,
 				OnlyHigherThanProjectId = null,
 				Weight = 50,
 				MinGradeToPassCourse = 5
@@ -240,7 +235,7 @@ namespace CoursesAPI.Tests.Services
 				ID = 9,
 				Name = "Project 1",
 				ProjectGroupId = null,
-				CourseInstanceId = courseInstanceID1,
+				CourseInstanceId = 4,
 				OnlyHigherThanProjectId = 10,
 				Weight = 10,
 				MinGradeToPassCourse = null
@@ -250,7 +245,7 @@ namespace CoursesAPI.Tests.Services
 				ID = 10,
 				Name = "Project 2",
 				ProjectGroupId = null,
-				CourseInstanceId = courseInstanceID1,
+				CourseInstanceId = 4,
 				OnlyHigherThanProjectId = null,
 				Weight = 60,
 				MinGradeToPassCourse = null
@@ -260,7 +255,7 @@ namespace CoursesAPI.Tests.Services
 				ID = 11,
 				Name = "Project 3",
 				ProjectGroupId = null,
-				CourseInstanceId = courseInstanceID1,
+				CourseInstanceId = 4,
 				OnlyHigherThanProjectId = null,
 				Weight = 20,
 				MinGradeToPassCourse = null
@@ -272,7 +267,7 @@ namespace CoursesAPI.Tests.Services
 				ID = 12,
 				Name = "Web Exam 1",
 				ProjectGroupId = projectGroupId1,
-				CourseInstanceId = courseInstanceID1,
+				CourseInstanceId = 4,
 				OnlyHigherThanProjectId = null,
 				Weight = 5,
 				MinGradeToPassCourse = null
@@ -282,7 +277,7 @@ namespace CoursesAPI.Tests.Services
 				ID = 13,
 				Name = "Web Exam 2",
 				ProjectGroupId = projectGroupId1,
-				CourseInstanceId = courseInstanceID1,
+				CourseInstanceId = 4,
 				OnlyHigherThanProjectId = null,
 				Weight = 5,
 				MinGradeToPassCourse = null
@@ -292,7 +287,7 @@ namespace CoursesAPI.Tests.Services
 				ID = 14,
 				Name = "Web Exam 3",
 				ProjectGroupId = projectGroupId1,
-				CourseInstanceId = courseInstanceID1,
+				CourseInstanceId = 4,
 				OnlyHigherThanProjectId = null,
 				Weight = 5,
 				MinGradeToPassCourse = null
@@ -620,7 +615,7 @@ namespace CoursesAPI.Tests.Services
 
 
 			//Get projects from a cource with no projects
-			theProjects = _service.GetProjectsForCourse(courseInstanceID2);
+			theProjects = _service.GetProjectsForCourse(1);
 
 			Assert.AreEqual(0, theProjects.Count);
 
@@ -628,7 +623,7 @@ namespace CoursesAPI.Tests.Services
 			//Add an invalid project to a valid course
 			try
 			{
-				_service.AddProjectToCourse(courseInstanceID1, new AddProjectViewModel
+				_service.AddProjectToCourse(1, new AddProjectViewModel
 				{
 					Name = "TestProject1",
 					ProjectGroupId = 2,
@@ -642,7 +637,7 @@ namespace CoursesAPI.Tests.Services
 
 			}
 
-			theProjects = _service.GetProjectsForCourse(courseInstanceID1);
+			theProjects = _service.GetProjectsForCourse(1);
 
 			Assert.AreEqual(0, theProjects.Count);
 
@@ -673,7 +668,7 @@ namespace CoursesAPI.Tests.Services
 			//Add a valid project to a valid course
 			try
 			{
-				_service.AddProjectToCourse(courseInstanceID1, new AddProjectViewModel
+				_service.AddProjectToCourse(1, new AddProjectViewModel
 				{
 					Name = "TestProject1",
 					ProjectGroupId = null,
@@ -687,7 +682,7 @@ namespace CoursesAPI.Tests.Services
 
 			}
 
-			theProjects = _service.GetProjectsForCourse(courseInstanceID1);
+			theProjects = _service.GetProjectsForCourse(1);
 
 			Assert.AreEqual(1, theProjects.Count);
 		}

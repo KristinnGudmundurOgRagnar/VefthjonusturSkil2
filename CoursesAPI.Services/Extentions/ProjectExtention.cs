@@ -16,7 +16,7 @@ namespace CoursesAPI.Services.Extensions
 
             if (pro == null)
             {
-                throw new KeyNotFoundException("No project found with this ID");
+                throw new KeyNotFoundException("No project found with this ID: " + id);
             }
             return pro;
         }

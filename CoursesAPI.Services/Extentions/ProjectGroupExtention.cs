@@ -16,7 +16,7 @@ namespace CoursesAPI.Services.Extensions
 
             if (group == null)
             {
-                throw new KeyNotFoundException("No projectGroup found with this ID");
+                throw new KeyNotFoundException("No projectGroup found with this ID: " + id);
             }
             return group;
         }

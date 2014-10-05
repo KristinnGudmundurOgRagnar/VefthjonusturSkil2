@@ -706,9 +706,9 @@ namespace CoursesAPI.Services.Services
 			
 			int totalPercentage = 0;
 			Dictionary<int, ProjectGroupData> projectGroups = new Dictionary<int,ProjectGroupData>();
+			List<int> finishedIDs = new List<int>();
 
 			foreach(var comp in theGradeComps){
-				//TODO: Add handling for OnlyIfHigherThan
 				FinalGradeComposition currentComp = (FinalGradeComposition)comp;
 				Project currentProject = null;
 				try
@@ -721,53 +721,90 @@ namespace CoursesAPI.Services.Services
 					}
 					//The collection is empty
 				}
-
 				GradeDTO currentGrade = GetProjectGrade(courseInstanceID, currentComp.ProjectId, personSSN);
 				if(currentProject.MinGradeToPassCourse != null && currentGrade.Grade != null){
 					if(currentGrade.Grade < currentProject.MinGradeToPassCourse){
 						returnValue.Status = "FAILED";
 					}
 				}
-				//Part of a ProjectGroup
-				if(currentProject.ProjectGroupId != null){
-					int currentID = (int)currentProject.ProjectGroupId;
 
-					ProjectGroup currentProjectGroup = null;
-					//See if the projectgroup exists
-					try{
-						currentProjectGroup = _projectGroups.All().SingleOrDefault(p => p.ID == currentID);
-					}
-					catch(Exception e){
-						if(_projectGroups.All().Count() != 0){
-							throw new KeyNotFoundException("No project group found with the given ID(" + currentID + ")");
-						}
-						//The collection is just empty
-					}
 
-					if(!projectGroups.ContainsKey(currentID)){
-						//There is no defined projectgroup with this id
-						projectGroups.Add(currentID, new ProjectGroupData(currentID, currentProjectGroup.GradedProjectsCount));
-					}
-					
-					projectGroups[currentID].AddProject(currentGrade.Grade, currentProject.Weight);
-				}
-				else
+				if (!finishedIDs.Contains(currentProject.ID))
 				{
-					totalPercentage += currentProject.Weight;
+					//Part of a ProjectGroup
+					if (currentProject.ProjectGroupId != null)
+					{
+						int currentID = (int)currentProject.ProjectGroupId;
 
-					if(currentGrade != null){
-						if (currentGrade.Grade == null)
+						ProjectGroup currentProjectGroup = null;
+						//See if the projectgroup exists
+						try
 						{
-							//throw new Exception("Student: " + personSSN + " has no grade for Project: " + currentProject.ID);
+							currentProjectGroup = _projectGroups.All().SingleOrDefault(p => p.ID == currentID);
 						}
-						else
+						catch (Exception e)
 						{
-							returnValue.Grade += (int)currentGrade.Grade / 1000.0 * currentProject.Weight;
-							returnValue.PercentageComplete += currentProject.Weight;
+							if (_projectGroups.All().Count() != 0)
+							{
+								throw new KeyNotFoundException("No project group found with the given ID(" + currentID + ")");
+							}
+							//The collection is just empty
+						}
+
+						if (!projectGroups.ContainsKey(currentID))
+						{
+							//There is no defined projectgroup with this id
+							projectGroups.Add(currentID, new ProjectGroupData(currentID, currentProjectGroup.GradedProjectsCount));
+						}
+
+						projectGroups[currentID].AddProject(currentGrade.Grade, currentProject.Weight);
+					}
+					else
+					{
+						totalPercentage += currentProject.Weight;
+
+						if (currentGrade != null)
+						{
+							if (currentGrade.Grade != null)
+							{
+								if (currentProject.OnlyHigherThanProjectId == null)
+								{
+									returnValue.Grade += (int)currentGrade.Grade / 1000.0 * currentProject.Weight;
+									returnValue.PercentageComplete += currentProject.Weight;
+									finishedIDs.Add(currentProject.ID);
+								}
+								else
+								{
+									//Grade otherGrade = _grades.All().SingleOrDefault(g => g.ProjectId == currentProject.OnlyHigherThanProjectId && g.PersonSSN == personSSN);
+									GradeDTO otherGrade = GetProjectGrade(courseInstanceID, (int)currentProject.OnlyHigherThanProjectId, personSSN);
+									if (otherGrade.Grade > currentGrade.Grade)
+									{
+										Project otherProject = _projects.All().SingleOrDefault(p => p.ID == currentProject.OnlyHigherThanProjectId);
+										
+
+										//Increase the weight of the other project
+										if (finishedIDs.Contains((int)currentProject.OnlyHigherThanProjectId))
+										{
+											//We have already added the other project
+											returnValue.Grade -= (int)otherGrade.Grade / 1000.0 * otherProject.Weight;
+											returnValue.PercentageComplete -= otherProject.Weight;
+										}
+
+										returnValue.Grade += (int)otherGrade.Grade / 1000.0 * (otherProject.Weight + currentProject.Weight);
+										returnValue.PercentageComplete += currentProject.Weight + otherProject.Weight;
+										finishedIDs.Add(currentProject.ID);
+									}
+									else
+									{
+										returnValue.Grade += (int)currentGrade.Grade / 1000.0 * currentProject.Weight;
+										returnValue.PercentageComplete += currentProject.Weight;
+										finishedIDs.Add(currentProject.ID);
+									}
+								}
+							}
 						}
 					}
 				}
-
 
 				
 			}

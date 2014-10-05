@@ -55,6 +55,11 @@ namespace CoursesAPI.Controllers
             return Request.CreateResponse(System.Net.HttpStatusCode.Created);
         }
 
+        /// <summary>
+        /// deletes a project from the course
+        /// </summary>
+        /// <param name="courseInstanceID">The Id of the courseInstance, gotten from the URL</param>
+        /// <param name="ProjectId">The Id of the project, gotten from the URL</param>
         [HttpDelete]
         [Route("project/{projectId:int}")]
         public void DeleteProject(int courseInstanceId, int projectId)
@@ -62,14 +67,27 @@ namespace CoursesAPI.Controllers
             _service.RemoveProjectFromCourse(courseInstanceId, projectId);
         }
 
+        /// <summary>
+        /// Makes a new project-group
+        /// </summary>
+        /// <param name="courseInstanceID">The Id of the courseInstance, gotten from the URL</param>
+        /// <param name="model">The project-group that is to be added, gotten from the request payload</param>
+        /// <returns>Status code, depending on the correctness of the payload</returns>
         [HttpPost]
         [Route("projectgroup")]
-        public void MakeProjectGroup(int courseInstanceID, AddProjectGroupViewModel model)
+        public HttpResponseMessage MakeProjectGroup(int courseInstanceID, AddProjectGroupViewModel model)
         {
             _service.MakeProjectGroup(model);
+
+            return Request.CreateResponse(System.Net.HttpStatusCode.Created);
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="courseInstanceID">The Id of the courseInstance, gotten from the URL</param>
+        /// <param name="model"></param>
+        /// <returns>Status code, depending on the correctness of the payload</returns>
 		[HttpPut]
 		[Route("finalGradeComposition")]
 		public HttpResponseMessage MakeFinalGradeComposition(int courseInstanceId, AddFinalGradeCompositionViewModel model)
@@ -97,6 +115,7 @@ namespace CoursesAPI.Controllers
 
 			return Request.CreateResponse(System.Net.HttpStatusCode.Created, "Final grade composition created");
 		}
+
 		/// <summary>
 		/// Add a grade for a given person for a given project
 		/// </summary>
@@ -130,8 +149,13 @@ namespace CoursesAPI.Controllers
 			return Request.CreateResponse(System.Net.HttpStatusCode.Created, "Grade created");
 		}
 
-        //TODO: Need to decide about the SSN in route
-        // public List<int> GetGrade(int courseInstanceId, int projectId, ProjectViewModel personId)
+        /// <summary>
+        /// gets a grade for a given person for a given project
+        /// </summary>
+        /// <param name="courseInstanceID">The Id of the courseInstance, gotten from the URL</param>
+        /// <param name="projectID">The Id of the project, gotten from the URL</param>
+        /// <param name="ssn">The ssn of the student, gotten from the URL</param>
+        /// <returns>Status code, depending on the correctness of the payload</returns>
         [HttpGet]
         [Route("project/{projectID:int}/grade/{ssn}")]
         public HttpResponseMessage GetProjectGrade(int courseInstanceId, int projectId, String ssn)
@@ -154,7 +178,12 @@ namespace CoursesAPI.Controllers
             return Request.CreateResponse(System.Net.HttpStatusCode.OK, result);
         }
 
-		//TODO: Add correct return type
+        /// <summary>
+        /// Gets the final grade
+        /// </summary>
+        /// <param name="courseInstanceID">The Id of the courseInstance, gotten from the URL</param>
+        /// <param name="personSSN">The SSN of the Student, gotten from the URL</param>
+        /// <returns>Status code, depending on the correctness of the payload</returns>
 		[HttpGet]
 		[Route("finalGrade/{personSSN}")]
 		public HttpResponseMessage GetFinalGrade(int courseInstanceId, String personSSN)
@@ -185,6 +214,11 @@ namespace CoursesAPI.Controllers
 			return Request.CreateResponse(HttpStatusCode.OK, result);
 		}
 
+        /// <summary>
+        /// Gets the final grade for all students in course
+        /// </summary>
+        /// <param name="courseInstanceID">The Id of the courseInstance, gotten from the URL</param>
+        /// <returns>Status code, depending on the correctness of the payload</returns>
 		[HttpGet]
 		[Route("finalGrade/all")]
 		public HttpResponseMessage GetAllFinalGrades(int courseInstanceId)
@@ -195,6 +229,12 @@ namespace CoursesAPI.Controllers
 			return Request.CreateResponse(HttpStatusCode.OK, result);
 		}
 
+        /// <summary>
+        /// Gets all grades for a given course
+        /// </summary>
+        /// <param name="courseInstanceID">The Id of the courseInstance, gotten from the URL</param>
+        /// <param name="projectId">The Id of the project, gotten from the URL</param>
+        /// <returns>Status code, depending on the correctness of the payload</returns>
         [HttpGet]
         [Route("project/{projectId:int}/allGrades")]
         public HttpResponseMessage GetAllGrades(int courseInstanceId, int projectId)

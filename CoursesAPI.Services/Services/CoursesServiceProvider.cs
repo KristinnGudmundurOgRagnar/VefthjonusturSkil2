@@ -471,7 +471,6 @@ namespace CoursesAPI.Services.Services
 			//See if the courseInstance exists
             CourseInstance theCourse = _courseInstances.GetCourseByID(courseInstanceId);
 
-			
 			//Validate the viewmodel
 			List<Project> theProjects = _projects.All().Where(p => model.Projects.Contains(p.ID)).ToList();
 			int totalWeight = 0;

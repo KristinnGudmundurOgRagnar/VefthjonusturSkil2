@@ -1176,7 +1176,9 @@ namespace CoursesAPI.Tests.Services
 		}
 
 
-
+		/// <summary>
+		/// Tests PUT /finalGradeComposition
+		/// </summary>
 		[TestMethod]
 		public void TestMakeFinalGradeComposition()
 		{

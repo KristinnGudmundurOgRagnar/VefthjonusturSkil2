@@ -7,6 +7,7 @@ using CoursesAPI.Services.DataAccess;
 using CoursesAPI.Services.Models.Entities;
 using CoursesAPI.Services.Helpers;
 using CoursesAPI.Services.Exceptions;
+using CoursesAPI.Services.Extensions;
 
 namespace CoursesAPI.Services.Services
 {
@@ -312,13 +313,8 @@ namespace CoursesAPI.Services.Services
         /// <param name="model">Viewmodel containing objects to put in the current project</param>
         public void AddProjectToCourse(int id, AddProjectViewModel model)
         {
-            var course = _courseInstances.All().SingleOrDefault(c => c.ID == id);
 
-            if(course == null)
-            {
-                throw new ArgumentException("Invalid course instance id");
-            }
-
+            var course = _courseInstances.GetCourseByID(id);
             
             var projectGroup = _projectGroups.All().SingleOrDefault(g => g.ID == model.ProjectGroupId);
 
@@ -348,12 +344,7 @@ namespace CoursesAPI.Services.Services
         /// <param name="projectId">Id of the project</param>
         public void RemoveProjectFromCourse(int courseId, int projectId)
         {
-            var course = _courseInstances.All().SingleOrDefault(c => c.ID == courseId);
-
-            if (course == null)
-            {
-                throw new ArgumentException("Invalid course instance id");
-            }
+            var course = _courseInstances.GetCourseByID(courseId);
 
             try
             {
@@ -361,7 +352,7 @@ namespace CoursesAPI.Services.Services
 
                 if (project == null)
                 {
-                    throw new Exception("no project found with that id");
+                    throw new Exception("No project found with that id");
                 }
 
                 _projects.Delete(project);
@@ -369,7 +360,7 @@ namespace CoursesAPI.Services.Services
             }
             catch (Exception)
             {
-                throw new Exception("found two projects with same id");
+                throw new Exception("Found two projects with same id");
             }
         }
 
@@ -380,17 +371,11 @@ namespace CoursesAPI.Services.Services
         /// <param name="model">viewmodel of project to add</param>
         public int PercentCompleted(int id, AddProjectViewModel model)
         {
-            CourseInstance theCourse = _courseInstances.All().SingleOrDefault(c => c.ID == id);
-
-            if (theCourse == null)
-            {
-                throw new KeyNotFoundException("No course instance found with this ID");
-            }
+            CourseInstance theCourse = _courseInstances.GetCourseByID(id);
 
             int PrecentComplete = 0;
 
-            Dictionary<int, int> myLists =
-            new Dictionary<int, int>();
+            Dictionary<int, int> myLists = new Dictionary<int, int>();
 
             var projects = GetProjectsForCourse(id);
 
@@ -408,6 +393,7 @@ namespace CoursesAPI.Services.Services
                     }
                 }
             }
+
             bool groupexist = false;
             foreach (KeyValuePair<int, int> pair in myLists)
             {
@@ -415,7 +401,7 @@ namespace CoursesAPI.Services.Services
 
                 if (group == null)
                 {
-                    throw new Exception("something went wrong in weightleft()");
+                    throw new Exception("Found two or more project groups with the same id");
                 }
                 if (model.ProjectGroupId == pair.Key)
                 {

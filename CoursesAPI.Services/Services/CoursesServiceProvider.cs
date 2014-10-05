@@ -183,9 +183,9 @@ namespace CoursesAPI.Services.Services
 		#region Language methods
 
         /// <summary>
-        /// 
+        /// Dummy function representing the method for getting language by their name
         /// </summary>
-        /// <param name="name"></param>
+        /// <param name="name">The language</param>
         /// <returns></returns>
         public LanguageViewModel GetLanguageByName(string name)
         {
@@ -195,9 +195,9 @@ namespace CoursesAPI.Services.Services
         }
 
         /// <summary>
-        /// 
+        /// Dummy function representing the method of getting language by their id
         /// </summary>
-        /// <param name="id"></param>
+        /// <param name="id">Id of the language</param>
         /// <returns></returns>
         public LanguageViewModel GetLanguageById(int id)
         {

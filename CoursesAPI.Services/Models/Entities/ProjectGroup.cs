@@ -7,6 +7,10 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CoursesAPI.Services.Models.Entities
 {
+    /// <summary>
+    /// Some projects may be in group so they can be evaluated together to get
+    /// a final grade based on e.g. top three grades
+    /// </summary>
 	[Table("ProjectGroups")]
 	public class ProjectGroup
 	{

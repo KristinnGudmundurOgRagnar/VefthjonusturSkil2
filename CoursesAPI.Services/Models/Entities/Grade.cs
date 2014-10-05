@@ -7,6 +7,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CoursesAPI.Services.Models.Entities
 {
+    /// <summary>
+    /// Each grade has a single Grades object associated with it.
+    /// </summary>
 	[Table("Grades")]
 	public class Grade
 	{

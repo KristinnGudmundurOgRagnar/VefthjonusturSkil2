@@ -7,6 +7,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CoursesAPI.Services.Models.Entities
 {
+    /// <summary>
+    /// Used to connect all projects to a course for grading purpose
+    /// </summary>
 	[Table("FinalGradeCompositions")]
 	public class FinalGradeComposition
 	{

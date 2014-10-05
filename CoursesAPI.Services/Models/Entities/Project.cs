@@ -7,6 +7,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CoursesAPI.Services.Models.Entities
 {
+    /// <summary>
+    /// Projects object for holding information about the project
+    /// </summary>
 	[Table("Projects")]
 	public class Project
 	{

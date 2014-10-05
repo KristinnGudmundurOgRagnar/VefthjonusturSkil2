@@ -7,6 +7,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CoursesAPI.Services.Models.Entities
 {
+    /// <summary>
+    /// Registration object for students registered to a course
+    /// </summary>
 	[Table("PersonRegistrations")]
 	public class PersonRegistration
 	{

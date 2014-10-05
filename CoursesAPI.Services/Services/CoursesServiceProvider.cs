@@ -375,14 +375,13 @@ namespace CoursesAPI.Services.Services
             {
                 if (p.ProjectGroupId == null)
                 {
+                    //Project is not a part of a group, so weight is added
                     PrecentComplete += p.Weight;
                 }
-                else
+                else if (!(myLists.ContainsKey(p.ProjectGroupId.Value)))
                 {
-                    if (!(myLists.ContainsKey(p.ProjectGroupId.Value)))
-                    {
-                        myLists.Add(p.ProjectGroupId.Value, p.Weight);
-                    }
+                    //Put the project-group and weight in our dictionary
+                    myLists.Add(p.ProjectGroupId.Value, p.Weight);
                 }
             }
 
@@ -393,13 +392,16 @@ namespace CoursesAPI.Services.Services
 
                 if (model.ProjectGroupId.Value == pair.Key)
                 {
+                    //the model is in a group of projects thats already in the course
                     groupexist = true;
                 }
+                //add the total weight of the group
                 PrecentComplete += group.GradedProjectsCount * pair.Value;
             }
 
             if (!groupexist && model.ProjectGroupId != null)
             {
+                //a new group is being introduced to the course
                 var group = _projectGroups.All().SingleOrDefault(x => x.ID == model.ProjectGroupId);
 
                 PrecentComplete += model.Weight * group.GradedProjectsCount;

@@ -52,7 +52,8 @@ namespace CoursesAPI.Services.Services
 
 		#region Private helper classes
         /// <summary>
-        /// 
+        /// A helper class that contains information about projects in a project group
+		/// Used in order to calculate the x best grades out of y projects
         /// </summary>
 		private class ProjectGroupData{
 			public int ProjectGroupID { get; set; }
@@ -60,10 +61,11 @@ namespace CoursesAPI.Services.Services
 			public List<ProjectData> TheProjects = new List<ProjectData>();
 
             /// <summary>
-            /// 
+            /// Creates an instance of the class
             /// </summary>
-            /// <param name="ID"></param>
-            /// <param name="GradedProjectsCount"></param>
+            /// <param name="ID">The ID of the project group</param>
+            /// <param name="GradedProjectsCount">The number of projects that are used
+			/// to calculate the grade for the project group</param>
 			public ProjectGroupData(int ID, int GradedProjectsCount)
 			{
 				this.ProjectGroupID = ID;
@@ -71,10 +73,10 @@ namespace CoursesAPI.Services.Services
 			}
 
             /// <summary>
-            /// 
+            /// Adds a project to the project group to be used for calculations
             /// </summary>
-            /// <param name="Grade"></param>
-            /// <param name="Weight"></param>
+            /// <param name="Grade">The student's grade for the project</param>
+            /// <param name="Weight">The weight of the project</param>
 			public void AddProject(int? Grade, int Weight)
 			{
 				//This causes a NullReferenceException if Grade == null
@@ -85,7 +87,8 @@ namespace CoursesAPI.Services.Services
 			}
 
             /// <summary>
-            /// 
+            /// A helper class for ProjectGroupData, to contain information
+			/// about the projects in the project group
             /// </summary>
 			public class ProjectData
 			{
@@ -94,7 +97,7 @@ namespace CoursesAPI.Services.Services
 			}
 
             /// <summary>
-            /// Checks if all the weights are the same
+            /// Checks if the weights of all the projects in the project group are the same
             /// </summary>
             /// <returns></returns>
 			public bool validate()
@@ -116,9 +119,10 @@ namespace CoursesAPI.Services.Services
 			}
 
             /// <summary>
-            /// 
+            /// Calculates the total finalgrade value of the project group
             /// </summary>
-            /// <returns></returns>
+            /// <returns>The grade for the project group
+			/// and the combined weight of the project group</returns>
 			public FinalGradeDTO getTotalGrade()
 			{
 				if(!validate()){
@@ -233,12 +237,7 @@ namespace CoursesAPI.Services.Services
                 throw new MissingFieldException("Must provide id of the course");
             }
 
-            CourseInstance theCourse = _courseInstances.All().SingleOrDefault(c => c.ID == courseInstanceID);
-
-            if(theCourse == null)
-            {
-                throw new KeyNotFoundException("There is no course with this id");
-            }
+            CourseInstance theCourse = _courseInstances.GetCourseByID(courseInstanceID);
 
             var result = from tr in _teacherRegistrations.All()
                          join p in _persons.All() on tr.SSN equals p.SSN
@@ -320,13 +319,8 @@ namespace CoursesAPI.Services.Services
             }
 
             var course = _courseInstances.GetCourseByID(id);
-            
-            var projectGroup = _projectGroups.All().SingleOrDefault(g => g.ID == model.ProjectGroupId);
 
-            if(projectGroup == null && model.ProjectGroupId != null)
-            {
-                throw new KeyNotFoundException("No group found with this ID");
-            }
+            var projectGroup = _projectGroups.GetGroupByID(model.ProjectGroupId.Value);
 
             Project project = new Project
             {
@@ -353,12 +347,7 @@ namespace CoursesAPI.Services.Services
 
             try
             {
-                var project = _projects.All().SingleOrDefault(x => x.ID == projectId);
-
-                if (project == null)
-                {
-                    throw new Exception("No project found with that id");
-                }
+                var project = _projects.GetProjectByID(projectId);
 
                 _projects.Delete(project);
                 _uow.Save();
@@ -478,12 +467,7 @@ namespace CoursesAPI.Services.Services
 			}
 
 			//See if the courseInstance exists
-			CourseInstance theCourse = _courseInstances.All().SingleOrDefault(c => c.ID == courseInstanceId);
-
-			if (theCourse == null)
-			{
-				throw new KeyNotFoundException("No course instance found with this ID");
-			}
+            CourseInstance theCourse = _courseInstances.GetCourseByID(courseInstanceId);
 
 			
 			//Validate the viewmodel
@@ -574,25 +558,15 @@ namespace CoursesAPI.Services.Services
 				throw new MissingFieldException("A \"PersonSSN\" field is required");
 			}
 
-			if(viewModel.Grade < 0 || viewModel.Grade > 100){
-				throw new ArgumentException("The grade must be an integer value  between 0 and 100");
+			if(viewModel.Grade < 0){
+				throw new ArgumentException("The grade must be a positive integer value (A perfect score is 100)");
 			}
 			
 			//See if the courseInstance exists
-			CourseInstance theCourse = _courseInstances.All().SingleOrDefault(c => c.ID == courseInstanceID);
-
-			if (theCourse == null)
-			{
-				throw new KeyNotFoundException("No course instance found with this ID");
-			}
+            CourseInstance theCourse = _courseInstances.GetCourseByID(courseInstanceID);
 
 			//See if the project exist
-			Project theProject = _projects.All().SingleOrDefault(p => p.ID == projectID);
-
-			if (theProject == null)
-			{
-				throw new KeyNotFoundException("No project found with this ID in the given course instance");
-			}
+            Project theProject = _projects.GetProjectByID(projectID);
 
 			//See if the person is in the course
 			PersonRegistration thePerson = _personRegistrations.All().SingleOrDefault(p => p.PersonSSN == viewModel.PersonSSN 
@@ -662,12 +636,7 @@ namespace CoursesAPI.Services.Services
         public GradeDTO GetProjectGrade(int courseInstanceId, int projectId, String ssn)
         {
 			//See if the courseInstance exists
-			CourseInstance theCourse = _courseInstances.All().SingleOrDefault(c => c.ID == courseInstanceId);
-
-			if (theCourse == null)
-			{
-				throw new KeyNotFoundException("No course instance found with this ID");
-			}
+            CourseInstance theCourse = _courseInstances.GetCourseByID(courseInstanceId);
 
 			List<Grade> allGrades = (from gr in _grades.All()
 									join p in _projects.All() on gr.ProjectId equals p.ID
@@ -725,12 +694,7 @@ namespace CoursesAPI.Services.Services
 			}
 
 			//See if the courseInstance exists
-			CourseInstance theCourse = _courseInstances.All().SingleOrDefault(c => c.ID == courseInstanceID);
-
-			if (theCourse == null)
-			{
-				throw new KeyNotFoundException("No course instance found with this ID");
-			}
+            CourseInstance theCourse = _courseInstances.GetCourseByID(courseInstanceID);
 
 			//See if a FinalGradeComposition is registered for the course
 			List<FinalGradeComposition> theGradeComps = _finalGradeComps.All().Where(f => f.CourseInstanceId == courseInstanceID).ToList();
@@ -869,6 +833,9 @@ namespace CoursesAPI.Services.Services
 			returnValue.Grade = Math.Round(returnValue.Grade, MidpointRounding.AwayFromZero);
 			returnValue.Grade /= 2;
 
+			if(returnValue.Grade > 10){
+				returnValue.Grade = 10;
+			}
 			return returnValue;
 		}
 
@@ -912,12 +879,7 @@ namespace CoursesAPI.Services.Services
 		public List<FinalGradeDTO> GetAllFinalGrades(int courseInstanceId)
 		{
 			//See if the courseInstance exists
-			CourseInstance theCourse = _courseInstances.All().SingleOrDefault(c => c.ID == courseInstanceId);
-
-			if (theCourse == null)
-			{
-				throw new KeyNotFoundException("No course instance found with this ID");
-			}
+            CourseInstance theCourse = _courseInstances.GetCourseByID(courseInstanceId);
 
 			//See if a FinalGradeComposition is registered for the course
 			List<FinalGradeComposition> theGradeComps = _finalGradeComps.All().Where(f => f.CourseInstanceId == courseInstanceId).ToList();
@@ -973,12 +935,7 @@ namespace CoursesAPI.Services.Services
         public List<GradeDTO> GetAllGrades(int courseInstanceId, int projectId)
         {
             //See if the courseInstance exists
-            CourseInstance theCourse = _courseInstances.All().SingleOrDefault(c => c.ID == courseInstanceId);
-
-            if (theCourse == null)
-            {
-                throw new KeyNotFoundException("No course instance found with this ID");
-            }
+            CourseInstance theCourse = _courseInstances.GetCourseByID(courseInstanceId);
 
             // See if projects does exist
             List<Project> theProjects = (from p in _projects.All()

@@ -34,9 +34,20 @@ namespace CoursesAPI.Controllers
 		/// <returns>A list of all the projects in the course</returns>
         [HttpGet]
         [Route("project")]
-        public List<Project> GetProjects(int courseInstanceID)
+        public HttpResponseMessage GetProjects(int courseInstanceID)
         {
-            return _service.GetProjectsForCourse(courseInstanceID);
+            List<Project> projects;
+
+            try
+            {
+                 projects = _service.GetProjectsForCourse(courseInstanceID);
+            }
+            catch (Exception e)
+            {
+                return Request.CreateResponse(System.Net.HttpStatusCode.InternalServerError, e.Message);
+            }
+
+            return Request.CreateResponse(System.Net.HttpStatusCode.OK, projects);
         }
 
 		/// <summary>
@@ -72,9 +83,22 @@ namespace CoursesAPI.Controllers
         /// <param name="model">The project that is to be deleted, gotten from the request payload</param>
         [HttpDelete]
         [Route("project")]
-        public void DeleteProject(int courseInstanceId, DeleteProjectViewModel model)
+        public HttpResponseMessage DeleteProject(int courseInstanceId, DeleteProjectViewModel model)
         {
-            _service.RemoveProjectFromCourse(courseInstanceId, model);
+            try
+            {
+                _service.RemoveProjectFromCourse(courseInstanceId, model);
+            }
+            catch (KeyNotFoundException e)
+            {
+                return Request.CreateResponse(System.Net.HttpStatusCode.NotFound, e.Message);
+            }
+            catch (Exception e)
+            {
+                return Request.CreateResponse(System.Net.HttpStatusCode.InternalServerError, e.Message);
+            }
+
+            return Request.CreateResponse(System.Net.HttpStatusCode.OK, "Project has been deleted");
         }
 
         /// <summary>
@@ -87,9 +111,20 @@ namespace CoursesAPI.Controllers
         [Route("projectgroup")]
         public HttpResponseMessage MakeProjectGroup(int courseInstanceID, AddProjectGroupViewModel model)
         {
-            _service.MakeProjectGroup(model);
+            try
+            {
+                _service.MakeProjectGroup(model);
+            }
+            catch (MissingFieldException e)
+            {
+                return Request.CreateResponse(System.Net.HttpStatusCode.BadRequest, e.Message);
+            }
+            catch (Exception e)
+            {
+                return Request.CreateResponse(System.Net.HttpStatusCode.InternalServerError, e.Message);
+            }
 
-            return Request.CreateResponse(System.Net.HttpStatusCode.Created);
+            return Request.CreateResponse(System.Net.HttpStatusCode.Created, "Project-group created");
         }
 
         /// <summary>
@@ -233,9 +268,21 @@ namespace CoursesAPI.Controllers
 		[Route("finalGrade/all")]
 		public HttpResponseMessage GetAllFinalGrades(int courseInstanceId)
 		{
-			//TODO: Implement
-			List<FinalGradeDTO> result = _service.GetAllFinalGrades(courseInstanceId);
+            List<FinalGradeDTO> result;
 
+            try
+            {
+                result = _service.GetAllFinalGrades(courseInstanceId);
+            }
+            catch (KeyNotFoundException e)
+            {
+                return Request.CreateResponse(System.Net.HttpStatusCode.NotFound, e.Message);
+            }
+            catch (Exception e)
+			{
+				return Request.CreateResponse(System.Net.HttpStatusCode.InternalServerError, e.Message);
+			}
+			
 			return Request.CreateResponse(HttpStatusCode.OK, result);
 		}
 

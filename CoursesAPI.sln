@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoursesAPI", "CoursesAPI\CoursesAPI.csproj", "{E348ABBA-82C5-43D8-9A81-F13B590D5C0D}"
 EndProject
@@ -18,6 +18,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityApplicationAPI", "IdentityApplicationAPI\IdentityApplicationAPI.csproj", "{D4D085FA-BED9-466F-A8AE-5A097DC93FE5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ODataApplication", "ODataApplication\ODataApplication.csproj", "{5AE18934-AEAC-433E-91D1-D7791FBB01F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{740252F9-3685-4F4E-BA59-D050A3BABFBC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

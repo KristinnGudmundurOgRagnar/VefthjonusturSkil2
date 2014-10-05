@@ -353,16 +353,7 @@ namespace CoursesAPI.Services.Services
         /// <param name="projectId">Id of the project</param>
         public void RemoveProjectFromCourse(int courseId, int projectId)
         {
-<<<<<<< HEAD
-            var course = _courseInstances.All().SingleOrDefault(c => c.ID == courseId);
-
-            if (course == null)
-            {
-                throw new ArgumentException("No course instance found with this ID");
-            }
-=======
             var course = _courseInstances.GetCourseByID(courseId);
->>>>>>> 890439c92e16d8f81ac7d949f00fd8e373715ae1
 
             try
             {

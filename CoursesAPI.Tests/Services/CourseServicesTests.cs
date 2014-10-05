@@ -662,7 +662,8 @@ namespace CoursesAPI.Tests.Services
 		}
 
 		/// <summary>
-		/// Tests GET /finalGrade
+		/// Tests GET /finalGrade/personSSN
+		/// Tests GET /finalGrade/all
 		/// </summary>
 		[TestMethod]
 		public void TestGetFinalGrade()
@@ -800,7 +801,39 @@ namespace CoursesAPI.Tests.Services
 			Assert.AreEqual(2, finalGrade.PositionUpper);
 			Assert.AreEqual(personSSN1, finalGrade.PersonSSN);
 			Assert.AreEqual("OK", finalGrade.Status);
+			exceptionThrown = false;
 
+			//Get all the final grades from a course with students who have both all grades and no grades
+			List<FinalGradeDTO> allFinalGrades = null;
+			try
+			{
+				allFinalGrades = _service.GetAllFinalGrades(3);
+			}
+			catch(Exception e){
+				exceptionThrown = true;
+			}
+
+			Assert.IsFalse(exceptionThrown);
+			Assert.AreEqual(3, allFinalGrades.Count);
+
+			List<double> temp = new List<double>();
+			foreach(FinalGradeDTO f in allFinalGrades){
+				temp.Add(f.Grade);
+			}
+
+			CollectionAssert.Contains(temp, 0.0);
+			CollectionAssert.Contains(temp, 10.0);
+			CollectionAssert.DoesNotContain(temp, null);
+
+
+			List<int> tempIntList = new List<int>();
+			foreach(FinalGradeDTO f in allFinalGrades){
+				tempIntList.Add(f.PercentageComplete);
+			}
+
+			CollectionAssert.Contains(tempIntList, 0);
+			CollectionAssert.Contains(tempIntList, 100);
+			CollectionAssert.DoesNotContain(tempIntList, null);
 		}
 
 		/// <summary>

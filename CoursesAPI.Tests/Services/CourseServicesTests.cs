@@ -584,6 +584,7 @@ namespace CoursesAPI.Tests.Services
 		{
 			//Get projects from a course that does not exist
 			var theProjects = _service.GetProjectsForCourse(invalidCourseInstanceID);
+			bool exceptionThrown = false;
 
 			Assert.AreEqual(0, theProjects.Count);
 
@@ -608,12 +609,14 @@ namespace CoursesAPI.Tests.Services
 			}
 			catch (Exception e)
 			{
-
+				exceptionThrown = true;
 			}
 
+			Assert.IsTrue(exceptionThrown);
 			theProjects = _service.GetProjectsForCourse(1);
 
 			Assert.AreEqual(0, theProjects.Count);
+			exceptionThrown = false;
 
 
 
@@ -631,12 +634,14 @@ namespace CoursesAPI.Tests.Services
 			}
 			catch (Exception e)
 			{
-
+				exceptionThrown = true;
 			}
 
+			Assert.IsTrue(exceptionThrown);
 			theProjects = _service.GetProjectsForCourse(invalidCourseInstanceID);
 
 			Assert.AreEqual(0, theProjects.Count);
+			exceptionThrown = false;
 
 
 			//Add a valid project to a valid course
@@ -653,10 +658,12 @@ namespace CoursesAPI.Tests.Services
 			}
 			catch (Exception e)
 			{
-
+				exceptionThrown = true;
 			}
 
+			Assert.IsFalse(exceptionThrown);
 			theProjects = _service.GetProjectsForCourse(1);
+			exceptionThrown = false;
 
 			Assert.AreEqual(1, theProjects.Count);
 		}

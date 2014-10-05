@@ -320,7 +320,9 @@ namespace CoursesAPI.Services.Services
 
             var course = _courseInstances.GetCourseByID(id);
 
-            var projectGroup = _projectGroups.GetGroupByID(model.ProjectGroupId.Value);
+			if(model.ProjectGroupId != null){
+				var projectGroup = _projectGroups.GetGroupByID(model.ProjectGroupId.Value);
+			}
 
             Project project = new Project
             {

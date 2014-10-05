@@ -424,7 +424,7 @@ namespace CoursesAPI.Services.Services
         /// the sum of the grades divided by their count.
         /// </summary>
         /// <param name="model">A name of the group and number of projects to be evaluated</param>
-        public void MakeProjectGroup(AddProjectGroupViewModel model)
+        public void MakeProjectGroup(int courseInstanceID, AddProjectGroupViewModel model)
         {
             if(model == null)
             {
@@ -440,6 +440,10 @@ namespace CoursesAPI.Services.Services
             {
                 throw new MissingFieldException("A \"GradedProjectsCount\" field is required");
             }
+
+			if(_courseInstances.GetCourseByID(courseInstanceID) == null){
+				throw new ArgumentException("No course instance found with the given ID");
+			}
 
             ProjectGroup group = new ProjectGroup
             {
@@ -607,6 +611,15 @@ namespace CoursesAPI.Services.Services
 
             return result.ToList();
         }
+
+
+		public List<ProjectGroup> GetProjectGroups()
+		{
+			var result = from p in _projectGroups.All()
+						 select p;
+
+			return result.ToList();
+		}
 
         /// <summary>
         /// Get student grade in project and return his grade, position based on all students grades

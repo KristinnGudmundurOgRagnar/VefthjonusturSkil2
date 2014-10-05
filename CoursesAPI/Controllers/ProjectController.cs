@@ -113,7 +113,7 @@ namespace CoursesAPI.Controllers
         {
             try
             {
-                _service.MakeProjectGroup(model);
+                _service.MakeProjectGroup(courseInstanceID, model);
             }
             catch (MissingFieldException e)
             {

@@ -1094,5 +1094,85 @@ namespace CoursesAPI.Tests.Services
 			Assert.AreEqual(1, currentProjects.Count);
 			exceptionThrown = false;
 		}
+
+
+		/// <summary>
+		/// Tests POST /projectGroup/
+		/// </summary>
+		[TestMethod]
+		public void TestAddProjectGroup()
+		{
+			bool exceptionThrown = false;
+			List<ProjectGroup> currentProjectGroups = null;
+
+			//Try to add an invalid project
+			try
+			{
+				_service.MakeProjectGroup(1, new AddProjectGroupViewModel
+				{
+					Name = "Project group 1",
+					GradedProjectsCount = null
+				});
+			}
+			catch (Exception e)
+			{
+				exceptionThrown = true;
+			}
+
+
+			Assert.IsTrue(exceptionThrown);
+			exceptionThrown = false;
+
+
+			//Assert the number of project groups
+			try
+			{
+				currentProjectGroups = _service.GetProjectGroups();
+			}
+			catch (Exception e)
+			{
+				exceptionThrown = true;
+			}
+
+
+			Assert.IsFalse(exceptionThrown);
+			Assert.AreEqual(1, currentProjectGroups.Count);
+			exceptionThrown = false;
+
+
+			//Try to add a valid project group 
+			try
+			{
+				_service.MakeProjectGroup(1, new AddProjectGroupViewModel
+				{
+					Name = "Test project group 1",
+					GradedProjectsCount = 2
+				});
+			}
+			catch (Exception e)
+			{
+				exceptionThrown = true;
+			}
+
+
+			Assert.IsFalse(exceptionThrown);
+			exceptionThrown = false;
+
+
+			//Assert the number of projects
+			try
+			{
+				currentProjectGroups = _service.GetProjectGroups();
+			}
+			catch (Exception e)
+			{
+				exceptionThrown = true;
+			}
+
+
+			Assert.IsFalse(exceptionThrown);
+			Assert.AreEqual(2, currentProjectGroups.Count);
+			exceptionThrown = false;
+		}
 	}
 }

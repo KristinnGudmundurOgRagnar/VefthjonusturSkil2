@@ -342,6 +342,11 @@ namespace CoursesAPI.Services.Services
             _uow.Save();
         }
 
+        /// <summary>
+        /// Removes project from a given course
+        /// </summary>
+        /// <param name="courseId">Id of the course</param>
+        /// <param name="projectId">Id of the project</param>
         public void RemoveProjectFromCourse(int courseId, int projectId)
         {
             var course = _courseInstances.All().SingleOrDefault(c => c.ID == courseId);
@@ -369,6 +374,11 @@ namespace CoursesAPI.Services.Services
             }
         }
 
+        /// <summary>
+        /// Ceck if a user can add a project without going over 100 percent
+        /// </summary>
+        /// <param name="id">Id of the course</param>
+        /// <param name="model">viewmodel of project to add</param>
         public int PercentCompleted(int id, AddProjectViewModel model)
         {
             CourseInstance theCourse = _courseInstances.All().SingleOrDefault(c => c.ID == id);
@@ -594,10 +604,10 @@ namespace CoursesAPI.Services.Services
 		}
 
         /// <summary>
-        /// TODO
+        /// Gets all project with the given id as courseId
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="id">the course Id</param>
+        /// <returns>A list of projects</returns>
         public List<Project> GetProjectsForCourse(int id)
         {
 

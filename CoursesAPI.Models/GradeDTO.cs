@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace CoursesAPI.Models
 {
+    /// <summary>
+    /// A DTO of grade for a student.
+    /// </summary>
 	public class GradeDTO
 	{
         /// <summary>

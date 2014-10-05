@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace CoursesAPI.Models
 {
+    /// <summary>
+    /// ViewModel for adding Project group
+    /// </summary>
     public class AddProjectGroupViewModel
     {
         /// <summary>

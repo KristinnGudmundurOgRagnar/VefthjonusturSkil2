@@ -1009,5 +1009,90 @@ namespace CoursesAPI.Tests.Services
 			Assert.AreEqual(3, allGrades.Count);
 			exceptionThrown = false;
 		}
+
+
+		/// <summary>
+		/// Tests POST /project/
+		/// </summary>
+		[TestMethod]
+		public void TestAddProject()
+		{
+			bool exceptionThrown = false;
+			List<Project> currentProjects = null;
+
+			//Try to add an invalid project
+			try
+			{
+				_service.AddProjectToCourse(1, new AddProjectViewModel
+				{
+					Name = "Test project 1",
+					ProjectGroupId = null,
+					OnlyHigherThanProjectId = null,
+					Weight = -1,
+					MinGradeToPassCourse = 0
+				});
+			}
+			catch(Exception e){
+				exceptionThrown = true;
+			}
+
+
+			Assert.IsTrue(exceptionThrown);
+			exceptionThrown = false;
+
+
+			//Assert the number of projects
+			try
+			{
+				currentProjects = _service.GetProjectsForCourse(1);
+			}
+			catch (Exception e)
+			{
+				exceptionThrown = true;
+			}
+
+
+			Assert.IsFalse(exceptionThrown);
+			Assert.AreEqual(0, currentProjects.Count);
+			exceptionThrown = false;
+
+
+			//Try to add a valid project 
+			try
+			{
+				_service.AddProjectToCourse(1, new AddProjectViewModel
+				{
+					Name = "Test Project 1",
+					ProjectGroupId = null,
+					OnlyHigherThanProjectId = null,
+					Weight = 10,
+					MinGradeToPassCourse = 0
+				});
+			}
+			catch (Exception e)
+			{
+				exceptionThrown = true;
+			}
+
+
+			Assert.IsFalse(exceptionThrown);
+			exceptionThrown = false;
+
+
+			//Assert the number of projects
+			try
+			{
+				currentProjects = _service.GetProjectsForCourse(1);
+			}
+			catch (Exception e)
+			{
+				exceptionThrown = true;
+			}
+
+
+			Assert.IsFalse(exceptionThrown);
+			Assert.AreEqual(1, currentProjects.Count);
+			exceptionThrown = false;
+		}
 	}
 }

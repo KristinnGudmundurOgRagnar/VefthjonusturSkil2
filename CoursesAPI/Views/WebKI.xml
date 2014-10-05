@@ -1,0 +1,909 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="Add method">
+    <HelpKINode Title="IRepository(T).Add Method " Url="html/M_CoursesAPI_Services_DataAccess_IRepository_1_Add.htm" />
+    <HelpKINode Title="MockRepository(T).Add Method " Url="html/M_CoursesAPI_Tests_MockObjects_MockRepository_1_Add.htm" />
+    <HelpKINode Title="Repository(T).Add Method " Url="html/M_CoursesAPI_Services_DataAccess_Repository_1_Add.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AddFinalGradeCompositionViewModel class">
+    <HelpKINode Title="AddFinalGradeCompositionViewModel Class" Url="html/T_CoursesAPI_Models_AddFinalGradeCompositionViewModel.htm" />
+    <HelpKINode Title="about AddFinalGradeCompositionViewModel class" Url="html/T_CoursesAPI_Models_AddFinalGradeCompositionViewModel.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Models_AddFinalGradeCompositionViewModel__ctor.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_CoursesAPI_Models_AddFinalGradeCompositionViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AddFinalGradeCompositionViewModel.AddFinalGradeCompositionViewModel constructor" Url="html/M_CoursesAPI_Models_AddFinalGradeCompositionViewModel__ctor.htm" />
+  <HelpKINode Title="AddFinalGradeCompositionViewModel.Projects property" Url="html/P_CoursesAPI_Models_AddFinalGradeCompositionViewModel_Projects.htm" />
+  <HelpKINode Title="AddGradeViewModel class">
+    <HelpKINode Title="AddGradeViewModel Class" Url="html/T_CoursesAPI_Models_AddGradeViewModel.htm" />
+    <HelpKINode Title="about AddGradeViewModel class" Url="html/T_CoursesAPI_Models_AddGradeViewModel.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Models_AddGradeViewModel__ctor.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_CoursesAPI_Models_AddGradeViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AddGradeViewModel.AddGradeViewModel constructor" Url="html/M_CoursesAPI_Models_AddGradeViewModel__ctor.htm" />
+  <HelpKINode Title="AddGradeViewModel.Grade property" Url="html/P_CoursesAPI_Models_AddGradeViewModel_Grade.htm" />
+  <HelpKINode Title="AddGradeViewModel.PersonSSN property" Url="html/P_CoursesAPI_Models_AddGradeViewModel_PersonSSN.htm" />
+  <HelpKINode Title="AddProject method" Url="html/M_CoursesAPI_Controllers_ProjectController_AddProject.htm" />
+  <HelpKINode Title="AddProjectGroupViewModel class">
+    <HelpKINode Title="AddProjectGroupViewModel Class" Url="html/T_CoursesAPI_Models_AddProjectGroupViewModel.htm" />
+    <HelpKINode Title="about AddProjectGroupViewModel class" Url="html/T_CoursesAPI_Models_AddProjectGroupViewModel.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Models_AddProjectGroupViewModel__ctor.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_CoursesAPI_Models_AddProjectGroupViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AddProjectGroupViewModel.AddProjectGroupViewModel constructor" Url="html/M_CoursesAPI_Models_AddProjectGroupViewModel__ctor.htm" />
+  <HelpKINode Title="AddProjectGroupViewModel.GradedProjectsCount property" Url="html/P_CoursesAPI_Models_AddProjectGroupViewModel_GradedProjectsCount.htm" />
+  <HelpKINode Title="AddProjectGroupViewModel.Name property" Url="html/P_CoursesAPI_Models_AddProjectGroupViewModel_Name.htm" />
+  <HelpKINode Title="AddProjectToCourse method" Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_AddProjectToCourse.htm" />
+  <HelpKINode Title="AddProjectViewModel class">
+    <HelpKINode Title="AddProjectViewModel Class" Url="html/T_CoursesAPI_Models_AddProjectViewModel.htm" />
+    <HelpKINode Title="about AddProjectViewModel class" Url="html/T_CoursesAPI_Models_AddProjectViewModel.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Models_AddProjectViewModel__ctor.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_CoursesAPI_Models_AddProjectViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AddProjectViewModel.AddProjectViewModel constructor" Url="html/M_CoursesAPI_Models_AddProjectViewModel__ctor.htm" />
+  <HelpKINode Title="AddProjectViewModel.MinGradeToPassCourse property" Url="html/P_CoursesAPI_Models_AddProjectViewModel_MinGradeToPassCourse.htm" />
+  <HelpKINode Title="AddProjectViewModel.Name property" Url="html/P_CoursesAPI_Models_AddProjectViewModel_Name.htm" />
+  <HelpKINode Title="AddProjectViewModel.OnlyHigherThanProjectId property" Url="html/P_CoursesAPI_Models_AddProjectViewModel_OnlyHigherThanProjectId.htm" />
+  <HelpKINode Title="AddProjectViewModel.ProjectGroupId property" Url="html/P_CoursesAPI_Models_AddProjectViewModel_ProjectGroupId.htm" />
+  <HelpKINode Title="AddProjectViewModel.Weight property" Url="html/P_CoursesAPI_Models_AddProjectViewModel_Weight.htm" />
+  <HelpKINode Title="All method">
+    <HelpKINode Title="IRepository(T).All Method " Url="html/M_CoursesAPI_Services_DataAccess_IRepository_1_All.htm" />
+    <HelpKINode Title="MockRepository(T).All Method " Url="html/M_CoursesAPI_Tests_MockObjects_MockRepository_1_All.htm" />
+    <HelpKINode Title="Repository(T).All Method " Url="html/M_CoursesAPI_Services_DataAccess_Repository_1_All.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AppDataContext class">
+    <HelpKINode Title="AppDataContext Class" Url="html/T_CoursesAPI_Services_DataAccess_AppDataContext.htm" />
+    <HelpKINode Title="about AppDataContext class" Url="html/T_CoursesAPI_Services_DataAccess_AppDataContext.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Services_DataAccess_AppDataContext__ctor.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_CoursesAPI_Services_DataAccess_AppDataContext.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AppDataContext.AppDataContext constructor" Url="html/M_CoursesAPI_Services_DataAccess_AppDataContext__ctor.htm" />
+  <HelpKINode Title="AppDataContext.CourseInstances property" Url="html/P_CoursesAPI_Services_DataAccess_AppDataContext_CourseInstances.htm" />
+  <HelpKINode Title="AppDataContext.CourseTemplates property" Url="html/P_CoursesAPI_Services_DataAccess_AppDataContext_CourseTemplates.htm" />
+  <HelpKINode Title="AppDataContext.FinalGradeCompositions property" Url="html/P_CoursesAPI_Services_DataAccess_AppDataContext_FinalGradeCompositions.htm" />
+  <HelpKINode Title="AppDataContext.Grades property" Url="html/P_CoursesAPI_Services_DataAccess_AppDataContext_Grades.htm" />
+  <HelpKINode Title="AppDataContext.PersonRegistrations property" Url="html/P_CoursesAPI_Services_DataAccess_AppDataContext_PersonRegistrations.htm" />
+  <HelpKINode Title="AppDataContext.Persons property" Url="html/P_CoursesAPI_Services_DataAccess_AppDataContext_Persons.htm" />
+  <HelpKINode Title="AppDataContext.ProjectGroups property" Url="html/P_CoursesAPI_Services_DataAccess_AppDataContext_ProjectGroups.htm" />
+  <HelpKINode Title="AppDataContext.Projects property" Url="html/P_CoursesAPI_Services_DataAccess_AppDataContext_Projects.htm" />
+  <HelpKINode Title="AppDataContext.Semesters property" Url="html/P_CoursesAPI_Services_DataAccess_AppDataContext_Semesters.htm" />
+  <HelpKINode Title="AppDataContext.TeacherRegistrations property" Url="html/P_CoursesAPI_Services_DataAccess_AppDataContext_TeacherRegistrations.htm" />
+  <HelpKINode Title="BundleConfig class">
+    <HelpKINode Title="BundleConfig Class" Url="html/T_CoursesAPI_BundleConfig.htm" />
+    <HelpKINode Title="about BundleConfig class" Url="html/T_CoursesAPI_BundleConfig.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_BundleConfig__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CoursesAPI_BundleConfig.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BundleConfig.BundleConfig constructor" Url="html/M_CoursesAPI_BundleConfig__ctor.htm" />
+  <HelpKINode Title="BundleConfig.RegisterBundles method" Url="html/M_CoursesAPI_BundleConfig_RegisterBundles.htm" />
+  <HelpKINode Title="CourseAPITracer class">
+    <HelpKINode Title="CourseAPITracer Class" Url="html/T_CoursesAPI_Tracers_CourseAPITracer.htm" />
+    <HelpKINode Title="about CourseAPITracer class" Url="html/T_CoursesAPI_Tracers_CourseAPITracer.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Tracers_CourseAPITracer__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CoursesAPI_Tracers_CourseAPITracer.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CourseAPITracer.CourseAPITracer constructor" Url="html/M_CoursesAPI_Tracers_CourseAPITracer__ctor.htm" />
+  <HelpKINode Title="CourseAPITracer.Trace method" Url="html/M_CoursesAPI_Tracers_CourseAPITracer_Trace.htm" />
+  <HelpKINode Title="CourseAPIValidation class">
+    <HelpKINode Title="CourseAPIValidation Class" Url="html/T_CoursesAPI_Services_Helpers_CourseAPIValidation.htm" />
+    <HelpKINode Title="about CourseAPIValidation class" Url="html/T_CoursesAPI_Services_Helpers_CourseAPIValidation.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Services_Helpers_CourseAPIValidation__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CoursesAPI_Services_Helpers_CourseAPIValidation.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CourseAPIValidation.CourseAPIValidation constructor" Url="html/M_CoursesAPI_Services_Helpers_CourseAPIValidation__ctor.htm" />
+  <HelpKINode Title="CourseAPIValidation.Validate(Of T) method" Url="html/M_CoursesAPI_Services_Helpers_CourseAPIValidation_Validate__1.htm" />
+  <HelpKINode Title="CourseAPIValidation.Validate&lt;T&gt; method" Url="html/M_CoursesAPI_Services_Helpers_CourseAPIValidation_Validate__1.htm" />
+  <HelpKINode Title="CourseID property">
+    <HelpKINode Title="CourseInstance.CourseID Property " Url="html/P_CoursesAPI_Services_Models_Entities_CourseInstance_CourseID.htm" />
+    <HelpKINode Title="CourseInstanceDTO.CourseID Property " Url="html/P_CoursesAPI_Models_CourseInstanceDTO_CourseID.htm" />
+    <HelpKINode Title="CourseTemplate.CourseID Property " Url="html/P_CoursesAPI_Services_Models_Entities_CourseTemplate_CourseID.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CourseInstance class">
+    <HelpKINode Title="CourseInstance Class" Url="html/T_CoursesAPI_Services_Models_Entities_CourseInstance.htm" />
+    <HelpKINode Title="about CourseInstance class" Url="html/T_CoursesAPI_Services_Models_Entities_CourseInstance.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Services_Models_Entities_CourseInstance__ctor.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_CoursesAPI_Services_Models_Entities_CourseInstance.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CourseInstance.CourseID property" Url="html/P_CoursesAPI_Services_Models_Entities_CourseInstance_CourseID.htm" />
+  <HelpKINode Title="CourseInstance.CourseInstance constructor" Url="html/M_CoursesAPI_Services_Models_Entities_CourseInstance__ctor.htm" />
+  <HelpKINode Title="CourseInstance.ID property" Url="html/P_CoursesAPI_Services_Models_Entities_CourseInstance_ID.htm" />
+  <HelpKINode Title="CourseInstance.SemesterID property" Url="html/P_CoursesAPI_Services_Models_Entities_CourseInstance_SemesterID.htm" />
+  <HelpKINode Title="CourseInstanceDTO class">
+    <HelpKINode Title="CourseInstanceDTO Class" Url="html/T_CoursesAPI_Models_CourseInstanceDTO.htm" />
+    <HelpKINode Title="about CourseInstanceDTO class" Url="html/T_CoursesAPI_Models_CourseInstanceDTO.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Models_CourseInstanceDTO__ctor.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_CoursesAPI_Models_CourseInstanceDTO.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CourseInstanceDTO.CourseID property" Url="html/P_CoursesAPI_Models_CourseInstanceDTO_CourseID.htm" />
+  <HelpKINode Title="CourseInstanceDTO.CourseInstanceDTO constructor" Url="html/M_CoursesAPI_Models_CourseInstanceDTO__ctor.htm" />
+  <HelpKINode Title="CourseInstanceDTO.CourseInstanceID property" Url="html/P_CoursesAPI_Models_CourseInstanceDTO_CourseInstanceID.htm" />
+  <HelpKINode Title="CourseInstanceDTO.MainTeacher property" Url="html/P_CoursesAPI_Models_CourseInstanceDTO_MainTeacher.htm" />
+  <HelpKINode Title="CourseInstanceDTO.Name property" Url="html/P_CoursesAPI_Models_CourseInstanceDTO_Name.htm" />
+  <HelpKINode Title="CourseInstanceExtentions class">
+    <HelpKINode Title="CourseInstanceExtentions Class" Url="html/T_CoursesAPI_Services_Extensions_CourseInstanceExtentions.htm" />
+    <HelpKINode Title="about CourseInstanceExtentions class" Url="html/T_CoursesAPI_Services_Extensions_CourseInstanceExtentions.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CoursesAPI_Services_Extensions_CourseInstanceExtentions.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CourseInstanceExtentions.GetCourseByID method" Url="html/M_CoursesAPI_Services_Extensions_CourseInstanceExtentions_GetCourseByID.htm" />
+  <HelpKINode Title="CourseInstanceID property">
+    <HelpKINode Title="TeacherRegistration.CourseInstanceID Property " Url="html/P_CoursesAPI_Services_Models_Entities_TeacherRegistration_CourseInstanceID.htm" />
+    <HelpKINode Title="CourseInstanceDTO.CourseInstanceID Property " Url="html/P_CoursesAPI_Models_CourseInstanceDTO_CourseInstanceID.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CourseInstanceId property">
+    <HelpKINode Title="FinalGradeComposition.CourseInstanceId Property " Url="html/P_CoursesAPI_Services_Models_Entities_FinalGradeComposition_CourseInstanceId.htm" />
+    <HelpKINode Title="PersonRegistration.CourseInstanceId Property " Url="html/P_CoursesAPI_Services_Models_Entities_PersonRegistration_CourseInstanceId.htm" />
+    <HelpKINode Title="Project.CourseInstanceId Property " Url="html/P_CoursesAPI_Services_Models_Entities_Project_CourseInstanceId.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CourseInstances property" Url="html/P_CoursesAPI_Services_DataAccess_AppDataContext_CourseInstances.htm" />
+  <HelpKINode Title="CoursesAPI namespace" Url="html/N_CoursesAPI.htm" />
+  <HelpKINode Title="CoursesAPI.BundleConfig class" Url="html/T_CoursesAPI_BundleConfig.htm" />
+  <HelpKINode Title="CoursesAPI.Controllers namespace" Url="html/N_CoursesAPI_Controllers.htm" />
+  <HelpKINode Title="CoursesAPI.Controllers.CoursesController class" Url="html/T_CoursesAPI_Controllers_CoursesController.htm" />
+  <HelpKINode Title="CoursesAPI.Controllers.HomeController class" Url="html/T_CoursesAPI_Controllers_HomeController.htm" />
+  <HelpKINode Title="CoursesAPI.Controllers.LanguageController class" Url="html/T_CoursesAPI_Controllers_LanguageController.htm" />
+  <HelpKINode Title="CoursesAPI.Controllers.ProjectController class" Url="html/T_CoursesAPI_Controllers_ProjectController.htm" />
+  <HelpKINode Title="CoursesAPI.Controllers.ValuesController class" Url="html/T_CoursesAPI_Controllers_ValuesController.htm" />
+  <HelpKINode Title="CoursesAPI.FilterConfig class" Url="html/T_CoursesAPI_FilterConfig.htm" />
+  <HelpKINode Title="CoursesAPI.LanguageMessageHandler class" Url="html/T_CoursesAPI_LanguageMessageHandler.htm" />
+  <HelpKINode Title="CoursesAPI.Models namespace" Url="html/N_CoursesAPI_Models.htm" />
+  <HelpKINode Title="CoursesAPI.Models.AddFinalGradeCompositionViewModel class" Url="html/T_CoursesAPI_Models_AddFinalGradeCompositionViewModel.htm" />
+  <HelpKINode Title="CoursesAPI.Models.AddGradeViewModel class" Url="html/T_CoursesAPI_Models_AddGradeViewModel.htm" />
+  <HelpKINode Title="CoursesAPI.Models.AddProjectGroupViewModel class" Url="html/T_CoursesAPI_Models_AddProjectGroupViewModel.htm" />
+  <HelpKINode Title="CoursesAPI.Models.AddProjectViewModel class" Url="html/T_CoursesAPI_Models_AddProjectViewModel.htm" />
+  <HelpKINode Title="CoursesAPI.Models.CourseInstanceDTO class" Url="html/T_CoursesAPI_Models_CourseInstanceDTO.htm" />
+  <HelpKINode Title="CoursesAPI.Models.DeleteProjectViewModel class" Url="html/T_CoursesAPI_Models_DeleteProjectViewModel.htm" />
+  <HelpKINode Title="CoursesAPI.Models.FinalGradeDTO class" Url="html/T_CoursesAPI_Models_FinalGradeDTO.htm" />
+  <HelpKINode Title="CoursesAPI.Models.GradeDTO class" Url="html/T_CoursesAPI_Models_GradeDTO.htm" />
+  <HelpKINode Title="CoursesAPI.Models.LanguageViewModel class" Url="html/T_CoursesAPI_Models_LanguageViewModel.htm" />
+  <HelpKINode Title="CoursesAPI.RouteConfig class" Url="html/T_CoursesAPI_RouteConfig.htm" />
+  <HelpKINode Title="CoursesAPI.Services.DataAccess namespace" Url="html/N_CoursesAPI_Services_DataAccess.htm" />
+  <HelpKINode Title="CoursesAPI.Services.DataAccess.AppDataContext class" Url="html/T_CoursesAPI_Services_DataAccess_AppDataContext.htm" />
+  <HelpKINode Title="CoursesAPI.Services.DataAccess.IDbContext interface" Url="html/T_CoursesAPI_Services_DataAccess_IDbContext.htm" />
+  <HelpKINode Title="CoursesAPI.Services.DataAccess.IRepository(Of T) interface" Url="html/T_CoursesAPI_Services_DataAccess_IRepository_1.htm" />
+  <HelpKINode Title="CoursesAPI.Services.DataAccess.IRepository&lt;T&gt; interface" Url="html/T_CoursesAPI_Services_DataAccess_IRepository_1.htm" />
+  <HelpKINode Title="CoursesAPI.Services.DataAccess.IUnitOfWork interface" Url="html/T_CoursesAPI_Services_DataAccess_IUnitOfWork.htm" />
+  <HelpKINode Title="CoursesAPI.Services.DataAccess.Repository(Of T) class" Url="html/T_CoursesAPI_Services_DataAccess_Repository_1.htm" />
+  <HelpKINode Title="CoursesAPI.Services.DataAccess.Repository&lt;T&gt; class" Url="html/T_CoursesAPI_Services_DataAccess_Repository_1.htm" />
+  <HelpKINode Title="CoursesAPI.Services.DataAccess.UnitOfWork(Of TContext) class" Url="html/T_CoursesAPI_Services_DataAccess_UnitOfWork_1.htm" />
+  <HelpKINode Title="CoursesAPI.Services.DataAccess.UnitOfWork&lt;TContext&gt; class" Url="html/T_CoursesAPI_Services_DataAccess_UnitOfWork_1.htm" />
+  <HelpKINode Title="CoursesAPI.Services.Exceptions namespace" Url="html/N_CoursesAPI_Services_Exceptions.htm" />
+  <HelpKINode Title="CoursesAPI.Services.Exceptions.CoursesAPIException class" Url="html/T_CoursesAPI_Services_Exceptions_CoursesAPIException.htm" />
+  <HelpKINode Title="CoursesAPI.Services.Exceptions.CoursesAPIObjectNotFoundException class" Url="html/T_CoursesAPI_Services_Exceptions_CoursesAPIObjectNotFoundException.htm" />
+  <HelpKINode Title="CoursesAPI.Services.Exceptions.CoursesAPIValidationException class" Url="html/T_CoursesAPI_Services_Exceptions_CoursesAPIValidationException.htm" />
+  <HelpKINode Title="CoursesAPI.Services.Exceptions.ErrorCodes class" Url="html/T_CoursesAPI_Services_Exceptions_ErrorCodes.htm" />
+  <HelpKINode Title="CoursesAPI.Services.Extensions namespace" Url="html/N_CoursesAPI_Services_Extensions.htm" />
+  <HelpKINode Title="CoursesAPI.Services.Extensions.CourseInstanceExtentions class" Url="html/T_CoursesAPI_Services_Extensions_CourseInstanceExtentions.htm" />
+  <HelpKINode Title="CoursesAPI.Services.Extensions.ProjectExtention class" Url="html/T_CoursesAPI_Services_Extensions_ProjectExtention.htm" />
+  <HelpKINode Title="CoursesAPI.Services.Extensions.ProjectGroupExtention class" Url="html/T_CoursesAPI_Services_Extensions_ProjectGroupExtention.htm" />
+  <HelpKINode Title="CoursesAPI.Services.Helpers namespace" Url="html/N_CoursesAPI_Services_Helpers.htm" />
+  <HelpKINode Title="CoursesAPI.Services.Helpers.CourseAPIValidation class" Url="html/T_CoursesAPI_Services_Helpers_CourseAPIValidation.htm" />
+  <HelpKINode Title="CoursesAPI.Services.Models.Entities namespace" Url="html/N_CoursesAPI_Services_Models_Entities.htm" />
+  <HelpKINode Title="CoursesAPI.Services.Models.Entities.CourseInstance class" Url="html/T_CoursesAPI_Services_Models_Entities_CourseInstance.htm" />
+  <HelpKINode Title="CoursesAPI.Services.Models.Entities.CourseTemplate class" Url="html/T_CoursesAPI_Services_Models_Entities_CourseTemplate.htm" />
+  <HelpKINode Title="CoursesAPI.Services.Models.Entities.FinalGradeComposition class" Url="html/T_CoursesAPI_Services_Models_Entities_FinalGradeComposition.htm" />
+  <HelpKINode Title="CoursesAPI.Services.Models.Entities.Grade class" Url="html/T_CoursesAPI_Services_Models_Entities_Grade.htm" />
+  <HelpKINode Title="CoursesAPI.Services.Models.Entities.Person class" Url="html/T_CoursesAPI_Services_Models_Entities_Person.htm" />
+  <HelpKINode Title="CoursesAPI.Services.Models.Entities.PersonRegistration class" Url="html/T_CoursesAPI_Services_Models_Entities_PersonRegistration.htm" />
+  <HelpKINode Title="CoursesAPI.Services.Models.Entities.Project class" Url="html/T_CoursesAPI_Services_Models_Entities_Project.htm" />
+  <HelpKINode Title="CoursesAPI.Services.Models.Entities.ProjectGroup class" Url="html/T_CoursesAPI_Services_Models_Entities_ProjectGroup.htm" />
+  <HelpKINode Title="CoursesAPI.Services.Models.Entities.Semester class" Url="html/T_CoursesAPI_Services_Models_Entities_Semester.htm" />
+  <HelpKINode Title="CoursesAPI.Services.Models.Entities.TeacherRegistration class" Url="html/T_CoursesAPI_Services_Models_Entities_TeacherRegistration.htm" />
+  <HelpKINode Title="CoursesAPI.Services.Services namespace" Url="html/N_CoursesAPI_Services_Services.htm" />
+  <HelpKINode Title="CoursesAPI.Services.Services.CoursesServiceProvider class" Url="html/T_CoursesAPI_Services_Services_CoursesServiceProvider.htm" />
+  <HelpKINode Title="CoursesAPI.Tests.MockObjects namespace" Url="html/N_CoursesAPI_Tests_MockObjects.htm" />
+  <HelpKINode Title="CoursesAPI.Tests.MockObjects.MockDataContext class" Url="html/T_CoursesAPI_Tests_MockObjects_MockDataContext.htm" />
+  <HelpKINode Title="CoursesAPI.Tests.MockObjects.MockRepository(Of T) class" Url="html/T_CoursesAPI_Tests_MockObjects_MockRepository_1.htm" />
+  <HelpKINode Title="CoursesAPI.Tests.MockObjects.MockRepository&lt;T&gt; class" Url="html/T_CoursesAPI_Tests_MockObjects_MockRepository_1.htm" />
+  <HelpKINode Title="CoursesAPI.Tests.MockObjects.MockUnitOfWork(Of T) class" Url="html/T_CoursesAPI_Tests_MockObjects_MockUnitOfWork_1.htm" />
+  <HelpKINode Title="CoursesAPI.Tests.MockObjects.MockUnitOfWork&lt;T&gt; class" Url="html/T_CoursesAPI_Tests_MockObjects_MockUnitOfWork_1.htm" />
+  <HelpKINode Title="CoursesAPI.Tests.Services namespace" Url="html/N_CoursesAPI_Tests_Services.htm" />
+  <HelpKINode Title="CoursesAPI.Tests.Services.CourseServicesTests class" Url="html/T_CoursesAPI_Tests_Services_CourseServicesTests.htm" />
+  <HelpKINode Title="CoursesAPI.Tests.TestExtensions namespace" Url="html/N_CoursesAPI_Tests_TestExtensions.htm" />
+  <HelpKINode Title="CoursesAPI.Tests.TestExtensions.ExpectedExceptionWithMessageAttribute class" Url="html/T_CoursesAPI_Tests_TestExtensions_ExpectedExceptionWithMessageAttribute.htm" />
+  <HelpKINode Title="CoursesAPI.Tracers namespace" Url="html/N_CoursesAPI_Tracers.htm" />
+  <HelpKINode Title="CoursesAPI.Tracers.CourseAPITracer class" Url="html/T_CoursesAPI_Tracers_CourseAPITracer.htm" />
+  <HelpKINode Title="CoursesAPI.WebApiApplication class" Url="html/T_CoursesAPI_WebApiApplication.htm" />
+  <HelpKINode Title="CoursesAPI.WebApiConfig class" Url="html/T_CoursesAPI_WebApiConfig.htm" />
+  <HelpKINode Title="CoursesAPIException class">
+    <HelpKINode Title="CoursesAPIException Class" Url="html/T_CoursesAPI_Services_Exceptions_CoursesAPIException.htm" />
+    <HelpKINode Title="about CoursesAPIException class" Url="html/T_CoursesAPI_Services_Exceptions_CoursesAPIException.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Services_Exceptions_CoursesAPIException__ctor.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CoursesAPIException.CoursesAPIException constructor" Url="html/M_CoursesAPI_Services_Exceptions_CoursesAPIException__ctor.htm" />
+  <HelpKINode Title="CoursesAPIObjectNotFoundException class">
+    <HelpKINode Title="CoursesAPIObjectNotFoundException Class" Url="html/T_CoursesAPI_Services_Exceptions_CoursesAPIObjectNotFoundException.htm" />
+    <HelpKINode Title="about CoursesAPIObjectNotFoundException class" Url="html/T_CoursesAPI_Services_Exceptions_CoursesAPIObjectNotFoundException.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Services_Exceptions_CoursesAPIObjectNotFoundException__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CoursesAPI_Services_Exceptions_CoursesAPIObjectNotFoundException.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_CoursesAPI_Services_Exceptions_CoursesAPIObjectNotFoundException.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CoursesAPIObjectNotFoundException.CoursesAPIObjectNotFoundException constructor" Url="html/M_CoursesAPI_Services_Exceptions_CoursesAPIObjectNotFoundException__ctor.htm" />
+  <HelpKINode Title="CoursesAPIObjectNotFoundException.GetValidationResults method" Url="html/M_CoursesAPI_Services_Exceptions_CoursesAPIObjectNotFoundException_GetValidationResults.htm" />
+  <HelpKINode Title="CoursesAPIObjectNotFoundException.ValidationResults property" Url="html/P_CoursesAPI_Services_Exceptions_CoursesAPIObjectNotFoundException_ValidationResults.htm" />
+  <HelpKINode Title="CoursesAPIValidationException class">
+    <HelpKINode Title="CoursesAPIValidationException Class" Url="html/T_CoursesAPI_Services_Exceptions_CoursesAPIValidationException.htm" />
+    <HelpKINode Title="about CoursesAPIValidationException class" Url="html/T_CoursesAPI_Services_Exceptions_CoursesAPIValidationException.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload_CoursesAPI_Services_Exceptions_CoursesAPIValidationException__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CoursesAPI_Services_Exceptions_CoursesAPIValidationException.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_CoursesAPI_Services_Exceptions_CoursesAPIValidationException.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CoursesAPIValidationException.CoursesAPIValidationException constructor" Url="html/Overload_CoursesAPI_Services_Exceptions_CoursesAPIValidationException__ctor.htm" />
+  <HelpKINode Title="CoursesAPIValidationException.GetMessage method" Url="html/M_CoursesAPI_Services_Exceptions_CoursesAPIValidationException_GetMessage.htm" />
+  <HelpKINode Title="CoursesAPIValidationException.GetValidationResults method" Url="html/M_CoursesAPI_Services_Exceptions_CoursesAPIValidationException_GetValidationResults.htm" />
+  <HelpKINode Title="CoursesAPIValidationException.ValidationResults property" Url="html/P_CoursesAPI_Services_Exceptions_CoursesAPIValidationException_ValidationResults.htm" />
+  <HelpKINode Title="CoursesController class">
+    <HelpKINode Title="CoursesController Class" Url="html/T_CoursesAPI_Controllers_CoursesController.htm" />
+    <HelpKINode Title="about CoursesController class" Url="html/T_CoursesAPI_Controllers_CoursesController.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Controllers_CoursesController__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CoursesAPI_Controllers_CoursesController.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CoursesController.CoursesController constructor" Url="html/M_CoursesAPI_Controllers_CoursesController__ctor.htm" />
+  <HelpKINode Title="CoursesController.GetCoursesOnSemester method" Url="html/M_CoursesAPI_Controllers_CoursesController_GetCoursesOnSemester.htm" />
+  <HelpKINode Title="CoursesController.GetCoursesOnSemester2 method" Url="html/M_CoursesAPI_Controllers_CoursesController_GetCoursesOnSemester2.htm" />
+  <HelpKINode Title="CoursesController.GetCourseTeachers method" Url="html/M_CoursesAPI_Controllers_CoursesController_GetCourseTeachers.htm" />
+  <HelpKINode Title="CourseServicesTests class">
+    <HelpKINode Title="CourseServicesTests Class" Url="html/T_CoursesAPI_Tests_Services_CourseServicesTests.htm" />
+    <HelpKINode Title="about CourseServicesTests class" Url="html/T_CoursesAPI_Tests_Services_CourseServicesTests.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Tests_Services_CourseServicesTests__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CoursesAPI_Tests_Services_CourseServicesTests.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CourseServicesTests.CourseServicesTests constructor" Url="html/M_CoursesAPI_Tests_Services_CourseServicesTests__ctor.htm" />
+  <HelpKINode Title="CourseServicesTests.Setup method" Url="html/M_CoursesAPI_Tests_Services_CourseServicesTests_Setup.htm" />
+  <HelpKINode Title="CourseServicesTests.TestAddProject method" Url="html/M_CoursesAPI_Tests_Services_CourseServicesTests_TestAddProject.htm" />
+  <HelpKINode Title="CourseServicesTests.TestAddProjectGroup method" Url="html/M_CoursesAPI_Tests_Services_CourseServicesTests_TestAddProjectGroup.htm" />
+  <HelpKINode Title="CourseServicesTests.TestGetFinalGrade method" Url="html/M_CoursesAPI_Tests_Services_CourseServicesTests_TestGetFinalGrade.htm" />
+  <HelpKINode Title="CourseServicesTests.TestGetProjects method" Url="html/M_CoursesAPI_Tests_Services_CourseServicesTests_TestGetProjects.htm" />
+  <HelpKINode Title="CourseServicesTests.TestGradeMethods method" Url="html/M_CoursesAPI_Tests_Services_CourseServicesTests_TestGradeMethods.htm" />
+  <HelpKINode Title="CourseServicesTests.TestMakeFinalGradeComposition method" Url="html/M_CoursesAPI_Tests_Services_CourseServicesTests_TestMakeFinalGradeComposition.htm" />
+  <HelpKINode Title="CoursesServiceProvider class">
+    <HelpKINode Title="CoursesServiceProvider Class" Url="html/T_CoursesAPI_Services_Services_CoursesServiceProvider.htm" />
+    <HelpKINode Title="about CoursesServiceProvider class" Url="html/T_CoursesAPI_Services_Services_CoursesServiceProvider.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider__ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_CoursesAPI_Services_Services_CoursesServiceProvider.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CoursesAPI_Services_Services_CoursesServiceProvider.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CoursesServiceProvider.AddProjectToCourse method" Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_AddProjectToCourse.htm" />
+  <HelpKINode Title="CoursesServiceProvider.CoursesServiceProvider constructor" Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider__ctor.htm" />
+  <HelpKINode Title="CoursesServiceProvider.CreateLanguage method" Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_CreateLanguage.htm" />
+  <HelpKINode Title="CoursesServiceProvider.GetAllFinalGrades method" Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_GetAllFinalGrades.htm" />
+  <HelpKINode Title="CoursesServiceProvider.GetAllGrades method" Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_GetAllGrades.htm" />
+  <HelpKINode Title="CoursesServiceProvider.GetCourseInstancesOnSemester method" Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_GetCourseInstancesOnSemester.htm" />
+  <HelpKINode Title="CoursesServiceProvider.GetCourseTeachers method" Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_GetCourseTeachers.htm" />
+  <HelpKINode Title="CoursesServiceProvider.GetFinalGradeComps method" Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_GetFinalGradeComps.htm" />
+  <HelpKINode Title="CoursesServiceProvider.GetFinalGradeForOneStudent method" Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_GetFinalGradeForOneStudent.htm" />
+  <HelpKINode Title="CoursesServiceProvider.GetLanguageById method" Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_GetLanguageById.htm" />
+  <HelpKINode Title="CoursesServiceProvider.GetLanguageByName method" Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_GetLanguageByName.htm" />
+  <HelpKINode Title="CoursesServiceProvider.GetProjectGrade method" Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_GetProjectGrade.htm" />
+  <HelpKINode Title="CoursesServiceProvider.GetProjectGroups method" Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_GetProjectGroups.htm" />
+  <HelpKINode Title="CoursesServiceProvider.GetProjectsForCourse method" Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_GetProjectsForCourse.htm" />
+  <HelpKINode Title="CoursesServiceProvider.GetSemesterCourses method" Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_GetSemesterCourses.htm" />
+  <HelpKINode Title="CoursesServiceProvider.MakeFinalGradeComp method" Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_MakeFinalGradeComp.htm" />
+  <HelpKINode Title="CoursesServiceProvider.MakeProjectGroup method" Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_MakeProjectGroup.htm" />
+  <HelpKINode Title="CoursesServiceProvider.PercentCompleted method" Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_PercentCompleted.htm" />
+  <HelpKINode Title="CoursesServiceProvider.RemoveProjectFromCourse method" Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_RemoveProjectFromCourse.htm" />
+  <HelpKINode Title="CoursesServiceProvider.SetGrade method" Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_SetGrade.htm" />
+  <HelpKINode Title="CoursesServiceProvider._uow field" Url="html/F_CoursesAPI_Services_Services_CoursesServiceProvider__uow.htm" />
+  <HelpKINode Title="CourseTemplate class">
+    <HelpKINode Title="CourseTemplate Class" Url="html/T_CoursesAPI_Services_Models_Entities_CourseTemplate.htm" />
+    <HelpKINode Title="about CourseTemplate class" Url="html/T_CoursesAPI_Services_Models_Entities_CourseTemplate.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Services_Models_Entities_CourseTemplate__ctor.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_CoursesAPI_Services_Models_Entities_CourseTemplate.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CourseTemplate.CourseID property" Url="html/P_CoursesAPI_Services_Models_Entities_CourseTemplate_CourseID.htm" />
+  <HelpKINode Title="CourseTemplate.CourseTemplate constructor" Url="html/M_CoursesAPI_Services_Models_Entities_CourseTemplate__ctor.htm" />
+  <HelpKINode Title="CourseTemplate.Description property" Url="html/P_CoursesAPI_Services_Models_Entities_CourseTemplate_Description.htm" />
+  <HelpKINode Title="CourseTemplate.Name property" Url="html/P_CoursesAPI_Services_Models_Entities_CourseTemplate_Name.htm" />
+  <HelpKINode Title="CourseTemplates property" Url="html/P_CoursesAPI_Services_DataAccess_AppDataContext_CourseTemplates.htm" />
+  <HelpKINode Title="CreateLanguage method" Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_CreateLanguage.htm" />
+  <HelpKINode Title="DateBegins property" Url="html/P_CoursesAPI_Services_Models_Entities_Semester_DateBegins.htm" />
+  <HelpKINode Title="DateEnds property" Url="html/P_CoursesAPI_Services_Models_Entities_Semester_DateEnds.htm" />
+  <HelpKINode Title="Delete method">
+    <HelpKINode Title="HomeController.Delete Method " Url="html/M_CoursesAPI_Controllers_HomeController_Delete.htm" />
+    <HelpKINode Title="IRepository(T).Delete Method " Url="html/M_CoursesAPI_Services_DataAccess_IRepository_1_Delete.htm" />
+    <HelpKINode Title="LanguageController.Delete Method " Url="html/M_CoursesAPI_Controllers_LanguageController_Delete.htm" />
+    <HelpKINode Title="MockRepository(T).Delete Method " Url="html/M_CoursesAPI_Tests_MockObjects_MockRepository_1_Delete.htm" />
+    <HelpKINode Title="Repository(T).Delete Method " Url="html/M_CoursesAPI_Services_DataAccess_Repository_1_Delete.htm" />
+    <HelpKINode Title="ValuesController.Delete Method " Url="html/M_CoursesAPI_Controllers_ValuesController_Delete.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DeleteProject method" Url="html/M_CoursesAPI_Controllers_ProjectController_DeleteProject.htm" />
+  <HelpKINode Title="DeleteProjectViewModel class">
+    <HelpKINode Title="DeleteProjectViewModel Class" Url="html/T_CoursesAPI_Models_DeleteProjectViewModel.htm" />
+    <HelpKINode Title="about DeleteProjectViewModel class" Url="html/T_CoursesAPI_Models_DeleteProjectViewModel.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Models_DeleteProjectViewModel__ctor.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_CoursesAPI_Models_DeleteProjectViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DeleteProjectViewModel.DeleteProjectViewModel constructor" Url="html/M_CoursesAPI_Models_DeleteProjectViewModel__ctor.htm" />
+  <HelpKINode Title="DeleteProjectViewModel.Id property" Url="html/P_CoursesAPI_Models_DeleteProjectViewModel_Id.htm" />
+  <HelpKINode Title="Description property">
+    <HelpKINode Title="CourseTemplate.Description Property " Url="html/P_CoursesAPI_Services_Models_Entities_CourseTemplate_Description.htm" />
+    <HelpKINode Title="LanguageViewModel.Description Property " Url="html/P_CoursesAPI_Models_LanguageViewModel_Description.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Dispose method">
+    <HelpKINode Title="IDbContext.Dispose Method " Url="html/M_CoursesAPI_Services_DataAccess_IDbContext_Dispose.htm" />
+    <HelpKINode Title="MockUnitOfWork(T).Dispose Method " Url="html/M_CoursesAPI_Tests_MockObjects_MockUnitOfWork_1_Dispose.htm" />
+    <HelpKINode Title="UnitOfWork(TContext).Dispose Method " Url="html/M_CoursesAPI_Services_DataAccess_UnitOfWork_1_Dispose.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Email property" Url="html/P_CoursesAPI_Services_Models_Entities_Person_Email.htm" />
+  <HelpKINode Title="Entry(Of T) method" Url="html/M_CoursesAPI_Services_DataAccess_IDbContext_Entry__1.htm" />
+  <HelpKINode Title="Entry&lt;T&gt; method" Url="html/M_CoursesAPI_Services_DataAccess_IDbContext_Entry__1.htm" />
+  <HelpKINode Title="ErrorCodes class">
+    <HelpKINode Title="ErrorCodes Class" Url="html/T_CoursesAPI_Services_Exceptions_ErrorCodes.htm" />
+    <HelpKINode Title="about ErrorCodes class" Url="html/T_CoursesAPI_Services_Exceptions_ErrorCodes.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Services_Exceptions_ErrorCodes__ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_CoursesAPI_Services_Exceptions_ErrorCodes.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ErrorCodes.ErrorCodes constructor" Url="html/M_CoursesAPI_Services_Exceptions_ErrorCodes__ctor.htm" />
+  <HelpKINode Title="ErrorCodes.IdDoesNotExistException field" Url="html/F_CoursesAPI_Services_Exceptions_ErrorCodes_IdDoesNotExistException.htm" />
+  <HelpKINode Title="ErrorCodes.LanguageDoesNotExist field" Url="html/F_CoursesAPI_Services_Exceptions_ErrorCodes_LanguageDoesNotExist.htm" />
+  <HelpKINode Title="ExceptionType property" Url="html/P_CoursesAPI_Tests_TestExtensions_ExpectedExceptionWithMessageAttribute_ExceptionType.htm" />
+  <HelpKINode Title="ExpectedExceptionWithMessageAttribute class">
+    <HelpKINode Title="ExpectedExceptionWithMessageAttribute Class" Url="html/T_CoursesAPI_Tests_TestExtensions_ExpectedExceptionWithMessageAttribute.htm" />
+    <HelpKINode Title="about ExpectedExceptionWithMessageAttribute class" Url="html/T_CoursesAPI_Tests_TestExtensions_ExpectedExceptionWithMessageAttribute.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload_CoursesAPI_Tests_TestExtensions_ExpectedExceptionWithMessageAttribute__ctor.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_CoursesAPI_Tests_TestExtensions_ExpectedExceptionWithMessageAttribute.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ExpectedExceptionWithMessageAttribute.ExceptionType property" Url="html/P_CoursesAPI_Tests_TestExtensions_ExpectedExceptionWithMessageAttribute_ExceptionType.htm" />
+  <HelpKINode Title="ExpectedExceptionWithMessageAttribute.ExpectedExceptionWithMessageAttribute constructor" Url="html/Overload_CoursesAPI_Tests_TestExtensions_ExpectedExceptionWithMessageAttribute__ctor.htm" />
+  <HelpKINode Title="ExpectedExceptionWithMessageAttribute.ExpectedMessage property" Url="html/P_CoursesAPI_Tests_TestExtensions_ExpectedExceptionWithMessageAttribute_ExpectedMessage.htm" />
+  <HelpKINode Title="ExpectedMessage property" Url="html/P_CoursesAPI_Tests_TestExtensions_ExpectedExceptionWithMessageAttribute_ExpectedMessage.htm" />
+  <HelpKINode Title="FilterConfig class">
+    <HelpKINode Title="FilterConfig Class" Url="html/T_CoursesAPI_FilterConfig.htm" />
+    <HelpKINode Title="about FilterConfig class" Url="html/T_CoursesAPI_FilterConfig.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_FilterConfig__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CoursesAPI_FilterConfig.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FilterConfig.FilterConfig constructor" Url="html/M_CoursesAPI_FilterConfig__ctor.htm" />
+  <HelpKINode Title="FilterConfig.RegisterGlobalFilters method" Url="html/M_CoursesAPI_FilterConfig_RegisterGlobalFilters.htm" />
+  <HelpKINode Title="FinalGradeComposition class">
+    <HelpKINode Title="FinalGradeComposition Class" Url="html/T_CoursesAPI_Services_Models_Entities_FinalGradeComposition.htm" />
+    <HelpKINode Title="about FinalGradeComposition class" Url="html/T_CoursesAPI_Services_Models_Entities_FinalGradeComposition.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Services_Models_Entities_FinalGradeComposition__ctor.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_CoursesAPI_Services_Models_Entities_FinalGradeComposition.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FinalGradeComposition.CourseInstanceId property" Url="html/P_CoursesAPI_Services_Models_Entities_FinalGradeComposition_CourseInstanceId.htm" />
+  <HelpKINode Title="FinalGradeComposition.FinalGradeComposition constructor" Url="html/M_CoursesAPI_Services_Models_Entities_FinalGradeComposition__ctor.htm" />
+  <HelpKINode Title="FinalGradeComposition.ID property" Url="html/P_CoursesAPI_Services_Models_Entities_FinalGradeComposition_ID.htm" />
+  <HelpKINode Title="FinalGradeComposition.ProjectId property" Url="html/P_CoursesAPI_Services_Models_Entities_FinalGradeComposition_ProjectId.htm" />
+  <HelpKINode Title="FinalGradeCompositions property" Url="html/P_CoursesAPI_Services_DataAccess_AppDataContext_FinalGradeCompositions.htm" />
+  <HelpKINode Title="FinalGradeDTO class">
+    <HelpKINode Title="FinalGradeDTO Class" Url="html/T_CoursesAPI_Models_FinalGradeDTO.htm" />
+    <HelpKINode Title="about FinalGradeDTO class" Url="html/T_CoursesAPI_Models_FinalGradeDTO.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Models_FinalGradeDTO__ctor.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_CoursesAPI_Models_FinalGradeDTO.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FinalGradeDTO.FinalGradeDTO constructor" Url="html/M_CoursesAPI_Models_FinalGradeDTO__ctor.htm" />
+  <HelpKINode Title="FinalGradeDTO.Grade property" Url="html/P_CoursesAPI_Models_FinalGradeDTO_Grade.htm" />
+  <HelpKINode Title="FinalGradeDTO.NumberOfStudents property" Url="html/P_CoursesAPI_Models_FinalGradeDTO_NumberOfStudents.htm" />
+  <HelpKINode Title="FinalGradeDTO.PercentageComplete property" Url="html/P_CoursesAPI_Models_FinalGradeDTO_PercentageComplete.htm" />
+  <HelpKINode Title="FinalGradeDTO.PersonSSN property" Url="html/P_CoursesAPI_Models_FinalGradeDTO_PersonSSN.htm" />
+  <HelpKINode Title="FinalGradeDTO.PositionLower property" Url="html/P_CoursesAPI_Models_FinalGradeDTO_PositionLower.htm" />
+  <HelpKINode Title="FinalGradeDTO.PositionUpper property" Url="html/P_CoursesAPI_Models_FinalGradeDTO_PositionUpper.htm" />
+  <HelpKINode Title="FinalGradeDTO.Status property" Url="html/P_CoursesAPI_Models_FinalGradeDTO_Status.htm" />
+  <HelpKINode Title="Get method">
+    <HelpKINode Title="LanguageController.Get Method " Url="html/Overload_CoursesAPI_Controllers_LanguageController_Get.htm" />
+    <HelpKINode Title="ValuesController.Get Method " Url="html/Overload_CoursesAPI_Controllers_ValuesController_Get.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetAllFinalGrades method">
+    <HelpKINode Title="CoursesServiceProvider.GetAllFinalGrades Method " Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_GetAllFinalGrades.htm" />
+    <HelpKINode Title="ProjectController.GetAllFinalGrades Method " Url="html/M_CoursesAPI_Controllers_ProjectController_GetAllFinalGrades.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetAllGrades method">
+    <HelpKINode Title="CoursesServiceProvider.GetAllGrades Method " Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_GetAllGrades.htm" />
+    <HelpKINode Title="ProjectController.GetAllGrades Method " Url="html/M_CoursesAPI_Controllers_ProjectController_GetAllGrades.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetById method">
+    <HelpKINode Title="MockRepository(T).GetById Method " Url="html/M_CoursesAPI_Tests_MockObjects_MockRepository_1_GetById.htm" />
+    <HelpKINode Title="Repository(T).GetById Method " Url="html/M_CoursesAPI_Services_DataAccess_Repository_1_GetById.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetCourseByID method" Url="html/M_CoursesAPI_Services_Extensions_CourseInstanceExtentions_GetCourseByID.htm" />
+  <HelpKINode Title="GetCourseInstancesOnSemester method" Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_GetCourseInstancesOnSemester.htm" />
+  <HelpKINode Title="GetCoursesOnSemester method" Url="html/M_CoursesAPI_Controllers_CoursesController_GetCoursesOnSemester.htm" />
+  <HelpKINode Title="GetCoursesOnSemester2 method" Url="html/M_CoursesAPI_Controllers_CoursesController_GetCoursesOnSemester2.htm" />
+  <HelpKINode Title="GetCourseTeachers method">
+    <HelpKINode Title="CoursesController.GetCourseTeachers Method " Url="html/M_CoursesAPI_Controllers_CoursesController_GetCourseTeachers.htm" />
+    <HelpKINode Title="CoursesServiceProvider.GetCourseTeachers Method " Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_GetCourseTeachers.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetException method" Url="html/M_CoursesAPI_Controllers_LanguageController_GetException.htm" />
+  <HelpKINode Title="GetFinalGrade method" Url="html/M_CoursesAPI_Controllers_ProjectController_GetFinalGrade.htm" />
+  <HelpKINode Title="GetFinalGradeComps method" Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_GetFinalGradeComps.htm" />
+  <HelpKINode Title="GetFinalGradeForOneStudent method" Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_GetFinalGradeForOneStudent.htm" />
+  <HelpKINode Title="GetGroupByID method" Url="html/M_CoursesAPI_Services_Extensions_ProjectGroupExtention_GetGroupByID.htm" />
+  <HelpKINode Title="GetLanguageById method" Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_GetLanguageById.htm" />
+  <HelpKINode Title="GetLanguageByName method" Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_GetLanguageByName.htm" />
+  <HelpKINode Title="GetMessage method" Url="html/M_CoursesAPI_Services_Exceptions_CoursesAPIValidationException_GetMessage.htm" />
+  <HelpKINode Title="GetProjectByID method" Url="html/M_CoursesAPI_Services_Extensions_ProjectExtention_GetProjectByID.htm" />
+  <HelpKINode Title="GetProjectGrade method">
+    <HelpKINode Title="CoursesServiceProvider.GetProjectGrade Method " Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_GetProjectGrade.htm" />
+    <HelpKINode Title="ProjectController.GetProjectGrade Method " Url="html/M_CoursesAPI_Controllers_ProjectController_GetProjectGrade.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetProjectGroups method" Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_GetProjectGroups.htm" />
+  <HelpKINode Title="GetProjects method" Url="html/M_CoursesAPI_Controllers_ProjectController_GetProjects.htm" />
+  <HelpKINode Title="GetProjectsForCourse method" Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_GetProjectsForCourse.htm" />
+  <HelpKINode Title="GetRepository(Of TEntity) method">
+    <HelpKINode Title="IUnitOfWork.GetRepository(TEntity) Method " Url="html/M_CoursesAPI_Services_DataAccess_IUnitOfWork_GetRepository__1.htm" />
+    <HelpKINode Title="MockUnitOfWork(T).GetRepository(TEntity) Method " Url="html/M_CoursesAPI_Tests_MockObjects_MockUnitOfWork_1_GetRepository__1.htm" />
+    <HelpKINode Title="UnitOfWork(TContext).GetRepository(TEntity) Method " Url="html/M_CoursesAPI_Services_DataAccess_UnitOfWork_1_GetRepository__1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetRepository&lt;TEntity&gt; method">
+    <HelpKINode Title="IUnitOfWork.GetRepository(TEntity) Method " Url="html/M_CoursesAPI_Services_DataAccess_IUnitOfWork_GetRepository__1.htm" />
+    <HelpKINode Title="MockUnitOfWork(T).GetRepository(TEntity) Method " Url="html/M_CoursesAPI_Tests_MockObjects_MockUnitOfWork_1_GetRepository__1.htm" />
+    <HelpKINode Title="UnitOfWork(TContext).GetRepository(TEntity) Method " Url="html/M_CoursesAPI_Services_DataAccess_UnitOfWork_1_GetRepository__1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetSaveCallCount method" Url="html/M_CoursesAPI_Tests_MockObjects_MockUnitOfWork_1_GetSaveCallCount.htm" />
+  <HelpKINode Title="GetSemesterCourses method" Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_GetSemesterCourses.htm" />
+  <HelpKINode Title="GetValidationResults method">
+    <HelpKINode Title="CoursesAPIObjectNotFoundException.GetValidationResults Method " Url="html/M_CoursesAPI_Services_Exceptions_CoursesAPIObjectNotFoundException_GetValidationResults.htm" />
+    <HelpKINode Title="CoursesAPIValidationException.GetValidationResults Method " Url="html/M_CoursesAPI_Services_Exceptions_CoursesAPIValidationException_GetValidationResults.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Grade class">
+    <HelpKINode Title="Grade Class" Url="html/T_CoursesAPI_Services_Models_Entities_Grade.htm" />
+    <HelpKINode Title="about Grade class" Url="html/T_CoursesAPI_Services_Models_Entities_Grade.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Services_Models_Entities_Grade__ctor.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_CoursesAPI_Services_Models_Entities_Grade.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Grade property">
+    <HelpKINode Title="AddGradeViewModel.Grade Property " Url="html/P_CoursesAPI_Models_AddGradeViewModel_Grade.htm" />
+    <HelpKINode Title="FinalGradeDTO.Grade Property " Url="html/P_CoursesAPI_Models_FinalGradeDTO_Grade.htm" />
+    <HelpKINode Title="GradeDTO.Grade Property " Url="html/P_CoursesAPI_Models_GradeDTO_Grade.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Grade.Grade constructor" Url="html/M_CoursesAPI_Services_Models_Entities_Grade__ctor.htm" />
+  <HelpKINode Title="Grade.GradeValue property" Url="html/P_CoursesAPI_Services_Models_Entities_Grade_GradeValue.htm" />
+  <HelpKINode Title="Grade.ID property" Url="html/P_CoursesAPI_Services_Models_Entities_Grade_ID.htm" />
+  <HelpKINode Title="Grade.PersonSSN property" Url="html/P_CoursesAPI_Services_Models_Entities_Grade_PersonSSN.htm" />
+  <HelpKINode Title="Grade.ProjectId property" Url="html/P_CoursesAPI_Services_Models_Entities_Grade_ProjectId.htm" />
+  <HelpKINode Title="GradedProjectsCount property">
+    <HelpKINode Title="AddProjectGroupViewModel.GradedProjectsCount Property " Url="html/P_CoursesAPI_Models_AddProjectGroupViewModel_GradedProjectsCount.htm" />
+    <HelpKINode Title="ProjectGroup.GradedProjectsCount Property " Url="html/P_CoursesAPI_Services_Models_Entities_ProjectGroup_GradedProjectsCount.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GradeDTO class">
+    <HelpKINode Title="GradeDTO Class" Url="html/T_CoursesAPI_Models_GradeDTO.htm" />
+    <HelpKINode Title="about GradeDTO class" Url="html/T_CoursesAPI_Models_GradeDTO.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Models_GradeDTO__ctor.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_CoursesAPI_Models_GradeDTO.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GradeDTO.Grade property" Url="html/P_CoursesAPI_Models_GradeDTO_Grade.htm" />
+  <HelpKINode Title="GradeDTO.GradeDTO constructor" Url="html/M_CoursesAPI_Models_GradeDTO__ctor.htm" />
+  <HelpKINode Title="GradeDTO.NumberOfStudents property" Url="html/P_CoursesAPI_Models_GradeDTO_NumberOfStudents.htm" />
+  <HelpKINode Title="GradeDTO.PositionLower property" Url="html/P_CoursesAPI_Models_GradeDTO_PositionLower.htm" />
+  <HelpKINode Title="GradeDTO.PositionUpper property" Url="html/P_CoursesAPI_Models_GradeDTO_PositionUpper.htm" />
+  <HelpKINode Title="GradeDTO.SSN property" Url="html/P_CoursesAPI_Models_GradeDTO_SSN.htm" />
+  <HelpKINode Title="Grades property" Url="html/P_CoursesAPI_Services_DataAccess_AppDataContext_Grades.htm" />
+  <HelpKINode Title="GradeValue property" Url="html/P_CoursesAPI_Services_Models_Entities_Grade_GradeValue.htm" />
+  <HelpKINode Title="HomeController class">
+    <HelpKINode Title="HomeController Class" Url="html/T_CoursesAPI_Controllers_HomeController.htm" />
+    <HelpKINode Title="about HomeController class" Url="html/T_CoursesAPI_Controllers_HomeController.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Controllers_HomeController__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CoursesAPI_Controllers_HomeController.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HomeController.Delete method" Url="html/M_CoursesAPI_Controllers_HomeController_Delete.htm" />
+  <HelpKINode Title="HomeController.HomeController constructor" Url="html/M_CoursesAPI_Controllers_HomeController__ctor.htm" />
+  <HelpKINode Title="HomeController.Index method" Url="html/M_CoursesAPI_Controllers_HomeController_Index.htm" />
+  <HelpKINode Title="HomeController.Post method" Url="html/M_CoursesAPI_Controllers_HomeController_Post.htm" />
+  <HelpKINode Title="ID property">
+    <HelpKINode Title="CourseInstance.ID Property " Url="html/P_CoursesAPI_Services_Models_Entities_CourseInstance_ID.htm" />
+    <HelpKINode Title="Grade.ID Property " Url="html/P_CoursesAPI_Services_Models_Entities_Grade_ID.htm" />
+    <HelpKINode Title="PersonRegistration.ID Property " Url="html/P_CoursesAPI_Services_Models_Entities_PersonRegistration_ID.htm" />
+    <HelpKINode Title="Project.ID Property " Url="html/P_CoursesAPI_Services_Models_Entities_Project_ID.htm" />
+    <HelpKINode Title="ProjectGroup.ID Property " Url="html/P_CoursesAPI_Services_Models_Entities_ProjectGroup_ID.htm" />
+    <HelpKINode Title="FinalGradeComposition.ID Property " Url="html/P_CoursesAPI_Services_Models_Entities_FinalGradeComposition_ID.htm" />
+    <HelpKINode Title="Person.ID Property " Url="html/P_CoursesAPI_Services_Models_Entities_Person_ID.htm" />
+    <HelpKINode Title="Semester.ID Property " Url="html/P_CoursesAPI_Services_Models_Entities_Semester_ID.htm" />
+    <HelpKINode Title="TeacherRegistration.ID Property " Url="html/P_CoursesAPI_Services_Models_Entities_TeacherRegistration_ID.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Id property" Url="html/P_CoursesAPI_Models_DeleteProjectViewModel_Id.htm" />
+  <HelpKINode Title="IDbContext interface">
+    <HelpKINode Title="IDbContext Interface" Url="html/T_CoursesAPI_Services_DataAccess_IDbContext.htm" />
+    <HelpKINode Title="about IDbContext interface" Url="html/T_CoursesAPI_Services_DataAccess_IDbContext.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CoursesAPI_Services_DataAccess_IDbContext.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IDbContext.Dispose method" Url="html/M_CoursesAPI_Services_DataAccess_IDbContext_Dispose.htm" />
+  <HelpKINode Title="IDbContext.Entry(Of T) method" Url="html/M_CoursesAPI_Services_DataAccess_IDbContext_Entry__1.htm" />
+  <HelpKINode Title="IDbContext.Entry&lt;T&gt; method" Url="html/M_CoursesAPI_Services_DataAccess_IDbContext_Entry__1.htm" />
+  <HelpKINode Title="IDbContext.SaveChanges method" Url="html/M_CoursesAPI_Services_DataAccess_IDbContext_SaveChanges.htm" />
+  <HelpKINode Title="IDbContext.Set(Of T) method" Url="html/M_CoursesAPI_Services_DataAccess_IDbContext_Set__1.htm" />
+  <HelpKINode Title="IDbContext.Set&lt;T&gt; method" Url="html/M_CoursesAPI_Services_DataAccess_IDbContext_Set__1.htm" />
+  <HelpKINode Title="IdDoesNotExistException field" Url="html/F_CoursesAPI_Services_Exceptions_ErrorCodes_IdDoesNotExistException.htm" />
+  <HelpKINode Title="Index method" Url="html/M_CoursesAPI_Controllers_HomeController_Index.htm" />
+  <HelpKINode Title="IRepository(Of T) interface">
+    <HelpKINode Title="IRepository(T) Interface" Url="html/T_CoursesAPI_Services_DataAccess_IRepository_1.htm" />
+    <HelpKINode Title="about IRepository(Of T) interface" Url="html/T_CoursesAPI_Services_DataAccess_IRepository_1.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CoursesAPI_Services_DataAccess_IRepository_1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IRepository(Of T).Add method" Url="html/M_CoursesAPI_Services_DataAccess_IRepository_1_Add.htm" />
+  <HelpKINode Title="IRepository(Of T).All method" Url="html/M_CoursesAPI_Services_DataAccess_IRepository_1_All.htm" />
+  <HelpKINode Title="IRepository(Of T).Delete method" Url="html/M_CoursesAPI_Services_DataAccess_IRepository_1_Delete.htm" />
+  <HelpKINode Title="IRepository(Of T).Update method" Url="html/M_CoursesAPI_Services_DataAccess_IRepository_1_Update.htm" />
+  <HelpKINode Title="IRepository&lt;T&gt; interface">
+    <HelpKINode Title="IRepository(T) Interface" Url="html/T_CoursesAPI_Services_DataAccess_IRepository_1.htm" />
+    <HelpKINode Title="about IRepository&lt;T&gt; interface" Url="html/T_CoursesAPI_Services_DataAccess_IRepository_1.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CoursesAPI_Services_DataAccess_IRepository_1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IRepository&lt;T&gt;.Add method" Url="html/M_CoursesAPI_Services_DataAccess_IRepository_1_Add.htm" />
+  <HelpKINode Title="IRepository&lt;T&gt;.All method" Url="html/M_CoursesAPI_Services_DataAccess_IRepository_1_All.htm" />
+  <HelpKINode Title="IRepository&lt;T&gt;.Delete method" Url="html/M_CoursesAPI_Services_DataAccess_IRepository_1_Delete.htm" />
+  <HelpKINode Title="IRepository&lt;T&gt;.Update method" Url="html/M_CoursesAPI_Services_DataAccess_IRepository_1_Update.htm" />
+  <HelpKINode Title="IUnitOfWork interface">
+    <HelpKINode Title="IUnitOfWork Interface" Url="html/T_CoursesAPI_Services_DataAccess_IUnitOfWork.htm" />
+    <HelpKINode Title="about IUnitOfWork interface" Url="html/T_CoursesAPI_Services_DataAccess_IUnitOfWork.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CoursesAPI_Services_DataAccess_IUnitOfWork.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IUnitOfWork.GetRepository(Of TEntity) method" Url="html/M_CoursesAPI_Services_DataAccess_IUnitOfWork_GetRepository__1.htm" />
+  <HelpKINode Title="IUnitOfWork.GetRepository&lt;TEntity&gt; method" Url="html/M_CoursesAPI_Services_DataAccess_IUnitOfWork_GetRepository__1.htm" />
+  <HelpKINode Title="IUnitOfWork.Save method" Url="html/M_CoursesAPI_Services_DataAccess_IUnitOfWork_Save.htm" />
+  <HelpKINode Title="LanguageController class">
+    <HelpKINode Title="LanguageController Class" Url="html/T_CoursesAPI_Controllers_LanguageController.htm" />
+    <HelpKINode Title="about LanguageController class" Url="html/T_CoursesAPI_Controllers_LanguageController.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Controllers_LanguageController__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CoursesAPI_Controllers_LanguageController.htm" />
+  </HelpKINode>
+  <HelpKINode Title="LanguageController.Delete method" Url="html/M_CoursesAPI_Controllers_LanguageController_Delete.htm" />
+  <HelpKINode Title="LanguageController.Get method" Url="html/Overload_CoursesAPI_Controllers_LanguageController_Get.htm" />
+  <HelpKINode Title="LanguageController.GetException method" Url="html/M_CoursesAPI_Controllers_LanguageController_GetException.htm" />
+  <HelpKINode Title="LanguageController.LanguageController constructor" Url="html/M_CoursesAPI_Controllers_LanguageController__ctor.htm" />
+  <HelpKINode Title="LanguageController.Post method" Url="html/M_CoursesAPI_Controllers_LanguageController_Post.htm" />
+  <HelpKINode Title="LanguageDoesNotExist field" Url="html/F_CoursesAPI_Services_Exceptions_ErrorCodes_LanguageDoesNotExist.htm" />
+  <HelpKINode Title="LanguageMessageHandler class">
+    <HelpKINode Title="LanguageMessageHandler Class" Url="html/T_CoursesAPI_LanguageMessageHandler.htm" />
+    <HelpKINode Title="about LanguageMessageHandler class" Url="html/T_CoursesAPI_LanguageMessageHandler.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_LanguageMessageHandler__ctor.htm" />
+  </HelpKINode>
+  <HelpKINode Title="LanguageMessageHandler.LanguageMessageHandler constructor" Url="html/M_CoursesAPI_LanguageMessageHandler__ctor.htm" />
+  <HelpKINode Title="LanguageViewModel class">
+    <HelpKINode Title="LanguageViewModel Class" Url="html/T_CoursesAPI_Models_LanguageViewModel.htm" />
+    <HelpKINode Title="about LanguageViewModel class" Url="html/T_CoursesAPI_Models_LanguageViewModel.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Models_LanguageViewModel__ctor.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_CoursesAPI_Models_LanguageViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="LanguageViewModel.Description property" Url="html/P_CoursesAPI_Models_LanguageViewModel_Description.htm" />
+  <HelpKINode Title="LanguageViewModel.LanguageViewModel constructor" Url="html/M_CoursesAPI_Models_LanguageViewModel__ctor.htm" />
+  <HelpKINode Title="LanguageViewModel.Name property" Url="html/P_CoursesAPI_Models_LanguageViewModel_Name.htm" />
+  <HelpKINode Title="LanguageViewModel.Timestamp property" Url="html/P_CoursesAPI_Models_LanguageViewModel_Timestamp.htm" />
+  <HelpKINode Title="MainTeacher property" Url="html/P_CoursesAPI_Models_CourseInstanceDTO_MainTeacher.htm" />
+  <HelpKINode Title="MakeFinalGradeComp method" Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_MakeFinalGradeComp.htm" />
+  <HelpKINode Title="MakeFinalGradeComposition method" Url="html/M_CoursesAPI_Controllers_ProjectController_MakeFinalGradeComposition.htm" />
+  <HelpKINode Title="MakeProjectGroup method">
+    <HelpKINode Title="CoursesServiceProvider.MakeProjectGroup Method " Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_MakeProjectGroup.htm" />
+    <HelpKINode Title="ProjectController.MakeProjectGroup Method " Url="html/M_CoursesAPI_Controllers_ProjectController_MakeProjectGroup.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MinGradeToPassCourse property">
+    <HelpKINode Title="AddProjectViewModel.MinGradeToPassCourse Property " Url="html/P_CoursesAPI_Models_AddProjectViewModel_MinGradeToPassCourse.htm" />
+    <HelpKINode Title="Project.MinGradeToPassCourse Property " Url="html/P_CoursesAPI_Services_Models_Entities_Project_MinGradeToPassCourse.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MockDataContext class">
+    <HelpKINode Title="MockDataContext Class" Url="html/T_CoursesAPI_Tests_MockObjects_MockDataContext.htm" />
+    <HelpKINode Title="about MockDataContext class" Url="html/T_CoursesAPI_Tests_MockObjects_MockDataContext.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Tests_MockObjects_MockDataContext__ctor.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MockDataContext.MockDataContext constructor" Url="html/M_CoursesAPI_Tests_MockObjects_MockDataContext__ctor.htm" />
+  <HelpKINode Title="MockRepository(Of T) class">
+    <HelpKINode Title="MockRepository(T) Class" Url="html/T_CoursesAPI_Tests_MockObjects_MockRepository_1.htm" />
+    <HelpKINode Title="about MockRepository(Of T) class" Url="html/T_CoursesAPI_Tests_MockObjects_MockRepository_1.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Tests_MockObjects_MockRepository_1__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CoursesAPI_Tests_MockObjects_MockRepository_1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MockRepository(Of T).Add method" Url="html/M_CoursesAPI_Tests_MockObjects_MockRepository_1_Add.htm" />
+  <HelpKINode Title="MockRepository(Of T).All method" Url="html/M_CoursesAPI_Tests_MockObjects_MockRepository_1_All.htm" />
+  <HelpKINode Title="MockRepository(Of T).Delete method" Url="html/M_CoursesAPI_Tests_MockObjects_MockRepository_1_Delete.htm" />
+  <HelpKINode Title="MockRepository(Of T).GetById method" Url="html/M_CoursesAPI_Tests_MockObjects_MockRepository_1_GetById.htm" />
+  <HelpKINode Title="MockRepository(Of T).MockRepository constructor" Url="html/M_CoursesAPI_Tests_MockObjects_MockRepository_1__ctor.htm" />
+  <HelpKINode Title="MockRepository(Of T).SetData method" Url="html/M_CoursesAPI_Tests_MockObjects_MockRepository_1_SetData.htm" />
+  <HelpKINode Title="MockRepository(Of T).Update method" Url="html/M_CoursesAPI_Tests_MockObjects_MockRepository_1_Update.htm" />
+  <HelpKINode Title="MockRepository&lt;T&gt; class">
+    <HelpKINode Title="MockRepository(T) Class" Url="html/T_CoursesAPI_Tests_MockObjects_MockRepository_1.htm" />
+    <HelpKINode Title="about MockRepository&lt;T&gt; class" Url="html/T_CoursesAPI_Tests_MockObjects_MockRepository_1.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Tests_MockObjects_MockRepository_1__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CoursesAPI_Tests_MockObjects_MockRepository_1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MockRepository&lt;T&gt;.Add method" Url="html/M_CoursesAPI_Tests_MockObjects_MockRepository_1_Add.htm" />
+  <HelpKINode Title="MockRepository&lt;T&gt;.All method" Url="html/M_CoursesAPI_Tests_MockObjects_MockRepository_1_All.htm" />
+  <HelpKINode Title="MockRepository&lt;T&gt;.Delete method" Url="html/M_CoursesAPI_Tests_MockObjects_MockRepository_1_Delete.htm" />
+  <HelpKINode Title="MockRepository&lt;T&gt;.GetById method" Url="html/M_CoursesAPI_Tests_MockObjects_MockRepository_1_GetById.htm" />
+  <HelpKINode Title="MockRepository&lt;T&gt;.MockRepository constructor" Url="html/M_CoursesAPI_Tests_MockObjects_MockRepository_1__ctor.htm" />
+  <HelpKINode Title="MockRepository&lt;T&gt;.SetData method" Url="html/M_CoursesAPI_Tests_MockObjects_MockRepository_1_SetData.htm" />
+  <HelpKINode Title="MockRepository&lt;T&gt;.Update method" Url="html/M_CoursesAPI_Tests_MockObjects_MockRepository_1_Update.htm" />
+  <HelpKINode Title="MockUnitOfWork(Of T) class">
+    <HelpKINode Title="MockUnitOfWork(T) Class" Url="html/T_CoursesAPI_Tests_MockObjects_MockUnitOfWork_1.htm" />
+    <HelpKINode Title="about MockUnitOfWork(Of T) class" Url="html/T_CoursesAPI_Tests_MockObjects_MockUnitOfWork_1.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Tests_MockObjects_MockUnitOfWork_1__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CoursesAPI_Tests_MockObjects_MockUnitOfWork_1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MockUnitOfWork(Of T).Dispose method" Url="html/M_CoursesAPI_Tests_MockObjects_MockUnitOfWork_1_Dispose.htm" />
+  <HelpKINode Title="MockUnitOfWork(Of T).GetRepository(Of TEntity) method" Url="html/M_CoursesAPI_Tests_MockObjects_MockUnitOfWork_1_GetRepository__1.htm" />
+  <HelpKINode Title="MockUnitOfWork(Of T).GetSaveCallCount method" Url="html/M_CoursesAPI_Tests_MockObjects_MockUnitOfWork_1_GetSaveCallCount.htm" />
+  <HelpKINode Title="MockUnitOfWork(Of T).MockUnitOfWork constructor" Url="html/M_CoursesAPI_Tests_MockObjects_MockUnitOfWork_1__ctor.htm" />
+  <HelpKINode Title="MockUnitOfWork(Of T).Save method" Url="html/M_CoursesAPI_Tests_MockObjects_MockUnitOfWork_1_Save.htm" />
+  <HelpKINode Title="MockUnitOfWork(Of T).SetRepositoryData(Of TEntity) method" Url="html/M_CoursesAPI_Tests_MockObjects_MockUnitOfWork_1_SetRepositoryData__1.htm" />
+  <HelpKINode Title="MockUnitOfWork&lt;T&gt; class">
+    <HelpKINode Title="MockUnitOfWork(T) Class" Url="html/T_CoursesAPI_Tests_MockObjects_MockUnitOfWork_1.htm" />
+    <HelpKINode Title="about MockUnitOfWork&lt;T&gt; class" Url="html/T_CoursesAPI_Tests_MockObjects_MockUnitOfWork_1.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Tests_MockObjects_MockUnitOfWork_1__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CoursesAPI_Tests_MockObjects_MockUnitOfWork_1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MockUnitOfWork&lt;T&gt;.Dispose method" Url="html/M_CoursesAPI_Tests_MockObjects_MockUnitOfWork_1_Dispose.htm" />
+  <HelpKINode Title="MockUnitOfWork&lt;T&gt;.GetRepository&lt;TEntity&gt; method" Url="html/M_CoursesAPI_Tests_MockObjects_MockUnitOfWork_1_GetRepository__1.htm" />
+  <HelpKINode Title="MockUnitOfWork&lt;T&gt;.GetSaveCallCount method" Url="html/M_CoursesAPI_Tests_MockObjects_MockUnitOfWork_1_GetSaveCallCount.htm" />
+  <HelpKINode Title="MockUnitOfWork&lt;T&gt;.MockUnitOfWork constructor" Url="html/M_CoursesAPI_Tests_MockObjects_MockUnitOfWork_1__ctor.htm" />
+  <HelpKINode Title="MockUnitOfWork&lt;T&gt;.Save method" Url="html/M_CoursesAPI_Tests_MockObjects_MockUnitOfWork_1_Save.htm" />
+  <HelpKINode Title="MockUnitOfWork&lt;T&gt;.SetRepositoryData&lt;TEntity&gt; method" Url="html/M_CoursesAPI_Tests_MockObjects_MockUnitOfWork_1_SetRepositoryData__1.htm" />
+  <HelpKINode Title="Name property">
+    <HelpKINode Title="AddProjectGroupViewModel.Name Property " Url="html/P_CoursesAPI_Models_AddProjectGroupViewModel_Name.htm" />
+    <HelpKINode Title="AddProjectViewModel.Name Property " Url="html/P_CoursesAPI_Models_AddProjectViewModel_Name.htm" />
+    <HelpKINode Title="CourseInstanceDTO.Name Property " Url="html/P_CoursesAPI_Models_CourseInstanceDTO_Name.htm" />
+    <HelpKINode Title="CourseTemplate.Name Property " Url="html/P_CoursesAPI_Services_Models_Entities_CourseTemplate_Name.htm" />
+    <HelpKINode Title="LanguageViewModel.Name Property " Url="html/P_CoursesAPI_Models_LanguageViewModel_Name.htm" />
+    <HelpKINode Title="Person.Name Property " Url="html/P_CoursesAPI_Services_Models_Entities_Person_Name.htm" />
+    <HelpKINode Title="Project.Name Property " Url="html/P_CoursesAPI_Services_Models_Entities_Project_Name.htm" />
+    <HelpKINode Title="ProjectGroup.Name Property " Url="html/P_CoursesAPI_Services_Models_Entities_ProjectGroup_Name.htm" />
+    <HelpKINode Title="Semester.Name Property " Url="html/P_CoursesAPI_Services_Models_Entities_Semester_Name.htm" />
+  </HelpKINode>
+  <HelpKINode Title="NumberOfStudents property">
+    <HelpKINode Title="FinalGradeDTO.NumberOfStudents Property " Url="html/P_CoursesAPI_Models_FinalGradeDTO_NumberOfStudents.htm" />
+    <HelpKINode Title="GradeDTO.NumberOfStudents Property " Url="html/P_CoursesAPI_Models_GradeDTO_NumberOfStudents.htm" />
+  </HelpKINode>
+  <HelpKINode Title="OnlyHigherThanProjectId property">
+    <HelpKINode Title="AddProjectViewModel.OnlyHigherThanProjectId Property " Url="html/P_CoursesAPI_Models_AddProjectViewModel_OnlyHigherThanProjectId.htm" />
+    <HelpKINode Title="Project.OnlyHigherThanProjectId Property " Url="html/P_CoursesAPI_Services_Models_Entities_Project_OnlyHigherThanProjectId.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PercentageComplete property" Url="html/P_CoursesAPI_Models_FinalGradeDTO_PercentageComplete.htm" />
+  <HelpKINode Title="PercentCompleted method" Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_PercentCompleted.htm" />
+  <HelpKINode Title="Person class">
+    <HelpKINode Title="Person Class" Url="html/T_CoursesAPI_Services_Models_Entities_Person.htm" />
+    <HelpKINode Title="about Person class" Url="html/T_CoursesAPI_Services_Models_Entities_Person.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Services_Models_Entities_Person__ctor.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_CoursesAPI_Services_Models_Entities_Person.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Person.Email property" Url="html/P_CoursesAPI_Services_Models_Entities_Person_Email.htm" />
+  <HelpKINode Title="Person.ID property" Url="html/P_CoursesAPI_Services_Models_Entities_Person_ID.htm" />
+  <HelpKINode Title="Person.Name property" Url="html/P_CoursesAPI_Services_Models_Entities_Person_Name.htm" />
+  <HelpKINode Title="Person.Person constructor" Url="html/M_CoursesAPI_Services_Models_Entities_Person__ctor.htm" />
+  <HelpKINode Title="Person.SSN property" Url="html/P_CoursesAPI_Services_Models_Entities_Person_SSN.htm" />
+  <HelpKINode Title="PersonRegistration class">
+    <HelpKINode Title="PersonRegistration Class" Url="html/T_CoursesAPI_Services_Models_Entities_PersonRegistration.htm" />
+    <HelpKINode Title="about PersonRegistration class" Url="html/T_CoursesAPI_Services_Models_Entities_PersonRegistration.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Services_Models_Entities_PersonRegistration__ctor.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_CoursesAPI_Services_Models_Entities_PersonRegistration.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PersonRegistration.CourseInstanceId property" Url="html/P_CoursesAPI_Services_Models_Entities_PersonRegistration_CourseInstanceId.htm" />
+  <HelpKINode Title="PersonRegistration.ID property" Url="html/P_CoursesAPI_Services_Models_Entities_PersonRegistration_ID.htm" />
+  <HelpKINode Title="PersonRegistration.PersonRegistration constructor" Url="html/M_CoursesAPI_Services_Models_Entities_PersonRegistration__ctor.htm" />
+  <HelpKINode Title="PersonRegistration.PersonSSN property" Url="html/P_CoursesAPI_Services_Models_Entities_PersonRegistration_PersonSSN.htm" />
+  <HelpKINode Title="PersonRegistrations property" Url="html/P_CoursesAPI_Services_DataAccess_AppDataContext_PersonRegistrations.htm" />
+  <HelpKINode Title="Persons property" Url="html/P_CoursesAPI_Services_DataAccess_AppDataContext_Persons.htm" />
+  <HelpKINode Title="PersonSSN property">
+    <HelpKINode Title="AddGradeViewModel.PersonSSN Property " Url="html/P_CoursesAPI_Models_AddGradeViewModel_PersonSSN.htm" />
+    <HelpKINode Title="FinalGradeDTO.PersonSSN Property " Url="html/P_CoursesAPI_Models_FinalGradeDTO_PersonSSN.htm" />
+    <HelpKINode Title="Grade.PersonSSN Property " Url="html/P_CoursesAPI_Services_Models_Entities_Grade_PersonSSN.htm" />
+    <HelpKINode Title="PersonRegistration.PersonSSN Property " Url="html/P_CoursesAPI_Services_Models_Entities_PersonRegistration_PersonSSN.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PositionLower property">
+    <HelpKINode Title="FinalGradeDTO.PositionLower Property " Url="html/P_CoursesAPI_Models_FinalGradeDTO_PositionLower.htm" />
+    <HelpKINode Title="GradeDTO.PositionLower Property " Url="html/P_CoursesAPI_Models_GradeDTO_PositionLower.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PositionUpper property">
+    <HelpKINode Title="FinalGradeDTO.PositionUpper Property " Url="html/P_CoursesAPI_Models_FinalGradeDTO_PositionUpper.htm" />
+    <HelpKINode Title="GradeDTO.PositionUpper Property " Url="html/P_CoursesAPI_Models_GradeDTO_PositionUpper.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Post method">
+    <HelpKINode Title="HomeController.Post Method " Url="html/M_CoursesAPI_Controllers_HomeController_Post.htm" />
+    <HelpKINode Title="LanguageController.Post Method " Url="html/M_CoursesAPI_Controllers_LanguageController_Post.htm" />
+    <HelpKINode Title="ValuesController.Post Method " Url="html/M_CoursesAPI_Controllers_ValuesController_Post.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Project class">
+    <HelpKINode Title="Project Class" Url="html/T_CoursesAPI_Services_Models_Entities_Project.htm" />
+    <HelpKINode Title="about Project class" Url="html/T_CoursesAPI_Services_Models_Entities_Project.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Services_Models_Entities_Project__ctor.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_CoursesAPI_Services_Models_Entities_Project.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Project.CourseInstanceId property" Url="html/P_CoursesAPI_Services_Models_Entities_Project_CourseInstanceId.htm" />
+  <HelpKINode Title="Project.ID property" Url="html/P_CoursesAPI_Services_Models_Entities_Project_ID.htm" />
+  <HelpKINode Title="Project.MinGradeToPassCourse property" Url="html/P_CoursesAPI_Services_Models_Entities_Project_MinGradeToPassCourse.htm" />
+  <HelpKINode Title="Project.Name property" Url="html/P_CoursesAPI_Services_Models_Entities_Project_Name.htm" />
+  <HelpKINode Title="Project.OnlyHigherThanProjectId property" Url="html/P_CoursesAPI_Services_Models_Entities_Project_OnlyHigherThanProjectId.htm" />
+  <HelpKINode Title="Project.Project constructor" Url="html/M_CoursesAPI_Services_Models_Entities_Project__ctor.htm" />
+  <HelpKINode Title="Project.ProjectGroupId property" Url="html/P_CoursesAPI_Services_Models_Entities_Project_ProjectGroupId.htm" />
+  <HelpKINode Title="Project.Weight property" Url="html/P_CoursesAPI_Services_Models_Entities_Project_Weight.htm" />
+  <HelpKINode Title="ProjectController class">
+    <HelpKINode Title="ProjectController Class" Url="html/T_CoursesAPI_Controllers_ProjectController.htm" />
+    <HelpKINode Title="about ProjectController class" Url="html/T_CoursesAPI_Controllers_ProjectController.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Controllers_ProjectController__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CoursesAPI_Controllers_ProjectController.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ProjectController.AddProject method" Url="html/M_CoursesAPI_Controllers_ProjectController_AddProject.htm" />
+  <HelpKINode Title="ProjectController.DeleteProject method" Url="html/M_CoursesAPI_Controllers_ProjectController_DeleteProject.htm" />
+  <HelpKINode Title="ProjectController.GetAllFinalGrades method" Url="html/M_CoursesAPI_Controllers_ProjectController_GetAllFinalGrades.htm" />
+  <HelpKINode Title="ProjectController.GetAllGrades method" Url="html/M_CoursesAPI_Controllers_ProjectController_GetAllGrades.htm" />
+  <HelpKINode Title="ProjectController.GetFinalGrade method" Url="html/M_CoursesAPI_Controllers_ProjectController_GetFinalGrade.htm" />
+  <HelpKINode Title="ProjectController.GetProjectGrade method" Url="html/M_CoursesAPI_Controllers_ProjectController_GetProjectGrade.htm" />
+  <HelpKINode Title="ProjectController.GetProjects method" Url="html/M_CoursesAPI_Controllers_ProjectController_GetProjects.htm" />
+  <HelpKINode Title="ProjectController.MakeFinalGradeComposition method" Url="html/M_CoursesAPI_Controllers_ProjectController_MakeFinalGradeComposition.htm" />
+  <HelpKINode Title="ProjectController.MakeProjectGroup method" Url="html/M_CoursesAPI_Controllers_ProjectController_MakeProjectGroup.htm" />
+  <HelpKINode Title="ProjectController.ProjectController constructor" Url="html/M_CoursesAPI_Controllers_ProjectController__ctor.htm" />
+  <HelpKINode Title="ProjectController.SetGrade method" Url="html/M_CoursesAPI_Controllers_ProjectController_SetGrade.htm" />
+  <HelpKINode Title="ProjectExtention class">
+    <HelpKINode Title="ProjectExtention Class" Url="html/T_CoursesAPI_Services_Extensions_ProjectExtention.htm" />
+    <HelpKINode Title="about ProjectExtention class" Url="html/T_CoursesAPI_Services_Extensions_ProjectExtention.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CoursesAPI_Services_Extensions_ProjectExtention.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ProjectExtention.GetProjectByID method" Url="html/M_CoursesAPI_Services_Extensions_ProjectExtention_GetProjectByID.htm" />
+  <HelpKINode Title="ProjectGroup class">
+    <HelpKINode Title="ProjectGroup Class" Url="html/T_CoursesAPI_Services_Models_Entities_ProjectGroup.htm" />
+    <HelpKINode Title="about ProjectGroup class" Url="html/T_CoursesAPI_Services_Models_Entities_ProjectGroup.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Services_Models_Entities_ProjectGroup__ctor.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_CoursesAPI_Services_Models_Entities_ProjectGroup.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ProjectGroup.GradedProjectsCount property" Url="html/P_CoursesAPI_Services_Models_Entities_ProjectGroup_GradedProjectsCount.htm" />
+  <HelpKINode Title="ProjectGroup.ID property" Url="html/P_CoursesAPI_Services_Models_Entities_ProjectGroup_ID.htm" />
+  <HelpKINode Title="ProjectGroup.Name property" Url="html/P_CoursesAPI_Services_Models_Entities_ProjectGroup_Name.htm" />
+  <HelpKINode Title="ProjectGroup.ProjectGroup constructor" Url="html/M_CoursesAPI_Services_Models_Entities_ProjectGroup__ctor.htm" />
+  <HelpKINode Title="ProjectGroupExtention class">
+    <HelpKINode Title="ProjectGroupExtention Class" Url="html/T_CoursesAPI_Services_Extensions_ProjectGroupExtention.htm" />
+    <HelpKINode Title="about ProjectGroupExtention class" Url="html/T_CoursesAPI_Services_Extensions_ProjectGroupExtention.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CoursesAPI_Services_Extensions_ProjectGroupExtention.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ProjectGroupExtention.GetGroupByID method" Url="html/M_CoursesAPI_Services_Extensions_ProjectGroupExtention_GetGroupByID.htm" />
+  <HelpKINode Title="ProjectGroupId property">
+    <HelpKINode Title="AddProjectViewModel.ProjectGroupId Property " Url="html/P_CoursesAPI_Models_AddProjectViewModel_ProjectGroupId.htm" />
+    <HelpKINode Title="Project.ProjectGroupId Property " Url="html/P_CoursesAPI_Services_Models_Entities_Project_ProjectGroupId.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ProjectGroups property" Url="html/P_CoursesAPI_Services_DataAccess_AppDataContext_ProjectGroups.htm" />
+  <HelpKINode Title="ProjectId property">
+    <HelpKINode Title="FinalGradeComposition.ProjectId Property " Url="html/P_CoursesAPI_Services_Models_Entities_FinalGradeComposition_ProjectId.htm" />
+    <HelpKINode Title="Grade.ProjectId Property " Url="html/P_CoursesAPI_Services_Models_Entities_Grade_ProjectId.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Projects property">
+    <HelpKINode Title="AddFinalGradeCompositionViewModel.Projects Property " Url="html/P_CoursesAPI_Models_AddFinalGradeCompositionViewModel_Projects.htm" />
+    <HelpKINode Title="AppDataContext.Projects Property " Url="html/P_CoursesAPI_Services_DataAccess_AppDataContext_Projects.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Put method" Url="html/M_CoursesAPI_Controllers_ValuesController_Put.htm" />
+  <HelpKINode Title="Register method" Url="html/M_CoursesAPI_WebApiConfig_Register.htm" />
+  <HelpKINode Title="RegisterBundles method" Url="html/M_CoursesAPI_BundleConfig_RegisterBundles.htm" />
+  <HelpKINode Title="RegisterGlobalFilters method" Url="html/M_CoursesAPI_FilterConfig_RegisterGlobalFilters.htm" />
+  <HelpKINode Title="RegisterRoutes method" Url="html/M_CoursesAPI_RouteConfig_RegisterRoutes.htm" />
+  <HelpKINode Title="RemoveProjectFromCourse method" Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_RemoveProjectFromCourse.htm" />
+  <HelpKINode Title="Repository(Of T) class">
+    <HelpKINode Title="Repository(T) Class" Url="html/T_CoursesAPI_Services_DataAccess_Repository_1.htm" />
+    <HelpKINode Title="about Repository(Of T) class" Url="html/T_CoursesAPI_Services_DataAccess_Repository_1.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Services_DataAccess_Repository_1__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CoursesAPI_Services_DataAccess_Repository_1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Repository(Of T).Add method" Url="html/M_CoursesAPI_Services_DataAccess_Repository_1_Add.htm" />
+  <HelpKINode Title="Repository(Of T).All method" Url="html/M_CoursesAPI_Services_DataAccess_Repository_1_All.htm" />
+  <HelpKINode Title="Repository(Of T).Delete method" Url="html/M_CoursesAPI_Services_DataAccess_Repository_1_Delete.htm" />
+  <HelpKINode Title="Repository(Of T).GetById method" Url="html/M_CoursesAPI_Services_DataAccess_Repository_1_GetById.htm" />
+  <HelpKINode Title="Repository(Of T).Repository constructor" Url="html/M_CoursesAPI_Services_DataAccess_Repository_1__ctor.htm" />
+  <HelpKINode Title="Repository(Of T).Update method" Url="html/M_CoursesAPI_Services_DataAccess_Repository_1_Update.htm" />
+  <HelpKINode Title="Repository&lt;T&gt; class">
+    <HelpKINode Title="Repository(T) Class" Url="html/T_CoursesAPI_Services_DataAccess_Repository_1.htm" />
+    <HelpKINode Title="about Repository&lt;T&gt; class" Url="html/T_CoursesAPI_Services_DataAccess_Repository_1.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Services_DataAccess_Repository_1__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CoursesAPI_Services_DataAccess_Repository_1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Repository&lt;T&gt;.Add method" Url="html/M_CoursesAPI_Services_DataAccess_Repository_1_Add.htm" />
+  <HelpKINode Title="Repository&lt;T&gt;.All method" Url="html/M_CoursesAPI_Services_DataAccess_Repository_1_All.htm" />
+  <HelpKINode Title="Repository&lt;T&gt;.Delete method" Url="html/M_CoursesAPI_Services_DataAccess_Repository_1_Delete.htm" />
+  <HelpKINode Title="Repository&lt;T&gt;.GetById method" Url="html/M_CoursesAPI_Services_DataAccess_Repository_1_GetById.htm" />
+  <HelpKINode Title="Repository&lt;T&gt;.Repository constructor" Url="html/M_CoursesAPI_Services_DataAccess_Repository_1__ctor.htm" />
+  <HelpKINode Title="Repository&lt;T&gt;.Update method" Url="html/M_CoursesAPI_Services_DataAccess_Repository_1_Update.htm" />
+  <HelpKINode Title="RouteConfig class">
+    <HelpKINode Title="RouteConfig Class" Url="html/T_CoursesAPI_RouteConfig.htm" />
+    <HelpKINode Title="about RouteConfig class" Url="html/T_CoursesAPI_RouteConfig.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_RouteConfig__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CoursesAPI_RouteConfig.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RouteConfig.RegisterRoutes method" Url="html/M_CoursesAPI_RouteConfig_RegisterRoutes.htm" />
+  <HelpKINode Title="RouteConfig.RouteConfig constructor" Url="html/M_CoursesAPI_RouteConfig__ctor.htm" />
+  <HelpKINode Title="Save method">
+    <HelpKINode Title="IUnitOfWork.Save Method " Url="html/M_CoursesAPI_Services_DataAccess_IUnitOfWork_Save.htm" />
+    <HelpKINode Title="MockUnitOfWork(T).Save Method " Url="html/M_CoursesAPI_Tests_MockObjects_MockUnitOfWork_1_Save.htm" />
+    <HelpKINode Title="UnitOfWork(TContext).Save Method " Url="html/M_CoursesAPI_Services_DataAccess_UnitOfWork_1_Save.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SaveChanges method" Url="html/M_CoursesAPI_Services_DataAccess_IDbContext_SaveChanges.htm" />
+  <HelpKINode Title="Semester class">
+    <HelpKINode Title="Semester Class" Url="html/T_CoursesAPI_Services_Models_Entities_Semester.htm" />
+    <HelpKINode Title="about Semester class" Url="html/T_CoursesAPI_Services_Models_Entities_Semester.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Services_Models_Entities_Semester__ctor.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_CoursesAPI_Services_Models_Entities_Semester.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Semester.DateBegins property" Url="html/P_CoursesAPI_Services_Models_Entities_Semester_DateBegins.htm" />
+  <HelpKINode Title="Semester.DateEnds property" Url="html/P_CoursesAPI_Services_Models_Entities_Semester_DateEnds.htm" />
+  <HelpKINode Title="Semester.ID property" Url="html/P_CoursesAPI_Services_Models_Entities_Semester_ID.htm" />
+  <HelpKINode Title="Semester.Name property" Url="html/P_CoursesAPI_Services_Models_Entities_Semester_Name.htm" />
+  <HelpKINode Title="Semester.Semester constructor" Url="html/M_CoursesAPI_Services_Models_Entities_Semester__ctor.htm" />
+  <HelpKINode Title="SemesterID property" Url="html/P_CoursesAPI_Services_Models_Entities_CourseInstance_SemesterID.htm" />
+  <HelpKINode Title="Semesters property" Url="html/P_CoursesAPI_Services_DataAccess_AppDataContext_Semesters.htm" />
+  <HelpKINode Title="Set(Of T) method" Url="html/M_CoursesAPI_Services_DataAccess_IDbContext_Set__1.htm" />
+  <HelpKINode Title="Set&lt;T&gt; method" Url="html/M_CoursesAPI_Services_DataAccess_IDbContext_Set__1.htm" />
+  <HelpKINode Title="SetData method" Url="html/M_CoursesAPI_Tests_MockObjects_MockRepository_1_SetData.htm" />
+  <HelpKINode Title="SetGrade method">
+    <HelpKINode Title="CoursesServiceProvider.SetGrade Method " Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_SetGrade.htm" />
+    <HelpKINode Title="ProjectController.SetGrade Method " Url="html/M_CoursesAPI_Controllers_ProjectController_SetGrade.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SetRepositoryData(Of TEntity) method" Url="html/M_CoursesAPI_Tests_MockObjects_MockUnitOfWork_1_SetRepositoryData__1.htm" />
+  <HelpKINode Title="SetRepositoryData&lt;TEntity&gt; method" Url="html/M_CoursesAPI_Tests_MockObjects_MockUnitOfWork_1_SetRepositoryData__1.htm" />
+  <HelpKINode Title="Setup method" Url="html/M_CoursesAPI_Tests_Services_CourseServicesTests_Setup.htm" />
+  <HelpKINode Title="SSN property">
+    <HelpKINode Title="GradeDTO.SSN Property " Url="html/P_CoursesAPI_Models_GradeDTO_SSN.htm" />
+    <HelpKINode Title="Person.SSN Property " Url="html/P_CoursesAPI_Services_Models_Entities_Person_SSN.htm" />
+    <HelpKINode Title="TeacherRegistration.SSN Property " Url="html/P_CoursesAPI_Services_Models_Entities_TeacherRegistration_SSN.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Status property" Url="html/P_CoursesAPI_Models_FinalGradeDTO_Status.htm" />
+  <HelpKINode Title="TeacherRegistration class">
+    <HelpKINode Title="TeacherRegistration Class" Url="html/T_CoursesAPI_Services_Models_Entities_TeacherRegistration.htm" />
+    <HelpKINode Title="about TeacherRegistration class" Url="html/T_CoursesAPI_Services_Models_Entities_TeacherRegistration.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Services_Models_Entities_TeacherRegistration__ctor.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_CoursesAPI_Services_Models_Entities_TeacherRegistration.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TeacherRegistration.CourseInstanceID property" Url="html/P_CoursesAPI_Services_Models_Entities_TeacherRegistration_CourseInstanceID.htm" />
+  <HelpKINode Title="TeacherRegistration.ID property" Url="html/P_CoursesAPI_Services_Models_Entities_TeacherRegistration_ID.htm" />
+  <HelpKINode Title="TeacherRegistration.SSN property" Url="html/P_CoursesAPI_Services_Models_Entities_TeacherRegistration_SSN.htm" />
+  <HelpKINode Title="TeacherRegistration.TeacherRegistration constructor" Url="html/M_CoursesAPI_Services_Models_Entities_TeacherRegistration__ctor.htm" />
+  <HelpKINode Title="TeacherRegistration.Type property" Url="html/P_CoursesAPI_Services_Models_Entities_TeacherRegistration_Type.htm" />
+  <HelpKINode Title="TeacherRegistrations property" Url="html/P_CoursesAPI_Services_DataAccess_AppDataContext_TeacherRegistrations.htm" />
+  <HelpKINode Title="TestAddProject method" Url="html/M_CoursesAPI_Tests_Services_CourseServicesTests_TestAddProject.htm" />
+  <HelpKINode Title="TestAddProjectGroup method" Url="html/M_CoursesAPI_Tests_Services_CourseServicesTests_TestAddProjectGroup.htm" />
+  <HelpKINode Title="TestGetFinalGrade method" Url="html/M_CoursesAPI_Tests_Services_CourseServicesTests_TestGetFinalGrade.htm" />
+  <HelpKINode Title="TestGetProjects method" Url="html/M_CoursesAPI_Tests_Services_CourseServicesTests_TestGetProjects.htm" />
+  <HelpKINode Title="TestGradeMethods method" Url="html/M_CoursesAPI_Tests_Services_CourseServicesTests_TestGradeMethods.htm" />
+  <HelpKINode Title="TestMakeFinalGradeComposition method" Url="html/M_CoursesAPI_Tests_Services_CourseServicesTests_TestMakeFinalGradeComposition.htm" />
+  <HelpKINode Title="Timestamp property" Url="html/P_CoursesAPI_Models_LanguageViewModel_Timestamp.htm" />
+  <HelpKINode Title="Trace method" Url="html/M_CoursesAPI_Tracers_CourseAPITracer_Trace.htm" />
+  <HelpKINode Title="Type property" Url="html/P_CoursesAPI_Services_Models_Entities_TeacherRegistration_Type.htm" />
+  <HelpKINode Title="UnitOfWork(Of TContext) class">
+    <HelpKINode Title="UnitOfWork(TContext) Class" Url="html/T_CoursesAPI_Services_DataAccess_UnitOfWork_1.htm" />
+    <HelpKINode Title="about UnitOfWork(Of TContext) class" Url="html/T_CoursesAPI_Services_DataAccess_UnitOfWork_1.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Services_DataAccess_UnitOfWork_1__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CoursesAPI_Services_DataAccess_UnitOfWork_1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UnitOfWork(Of TContext).Dispose method" Url="html/M_CoursesAPI_Services_DataAccess_UnitOfWork_1_Dispose.htm" />
+  <HelpKINode Title="UnitOfWork(Of TContext).GetRepository(Of TEntity) method" Url="html/M_CoursesAPI_Services_DataAccess_UnitOfWork_1_GetRepository__1.htm" />
+  <HelpKINode Title="UnitOfWork(Of TContext).Save method" Url="html/M_CoursesAPI_Services_DataAccess_UnitOfWork_1_Save.htm" />
+  <HelpKINode Title="UnitOfWork(Of TContext).UnitOfWork constructor" Url="html/M_CoursesAPI_Services_DataAccess_UnitOfWork_1__ctor.htm" />
+  <HelpKINode Title="UnitOfWork&lt;TContext&gt; class">
+    <HelpKINode Title="UnitOfWork(TContext) Class" Url="html/T_CoursesAPI_Services_DataAccess_UnitOfWork_1.htm" />
+    <HelpKINode Title="about UnitOfWork&lt;TContext&gt; class" Url="html/T_CoursesAPI_Services_DataAccess_UnitOfWork_1.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Services_DataAccess_UnitOfWork_1__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CoursesAPI_Services_DataAccess_UnitOfWork_1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UnitOfWork&lt;TContext&gt;.Dispose method" Url="html/M_CoursesAPI_Services_DataAccess_UnitOfWork_1_Dispose.htm" />
+  <HelpKINode Title="UnitOfWork&lt;TContext&gt;.GetRepository&lt;TEntity&gt; method" Url="html/M_CoursesAPI_Services_DataAccess_UnitOfWork_1_GetRepository__1.htm" />
+  <HelpKINode Title="UnitOfWork&lt;TContext&gt;.Save method" Url="html/M_CoursesAPI_Services_DataAccess_UnitOfWork_1_Save.htm" />
+  <HelpKINode Title="UnitOfWork&lt;TContext&gt;.UnitOfWork constructor" Url="html/M_CoursesAPI_Services_DataAccess_UnitOfWork_1__ctor.htm" />
+  <HelpKINode Title="Update method">
+    <HelpKINode Title="IRepository(T).Update Method " Url="html/M_CoursesAPI_Services_DataAccess_IRepository_1_Update.htm" />
+    <HelpKINode Title="MockRepository(T).Update Method " Url="html/M_CoursesAPI_Tests_MockObjects_MockRepository_1_Update.htm" />
+    <HelpKINode Title="Repository(T).Update Method " Url="html/M_CoursesAPI_Services_DataAccess_Repository_1_Update.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Validate(Of T) method" Url="html/M_CoursesAPI_Services_Helpers_CourseAPIValidation_Validate__1.htm" />
+  <HelpKINode Title="Validate&lt;T&gt; method" Url="html/M_CoursesAPI_Services_Helpers_CourseAPIValidation_Validate__1.htm" />
+  <HelpKINode Title="ValidationResults property">
+    <HelpKINode Title="CoursesAPIObjectNotFoundException.ValidationResults Property " Url="html/P_CoursesAPI_Services_Exceptions_CoursesAPIObjectNotFoundException_ValidationResults.htm" />
+    <HelpKINode Title="CoursesAPIValidationException.ValidationResults Property " Url="html/P_CoursesAPI_Services_Exceptions_CoursesAPIValidationException_ValidationResults.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ValuesController class">
+    <HelpKINode Title="ValuesController Class" Url="html/T_CoursesAPI_Controllers_ValuesController.htm" />
+    <HelpKINode Title="about ValuesController class" Url="html/T_CoursesAPI_Controllers_ValuesController.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_Controllers_ValuesController__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CoursesAPI_Controllers_ValuesController.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ValuesController.Delete method" Url="html/M_CoursesAPI_Controllers_ValuesController_Delete.htm" />
+  <HelpKINode Title="ValuesController.Get method" Url="html/Overload_CoursesAPI_Controllers_ValuesController_Get.htm" />
+  <HelpKINode Title="ValuesController.Post method" Url="html/M_CoursesAPI_Controllers_ValuesController_Post.htm" />
+  <HelpKINode Title="ValuesController.Put method" Url="html/M_CoursesAPI_Controllers_ValuesController_Put.htm" />
+  <HelpKINode Title="ValuesController.ValuesController constructor" Url="html/M_CoursesAPI_Controllers_ValuesController__ctor.htm" />
+  <HelpKINode Title="WebApiApplication class">
+    <HelpKINode Title="WebApiApplication Class" Url="html/T_CoursesAPI_WebApiApplication.htm" />
+    <HelpKINode Title="about WebApiApplication class" Url="html/T_CoursesAPI_WebApiApplication.htm" />
+    <HelpKINode Title="constructor" Url="html/M_CoursesAPI_WebApiApplication__ctor.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WebApiApplication.WebApiApplication constructor" Url="html/M_CoursesAPI_WebApiApplication__ctor.htm" />
+  <HelpKINode Title="WebApiConfig class">
+    <HelpKINode Title="WebApiConfig Class" Url="html/T_CoursesAPI_WebApiConfig.htm" />
+    <HelpKINode Title="about WebApiConfig class" Url="html/T_CoursesAPI_WebApiConfig.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_CoursesAPI_WebApiConfig.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WebApiConfig.Register method" Url="html/M_CoursesAPI_WebApiConfig_Register.htm" />
+  <HelpKINode Title="Weight property">
+    <HelpKINode Title="AddProjectViewModel.Weight Property " Url="html/P_CoursesAPI_Models_AddProjectViewModel_Weight.htm" />
+    <HelpKINode Title="Project.Weight Property " Url="html/P_CoursesAPI_Services_Models_Entities_Project_Weight.htm" />
+  </HelpKINode>
+  <HelpKINode Title="_uow field" Url="html/F_CoursesAPI_Services_Services_CoursesServiceProvider__uow.htm" />
+</HelpKI>

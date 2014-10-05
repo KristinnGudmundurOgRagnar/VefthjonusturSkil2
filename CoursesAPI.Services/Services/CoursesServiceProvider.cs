@@ -327,13 +327,12 @@ namespace CoursesAPI.Services.Services
                 throw new ArgumentException("Invalid project-group id");
             }
 
-			//TODO: Suppor ProjectGroupId and OnlyHigherThanProjectId
             Project project = new Project
             {
                 Name = model.Name,
                 CourseInstanceId = id,
                 ProjectGroupId = model.ProjectGroupId,
-                OnlyHigherThanProjectId = null,
+                OnlyHigherThanProjectId = model.OnlyHigherThanProjectId,
                 Weight = model.Weight,
                 MinGradeToPassCourse = model.MinGradeToPassCourse
             };

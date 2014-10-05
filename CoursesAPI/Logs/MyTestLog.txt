@@ -562,6 +562,7 @@ Created - Content-type='application/json; charset=utf-8', content-length=unknown
 0 - 
 0 - 
 0 - 
+<<<<<<< HEAD
 0 - http://localhost:12298/api/courses/5/project
 0 - 
 0 - Route='MS_SubRoutes:System.Web.Http.Routing.IHttpRouteData[]'
@@ -940,3 +941,5 @@ BadRequest - Content-type='application/json; charset=utf-8', content-length=unkn
 0 - 
 0 - 
 0 - 
+=======
+>>>>>>> 890439c92e16d8f81ac7d949f00fd8e373715ae1

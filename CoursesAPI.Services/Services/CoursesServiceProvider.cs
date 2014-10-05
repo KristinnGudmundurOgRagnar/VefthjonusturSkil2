@@ -7,6 +7,7 @@ using CoursesAPI.Services.DataAccess;
 using CoursesAPI.Services.Models.Entities;
 using CoursesAPI.Services.Helpers;
 using CoursesAPI.Services.Exceptions;
+using CoursesAPI.Services.Extensions;
 
 namespace CoursesAPI.Services.Services
 {
@@ -318,13 +319,7 @@ namespace CoursesAPI.Services.Services
                                      (PercentCompleted(id, model)) + ", it cant be higher than 100");
             }
 
-            var course = _courseInstances.All().SingleOrDefault(c => c.ID == id);
-
-            if(course == null)
-            {
-                throw new KeyNotFoundException("No course instance found with this ID");
-            }
-
+            var course = _courseInstances.GetCourseByID(id);
             
             var projectGroup = _projectGroups.All().SingleOrDefault(g => g.ID == model.ProjectGroupId);
 
@@ -354,12 +349,16 @@ namespace CoursesAPI.Services.Services
         /// <param name="projectId">Id of the project</param>
         public void RemoveProjectFromCourse(int courseId, int projectId)
         {
+<<<<<<< HEAD
             var course = _courseInstances.All().SingleOrDefault(c => c.ID == courseId);
 
             if (course == null)
             {
                 throw new ArgumentException("No course instance found with this ID");
             }
+=======
+            var course = _courseInstances.GetCourseByID(courseId);
+>>>>>>> 890439c92e16d8f81ac7d949f00fd8e373715ae1
 
             try
             {
@@ -367,7 +366,7 @@ namespace CoursesAPI.Services.Services
 
                 if (project == null)
                 {
-                    throw new Exception("no project found with that id");
+                    throw new Exception("No project found with that id");
                 }
 
                 _projects.Delete(project);
@@ -375,7 +374,7 @@ namespace CoursesAPI.Services.Services
             }
             catch (Exception)
             {
-                throw new Exception("found two projects with same id");
+                throw new Exception("Found two projects with same id");
             }
         }
 
@@ -386,17 +385,11 @@ namespace CoursesAPI.Services.Services
         /// <param name="model">viewmodel of project to add</param>
         public int PercentCompleted(int id, AddProjectViewModel model)
         {
-            CourseInstance theCourse = _courseInstances.All().SingleOrDefault(c => c.ID == id);
-
-            if (theCourse == null)
-            {
-                throw new KeyNotFoundException("No course instance found with this ID");
-            }
+            CourseInstance theCourse = _courseInstances.GetCourseByID(id);
 
             int PrecentComplete = 0;
 
-            Dictionary<int, int> myLists =
-            new Dictionary<int, int>();
+            Dictionary<int, int> myLists = new Dictionary<int, int>();
 
             var projects = GetProjectsForCourse(id);
 
@@ -414,6 +407,7 @@ namespace CoursesAPI.Services.Services
                     }
                 }
             }
+
             bool groupexist = false;
             foreach (KeyValuePair<int, int> pair in myLists)
             {
@@ -421,7 +415,7 @@ namespace CoursesAPI.Services.Services
 
                 if (group == null)
                 {
-                    throw new Exception("something went wrong in weightleft()");
+                    throw new Exception("Found two or more project groups with the same id");
                 }
                 if (model.ProjectGroupId == pair.Key)
                 {
@@ -576,7 +570,7 @@ namespace CoursesAPI.Services.Services
         /// <param name="courseInstanceID">Id of the course</param>
         /// <param name="projectID">Id of the project</param>
         /// <param name="viewModel">Contains student id to be evaluated and his grade</param>
-		public void AddGrade(int courseInstanceID, int projectID, AddGradeViewModel viewModel)
+		public void SetGrade(int courseInstanceID, int projectID, AddGradeViewModel viewModel)
 		{
 			if(viewModel == null){
 				throw new MissingFieldException("The payload must contain \"Grade\" and \"PersonSSN\"");
@@ -643,8 +637,10 @@ namespace CoursesAPI.Services.Services
 				});
 			}
 			else{
-				//TODO: Should the old one be overwritten, or should there be an error
+				//Overwrite the old grade
+				theGrade.GradeValue = viewModel.Grade;
 			}
+			_uow.Save();
 		}
 
         /// <summary>

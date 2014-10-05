@@ -121,19 +121,19 @@ namespace CoursesAPI.Controllers
 		}
 
 		/// <summary>
-		/// Add a grade for a given person for a given project
+		/// Add a grade for a given person for a given project, or overwrite an old one
 		/// </summary>
 		/// <param name="courseInstanceID">The Id of the courseInstance, gotten from the URL</param>
 		/// <param name="projectID">The Id of the project, gotten from the URL</param>
 		/// <param name="viewModel">The grade that is to be added, gotten from the payload</param>
 		/// <returns>Status code, depending on the correctness of the payload</returns>
-		[HttpPost]
+		[HttpPut]
 		[Route("project/{projectId:int}/grade")]
-		public HttpResponseMessage AddGrade(int courseInstanceID, int projectID, AddGradeViewModel viewModel)
+		public HttpResponseMessage SetGrade(int courseInstanceID, int projectID, AddGradeViewModel viewModel)
 		{
 			try
 			{
-				_service.AddGrade(courseInstanceID, projectID, viewModel);
+				_service.SetGrade(courseInstanceID, projectID, viewModel);
 			}
 			catch (ArgumentException e)
 			{

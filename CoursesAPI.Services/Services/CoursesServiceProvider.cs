@@ -277,10 +277,10 @@ namespace CoursesAPI.Services.Services
 		}
 
         /// <summary>
-        /// TODO
+        /// Gets all courses in selected semester
         /// </summary>
-        /// <param name="semester"></param>
-        /// <returns></returns>
+        /// <param name="semester">The id of the semester e.g. 20143</param>
+        /// <returns>List of courses from the selected semester</returns>
 		public List<CourseInstanceDTO> GetSemesterCourses(string semester)
 		{
 			// TODO

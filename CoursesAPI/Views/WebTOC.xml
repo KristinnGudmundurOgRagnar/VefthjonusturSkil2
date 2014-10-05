@@ -1,59 +1,59 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HelpTOC>
 
-  <HelpTOCNode Id="9c8be341-d344-4c91-900d-ef1f29881612" Title="CoursesAPI" Url="html/N_CoursesAPI.htm">
-    <HelpTOCNode Id="0aa5e73d-247d-4b64-8dc5-ed191429f67a" Title="BundleConfig Class" Url="html/T_CoursesAPI_BundleConfig.htm">
+  <HelpTOCNode Id="01861b67-1ab3-4e45-8353-977f14536b3d" Title="CoursesAPI" Url="html/N_CoursesAPI.htm">
+    <HelpTOCNode Id="7cc867f2-30d0-468e-8fe7-6e9fa9f74cbc" Title="BundleConfig Class" Url="html/T_CoursesAPI_BundleConfig.htm">
       <HelpTOCNode Title="BundleConfig Constructor " Url="html/M_CoursesAPI_BundleConfig__ctor.htm" />
-      <HelpTOCNode Id="0800b05c-c867-4a3e-b53e-ab003d600f35" Title="BundleConfig Methods" Url="html/Methods_T_CoursesAPI_BundleConfig.htm">
+      <HelpTOCNode Id="b4c038ec-de0f-4ac2-82c0-16db404f7792" Title="BundleConfig Methods" Url="html/Methods_T_CoursesAPI_BundleConfig.htm">
         <HelpTOCNode Title="RegisterBundles Method " Url="html/M_CoursesAPI_BundleConfig_RegisterBundles.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="5aa7a65d-6520-498b-a0f8-a2cea74ae64f" Title="FilterConfig Class" Url="html/T_CoursesAPI_FilterConfig.htm">
+    <HelpTOCNode Id="0325a385-984e-4dc4-a8cf-4d8663cb0c0d" Title="FilterConfig Class" Url="html/T_CoursesAPI_FilterConfig.htm">
       <HelpTOCNode Title="FilterConfig Constructor " Url="html/M_CoursesAPI_FilterConfig__ctor.htm" />
-      <HelpTOCNode Id="6333ef9d-2936-4f77-828f-d6145a58acdd" Title="FilterConfig Methods" Url="html/Methods_T_CoursesAPI_FilterConfig.htm">
+      <HelpTOCNode Id="2338ebe5-7d3c-48a6-be66-7ed4a962172a" Title="FilterConfig Methods" Url="html/Methods_T_CoursesAPI_FilterConfig.htm">
         <HelpTOCNode Title="RegisterGlobalFilters Method " Url="html/M_CoursesAPI_FilterConfig_RegisterGlobalFilters.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="74becd52-7346-4855-bb25-d36e41ff8da0" Title="LanguageMessageHandler Class" Url="html/T_CoursesAPI_LanguageMessageHandler.htm">
+    <HelpTOCNode Id="aa9aa47f-636a-40a8-a7e1-5bfabf2b9725" Title="LanguageMessageHandler Class" Url="html/T_CoursesAPI_LanguageMessageHandler.htm">
       <HelpTOCNode Title="LanguageMessageHandler Constructor " Url="html/M_CoursesAPI_LanguageMessageHandler__ctor.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="d90d29cb-eca9-4a1a-84ac-feedcc47affc" Title="RouteConfig Class" Url="html/T_CoursesAPI_RouteConfig.htm">
+    <HelpTOCNode Id="8e6b9bf2-5ccb-42ac-8182-83735bdc20b6" Title="RouteConfig Class" Url="html/T_CoursesAPI_RouteConfig.htm">
       <HelpTOCNode Title="RouteConfig Constructor " Url="html/M_CoursesAPI_RouteConfig__ctor.htm" />
-      <HelpTOCNode Id="5284bd5b-40ee-4fb6-9de5-118b728408eb" Title="RouteConfig Methods" Url="html/Methods_T_CoursesAPI_RouteConfig.htm">
+      <HelpTOCNode Id="d15f2f69-6d64-4bcc-89ee-cca92d9667ef" Title="RouteConfig Methods" Url="html/Methods_T_CoursesAPI_RouteConfig.htm">
         <HelpTOCNode Title="RegisterRoutes Method " Url="html/M_CoursesAPI_RouteConfig_RegisterRoutes.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="cbb1a276-0afa-4dd8-8e54-8e5e4ae602a3" Title="WebApiApplication Class" Url="html/T_CoursesAPI_WebApiApplication.htm">
+    <HelpTOCNode Id="368c13e7-79ca-4f26-aa70-71dfdc629d57" Title="WebApiApplication Class" Url="html/T_CoursesAPI_WebApiApplication.htm">
       <HelpTOCNode Title="WebApiApplication Constructor " Url="html/M_CoursesAPI_WebApiApplication__ctor.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="1a273f27-8259-4718-8dc5-e8629da5f529" Title="WebApiConfig Class" Url="html/T_CoursesAPI_WebApiConfig.htm">
-      <HelpTOCNode Id="8b2966da-1be1-496b-bd17-fbaa25fbd2b9" Title="WebApiConfig Methods" Url="html/Methods_T_CoursesAPI_WebApiConfig.htm">
+    <HelpTOCNode Id="3e01281c-5866-40d6-a3e0-5b57d76edeae" Title="WebApiConfig Class" Url="html/T_CoursesAPI_WebApiConfig.htm">
+      <HelpTOCNode Id="de4f0399-8154-483c-8b15-fe19f8821a61" Title="WebApiConfig Methods" Url="html/Methods_T_CoursesAPI_WebApiConfig.htm">
         <HelpTOCNode Title="Register Method " Url="html/M_CoursesAPI_WebApiConfig_Register.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="525e3bf7-c365-4b31-9ea8-8a6471fb7049" Title="CoursesAPI.Controllers" Url="html/N_CoursesAPI_Controllers.htm">
-    <HelpTOCNode Id="2b898f1e-e294-4b3b-b119-96fa0027d080" Title="CoursesController Class" Url="html/T_CoursesAPI_Controllers_CoursesController.htm">
+  <HelpTOCNode Id="5e7ce05d-87d8-442f-b4bd-3029aa02e9ea" Title="CoursesAPI.Controllers" Url="html/N_CoursesAPI_Controllers.htm">
+    <HelpTOCNode Id="6853976a-85be-4a16-9eda-e9844a589146" Title="CoursesController Class" Url="html/T_CoursesAPI_Controllers_CoursesController.htm">
       <HelpTOCNode Title="CoursesController Constructor " Url="html/M_CoursesAPI_Controllers_CoursesController__ctor.htm" />
-      <HelpTOCNode Id="fe88767c-f279-4e6e-89db-fdf198f0af89" Title="CoursesController Methods" Url="html/Methods_T_CoursesAPI_Controllers_CoursesController.htm">
+      <HelpTOCNode Id="793dd27b-1548-4fe0-b9f2-097664bb8fa2" Title="CoursesController Methods" Url="html/Methods_T_CoursesAPI_Controllers_CoursesController.htm">
         <HelpTOCNode Title="GetCoursesOnSemester Method " Url="html/M_CoursesAPI_Controllers_CoursesController_GetCoursesOnSemester.htm" />
         <HelpTOCNode Title="GetCoursesOnSemester2 Method " Url="html/M_CoursesAPI_Controllers_CoursesController_GetCoursesOnSemester2.htm" />
         <HelpTOCNode Title="GetCourseTeachers Method " Url="html/M_CoursesAPI_Controllers_CoursesController_GetCourseTeachers.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="333a3229-8ebd-454b-9ca1-905a988daa6a" Title="HomeController Class" Url="html/T_CoursesAPI_Controllers_HomeController.htm">
+    <HelpTOCNode Id="1de32a47-f9d0-4986-a44b-3c7b800abed0" Title="HomeController Class" Url="html/T_CoursesAPI_Controllers_HomeController.htm">
       <HelpTOCNode Title="HomeController Constructor " Url="html/M_CoursesAPI_Controllers_HomeController__ctor.htm" />
-      <HelpTOCNode Id="63370f6d-c996-40a6-8648-1035516fb572" Title="HomeController Methods" Url="html/Methods_T_CoursesAPI_Controllers_HomeController.htm">
+      <HelpTOCNode Id="5bf9a93d-bc55-4f54-b585-b4704a539f04" Title="HomeController Methods" Url="html/Methods_T_CoursesAPI_Controllers_HomeController.htm">
         <HelpTOCNode Title="Delete Method " Url="html/M_CoursesAPI_Controllers_HomeController_Delete.htm" />
         <HelpTOCNode Title="Index Method " Url="html/M_CoursesAPI_Controllers_HomeController_Index.htm" />
         <HelpTOCNode Title="Post Method " Url="html/M_CoursesAPI_Controllers_HomeController_Post.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="e12e8758-ce9c-4f82-b886-af84a8f2b827" Title="LanguageController Class" Url="html/T_CoursesAPI_Controllers_LanguageController.htm">
+    <HelpTOCNode Id="ded6404e-ec48-4646-8865-c6205239dadf" Title="LanguageController Class" Url="html/T_CoursesAPI_Controllers_LanguageController.htm">
       <HelpTOCNode Title="LanguageController Constructor " Url="html/M_CoursesAPI_Controllers_LanguageController__ctor.htm" />
-      <HelpTOCNode Id="e7e8a4e4-4f0f-4192-aeea-d67001079b0a" Title="LanguageController Methods" Url="html/Methods_T_CoursesAPI_Controllers_LanguageController.htm">
+      <HelpTOCNode Id="203cc893-de50-4473-90c0-02ee1c0c8ab2" Title="LanguageController Methods" Url="html/Methods_T_CoursesAPI_Controllers_LanguageController.htm">
         <HelpTOCNode Title="Delete Method " Url="html/M_CoursesAPI_Controllers_LanguageController_Delete.htm" />
-        <HelpTOCNode Id="fa65415c-608e-428b-8f8b-a44abca4d680" Title="Get Method " Url="html/Overload_CoursesAPI_Controllers_LanguageController_Get.htm">
+        <HelpTOCNode Id="882f4078-ed7a-4525-8ad7-b1c146d43fb2" Title="Get Method " Url="html/Overload_CoursesAPI_Controllers_LanguageController_Get.htm">
           <HelpTOCNode Title="Get Method " Url="html/M_CoursesAPI_Controllers_LanguageController_Get.htm" />
           <HelpTOCNode Title="Get Method (Int32)" Url="html/M_CoursesAPI_Controllers_LanguageController_Get_1.htm" />
         </HelpTOCNode>
@@ -61,9 +61,9 @@
         <HelpTOCNode Title="Post Method " Url="html/M_CoursesAPI_Controllers_LanguageController_Post.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="8ee9194b-a111-4c53-9676-9b1b36ba0f03" Title="ProjectController Class" Url="html/T_CoursesAPI_Controllers_ProjectController.htm">
+    <HelpTOCNode Id="dc93908e-7731-4239-8afd-d049944aa084" Title="ProjectController Class" Url="html/T_CoursesAPI_Controllers_ProjectController.htm">
       <HelpTOCNode Title="ProjectController Constructor " Url="html/M_CoursesAPI_Controllers_ProjectController__ctor.htm" />
-      <HelpTOCNode Id="750da3ef-fb48-4821-b649-5eaad3f6f83e" Title="ProjectController Methods" Url="html/Methods_T_CoursesAPI_Controllers_ProjectController.htm">
+      <HelpTOCNode Id="c0b5764c-5a3a-467a-ad6a-e3555a37e2aa" Title="ProjectController Methods" Url="html/Methods_T_CoursesAPI_Controllers_ProjectController.htm">
         <HelpTOCNode Title="AddProject Method " Url="html/M_CoursesAPI_Controllers_ProjectController_AddProject.htm" />
         <HelpTOCNode Title="DeleteProject Method " Url="html/M_CoursesAPI_Controllers_ProjectController_DeleteProject.htm" />
         <HelpTOCNode Title="GetAllFinalGrades Method " Url="html/M_CoursesAPI_Controllers_ProjectController_GetAllFinalGrades.htm" />
@@ -76,11 +76,11 @@
         <HelpTOCNode Title="SetGrade Method " Url="html/M_CoursesAPI_Controllers_ProjectController_SetGrade.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="749452ff-824b-4800-8f0b-3e95ba489381" Title="ValuesController Class" Url="html/T_CoursesAPI_Controllers_ValuesController.htm">
+    <HelpTOCNode Id="b387f391-e829-44ea-852c-5ec51f44c76c" Title="ValuesController Class" Url="html/T_CoursesAPI_Controllers_ValuesController.htm">
       <HelpTOCNode Title="ValuesController Constructor " Url="html/M_CoursesAPI_Controllers_ValuesController__ctor.htm" />
-      <HelpTOCNode Id="b894de61-8250-49e4-93ce-2ab6e9c91cb1" Title="ValuesController Methods" Url="html/Methods_T_CoursesAPI_Controllers_ValuesController.htm">
+      <HelpTOCNode Id="a6578b22-59e7-4f74-a3b8-7466e0c0f3ac" Title="ValuesController Methods" Url="html/Methods_T_CoursesAPI_Controllers_ValuesController.htm">
         <HelpTOCNode Title="Delete Method " Url="html/M_CoursesAPI_Controllers_ValuesController_Delete.htm" />
-        <HelpTOCNode Id="7d613254-00ad-4561-8481-1c829168500f" Title="Get Method " Url="html/Overload_CoursesAPI_Controllers_ValuesController_Get.htm">
+        <HelpTOCNode Id="d5989c32-c890-45cd-b5ad-bf532262c27d" Title="Get Method " Url="html/Overload_CoursesAPI_Controllers_ValuesController_Get.htm">
           <HelpTOCNode Title="Get Method " Url="html/M_CoursesAPI_Controllers_ValuesController_Get.htm" />
           <HelpTOCNode Title="Get Method (Int32)" Url="html/M_CoursesAPI_Controllers_ValuesController_Get_1.htm" />
         </HelpTOCNode>
@@ -89,30 +89,30 @@
       </HelpTOCNode>
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="d69b6ffa-bbb6-48dc-95fa-cd7c30f05a10" Title="CoursesAPI.Models" Url="html/N_CoursesAPI_Models.htm">
-    <HelpTOCNode Id="205c8434-3775-434e-b3a6-f4a6ede5fa0a" Title="AddFinalGradeCompositionViewModel Class" Url="html/T_CoursesAPI_Models_AddFinalGradeCompositionViewModel.htm">
+  <HelpTOCNode Id="bbf1ecf6-cb63-4324-a401-cf71aa0a11c3" Title="CoursesAPI.Models" Url="html/N_CoursesAPI_Models.htm">
+    <HelpTOCNode Id="fe670e79-a5f2-499d-b7dd-4c03f93bfb46" Title="AddFinalGradeCompositionViewModel Class" Url="html/T_CoursesAPI_Models_AddFinalGradeCompositionViewModel.htm">
       <HelpTOCNode Title="AddFinalGradeCompositionViewModel Constructor " Url="html/M_CoursesAPI_Models_AddFinalGradeCompositionViewModel__ctor.htm" />
-      <HelpTOCNode Id="de3cfafe-e6a2-4c9d-883c-5316472750a3" Title="AddFinalGradeCompositionViewModel Properties" Url="html/Properties_T_CoursesAPI_Models_AddFinalGradeCompositionViewModel.htm">
+      <HelpTOCNode Id="7704cac4-4d38-4063-a97b-bcccb9d67643" Title="AddFinalGradeCompositionViewModel Properties" Url="html/Properties_T_CoursesAPI_Models_AddFinalGradeCompositionViewModel.htm">
         <HelpTOCNode Title="Projects Property " Url="html/P_CoursesAPI_Models_AddFinalGradeCompositionViewModel_Projects.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="bd37128d-ed2f-4365-a15d-d669c88b2d0f" Title="AddGradeViewModel Class" Url="html/T_CoursesAPI_Models_AddGradeViewModel.htm">
+    <HelpTOCNode Id="525673ab-4af8-42ae-86e6-0eb252d5e9b8" Title="AddGradeViewModel Class" Url="html/T_CoursesAPI_Models_AddGradeViewModel.htm">
       <HelpTOCNode Title="AddGradeViewModel Constructor " Url="html/M_CoursesAPI_Models_AddGradeViewModel__ctor.htm" />
-      <HelpTOCNode Id="e966e57b-0b0c-4241-98f6-34000900e15c" Title="AddGradeViewModel Properties" Url="html/Properties_T_CoursesAPI_Models_AddGradeViewModel.htm">
+      <HelpTOCNode Id="d6be36f6-615a-4f18-9089-6c0cf644a5b1" Title="AddGradeViewModel Properties" Url="html/Properties_T_CoursesAPI_Models_AddGradeViewModel.htm">
         <HelpTOCNode Title="Grade Property " Url="html/P_CoursesAPI_Models_AddGradeViewModel_Grade.htm" />
         <HelpTOCNode Title="PersonSSN Property " Url="html/P_CoursesAPI_Models_AddGradeViewModel_PersonSSN.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="ef1982a4-09fb-4b7f-8a9c-3dd538678f5e" Title="AddProjectGroupViewModel Class" Url="html/T_CoursesAPI_Models_AddProjectGroupViewModel.htm">
+    <HelpTOCNode Id="a533b1c6-c258-43b5-b648-671259fbda51" Title="AddProjectGroupViewModel Class" Url="html/T_CoursesAPI_Models_AddProjectGroupViewModel.htm">
       <HelpTOCNode Title="AddProjectGroupViewModel Constructor " Url="html/M_CoursesAPI_Models_AddProjectGroupViewModel__ctor.htm" />
-      <HelpTOCNode Id="6f921bc1-149a-4168-ac64-518ab8244cd2" Title="AddProjectGroupViewModel Properties" Url="html/Properties_T_CoursesAPI_Models_AddProjectGroupViewModel.htm">
+      <HelpTOCNode Id="1597cdf1-8eff-4250-9ca1-9a9f47d52e20" Title="AddProjectGroupViewModel Properties" Url="html/Properties_T_CoursesAPI_Models_AddProjectGroupViewModel.htm">
         <HelpTOCNode Title="GradedProjectsCount Property " Url="html/P_CoursesAPI_Models_AddProjectGroupViewModel_GradedProjectsCount.htm" />
         <HelpTOCNode Title="Name Property " Url="html/P_CoursesAPI_Models_AddProjectGroupViewModel_Name.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="800a4eda-272f-4712-a9ab-f46b3325e0c7" Title="AddProjectViewModel Class" Url="html/T_CoursesAPI_Models_AddProjectViewModel.htm">
+    <HelpTOCNode Id="eb86d533-9b69-414a-b304-ec5884c46aec" Title="AddProjectViewModel Class" Url="html/T_CoursesAPI_Models_AddProjectViewModel.htm">
       <HelpTOCNode Title="AddProjectViewModel Constructor " Url="html/M_CoursesAPI_Models_AddProjectViewModel__ctor.htm" />
-      <HelpTOCNode Id="29a6176c-630b-47cf-8885-13e69c386220" Title="AddProjectViewModel Properties" Url="html/Properties_T_CoursesAPI_Models_AddProjectViewModel.htm">
+      <HelpTOCNode Id="78e8e340-8282-485f-b6cb-168fea55bb1a" Title="AddProjectViewModel Properties" Url="html/Properties_T_CoursesAPI_Models_AddProjectViewModel.htm">
         <HelpTOCNode Title="MinGradeToPassCourse Property " Url="html/P_CoursesAPI_Models_AddProjectViewModel_MinGradeToPassCourse.htm" />
         <HelpTOCNode Title="Name Property " Url="html/P_CoursesAPI_Models_AddProjectViewModel_Name.htm" />
         <HelpTOCNode Title="OnlyHigherThanProjectId Property " Url="html/P_CoursesAPI_Models_AddProjectViewModel_OnlyHigherThanProjectId.htm" />
@@ -120,24 +120,24 @@
         <HelpTOCNode Title="Weight Property " Url="html/P_CoursesAPI_Models_AddProjectViewModel_Weight.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="8bdeaade-1620-4119-87c9-ec147d0db72f" Title="CourseInstanceDTO Class" Url="html/T_CoursesAPI_Models_CourseInstanceDTO.htm">
+    <HelpTOCNode Id="0422eb82-34b9-4e8e-bd6c-d11670a328b8" Title="CourseInstanceDTO Class" Url="html/T_CoursesAPI_Models_CourseInstanceDTO.htm">
       <HelpTOCNode Title="CourseInstanceDTO Constructor " Url="html/M_CoursesAPI_Models_CourseInstanceDTO__ctor.htm" />
-      <HelpTOCNode Id="913b9d31-b1ae-4e03-8f40-4965f9b4b27f" Title="CourseInstanceDTO Properties" Url="html/Properties_T_CoursesAPI_Models_CourseInstanceDTO.htm">
+      <HelpTOCNode Id="b688c8bc-49c7-492d-a1a1-23049e5cb3a1" Title="CourseInstanceDTO Properties" Url="html/Properties_T_CoursesAPI_Models_CourseInstanceDTO.htm">
         <HelpTOCNode Title="CourseID Property " Url="html/P_CoursesAPI_Models_CourseInstanceDTO_CourseID.htm" />
         <HelpTOCNode Title="CourseInstanceID Property " Url="html/P_CoursesAPI_Models_CourseInstanceDTO_CourseInstanceID.htm" />
         <HelpTOCNode Title="MainTeacher Property " Url="html/P_CoursesAPI_Models_CourseInstanceDTO_MainTeacher.htm" />
         <HelpTOCNode Title="Name Property " Url="html/P_CoursesAPI_Models_CourseInstanceDTO_Name.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="9bd46c54-7304-4923-bb0a-7822a0df7e0c" Title="DeleteProjectViewModel Class" Url="html/T_CoursesAPI_Models_DeleteProjectViewModel.htm">
+    <HelpTOCNode Id="00cfeb26-2e17-4c0a-9279-f95da2e2cbc4" Title="DeleteProjectViewModel Class" Url="html/T_CoursesAPI_Models_DeleteProjectViewModel.htm">
       <HelpTOCNode Title="DeleteProjectViewModel Constructor " Url="html/M_CoursesAPI_Models_DeleteProjectViewModel__ctor.htm" />
-      <HelpTOCNode Id="a64e77c6-914a-4279-8365-f841a69c1d05" Title="DeleteProjectViewModel Properties" Url="html/Properties_T_CoursesAPI_Models_DeleteProjectViewModel.htm">
+      <HelpTOCNode Id="4da50eeb-8f68-432d-9aff-c242c11f4073" Title="DeleteProjectViewModel Properties" Url="html/Properties_T_CoursesAPI_Models_DeleteProjectViewModel.htm">
         <HelpTOCNode Title="Id Property " Url="html/P_CoursesAPI_Models_DeleteProjectViewModel_Id.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="11003dac-1dc1-451b-be6d-6ba6d65bb337" Title="FinalGradeDTO Class" Url="html/T_CoursesAPI_Models_FinalGradeDTO.htm">
+    <HelpTOCNode Id="69871d92-5f09-407d-afb5-d9ecb1918df3" Title="FinalGradeDTO Class" Url="html/T_CoursesAPI_Models_FinalGradeDTO.htm">
       <HelpTOCNode Title="FinalGradeDTO Constructor " Url="html/M_CoursesAPI_Models_FinalGradeDTO__ctor.htm" />
-      <HelpTOCNode Id="764ca1ab-d03a-4cf9-951b-161b7d7cea33" Title="FinalGradeDTO Properties" Url="html/Properties_T_CoursesAPI_Models_FinalGradeDTO.htm">
+      <HelpTOCNode Id="3f0a2ca1-193c-416f-bca3-6c9e2a8853fc" Title="FinalGradeDTO Properties" Url="html/Properties_T_CoursesAPI_Models_FinalGradeDTO.htm">
         <HelpTOCNode Title="Grade Property " Url="html/P_CoursesAPI_Models_FinalGradeDTO_Grade.htm" />
         <HelpTOCNode Title="NumberOfStudents Property " Url="html/P_CoursesAPI_Models_FinalGradeDTO_NumberOfStudents.htm" />
         <HelpTOCNode Title="PercentageComplete Property " Url="html/P_CoursesAPI_Models_FinalGradeDTO_PercentageComplete.htm" />
@@ -147,9 +147,9 @@
         <HelpTOCNode Title="Status Property " Url="html/P_CoursesAPI_Models_FinalGradeDTO_Status.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="fa2c73b2-789d-4e5f-9cbf-0f7ee600defb" Title="GradeDTO Class" Url="html/T_CoursesAPI_Models_GradeDTO.htm">
+    <HelpTOCNode Id="7954498b-fb72-4ac4-a8e4-966b2bc84f36" Title="GradeDTO Class" Url="html/T_CoursesAPI_Models_GradeDTO.htm">
       <HelpTOCNode Title="GradeDTO Constructor " Url="html/M_CoursesAPI_Models_GradeDTO__ctor.htm" />
-      <HelpTOCNode Id="c1ca5a53-8cc1-4827-92d3-bb97af0c25bb" Title="GradeDTO Properties" Url="html/Properties_T_CoursesAPI_Models_GradeDTO.htm">
+      <HelpTOCNode Id="0ef02cab-8627-46d3-8c0b-f1991450cc20" Title="GradeDTO Properties" Url="html/Properties_T_CoursesAPI_Models_GradeDTO.htm">
         <HelpTOCNode Title="Grade Property " Url="html/P_CoursesAPI_Models_GradeDTO_Grade.htm" />
         <HelpTOCNode Title="NumberOfStudents Property " Url="html/P_CoursesAPI_Models_GradeDTO_NumberOfStudents.htm" />
         <HelpTOCNode Title="PositionLower Property " Url="html/P_CoursesAPI_Models_GradeDTO_PositionLower.htm" />
@@ -157,20 +157,20 @@
         <HelpTOCNode Title="SSN Property " Url="html/P_CoursesAPI_Models_GradeDTO_SSN.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="436a5d0a-0cda-4a22-9a73-1bf3ec25bf70" Title="LanguageViewModel Class" Url="html/T_CoursesAPI_Models_LanguageViewModel.htm">
+    <HelpTOCNode Id="3dbacf9d-31ff-4a80-8434-423eaaa50399" Title="LanguageViewModel Class" Url="html/T_CoursesAPI_Models_LanguageViewModel.htm">
       <HelpTOCNode Title="LanguageViewModel Constructor " Url="html/M_CoursesAPI_Models_LanguageViewModel__ctor.htm" />
-      <HelpTOCNode Id="84b7ce00-0772-44ea-8c15-243534ea60d2" Title="LanguageViewModel Properties" Url="html/Properties_T_CoursesAPI_Models_LanguageViewModel.htm">
+      <HelpTOCNode Id="1092e936-9538-44c2-8f6b-78bb494b87bf" Title="LanguageViewModel Properties" Url="html/Properties_T_CoursesAPI_Models_LanguageViewModel.htm">
         <HelpTOCNode Title="Description Property " Url="html/P_CoursesAPI_Models_LanguageViewModel_Description.htm" />
         <HelpTOCNode Title="Name Property " Url="html/P_CoursesAPI_Models_LanguageViewModel_Name.htm" />
         <HelpTOCNode Title="Timestamp Property " Url="html/P_CoursesAPI_Models_LanguageViewModel_Timestamp.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="5eb76cde-8951-4133-a390-507d094e5a9f" Title="CoursesAPI.Services Namespaces" Url="html/G_CoursesAPI_Services.htm">
-    <HelpTOCNode Id="8a5633e9-4820-4c1c-88ee-38b49c920f38" Title="CoursesAPI.Services.DataAccess" Url="html/N_CoursesAPI_Services_DataAccess.htm">
-      <HelpTOCNode Id="9b86e1b1-8efc-46c9-9309-39d5f35f6c27" Title="AppDataContext Class" Url="html/T_CoursesAPI_Services_DataAccess_AppDataContext.htm">
+  <HelpTOCNode Id="8dac7d0a-f29f-489c-9a23-cf592d9178e4" Title="CoursesAPI.Services Namespaces" Url="html/G_CoursesAPI_Services.htm">
+    <HelpTOCNode Id="64417f1e-c5e4-41d9-9269-0e2cc3802cac" Title="CoursesAPI.Services.DataAccess" Url="html/N_CoursesAPI_Services_DataAccess.htm">
+      <HelpTOCNode Id="42295f7f-549a-4036-89c6-4f867de39b58" Title="AppDataContext Class" Url="html/T_CoursesAPI_Services_DataAccess_AppDataContext.htm">
         <HelpTOCNode Title="AppDataContext Constructor " Url="html/M_CoursesAPI_Services_DataAccess_AppDataContext__ctor.htm" />
-        <HelpTOCNode Id="3a3531a9-f834-4373-bd1e-f28847e7529c" Title="AppDataContext Properties" Url="html/Properties_T_CoursesAPI_Services_DataAccess_AppDataContext.htm">
+        <HelpTOCNode Id="40a2024c-ba0a-4ede-87c1-0f960fc8b77e" Title="AppDataContext Properties" Url="html/Properties_T_CoursesAPI_Services_DataAccess_AppDataContext.htm">
           <HelpTOCNode Title="CourseInstances Property " Url="html/P_CoursesAPI_Services_DataAccess_AppDataContext_CourseInstances.htm" />
           <HelpTOCNode Title="CourseTemplates Property " Url="html/P_CoursesAPI_Services_DataAccess_AppDataContext_CourseTemplates.htm" />
           <HelpTOCNode Title="FinalGradeCompositions Property " Url="html/P_CoursesAPI_Services_DataAccess_AppDataContext_FinalGradeCompositions.htm" />
@@ -183,31 +183,31 @@
           <HelpTOCNode Title="TeacherRegistrations Property " Url="html/P_CoursesAPI_Services_DataAccess_AppDataContext_TeacherRegistrations.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="b9b803e5-6218-4091-b8e4-b90194693113" Title="IDbContext Interface" Url="html/T_CoursesAPI_Services_DataAccess_IDbContext.htm">
-        <HelpTOCNode Id="89997a6a-fc3a-4419-a7fc-9974cb0b22c8" Title="IDbContext Methods" Url="html/Methods_T_CoursesAPI_Services_DataAccess_IDbContext.htm">
+      <HelpTOCNode Id="914c4b13-4215-4132-8de2-f16e1f4c4ee4" Title="IDbContext Interface" Url="html/T_CoursesAPI_Services_DataAccess_IDbContext.htm">
+        <HelpTOCNode Id="54141cef-4a42-43ae-9547-af158fa686f8" Title="IDbContext Methods" Url="html/Methods_T_CoursesAPI_Services_DataAccess_IDbContext.htm">
           <HelpTOCNode Title="Dispose Method " Url="html/M_CoursesAPI_Services_DataAccess_IDbContext_Dispose.htm" />
           <HelpTOCNode Title="Entry(T) Method " Url="html/M_CoursesAPI_Services_DataAccess_IDbContext_Entry__1.htm" />
           <HelpTOCNode Title="SaveChanges Method " Url="html/M_CoursesAPI_Services_DataAccess_IDbContext_SaveChanges.htm" />
           <HelpTOCNode Title="Set(T) Method " Url="html/M_CoursesAPI_Services_DataAccess_IDbContext_Set__1.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="934edc61-be79-4878-ad6f-6a1066cd283e" Title="IRepository(T) Interface" Url="html/T_CoursesAPI_Services_DataAccess_IRepository_1.htm">
-        <HelpTOCNode Id="9521be83-0e70-4f81-b0bb-56e2a8750d07" Title="IRepository(T) Methods" Url="html/Methods_T_CoursesAPI_Services_DataAccess_IRepository_1.htm">
+      <HelpTOCNode Id="12bcb132-3954-4f45-ae95-b47443b9a1f9" Title="IRepository(T) Interface" Url="html/T_CoursesAPI_Services_DataAccess_IRepository_1.htm">
+        <HelpTOCNode Id="194321a4-f639-4520-833f-bd017574a0be" Title="IRepository(T) Methods" Url="html/Methods_T_CoursesAPI_Services_DataAccess_IRepository_1.htm">
           <HelpTOCNode Title="Add Method " Url="html/M_CoursesAPI_Services_DataAccess_IRepository_1_Add.htm" />
           <HelpTOCNode Title="All Method " Url="html/M_CoursesAPI_Services_DataAccess_IRepository_1_All.htm" />
           <HelpTOCNode Title="Delete Method " Url="html/M_CoursesAPI_Services_DataAccess_IRepository_1_Delete.htm" />
           <HelpTOCNode Title="Update Method " Url="html/M_CoursesAPI_Services_DataAccess_IRepository_1_Update.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="87c59f0b-175c-45c7-a816-e7a7865da6b8" Title="IUnitOfWork Interface" Url="html/T_CoursesAPI_Services_DataAccess_IUnitOfWork.htm">
-        <HelpTOCNode Id="00cb722f-c63e-4b4e-a39d-a12bb3496b64" Title="IUnitOfWork Methods" Url="html/Methods_T_CoursesAPI_Services_DataAccess_IUnitOfWork.htm">
+      <HelpTOCNode Id="a7b97249-ccd6-4e57-895b-d6731938d83b" Title="IUnitOfWork Interface" Url="html/T_CoursesAPI_Services_DataAccess_IUnitOfWork.htm">
+        <HelpTOCNode Id="f63499de-0b85-4084-85be-dd5d2cba3140" Title="IUnitOfWork Methods" Url="html/Methods_T_CoursesAPI_Services_DataAccess_IUnitOfWork.htm">
           <HelpTOCNode Title="GetRepository(TEntity) Method " Url="html/M_CoursesAPI_Services_DataAccess_IUnitOfWork_GetRepository__1.htm" />
           <HelpTOCNode Title="Save Method " Url="html/M_CoursesAPI_Services_DataAccess_IUnitOfWork_Save.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="3884ee55-cc31-48fc-829c-37f7ca441209" Title="Repository(T) Class" Url="html/T_CoursesAPI_Services_DataAccess_Repository_1.htm">
+      <HelpTOCNode Id="26158588-9085-4eb0-97ad-2832d363a121" Title="Repository(T) Class" Url="html/T_CoursesAPI_Services_DataAccess_Repository_1.htm">
         <HelpTOCNode Title="Repository(T) Constructor " Url="html/M_CoursesAPI_Services_DataAccess_Repository_1__ctor.htm" />
-        <HelpTOCNode Id="18e77fc7-8bd6-4e2b-96ad-645f2780584b" Title="Repository(T) Methods" Url="html/Methods_T_CoursesAPI_Services_DataAccess_Repository_1.htm">
+        <HelpTOCNode Id="37bfd859-dc3b-44fc-98f7-21ef05eb04d2" Title="Repository(T) Methods" Url="html/Methods_T_CoursesAPI_Services_DataAccess_Repository_1.htm">
           <HelpTOCNode Title="Add Method " Url="html/M_CoursesAPI_Services_DataAccess_Repository_1_Add.htm" />
           <HelpTOCNode Title="All Method " Url="html/M_CoursesAPI_Services_DataAccess_Repository_1_All.htm" />
           <HelpTOCNode Title="Delete Method " Url="html/M_CoursesAPI_Services_DataAccess_Repository_1_Delete.htm" />
@@ -215,128 +215,128 @@
           <HelpTOCNode Title="Update Method " Url="html/M_CoursesAPI_Services_DataAccess_Repository_1_Update.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="e9cfa7b9-1498-4a5a-a480-0368c265794a" Title="UnitOfWork(TContext) Class" Url="html/T_CoursesAPI_Services_DataAccess_UnitOfWork_1.htm">
+      <HelpTOCNode Id="ac609362-cd36-4b51-8680-155f2657e0a6" Title="UnitOfWork(TContext) Class" Url="html/T_CoursesAPI_Services_DataAccess_UnitOfWork_1.htm">
         <HelpTOCNode Title="UnitOfWork(TContext) Constructor " Url="html/M_CoursesAPI_Services_DataAccess_UnitOfWork_1__ctor.htm" />
-        <HelpTOCNode Id="11134e8c-c8b7-45f7-950a-6e6bd7c8f20e" Title="UnitOfWork(TContext) Methods" Url="html/Methods_T_CoursesAPI_Services_DataAccess_UnitOfWork_1.htm">
+        <HelpTOCNode Id="6b20b53a-a4d0-4aad-8220-27167e729be3" Title="UnitOfWork(TContext) Methods" Url="html/Methods_T_CoursesAPI_Services_DataAccess_UnitOfWork_1.htm">
           <HelpTOCNode Title="Dispose Method " Url="html/M_CoursesAPI_Services_DataAccess_UnitOfWork_1_Dispose.htm" />
           <HelpTOCNode Title="GetRepository(TEntity) Method " Url="html/M_CoursesAPI_Services_DataAccess_UnitOfWork_1_GetRepository__1.htm" />
           <HelpTOCNode Title="Save Method " Url="html/M_CoursesAPI_Services_DataAccess_UnitOfWork_1_Save.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="bcbe94d6-e1f1-4c6b-b2e0-1943cbdf5c73" Title="CoursesAPI.Services.Exceptions" Url="html/N_CoursesAPI_Services_Exceptions.htm">
-      <HelpTOCNode Id="780f0658-15fe-4099-ba1f-27092f8e9870" Title="CoursesAPIException Class" Url="html/T_CoursesAPI_Services_Exceptions_CoursesAPIException.htm">
+    <HelpTOCNode Id="367a29ec-7190-42cd-806f-b3ee70be3175" Title="CoursesAPI.Services.Exceptions" Url="html/N_CoursesAPI_Services_Exceptions.htm">
+      <HelpTOCNode Id="5f52d789-1b72-49cb-9a8e-814ea99c72c0" Title="CoursesAPIException Class" Url="html/T_CoursesAPI_Services_Exceptions_CoursesAPIException.htm">
         <HelpTOCNode Title="CoursesAPIException Constructor " Url="html/M_CoursesAPI_Services_Exceptions_CoursesAPIException__ctor.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="55ac0191-9834-4f3c-a711-4ce4e5f45ed7" Title="CoursesAPIObjectNotFoundException Class" Url="html/T_CoursesAPI_Services_Exceptions_CoursesAPIObjectNotFoundException.htm">
+      <HelpTOCNode Id="786eee7d-b0ef-4159-bffd-97127ce86034" Title="CoursesAPIObjectNotFoundException Class" Url="html/T_CoursesAPI_Services_Exceptions_CoursesAPIObjectNotFoundException.htm">
         <HelpTOCNode Title="CoursesAPIObjectNotFoundException Constructor " Url="html/M_CoursesAPI_Services_Exceptions_CoursesAPIObjectNotFoundException__ctor.htm" />
-        <HelpTOCNode Id="3ef389d3-f2e4-4881-be24-118627c8989e" Title="CoursesAPIObjectNotFoundException Methods" Url="html/Methods_T_CoursesAPI_Services_Exceptions_CoursesAPIObjectNotFoundException.htm">
+        <HelpTOCNode Id="1b1dbd47-f23d-4ef7-b6ff-6e638c2e31ad" Title="CoursesAPIObjectNotFoundException Methods" Url="html/Methods_T_CoursesAPI_Services_Exceptions_CoursesAPIObjectNotFoundException.htm">
           <HelpTOCNode Title="GetValidationResults Method " Url="html/M_CoursesAPI_Services_Exceptions_CoursesAPIObjectNotFoundException_GetValidationResults.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="b02f868b-562c-4b10-8465-37986bf08924" Title="CoursesAPIObjectNotFoundException Properties" Url="html/Properties_T_CoursesAPI_Services_Exceptions_CoursesAPIObjectNotFoundException.htm">
+        <HelpTOCNode Id="76c4b48a-cca7-4e1d-9098-ca111385ed4e" Title="CoursesAPIObjectNotFoundException Properties" Url="html/Properties_T_CoursesAPI_Services_Exceptions_CoursesAPIObjectNotFoundException.htm">
           <HelpTOCNode Title="ValidationResults Property " Url="html/P_CoursesAPI_Services_Exceptions_CoursesAPIObjectNotFoundException_ValidationResults.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="f990f7ae-6dfa-4324-84a6-b7637a6eaab1" Title="CoursesAPIValidationException Class" Url="html/T_CoursesAPI_Services_Exceptions_CoursesAPIValidationException.htm">
-        <HelpTOCNode Id="8bff0bf3-8efb-4e8d-a094-56fdfc2fadfb" Title="CoursesAPIValidationException Constructor " Url="html/Overload_CoursesAPI_Services_Exceptions_CoursesAPIValidationException__ctor.htm">
+      <HelpTOCNode Id="92a7634f-700c-4a15-86f3-0feef59f19c3" Title="CoursesAPIValidationException Class" Url="html/T_CoursesAPI_Services_Exceptions_CoursesAPIValidationException.htm">
+        <HelpTOCNode Id="c2d2d70c-1362-452e-b113-a92439b5d93e" Title="CoursesAPIValidationException Constructor " Url="html/Overload_CoursesAPI_Services_Exceptions_CoursesAPIValidationException__ctor.htm">
           <HelpTOCNode Title="CoursesAPIValidationException Constructor (List(ValidationResult))" Url="html/M_CoursesAPI_Services_Exceptions_CoursesAPIValidationException__ctor.htm" />
           <HelpTOCNode Title="CoursesAPIValidationException Constructor (String)" Url="html/M_CoursesAPI_Services_Exceptions_CoursesAPIValidationException__ctor_1.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="0ebe438e-0e86-4be3-8c1b-4d0c20fd0ff5" Title="CoursesAPIValidationException Methods" Url="html/Methods_T_CoursesAPI_Services_Exceptions_CoursesAPIValidationException.htm">
+        <HelpTOCNode Id="288bee9c-365e-4ef5-a48c-4fd4a9660020" Title="CoursesAPIValidationException Methods" Url="html/Methods_T_CoursesAPI_Services_Exceptions_CoursesAPIValidationException.htm">
           <HelpTOCNode Title="GetMessage Method " Url="html/M_CoursesAPI_Services_Exceptions_CoursesAPIValidationException_GetMessage.htm" />
           <HelpTOCNode Title="GetValidationResults Method " Url="html/M_CoursesAPI_Services_Exceptions_CoursesAPIValidationException_GetValidationResults.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="b8fd2cbb-60f7-4ea0-87cd-4b51ec3813d8" Title="CoursesAPIValidationException Properties" Url="html/Properties_T_CoursesAPI_Services_Exceptions_CoursesAPIValidationException.htm">
+        <HelpTOCNode Id="1f1fec4e-5b7e-4166-93c5-84335e0b012f" Title="CoursesAPIValidationException Properties" Url="html/Properties_T_CoursesAPI_Services_Exceptions_CoursesAPIValidationException.htm">
           <HelpTOCNode Title="ValidationResults Property " Url="html/P_CoursesAPI_Services_Exceptions_CoursesAPIValidationException_ValidationResults.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="3b19cb93-5203-41da-8c1d-1e992bc95a20" Title="ErrorCodes Class" Url="html/T_CoursesAPI_Services_Exceptions_ErrorCodes.htm">
+      <HelpTOCNode Id="2623f7c7-fccd-48ed-8275-565a71c648fa" Title="ErrorCodes Class" Url="html/T_CoursesAPI_Services_Exceptions_ErrorCodes.htm">
         <HelpTOCNode Title="ErrorCodes Constructor " Url="html/M_CoursesAPI_Services_Exceptions_ErrorCodes__ctor.htm" />
-        <HelpTOCNode Id="bfca9ac2-2af8-4d74-a365-9bd94cdff17f" Title="ErrorCodes Fields" Url="html/Fields_T_CoursesAPI_Services_Exceptions_ErrorCodes.htm">
+        <HelpTOCNode Id="feba7df8-a8c7-4c89-b984-5e45140878c7" Title="ErrorCodes Fields" Url="html/Fields_T_CoursesAPI_Services_Exceptions_ErrorCodes.htm">
           <HelpTOCNode Title="IdDoesNotExistException Field" Url="html/F_CoursesAPI_Services_Exceptions_ErrorCodes_IdDoesNotExistException.htm" />
           <HelpTOCNode Title="LanguageDoesNotExist Field" Url="html/F_CoursesAPI_Services_Exceptions_ErrorCodes_LanguageDoesNotExist.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="f31d3072-a309-4fc8-9228-83df415be752" Title="CoursesAPI.Services.Extensions" Url="html/N_CoursesAPI_Services_Extensions.htm">
-      <HelpTOCNode Id="0087c87c-1e64-4880-a3a6-94c4a7335f34" Title="CourseInstanceExtentions Class" Url="html/T_CoursesAPI_Services_Extensions_CourseInstanceExtentions.htm">
-        <HelpTOCNode Id="6b77baf3-d01a-43c8-9bcb-db45d42ff992" Title="CourseInstanceExtentions Methods" Url="html/Methods_T_CoursesAPI_Services_Extensions_CourseInstanceExtentions.htm">
+    <HelpTOCNode Id="0e85a990-efea-4edd-957a-82dc5843fc47" Title="CoursesAPI.Services.Extensions" Url="html/N_CoursesAPI_Services_Extensions.htm">
+      <HelpTOCNode Id="edbb833b-dcb2-4e48-ab21-d70625c7de7f" Title="CourseInstanceExtentions Class" Url="html/T_CoursesAPI_Services_Extensions_CourseInstanceExtentions.htm">
+        <HelpTOCNode Id="3c7a38ae-dadf-4ea3-a804-8747e47d6717" Title="CourseInstanceExtentions Methods" Url="html/Methods_T_CoursesAPI_Services_Extensions_CourseInstanceExtentions.htm">
           <HelpTOCNode Title="GetCourseByID Method " Url="html/M_CoursesAPI_Services_Extensions_CourseInstanceExtentions_GetCourseByID.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="9a5be270-0a96-4e36-ac36-b297fbbba8a3" Title="ProjectExtention Class" Url="html/T_CoursesAPI_Services_Extensions_ProjectExtention.htm">
-        <HelpTOCNode Id="9e8ed5a2-b26e-4372-8f8f-dd539ae04214" Title="ProjectExtention Methods" Url="html/Methods_T_CoursesAPI_Services_Extensions_ProjectExtention.htm">
+      <HelpTOCNode Id="de493d2f-e783-4afb-87b8-05c51e6c7fa2" Title="ProjectExtention Class" Url="html/T_CoursesAPI_Services_Extensions_ProjectExtention.htm">
+        <HelpTOCNode Id="c22840d1-bce3-4a1d-ada3-85f7ce5a0e2e" Title="ProjectExtention Methods" Url="html/Methods_T_CoursesAPI_Services_Extensions_ProjectExtention.htm">
           <HelpTOCNode Title="GetProjectByID Method " Url="html/M_CoursesAPI_Services_Extensions_ProjectExtention_GetProjectByID.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="9a6c7cb6-6f7e-41b5-949d-f4b8d9b5f16b" Title="ProjectGroupExtention Class" Url="html/T_CoursesAPI_Services_Extensions_ProjectGroupExtention.htm">
-        <HelpTOCNode Id="aebb0e50-b9c3-4c05-87ee-eadc0bdd5031" Title="ProjectGroupExtention Methods" Url="html/Methods_T_CoursesAPI_Services_Extensions_ProjectGroupExtention.htm">
+      <HelpTOCNode Id="a4c3855c-e68e-481b-a5f7-b5cf512140a3" Title="ProjectGroupExtention Class" Url="html/T_CoursesAPI_Services_Extensions_ProjectGroupExtention.htm">
+        <HelpTOCNode Id="7ec869a4-0d9e-4e77-8919-ff97715a6798" Title="ProjectGroupExtention Methods" Url="html/Methods_T_CoursesAPI_Services_Extensions_ProjectGroupExtention.htm">
           <HelpTOCNode Title="GetGroupByID Method " Url="html/M_CoursesAPI_Services_Extensions_ProjectGroupExtention_GetGroupByID.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="c959ebfb-e2d9-4205-ac48-9f8ebf774331" Title="CoursesAPI.Services.Helpers" Url="html/N_CoursesAPI_Services_Helpers.htm">
-      <HelpTOCNode Id="e5368732-e755-4b2e-81d5-95cdfd98e134" Title="CourseAPIValidation Class" Url="html/T_CoursesAPI_Services_Helpers_CourseAPIValidation.htm">
+    <HelpTOCNode Id="962d3024-b594-4c38-a70d-2b737d1cd749" Title="CoursesAPI.Services.Helpers" Url="html/N_CoursesAPI_Services_Helpers.htm">
+      <HelpTOCNode Id="a48cd8eb-13ef-4df9-8f72-2fc451481b5b" Title="CourseAPIValidation Class" Url="html/T_CoursesAPI_Services_Helpers_CourseAPIValidation.htm">
         <HelpTOCNode Title="CourseAPIValidation Constructor " Url="html/M_CoursesAPI_Services_Helpers_CourseAPIValidation__ctor.htm" />
-        <HelpTOCNode Id="3dde60cb-0416-40c2-8899-6b6217ee5ba5" Title="CourseAPIValidation Methods" Url="html/Methods_T_CoursesAPI_Services_Helpers_CourseAPIValidation.htm">
+        <HelpTOCNode Id="4c67102d-7901-4e36-8f9b-22dbee84b9c9" Title="CourseAPIValidation Methods" Url="html/Methods_T_CoursesAPI_Services_Helpers_CourseAPIValidation.htm">
           <HelpTOCNode Title="Validate(T) Method " Url="html/M_CoursesAPI_Services_Helpers_CourseAPIValidation_Validate__1.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="730a6306-c42c-473d-9242-2b77da0b0087" Title="CoursesAPI.Services.Models.Entities" Url="html/N_CoursesAPI_Services_Models_Entities.htm">
-      <HelpTOCNode Id="c7643c2a-dee3-4fba-9b93-486310c060ff" Title="CourseInstance Class" Url="html/T_CoursesAPI_Services_Models_Entities_CourseInstance.htm">
+    <HelpTOCNode Id="a75075fb-bd2b-4448-b4b8-55d884d40dd3" Title="CoursesAPI.Services.Models.Entities" Url="html/N_CoursesAPI_Services_Models_Entities.htm">
+      <HelpTOCNode Id="f386a86b-9ee1-4d85-8804-6f28a66cd692" Title="CourseInstance Class" Url="html/T_CoursesAPI_Services_Models_Entities_CourseInstance.htm">
         <HelpTOCNode Title="CourseInstance Constructor " Url="html/M_CoursesAPI_Services_Models_Entities_CourseInstance__ctor.htm" />
-        <HelpTOCNode Id="69f57f73-9ad9-4e1b-ac39-b4be351bd8b7" Title="CourseInstance Properties" Url="html/Properties_T_CoursesAPI_Services_Models_Entities_CourseInstance.htm">
+        <HelpTOCNode Id="870350b1-7ab5-49a2-932b-ad6500d55cd3" Title="CourseInstance Properties" Url="html/Properties_T_CoursesAPI_Services_Models_Entities_CourseInstance.htm">
           <HelpTOCNode Title="CourseID Property " Url="html/P_CoursesAPI_Services_Models_Entities_CourseInstance_CourseID.htm" />
           <HelpTOCNode Title="ID Property " Url="html/P_CoursesAPI_Services_Models_Entities_CourseInstance_ID.htm" />
           <HelpTOCNode Title="SemesterID Property " Url="html/P_CoursesAPI_Services_Models_Entities_CourseInstance_SemesterID.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="8dee3856-505c-4ac2-8e4c-eff888215df3" Title="CourseTemplate Class" Url="html/T_CoursesAPI_Services_Models_Entities_CourseTemplate.htm">
+      <HelpTOCNode Id="f1c968e3-a0fd-4e1e-992f-58efc6769140" Title="CourseTemplate Class" Url="html/T_CoursesAPI_Services_Models_Entities_CourseTemplate.htm">
         <HelpTOCNode Title="CourseTemplate Constructor " Url="html/M_CoursesAPI_Services_Models_Entities_CourseTemplate__ctor.htm" />
-        <HelpTOCNode Id="0930131a-5fe1-4ac4-9282-0cbf8f29ecee" Title="CourseTemplate Properties" Url="html/Properties_T_CoursesAPI_Services_Models_Entities_CourseTemplate.htm">
+        <HelpTOCNode Id="b0a98f0a-9de4-4f92-ad85-edba95c80910" Title="CourseTemplate Properties" Url="html/Properties_T_CoursesAPI_Services_Models_Entities_CourseTemplate.htm">
           <HelpTOCNode Title="CourseID Property " Url="html/P_CoursesAPI_Services_Models_Entities_CourseTemplate_CourseID.htm" />
           <HelpTOCNode Title="Description Property " Url="html/P_CoursesAPI_Services_Models_Entities_CourseTemplate_Description.htm" />
           <HelpTOCNode Title="Name Property " Url="html/P_CoursesAPI_Services_Models_Entities_CourseTemplate_Name.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="d31f63a7-300c-47ac-b096-609225cedc24" Title="FinalGradeComposition Class" Url="html/T_CoursesAPI_Services_Models_Entities_FinalGradeComposition.htm">
+      <HelpTOCNode Id="78b3ebe3-80fd-46a4-95e3-1393b6ee519f" Title="FinalGradeComposition Class" Url="html/T_CoursesAPI_Services_Models_Entities_FinalGradeComposition.htm">
         <HelpTOCNode Title="FinalGradeComposition Constructor " Url="html/M_CoursesAPI_Services_Models_Entities_FinalGradeComposition__ctor.htm" />
-        <HelpTOCNode Id="d0d87fda-96c1-4258-9832-03f0b0d44ab6" Title="FinalGradeComposition Properties" Url="html/Properties_T_CoursesAPI_Services_Models_Entities_FinalGradeComposition.htm">
+        <HelpTOCNode Id="882555b9-410e-4323-86d1-5de998e20c95" Title="FinalGradeComposition Properties" Url="html/Properties_T_CoursesAPI_Services_Models_Entities_FinalGradeComposition.htm">
           <HelpTOCNode Title="CourseInstanceId Property " Url="html/P_CoursesAPI_Services_Models_Entities_FinalGradeComposition_CourseInstanceId.htm" />
           <HelpTOCNode Title="ID Property " Url="html/P_CoursesAPI_Services_Models_Entities_FinalGradeComposition_ID.htm" />
           <HelpTOCNode Title="ProjectId Property " Url="html/P_CoursesAPI_Services_Models_Entities_FinalGradeComposition_ProjectId.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="18b98794-7a6f-43d3-aeac-cad9d6829953" Title="Grade Class" Url="html/T_CoursesAPI_Services_Models_Entities_Grade.htm">
+      <HelpTOCNode Id="b1774227-c602-4e52-8ea1-21001e2a1c66" Title="Grade Class" Url="html/T_CoursesAPI_Services_Models_Entities_Grade.htm">
         <HelpTOCNode Title="Grade Constructor " Url="html/M_CoursesAPI_Services_Models_Entities_Grade__ctor.htm" />
-        <HelpTOCNode Id="f9225824-2754-4678-962d-c7e1930f794f" Title="Grade Properties" Url="html/Properties_T_CoursesAPI_Services_Models_Entities_Grade.htm">
+        <HelpTOCNode Id="ac2193d5-1777-42d6-89b3-c9d1f1d715e3" Title="Grade Properties" Url="html/Properties_T_CoursesAPI_Services_Models_Entities_Grade.htm">
           <HelpTOCNode Title="GradeValue Property " Url="html/P_CoursesAPI_Services_Models_Entities_Grade_GradeValue.htm" />
           <HelpTOCNode Title="ID Property " Url="html/P_CoursesAPI_Services_Models_Entities_Grade_ID.htm" />
           <HelpTOCNode Title="PersonSSN Property " Url="html/P_CoursesAPI_Services_Models_Entities_Grade_PersonSSN.htm" />
           <HelpTOCNode Title="ProjectId Property " Url="html/P_CoursesAPI_Services_Models_Entities_Grade_ProjectId.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="cb7cfecf-0b23-4c38-9ade-3f6a42893aa0" Title="Person Class" Url="html/T_CoursesAPI_Services_Models_Entities_Person.htm">
+      <HelpTOCNode Id="9be24846-2da9-4c25-ba20-4c2567dd590f" Title="Person Class" Url="html/T_CoursesAPI_Services_Models_Entities_Person.htm">
         <HelpTOCNode Title="Person Constructor " Url="html/M_CoursesAPI_Services_Models_Entities_Person__ctor.htm" />
-        <HelpTOCNode Id="f9d90888-be6f-4039-a493-b67e00f35378" Title="Person Properties" Url="html/Properties_T_CoursesAPI_Services_Models_Entities_Person.htm">
+        <HelpTOCNode Id="cba9fc62-fd58-4c01-ba73-d57cc9a8edab" Title="Person Properties" Url="html/Properties_T_CoursesAPI_Services_Models_Entities_Person.htm">
           <HelpTOCNode Title="Email Property " Url="html/P_CoursesAPI_Services_Models_Entities_Person_Email.htm" />
           <HelpTOCNode Title="ID Property " Url="html/P_CoursesAPI_Services_Models_Entities_Person_ID.htm" />
           <HelpTOCNode Title="Name Property " Url="html/P_CoursesAPI_Services_Models_Entities_Person_Name.htm" />
           <HelpTOCNode Title="SSN Property " Url="html/P_CoursesAPI_Services_Models_Entities_Person_SSN.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="3d78c085-6f4a-4232-8018-af7c5ece3b4e" Title="PersonRegistration Class" Url="html/T_CoursesAPI_Services_Models_Entities_PersonRegistration.htm">
+      <HelpTOCNode Id="efbb8084-f5c4-49a9-a5d5-0d14ea43eafc" Title="PersonRegistration Class" Url="html/T_CoursesAPI_Services_Models_Entities_PersonRegistration.htm">
         <HelpTOCNode Title="PersonRegistration Constructor " Url="html/M_CoursesAPI_Services_Models_Entities_PersonRegistration__ctor.htm" />
-        <HelpTOCNode Id="823b8740-189f-430a-870a-37f07c3d33cb" Title="PersonRegistration Properties" Url="html/Properties_T_CoursesAPI_Services_Models_Entities_PersonRegistration.htm">
+        <HelpTOCNode Id="85ce4c35-472f-48c1-8cb0-d9ec4736770a" Title="PersonRegistration Properties" Url="html/Properties_T_CoursesAPI_Services_Models_Entities_PersonRegistration.htm">
           <HelpTOCNode Title="CourseInstanceId Property " Url="html/P_CoursesAPI_Services_Models_Entities_PersonRegistration_CourseInstanceId.htm" />
           <HelpTOCNode Title="ID Property " Url="html/P_CoursesAPI_Services_Models_Entities_PersonRegistration_ID.htm" />
           <HelpTOCNode Title="PersonSSN Property " Url="html/P_CoursesAPI_Services_Models_Entities_PersonRegistration_PersonSSN.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="ee314b45-b0ac-45c1-83d8-cdc273d01209" Title="Project Class" Url="html/T_CoursesAPI_Services_Models_Entities_Project.htm">
+      <HelpTOCNode Id="b12dff0c-527b-45b6-b110-7e680ad552b9" Title="Project Class" Url="html/T_CoursesAPI_Services_Models_Entities_Project.htm">
         <HelpTOCNode Title="Project Constructor " Url="html/M_CoursesAPI_Services_Models_Entities_Project__ctor.htm" />
-        <HelpTOCNode Id="5bc6d1be-eeee-42f4-a630-0f4125652d6b" Title="Project Properties" Url="html/Properties_T_CoursesAPI_Services_Models_Entities_Project.htm">
+        <HelpTOCNode Id="8b3937f2-cc0a-41e4-b26e-ce5c910a5ab7" Title="Project Properties" Url="html/Properties_T_CoursesAPI_Services_Models_Entities_Project.htm">
           <HelpTOCNode Title="CourseInstanceId Property " Url="html/P_CoursesAPI_Services_Models_Entities_Project_CourseInstanceId.htm" />
           <HelpTOCNode Title="ID Property " Url="html/P_CoursesAPI_Services_Models_Entities_Project_ID.htm" />
           <HelpTOCNode Title="MinGradeToPassCourse Property " Url="html/P_CoursesAPI_Services_Models_Entities_Project_MinGradeToPassCourse.htm" />
@@ -346,26 +346,26 @@
           <HelpTOCNode Title="Weight Property " Url="html/P_CoursesAPI_Services_Models_Entities_Project_Weight.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="dfad6eb1-96e2-4a58-923a-ca3080bfbdb8" Title="ProjectGroup Class" Url="html/T_CoursesAPI_Services_Models_Entities_ProjectGroup.htm">
+      <HelpTOCNode Id="2303f89a-9d9f-48d6-bec4-170012bb2c70" Title="ProjectGroup Class" Url="html/T_CoursesAPI_Services_Models_Entities_ProjectGroup.htm">
         <HelpTOCNode Title="ProjectGroup Constructor " Url="html/M_CoursesAPI_Services_Models_Entities_ProjectGroup__ctor.htm" />
-        <HelpTOCNode Id="ee4a13e6-c00a-4afb-80a1-84ebff0521cc" Title="ProjectGroup Properties" Url="html/Properties_T_CoursesAPI_Services_Models_Entities_ProjectGroup.htm">
+        <HelpTOCNode Id="5cc863ec-4654-454d-9c4b-76ad5cecda22" Title="ProjectGroup Properties" Url="html/Properties_T_CoursesAPI_Services_Models_Entities_ProjectGroup.htm">
           <HelpTOCNode Title="GradedProjectsCount Property " Url="html/P_CoursesAPI_Services_Models_Entities_ProjectGroup_GradedProjectsCount.htm" />
           <HelpTOCNode Title="ID Property " Url="html/P_CoursesAPI_Services_Models_Entities_ProjectGroup_ID.htm" />
           <HelpTOCNode Title="Name Property " Url="html/P_CoursesAPI_Services_Models_Entities_ProjectGroup_Name.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="ab4c9c1c-e65a-4a5b-bc47-38c3874baf43" Title="Semester Class" Url="html/T_CoursesAPI_Services_Models_Entities_Semester.htm">
+      <HelpTOCNode Id="da717df4-305b-456c-b26c-b53a47b673ee" Title="Semester Class" Url="html/T_CoursesAPI_Services_Models_Entities_Semester.htm">
         <HelpTOCNode Title="Semester Constructor " Url="html/M_CoursesAPI_Services_Models_Entities_Semester__ctor.htm" />
-        <HelpTOCNode Id="24ecc7f9-3bba-4c07-920a-5841a0267858" Title="Semester Properties" Url="html/Properties_T_CoursesAPI_Services_Models_Entities_Semester.htm">
+        <HelpTOCNode Id="3dd3abe5-b53a-4c48-9dfd-4747e2686a32" Title="Semester Properties" Url="html/Properties_T_CoursesAPI_Services_Models_Entities_Semester.htm">
           <HelpTOCNode Title="DateBegins Property " Url="html/P_CoursesAPI_Services_Models_Entities_Semester_DateBegins.htm" />
           <HelpTOCNode Title="DateEnds Property " Url="html/P_CoursesAPI_Services_Models_Entities_Semester_DateEnds.htm" />
           <HelpTOCNode Title="ID Property " Url="html/P_CoursesAPI_Services_Models_Entities_Semester_ID.htm" />
           <HelpTOCNode Title="Name Property " Url="html/P_CoursesAPI_Services_Models_Entities_Semester_Name.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="54277996-bf9d-4073-804c-998827905870" Title="TeacherRegistration Class" Url="html/T_CoursesAPI_Services_Models_Entities_TeacherRegistration.htm">
+      <HelpTOCNode Id="1d68c853-002e-41da-a717-7a6e0345e92b" Title="TeacherRegistration Class" Url="html/T_CoursesAPI_Services_Models_Entities_TeacherRegistration.htm">
         <HelpTOCNode Title="TeacherRegistration Constructor " Url="html/M_CoursesAPI_Services_Models_Entities_TeacherRegistration__ctor.htm" />
-        <HelpTOCNode Id="bb4fdf68-8e03-4101-a242-42dc075b3997" Title="TeacherRegistration Properties" Url="html/Properties_T_CoursesAPI_Services_Models_Entities_TeacherRegistration.htm">
+        <HelpTOCNode Id="fe694c00-3348-430c-a138-29952ce703ba" Title="TeacherRegistration Properties" Url="html/Properties_T_CoursesAPI_Services_Models_Entities_TeacherRegistration.htm">
           <HelpTOCNode Title="CourseInstanceID Property " Url="html/P_CoursesAPI_Services_Models_Entities_TeacherRegistration_CourseInstanceID.htm" />
           <HelpTOCNode Title="ID Property " Url="html/P_CoursesAPI_Services_Models_Entities_TeacherRegistration_ID.htm" />
           <HelpTOCNode Title="SSN Property " Url="html/P_CoursesAPI_Services_Models_Entities_TeacherRegistration_SSN.htm" />
@@ -373,13 +373,13 @@
         </HelpTOCNode>
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="efcc8c54-ca34-4176-aebb-7ca8d349f65a" Title="CoursesAPI.Services.Services" Url="html/N_CoursesAPI_Services_Services.htm">
-      <HelpTOCNode Id="a435d12f-0f54-42f2-89e5-be8d69418eac" Title="CoursesServiceProvider Class" Url="html/T_CoursesAPI_Services_Services_CoursesServiceProvider.htm">
+    <HelpTOCNode Id="3618dccf-eb41-44fb-b5c4-63a2e04b3607" Title="CoursesAPI.Services.Services" Url="html/N_CoursesAPI_Services_Services.htm">
+      <HelpTOCNode Id="c66e3edb-8f9a-4b4c-9d19-d8ef16ccb1bf" Title="CoursesServiceProvider Class" Url="html/T_CoursesAPI_Services_Services_CoursesServiceProvider.htm">
         <HelpTOCNode Title="CoursesServiceProvider Constructor " Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider__ctor.htm" />
-        <HelpTOCNode Id="c64cfd14-0e7f-413f-b0a2-f81d1ae79b51" Title="CoursesServiceProvider Fields" Url="html/Fields_T_CoursesAPI_Services_Services_CoursesServiceProvider.htm">
+        <HelpTOCNode Id="0450e755-ffc1-4720-84e5-2d9311d928e2" Title="CoursesServiceProvider Fields" Url="html/Fields_T_CoursesAPI_Services_Services_CoursesServiceProvider.htm">
           <HelpTOCNode Title="_uow Field" Url="html/F_CoursesAPI_Services_Services_CoursesServiceProvider__uow.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="e06eece1-a06c-4f47-8ad6-00f479ddc429" Title="CoursesServiceProvider Methods" Url="html/Methods_T_CoursesAPI_Services_Services_CoursesServiceProvider.htm">
+        <HelpTOCNode Id="8300fcbc-d5fe-442f-a8da-eb30a98028c4" Title="CoursesServiceProvider Methods" Url="html/Methods_T_CoursesAPI_Services_Services_CoursesServiceProvider.htm">
           <HelpTOCNode Title="AddProjectToCourse Method " Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_AddProjectToCourse.htm" />
           <HelpTOCNode Title="CreateLanguage Method " Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_CreateLanguage.htm" />
           <HelpTOCNode Title="GetAllFinalGrades Method " Url="html/M_CoursesAPI_Services_Services_CoursesServiceProvider_GetAllFinalGrades.htm" />
@@ -403,14 +403,14 @@
       </HelpTOCNode>
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="bab476d4-3dbe-4ded-87f9-664694ed8599" Title="CoursesAPI.Tests Namespaces" Url="html/G_CoursesAPI_Tests.htm">
-    <HelpTOCNode Id="997e2c28-1888-4bc8-8c23-dd4dd08df90e" Title="CoursesAPI.Tests.MockObjects" Url="html/N_CoursesAPI_Tests_MockObjects.htm">
-      <HelpTOCNode Id="7573d540-5e37-4e19-83fc-2a49dfbaec78" Title="MockDataContext Class" Url="html/T_CoursesAPI_Tests_MockObjects_MockDataContext.htm">
+  <HelpTOCNode Id="bb74a069-88a8-460d-9331-c47dc2bdce62" Title="CoursesAPI.Tests Namespaces" Url="html/G_CoursesAPI_Tests.htm">
+    <HelpTOCNode Id="e9b54f60-6d74-4a4a-9442-cef8189a08ef" Title="CoursesAPI.Tests.MockObjects" Url="html/N_CoursesAPI_Tests_MockObjects.htm">
+      <HelpTOCNode Id="a13e752c-63a5-4522-839e-f92fa8dec2e9" Title="MockDataContext Class" Url="html/T_CoursesAPI_Tests_MockObjects_MockDataContext.htm">
         <HelpTOCNode Title="MockDataContext Constructor " Url="html/M_CoursesAPI_Tests_MockObjects_MockDataContext__ctor.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="2b3b06e1-9905-4563-8598-03726ae1a8de" Title="MockRepository(T) Class" Url="html/T_CoursesAPI_Tests_MockObjects_MockRepository_1.htm">
+      <HelpTOCNode Id="89aac4ba-7d6a-4ad1-8370-a7ffb4f2261f" Title="MockRepository(T) Class" Url="html/T_CoursesAPI_Tests_MockObjects_MockRepository_1.htm">
         <HelpTOCNode Title="MockRepository(T) Constructor " Url="html/M_CoursesAPI_Tests_MockObjects_MockRepository_1__ctor.htm" />
-        <HelpTOCNode Id="85251cc2-58a5-4f9c-b3bb-18a460277282" Title="MockRepository(T) Methods" Url="html/Methods_T_CoursesAPI_Tests_MockObjects_MockRepository_1.htm">
+        <HelpTOCNode Id="e85e3ed6-c085-4444-85df-1df5d877a8c3" Title="MockRepository(T) Methods" Url="html/Methods_T_CoursesAPI_Tests_MockObjects_MockRepository_1.htm">
           <HelpTOCNode Title="Add Method " Url="html/M_CoursesAPI_Tests_MockObjects_MockRepository_1_Add.htm" />
           <HelpTOCNode Title="All Method " Url="html/M_CoursesAPI_Tests_MockObjects_MockRepository_1_All.htm" />
           <HelpTOCNode Title="Delete Method " Url="html/M_CoursesAPI_Tests_MockObjects_MockRepository_1_Delete.htm" />
@@ -419,9 +419,9 @@
           <HelpTOCNode Title="Update Method " Url="html/M_CoursesAPI_Tests_MockObjects_MockRepository_1_Update.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="c64e047e-3333-4a1c-9b89-a58e78319fc4" Title="MockUnitOfWork(T) Class" Url="html/T_CoursesAPI_Tests_MockObjects_MockUnitOfWork_1.htm">
+      <HelpTOCNode Id="776e7051-bef3-42df-9f00-8270bd6e304a" Title="MockUnitOfWork(T) Class" Url="html/T_CoursesAPI_Tests_MockObjects_MockUnitOfWork_1.htm">
         <HelpTOCNode Title="MockUnitOfWork(T) Constructor " Url="html/M_CoursesAPI_Tests_MockObjects_MockUnitOfWork_1__ctor.htm" />
-        <HelpTOCNode Id="2a7c7cd8-3a80-42f7-8a37-f75ec98867c3" Title="MockUnitOfWork(T) Methods" Url="html/Methods_T_CoursesAPI_Tests_MockObjects_MockUnitOfWork_1.htm">
+        <HelpTOCNode Id="bc401963-d010-44c3-b2db-0fe91170c9cf" Title="MockUnitOfWork(T) Methods" Url="html/Methods_T_CoursesAPI_Tests_MockObjects_MockUnitOfWork_1.htm">
           <HelpTOCNode Title="Dispose Method " Url="html/M_CoursesAPI_Tests_MockObjects_MockUnitOfWork_1_Dispose.htm" />
           <HelpTOCNode Title="GetRepository(TEntity) Method " Url="html/M_CoursesAPI_Tests_MockObjects_MockUnitOfWork_1_GetRepository__1.htm" />
           <HelpTOCNode Title="GetSaveCallCount Method " Url="html/M_CoursesAPI_Tests_MockObjects_MockUnitOfWork_1_GetSaveCallCount.htm" />
@@ -430,10 +430,10 @@
         </HelpTOCNode>
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="6b3f34f5-d703-4691-8e63-6d6a58ff15dc" Title="CoursesAPI.Tests.Services" Url="html/N_CoursesAPI_Tests_Services.htm">
-      <HelpTOCNode Id="c8211b6d-a0fa-4db2-ba8e-d200ec78a855" Title="CourseServicesTests Class" Url="html/T_CoursesAPI_Tests_Services_CourseServicesTests.htm">
+    <HelpTOCNode Id="4673e3fb-1f00-4070-b45e-19456c3a552f" Title="CoursesAPI.Tests.Services" Url="html/N_CoursesAPI_Tests_Services.htm">
+      <HelpTOCNode Id="6a001fbc-5f73-449a-8901-beea7f3d90c2" Title="CourseServicesTests Class" Url="html/T_CoursesAPI_Tests_Services_CourseServicesTests.htm">
         <HelpTOCNode Title="CourseServicesTests Constructor " Url="html/M_CoursesAPI_Tests_Services_CourseServicesTests__ctor.htm" />
-        <HelpTOCNode Id="16898ede-2c22-4b52-9f87-d11e84cf5a8e" Title="CourseServicesTests Methods" Url="html/Methods_T_CoursesAPI_Tests_Services_CourseServicesTests.htm">
+        <HelpTOCNode Id="11080e95-b7fb-4f8b-ad8f-d3fd429ed430" Title="CourseServicesTests Methods" Url="html/Methods_T_CoursesAPI_Tests_Services_CourseServicesTests.htm">
           <HelpTOCNode Title="Setup Method " Url="html/M_CoursesAPI_Tests_Services_CourseServicesTests_Setup.htm" />
           <HelpTOCNode Title="TestAddProject Method " Url="html/M_CoursesAPI_Tests_Services_CourseServicesTests_TestAddProject.htm" />
           <HelpTOCNode Title="TestAddProjectGroup Method " Url="html/M_CoursesAPI_Tests_Services_CourseServicesTests_TestAddProjectGroup.htm" />
@@ -444,23 +444,23 @@
         </HelpTOCNode>
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="ee5d2b67-fff9-4627-957f-9aa614b5504b" Title="CoursesAPI.Tests.TestExtensions" Url="html/N_CoursesAPI_Tests_TestExtensions.htm">
-      <HelpTOCNode Id="320070b6-b887-4b42-9a3f-c66bd5186cfd" Title="ExpectedExceptionWithMessageAttribute Class" Url="html/T_CoursesAPI_Tests_TestExtensions_ExpectedExceptionWithMessageAttribute.htm">
-        <HelpTOCNode Id="d32efca7-a293-4de1-a823-c2dce0d7e21a" Title="ExpectedExceptionWithMessageAttribute Constructor " Url="html/Overload_CoursesAPI_Tests_TestExtensions_ExpectedExceptionWithMessageAttribute__ctor.htm">
+    <HelpTOCNode Id="279fd5a1-222d-4147-a1c0-7242d8460d08" Title="CoursesAPI.Tests.TestExtensions" Url="html/N_CoursesAPI_Tests_TestExtensions.htm">
+      <HelpTOCNode Id="cdf6fd06-0efe-49e8-b6a0-0b21f0cae90e" Title="ExpectedExceptionWithMessageAttribute Class" Url="html/T_CoursesAPI_Tests_TestExtensions_ExpectedExceptionWithMessageAttribute.htm">
+        <HelpTOCNode Id="b7654ec9-d82b-4277-b378-13006743bc66" Title="ExpectedExceptionWithMessageAttribute Constructor " Url="html/Overload_CoursesAPI_Tests_TestExtensions_ExpectedExceptionWithMessageAttribute__ctor.htm">
           <HelpTOCNode Title="ExpectedExceptionWithMessageAttribute Constructor (Type)" Url="html/M_CoursesAPI_Tests_TestExtensions_ExpectedExceptionWithMessageAttribute__ctor.htm" />
           <HelpTOCNode Title="ExpectedExceptionWithMessageAttribute Constructor (Type, String)" Url="html/M_CoursesAPI_Tests_TestExtensions_ExpectedExceptionWithMessageAttribute__ctor_1.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="8392d065-5843-49f9-b714-dfa82785eb2a" Title="ExpectedExceptionWithMessageAttribute Properties" Url="html/Properties_T_CoursesAPI_Tests_TestExtensions_ExpectedExceptionWithMessageAttribute.htm">
+        <HelpTOCNode Id="4dcb965d-f30f-466e-850e-ed453f5d4e2e" Title="ExpectedExceptionWithMessageAttribute Properties" Url="html/Properties_T_CoursesAPI_Tests_TestExtensions_ExpectedExceptionWithMessageAttribute.htm">
           <HelpTOCNode Title="ExceptionType Property " Url="html/P_CoursesAPI_Tests_TestExtensions_ExpectedExceptionWithMessageAttribute_ExceptionType.htm" />
           <HelpTOCNode Title="ExpectedMessage Property " Url="html/P_CoursesAPI_Tests_TestExtensions_ExpectedExceptionWithMessageAttribute_ExpectedMessage.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="ad5acb9f-33ad-4656-ad6b-599060e71a0b" Title="CoursesAPI.Tracers" Url="html/N_CoursesAPI_Tracers.htm">
-    <HelpTOCNode Id="52a7370f-f866-445a-921a-43ebe54d7e4c" Title="CourseAPITracer Class" Url="html/T_CoursesAPI_Tracers_CourseAPITracer.htm">
+  <HelpTOCNode Id="3821b867-1d0a-4f25-8f00-a651561c8ab2" Title="CoursesAPI.Tracers" Url="html/N_CoursesAPI_Tracers.htm">
+    <HelpTOCNode Id="3709bb4c-e272-4b1b-98c1-e723681fdf24" Title="CourseAPITracer Class" Url="html/T_CoursesAPI_Tracers_CourseAPITracer.htm">
       <HelpTOCNode Title="CourseAPITracer Constructor " Url="html/M_CoursesAPI_Tracers_CourseAPITracer__ctor.htm" />
-      <HelpTOCNode Id="e274fc3e-4011-4fda-a746-87a26495fe31" Title="CourseAPITracer Methods" Url="html/Methods_T_CoursesAPI_Tracers_CourseAPITracer.htm">
+      <HelpTOCNode Id="4d48ce12-4e6f-45a6-87ea-26ecb2ddfb0c" Title="CourseAPITracer Methods" Url="html/Methods_T_CoursesAPI_Tracers_CourseAPITracer.htm">
         <HelpTOCNode Title="Trace Method " Url="html/M_CoursesAPI_Tracers_CourseAPITracer_Trace.htm" />
       </HelpTOCNode>
     </HelpTOCNode>

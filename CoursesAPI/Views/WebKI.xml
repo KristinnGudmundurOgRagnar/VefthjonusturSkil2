@@ -124,14 +124,14 @@
     <HelpKINode Title="methods" Url="html/Methods_T_CoursesAPI_Services_Extensions_CourseInstanceExtentions.htm" />
   </HelpKINode>
   <HelpKINode Title="CourseInstanceExtentions.GetCourseByID method" Url="html/M_CoursesAPI_Services_Extensions_CourseInstanceExtentions_GetCourseByID.htm" />
-  <HelpKINode Title="CourseInstanceID property">
-    <HelpKINode Title="TeacherRegistration.CourseInstanceID Property " Url="html/P_CoursesAPI_Services_Models_Entities_TeacherRegistration_CourseInstanceID.htm" />
-    <HelpKINode Title="CourseInstanceDTO.CourseInstanceID Property " Url="html/P_CoursesAPI_Models_CourseInstanceDTO_CourseInstanceID.htm" />
-  </HelpKINode>
   <HelpKINode Title="CourseInstanceId property">
     <HelpKINode Title="FinalGradeComposition.CourseInstanceId Property " Url="html/P_CoursesAPI_Services_Models_Entities_FinalGradeComposition_CourseInstanceId.htm" />
     <HelpKINode Title="PersonRegistration.CourseInstanceId Property " Url="html/P_CoursesAPI_Services_Models_Entities_PersonRegistration_CourseInstanceId.htm" />
     <HelpKINode Title="Project.CourseInstanceId Property " Url="html/P_CoursesAPI_Services_Models_Entities_Project_CourseInstanceId.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CourseInstanceID property">
+    <HelpKINode Title="CourseInstanceDTO.CourseInstanceID Property " Url="html/P_CoursesAPI_Models_CourseInstanceDTO_CourseInstanceID.htm" />
+    <HelpKINode Title="TeacherRegistration.CourseInstanceID Property " Url="html/P_CoursesAPI_Services_Models_Entities_TeacherRegistration_CourseInstanceID.htm" />
   </HelpKINode>
   <HelpKINode Title="CourseInstances property" Url="html/P_CoursesAPI_Services_DataAccess_AppDataContext_CourseInstances.htm" />
   <HelpKINode Title="CoursesAPI namespace" Url="html/N_CoursesAPI.htm" />
@@ -478,18 +478,18 @@
   <HelpKINode Title="HomeController.HomeController constructor" Url="html/M_CoursesAPI_Controllers_HomeController__ctor.htm" />
   <HelpKINode Title="HomeController.Index method" Url="html/M_CoursesAPI_Controllers_HomeController_Index.htm" />
   <HelpKINode Title="HomeController.Post method" Url="html/M_CoursesAPI_Controllers_HomeController_Post.htm" />
+  <HelpKINode Title="Id property" Url="html/P_CoursesAPI_Models_DeleteProjectViewModel_Id.htm" />
   <HelpKINode Title="ID property">
     <HelpKINode Title="CourseInstance.ID Property " Url="html/P_CoursesAPI_Services_Models_Entities_CourseInstance_ID.htm" />
+    <HelpKINode Title="FinalGradeComposition.ID Property " Url="html/P_CoursesAPI_Services_Models_Entities_FinalGradeComposition_ID.htm" />
     <HelpKINode Title="Grade.ID Property " Url="html/P_CoursesAPI_Services_Models_Entities_Grade_ID.htm" />
+    <HelpKINode Title="Person.ID Property " Url="html/P_CoursesAPI_Services_Models_Entities_Person_ID.htm" />
     <HelpKINode Title="PersonRegistration.ID Property " Url="html/P_CoursesAPI_Services_Models_Entities_PersonRegistration_ID.htm" />
     <HelpKINode Title="Project.ID Property " Url="html/P_CoursesAPI_Services_Models_Entities_Project_ID.htm" />
     <HelpKINode Title="ProjectGroup.ID Property " Url="html/P_CoursesAPI_Services_Models_Entities_ProjectGroup_ID.htm" />
-    <HelpKINode Title="FinalGradeComposition.ID Property " Url="html/P_CoursesAPI_Services_Models_Entities_FinalGradeComposition_ID.htm" />
-    <HelpKINode Title="Person.ID Property " Url="html/P_CoursesAPI_Services_Models_Entities_Person_ID.htm" />
     <HelpKINode Title="Semester.ID Property " Url="html/P_CoursesAPI_Services_Models_Entities_Semester_ID.htm" />
     <HelpKINode Title="TeacherRegistration.ID Property " Url="html/P_CoursesAPI_Services_Models_Entities_TeacherRegistration_ID.htm" />
   </HelpKINode>
-  <HelpKINode Title="Id property" Url="html/P_CoursesAPI_Models_DeleteProjectViewModel_Id.htm" />
   <HelpKINode Title="IDbContext interface">
     <HelpKINode Title="IDbContext Interface" Url="html/T_CoursesAPI_Services_DataAccess_IDbContext.htm" />
     <HelpKINode Title="about IDbContext interface" Url="html/T_CoursesAPI_Services_DataAccess_IDbContext.htm" />

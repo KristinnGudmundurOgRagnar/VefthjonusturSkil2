@@ -822,6 +822,11 @@ namespace CoursesAPI.Services.Services
 			}
 
 			returnValue.PersonSSN = personSSN;
+
+			returnValue.Grade *= 2;
+			returnValue.Grade = Math.Round(returnValue.Grade, MidpointRounding.AwayFromZero);
+			returnValue.Grade /= 2;
+
 			return returnValue;
 		}
 

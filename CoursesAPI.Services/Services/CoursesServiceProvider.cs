@@ -570,7 +570,7 @@ namespace CoursesAPI.Services.Services
         /// <param name="courseInstanceID">Id of the course</param>
         /// <param name="projectID">Id of the project</param>
         /// <param name="viewModel">Contains student id to be evaluated and his grade</param>
-		public void AddGrade(int courseInstanceID, int projectID, AddGradeViewModel viewModel)
+		public void SetGrade(int courseInstanceID, int projectID, AddGradeViewModel viewModel)
 		{
 			if(viewModel == null){
 				throw new MissingFieldException("The payload must contain \"Grade\" and \"PersonSSN\"");
@@ -637,8 +637,10 @@ namespace CoursesAPI.Services.Services
 				});
 			}
 			else{
-				//TODO: Should the old one be overwritten, or should there be an error
+				//Overwrite the old grade
+				theGrade.GradeValue = viewModel.Grade;
 			}
+			_uow.Save();
 		}
 
         /// <summary>

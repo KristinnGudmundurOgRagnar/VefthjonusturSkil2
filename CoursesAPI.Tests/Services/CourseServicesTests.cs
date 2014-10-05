@@ -118,7 +118,7 @@ namespace CoursesAPI.Tests.Services
 			((MockUnitOfWork<MockDataContext>)(_service._uow)).SetRepositoryData<PersonRegistration>(personRegistrations);
 			#endregion Add PersonRegistrations
 
-			
+
 			#region Add ProjectGroups
 			List<ProjectGroup> projectGroups = new List<ProjectGroup>();
 
@@ -492,9 +492,9 @@ namespace CoursesAPI.Tests.Services
 
 			#region Course 2
 			finalGradeComps.Add(new FinalGradeComposition
-			{ 
-				ID = 1, 
-				CourseInstanceId = 2, 
+			{
+				ID = 1,
+				CourseInstanceId = 2,
 				ProjectId = 1
 			});
 			finalGradeComps.Add(new FinalGradeComposition
@@ -675,7 +675,8 @@ namespace CoursesAPI.Tests.Services
 			{
 				finalGrade = _service.GetFinalGradeForOneStudent(1, personSSN1);
 			}
-			catch(Exception e){
+			catch (Exception e)
+			{
 				exceptionThrown = true;
 			}
 
@@ -800,6 +801,124 @@ namespace CoursesAPI.Tests.Services
 			Assert.AreEqual(personSSN1, finalGrade.PersonSSN);
 			Assert.AreEqual("OK", finalGrade.Status);
 
+		}
+
+		/// <summary>
+		/// Tests GET /project/{projectId}/grade
+		/// Tests PUT /project/{projectId}/grade
+		/// </summary>
+		[TestMethod]
+		public void TestAddGrade()
+		{
+			bool exceptionThrown = false;
+			GradeDTO currentGrade = null;
+
+			//Try to add a grade for a course in which the student is not
+			try
+			{
+				_service.SetGrade(2, 1, new AddGradeViewModel
+					{
+						Grade = 77,
+						PersonSSN = personSSN3
+					});
+			}
+			catch(Exception e)
+			{
+				exceptionThrown = true;
+			}
+
+			Assert.IsTrue(exceptionThrown);
+			exceptionThrown = false;
+
+
+			//Try to add a grade for a course in which the student is, but for a project outside of the course
+			try
+			{
+				_service.SetGrade(2, 5, new AddGradeViewModel
+				{
+					Grade = 77,
+					PersonSSN = personSSN3
+				});
+			}
+			catch (Exception e)
+			{
+				exceptionThrown = true;
+			}
+
+			Assert.IsTrue(exceptionThrown);
+			exceptionThrown = false;
+
+
+			//Try to add a valid grade
+			try
+			{
+				_service.SetGrade(3, 5, new AddGradeViewModel
+				{
+					Grade = 77,
+					PersonSSN = personSSN3
+				});
+			}
+			catch (Exception e)
+			{
+				exceptionThrown = true;
+			}
+
+			Assert.IsFalse(exceptionThrown);
+			exceptionThrown = false;
+
+			//Try to get the newly added grade
+			try
+			{
+				currentGrade = _service.GetProjectGrade(3, 5, personSSN3);
+			}
+			catch(Exception e){
+				exceptionThrown = true;
+			}
+
+			Assert.IsFalse(exceptionThrown);
+			Assert.AreEqual(77, currentGrade.Grade);
+			Assert.AreEqual(3, currentGrade.NumberOfStudents);
+			Assert.AreEqual(2, currentGrade.PositionUpper);
+			Assert.AreEqual(2, currentGrade.PositionLower);
+			Assert.AreEqual(personSSN3, currentGrade.SSN);
+			exceptionThrown = false;
+
+
+			//Try to change the newly added grade
+			try
+			{
+				_service.SetGrade(3, 5, new AddGradeViewModel
+				{
+					Grade = 50,
+					PersonSSN = personSSN3
+				});
+			}
+			catch(Exception e){
+				exceptionThrown = true;
+			}
+
+
+			Assert.IsFalse(exceptionThrown);
+			exceptionThrown = false;
+
+
+			//Try to access the newly updated grade
+			try
+			{
+				currentGrade = _service.GetProjectGrade(3, 5, personSSN3);
+			}
+			catch (Exception e)
+			{
+				exceptionThrown = true;
+			}
+
+			Assert.IsFalse(exceptionThrown);
+			Assert.AreEqual(50, currentGrade.Grade);
+			Assert.AreEqual(3, currentGrade.NumberOfStudents);
+			Assert.AreEqual(2, currentGrade.PositionUpper);
+			Assert.AreEqual(2, currentGrade.PositionLower);
+			Assert.AreEqual(personSSN3, currentGrade.SSN);
+			exceptionThrown = false;
 		}
 	}
 }

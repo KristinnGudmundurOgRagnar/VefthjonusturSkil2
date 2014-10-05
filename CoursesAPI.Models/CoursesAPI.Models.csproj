@@ -46,6 +46,7 @@
     <Compile Include="AddProjectGroupViewModel.cs" />
     <Compile Include="AddProjectViewModel.cs" />
     <Compile Include="CourseInstanceDTO.cs" />
+    <Compile Include="DeleteProjectViewModel.cs" />
     <Compile Include="FinalGradeDTO.cs" />
     <Compile Include="GradeDTO.cs" />
     <Compile Include="LanguageViewModel.cs" />

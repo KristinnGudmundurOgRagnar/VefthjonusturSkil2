@@ -12,13 +12,22 @@ namespace CoursesAPI.Services.Extensions
     {
         public static Project GetProjectByID(this IRepository<Project> repo, int id)
         {
-            var pro = repo.All().SingleOrDefault(c => c.ID == id);
-
-            if (pro == null)
+            try
             {
-                throw new KeyNotFoundException("No project found with this ID: " + id);
+                var pro = repo.All().SingleOrDefault(c => c.ID == id);
+
+                if (pro == null)
+                {
+                    throw new KeyNotFoundException("No project found with this ID: " + id);
+                }
+                return pro;
             }
-            return pro;
+            catch (Exception)
+            {
+                throw new Exception("Found two Projects with same id: " + id);
+            }
+
+
         }
     }
 }

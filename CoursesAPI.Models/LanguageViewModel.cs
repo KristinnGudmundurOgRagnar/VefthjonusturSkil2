@@ -3,6 +3,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace CoursesAPI.Models
 {
+    /// <summary>
+    /// Language ViewModel
+    /// </summary>
     public class LanguageViewModel
     {
         [Required(ErrorMessageResourceType = typeof(Resources.Resources), AllowEmptyStrings = false, ErrorMessageResourceName = "NameRequired")]

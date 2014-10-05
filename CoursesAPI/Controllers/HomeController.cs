@@ -9,6 +9,11 @@ namespace CoursesAPI.Controllers
 {
 	public class HomeController : Controller
 	{
+
+        /// <summary>
+        /// A dummy controller
+        /// </summary>
+        /// <returns></returns>
 		public ActionResult Index()
 		{
 			ViewBag.Title = "Home Page";
@@ -16,12 +21,19 @@ namespace CoursesAPI.Controllers
 			return View();
 		}
 
-        //Action for testing the post method in Language API controller
+        /// <summary>
+        /// A dummy controller
+        /// </summary>
+        /// <returns></returns>
         public ActionResult Post()
         {
             return View(new LanguageViewModel());
         }
 
+        /// <summary>
+        /// A dummy controller
+        /// </summary>
+        /// <returns></returns>
         public ActionResult Delete()
         {
             return View(new LanguageViewModel());

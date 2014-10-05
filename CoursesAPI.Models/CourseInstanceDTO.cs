@@ -1,7 +1,7 @@
 ﻿namespace CoursesAPI.Models
 {
 	/// <summary>
-	/// 
+	/// A DTO of courseInstance
 	/// </summary>
 	public class CourseInstanceDTO
 	{

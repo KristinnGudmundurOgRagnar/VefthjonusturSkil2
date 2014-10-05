@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace CoursesAPI.Models
 {
+    /// <summary>
+    /// ViewModel for a project
+    /// </summary>
     public class AddProjectViewModel
     {
         /// <summary>

@@ -12,11 +12,14 @@ using CoursesAPI.Services.DataAccess;
 namespace CoursesAPI.Controllers
 {
     /// <summary>
-    /// Controler for all project Api methods
+    /// Controller API for all courses
     /// </summary>
 	[RoutePrefix("api/courses/{courseInstanceID:int}")]
     public class ProjectController : ApiController
     {
+        /// <summary>
+        /// Service provider instance
+        /// </summary>
 		private readonly CoursesServiceProvider _service;
 
         /// <summary>
@@ -77,7 +80,7 @@ namespace CoursesAPI.Controllers
         }
 
         /// <summary>
-        /// deletes a project from the course
+        /// Deletes a project from the course
         /// </summary>
         /// <param name="courseInstanceId">The Id of the courseInstance, gotten from the URL</param>
         /// <param name="model">The project that is to be deleted, gotten from the request payload</param>
@@ -128,7 +131,7 @@ namespace CoursesAPI.Controllers
         }
 
         /// <summary>
-        /// 
+        /// Creates a composition of all final grades based on course instance and projects
         /// </summary>
         /// <param name="courseInstanceId">The Id of the courseInstance, gotten from the URL</param>
         /// <param name="model"></param>

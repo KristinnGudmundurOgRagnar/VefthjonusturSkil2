@@ -60,6 +60,8 @@
     <Compile Include="Exceptions\CoursesAPIValidationException.cs" />
     <Compile Include="Exceptions\ErrorCodes.cs" />
     <Compile Include="Extentions\CourseInstanceExtentions.cs" />
+    <Compile Include="Extentions\ProjectExtention.cs" />
+    <Compile Include="Extentions\ProjectGroupExtention.cs" />
     <Compile Include="Helpers\CourseAPIValidation.cs" />
     <Compile Include="Models\Entities\CourseInstance.cs" />
     <Compile Include="Models\Entities\CourseTemplate.cs" />

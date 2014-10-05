@@ -134,7 +134,7 @@ namespace CoursesAPI.Controllers
         /// Creates a composition of all final grades based on course instance and projects
         /// </summary>
         /// <param name="courseInstanceId">The Id of the courseInstance, gotten from the URL</param>
-        /// <param name="model"></param>
+        /// <param name="model">The projects that should be used to calculate final grade</param>
         /// <returns>Status code, depending on the correctness of the payload</returns>
 		[HttpPut]
 		[Route("finalGradeComposition")]

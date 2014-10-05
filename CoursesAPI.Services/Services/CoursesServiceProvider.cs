@@ -312,6 +312,9 @@ namespace CoursesAPI.Services.Services
         /// <param name="model">Viewmodel containing objects to put in the current project</param>
         public void AddProjectToCourse(int id, AddProjectViewModel model)
         {
+			if(model.Weight < 0 || model.Weight > 100){
+				throw new ArgumentException("Weight must be a value between 0 and 100");
+			}
             if ((PercentCompleted(id, model)) > 100)
             {
                 throw new ApplicationException("Cannot add project, total precent becomes: " +
@@ -320,7 +323,9 @@ namespace CoursesAPI.Services.Services
 
             var course = _courseInstances.GetCourseByID(id);
 
-            var projectGroup = _projectGroups.GetGroupByID(model.ProjectGroupId.Value);
+			if(model.ProjectGroupId != null){
+				var projectGroup = _projectGroups.GetGroupByID(model.ProjectGroupId.Value);
+			}
 
             Project project = new Project
             {

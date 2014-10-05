@@ -52,7 +52,8 @@ namespace CoursesAPI.Services.Services
 
 		#region Private helper classes
         /// <summary>
-        /// 
+        /// A helper class that contains information about projects in a project group
+		/// Used in order to calculate the x best grades out of y projects
         /// </summary>
 		private class ProjectGroupData{
 			public int ProjectGroupID { get; set; }
@@ -60,10 +61,11 @@ namespace CoursesAPI.Services.Services
 			public List<ProjectData> TheProjects = new List<ProjectData>();
 
             /// <summary>
-            /// 
+            /// Creates an instance of the class
             /// </summary>
-            /// <param name="ID"></param>
-            /// <param name="GradedProjectsCount"></param>
+            /// <param name="ID">The ID of the project group</param>
+            /// <param name="GradedProjectsCount">The number of projects that are used
+			/// to calculate the grade for the project group</param>
 			public ProjectGroupData(int ID, int GradedProjectsCount)
 			{
 				this.ProjectGroupID = ID;
@@ -71,10 +73,10 @@ namespace CoursesAPI.Services.Services
 			}
 
             /// <summary>
-            /// 
+            /// Adds a project to the project group to be used for calculations
             /// </summary>
-            /// <param name="Grade"></param>
-            /// <param name="Weight"></param>
+            /// <param name="Grade">The student's grade for the project</param>
+            /// <param name="Weight">The weight of the project</param>
 			public void AddProject(int? Grade, int Weight)
 			{
 				//This causes a NullReferenceException if Grade == null
@@ -85,7 +87,8 @@ namespace CoursesAPI.Services.Services
 			}
 
             /// <summary>
-            /// 
+            /// A helper class for ProjectGroupData, to contain information
+			/// about the projects in the project group
             /// </summary>
 			public class ProjectData
 			{
@@ -94,7 +97,7 @@ namespace CoursesAPI.Services.Services
 			}
 
             /// <summary>
-            /// Checks if all the weights are the same
+            /// Checks if the weights of all the projects in the project group are the same
             /// </summary>
             /// <returns></returns>
 			public bool validate()
@@ -116,9 +119,10 @@ namespace CoursesAPI.Services.Services
 			}
 
             /// <summary>
-            /// 
+            /// Calculates the total finalgrade value of the project group
             /// </summary>
-            /// <returns></returns>
+            /// <returns>The grade for the project group
+			/// and the combined weight of the project group</returns>
 			public FinalGradeDTO getTotalGrade()
 			{
 				if(!validate()){

@@ -837,14 +837,47 @@ namespace CoursesAPI.Tests.Services
 		}
 
 		/// <summary>
-		/// Tests GET /project/{projectId}/grade
-		/// Tests PUT /project/{projectId}/grade
+		/// Tests GET /project/{projectId}/grade/{ssn}
+		/// Tests PUT /project/{projectId}/grade/{ssn}
+		/// Tests GET /project/{projectId}/allGrades
 		/// </summary>
 		[TestMethod]
-		public void TestAddGrade()
+		public void TestGradeMethods()
 		{
 			bool exceptionThrown = false;
 			GradeDTO currentGrade = null;
+			List<GradeDTO> allGrades = null;
+
+			//Try to get all the grades from a project with grades from one student
+			try
+			{
+				allGrades = _service.GetAllGrades(2, 1);
+			}
+			catch(Exception e){
+				exceptionThrown = true;
+			}
+
+
+			Assert.IsFalse(exceptionThrown);
+			Assert.AreEqual(1, allGrades.Count);
+			exceptionThrown = false;
+
+
+			//Try to get all the grades from a project with grades from two students
+			try
+			{
+				allGrades = _service.GetAllGrades(3, 5);
+			}
+			catch (Exception e)
+			{
+				exceptionThrown = true;
+			}
+
+
+			Assert.IsFalse(exceptionThrown);
+			Assert.AreEqual(2, allGrades.Count);
+			exceptionThrown = false;
+
 
 			//Try to add a grade for a course in which the student is not
 			try
@@ -951,6 +984,22 @@ namespace CoursesAPI.Tests.Services
 			Assert.AreEqual(2, currentGrade.PositionUpper);
 			Assert.AreEqual(2, currentGrade.PositionLower);
 			Assert.AreEqual(personSSN3, currentGrade.SSN);
+			exceptionThrown = false;
+
+
+			//Try to get all the grades from the project to which we added a grade
+			try
+			{
+				allGrades = _service.GetAllGrades(3, 5);
+			}
+			catch (Exception e)
+			{
+				exceptionThrown = true;
+			}
+
+
+			Assert.IsFalse(exceptionThrown);
+			Assert.AreEqual(3, allGrades.Count);
 			exceptionThrown = false;
 		}
 	}

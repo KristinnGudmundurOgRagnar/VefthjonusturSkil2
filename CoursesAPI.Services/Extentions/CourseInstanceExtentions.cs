@@ -16,7 +16,7 @@ namespace CoursesAPI.Services.Extensions
 
             if (course == null)
             {
-                throw new KeyNotFoundException("No course instance found with this ID");
+                throw new KeyNotFoundException("No course instance found with this ID: " + id);
             }
             return course;
         }

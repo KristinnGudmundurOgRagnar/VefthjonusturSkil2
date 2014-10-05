@@ -494,8 +494,47 @@ namespace CoursesAPI.Services.Services
 				throw new KeyNotFoundException("No course instance found with this ID");
 			}
 
-			//TODO: Add validation
+			
+			//Validate the viewmodel
+			List<Project> theProjects = _projects.All().Where(p => model.Projects.Contains(p.ID)).ToList();
+			int totalWeight = 0;
+			Dictionary<int, ProjectGroupData> theProjectGroups = new Dictionary<int,ProjectGroupData>();
 
+			foreach(Project p in theProjects){
+				if(p.ProjectGroupId == null){
+					totalWeight += p.Weight;
+				}
+				else
+				{
+					ProjectGroup pGroup = null;
+					try {
+						pGroup = _projectGroups.All().SingleOrDefault(g => g.ID == p.ProjectGroupId);
+					}
+					catch(Exception e){
+						if(_projectGroups.All().Count() != 0){
+							throw new Exception("More than one project groups found with the given ID");
+						}
+						else
+						{
+							//The collection is empty
+							throw new KeyNotFoundException("There is no project group with the given ID");
+						}
+
+					}
+					if(!theProjectGroups.ContainsKey((int)p.ProjectGroupId)){
+						theProjectGroups.Add((int)p.ProjectGroupId, new ProjectGroupData(pGroup.ID, pGroup.GradedProjectsCount));
+					}
+					theProjectGroups[(int)p.ProjectGroupId].AddProject(0, p.Weight);
+				}
+			}
+
+			foreach(ProjectGroupData p in theProjectGroups.Values){
+				totalWeight += Math.Min(p.GradedProjectsCount, p.TheProjects.Count()) * p.TheProjects[0].Weight;
+			}
+
+			if(totalWeight != 100){
+				throw new ArgumentException("The total weight of the projects should be 100, not " + totalWeight);
+			}
 
 			//Remove the old composition
 			List<FinalGradeComposition> currentComps = _finalGradeComps.All().Where(f => f.CourseInstanceId == courseInstanceId).ToList();

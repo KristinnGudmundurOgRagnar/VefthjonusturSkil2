@@ -726,7 +726,6 @@ namespace CoursesAPI.Tests.Services
 			catch (Exception e)
 			{
 				exceptionThrown = true;
-				Assert.AreEqual("", e.Message);
 			}
 
 			Assert.IsFalse(exceptionThrown);
@@ -737,6 +736,29 @@ namespace CoursesAPI.Tests.Services
 			Assert.AreEqual(finalGrade.PositionUpper, 1);
 			Assert.AreEqual(finalGrade.PersonSSN, personSSN2);
 			Assert.AreEqual(finalGrade.Status, "OK");
+			exceptionThrown = false;
+
+
+			//Try to get a final grade from a course with projects and a student who has not finished any projects
+			try
+			{
+				finalGrade = _service.GetFinalGradeForOneStudent(3, personSSN3);
+			}
+			catch (Exception e)
+			{
+				exceptionThrown = true;
+			}
+
+			Assert.IsFalse(exceptionThrown);
+			Assert.AreEqual(finalGrade.Grade, 0);
+			Assert.AreEqual(finalGrade.NumberOfStudents, 3);
+			Assert.AreEqual(finalGrade.PercentageComplete, 0);
+			Assert.AreEqual(finalGrade.PositionLower, 3);
+			Assert.AreEqual(finalGrade.PositionUpper, 2);
+			Assert.AreEqual(finalGrade.PersonSSN, personSSN3);
+			Assert.AreEqual(finalGrade.Status, "OK");
+
+
 		}
 	}
 }

@@ -708,7 +708,7 @@ namespace CoursesAPI.Services.Services
 			Dictionary<int, ProjectGroupData> projectGroups = new Dictionary<int,ProjectGroupData>();
 
 			foreach(var comp in theGradeComps){
-				//TODO: Add handling for ProjectGroups and OnlyIfHigherThan
+				//TODO: Add handling for OnlyIfHigherThan
 				FinalGradeComposition currentComp = (FinalGradeComposition)comp;
 				Project currentProject = null;
 				try
@@ -756,12 +756,15 @@ namespace CoursesAPI.Services.Services
 					totalPercentage += currentProject.Weight;
 
 					if(currentGrade != null){
-						returnValue.PercentageComplete += currentProject.Weight;
-						//For some reason, this is not a given thing :/
-						if(currentGrade.Grade == null ){
-							throw new Exception("Student: " + personSSN + " has no grade for Project: " + currentProject.ID);
+						if (currentGrade.Grade == null)
+						{
+							//throw new Exception("Student: " + personSSN + " has no grade for Project: " + currentProject.ID);
 						}
-						returnValue.Grade += (int)currentGrade.Grade / 1000.0 * currentProject.Weight;
+						else
+						{
+							returnValue.Grade += (int)currentGrade.Grade / 1000.0 * currentProject.Weight;
+							returnValue.PercentageComplete += currentProject.Weight;
+						}
 					}
 				}
 

@@ -312,6 +312,9 @@ namespace CoursesAPI.Services.Services
         /// <param name="model">Viewmodel containing objects to put in the current project</param>
         public void AddProjectToCourse(int id, AddProjectViewModel model)
         {
+			if(model.Weight < 0 || model.Weight > 100){
+				throw new ArgumentException("Weight must be a value between 0 and 100");
+			}
             if ((PercentCompleted(id, model)) > 100)
             {
                 throw new ApplicationException("Cannot add project, total precent becomes: " +
@@ -343,21 +346,14 @@ namespace CoursesAPI.Services.Services
         /// </summary>
         /// <param name="courseId">Id of the course</param>
         /// <param name="projectId">Id of the project</param>
-        public void RemoveProjectFromCourse(int courseId, int projectId)
+        public void RemoveProjectFromCourse(int courseId, DeleteProjectViewModel model)
         {
             var course = _courseInstances.GetCourseByID(courseId);
 
-            try
-            {
-                var project = _projects.GetProjectByID(projectId);
+            var project = _projects.GetProjectByID(model.Id);
 
-                _projects.Delete(project);
-                _uow.Save();
-            }
-            catch (Exception)
-            {
-                throw new Exception("Found two projects with same id");
-            }
+            _projects.Delete(project);
+            _uow.Save();
         }
 
         /// <summary>
@@ -393,13 +389,9 @@ namespace CoursesAPI.Services.Services
             bool groupexist = false;
             foreach (KeyValuePair<int, int> pair in myLists)
             {
-                var group = _projectGroups.All().SingleOrDefault(x => x.ID == pair.Key);
+                var group = _projectGroups.GetGroupByID(model.ProjectGroupId.Value);
 
-                if (group == null)
-                {
-                    throw new Exception("Found two or more project groups with the same id");
-                }
-                if (model.ProjectGroupId == pair.Key)
+                if (model.ProjectGroupId.Value == pair.Key)
                 {
                     groupexist = true;
                 }
@@ -482,21 +474,8 @@ namespace CoursesAPI.Services.Services
 				}
 				else
 				{
-					ProjectGroup pGroup = null;
-					try {
-						pGroup = _projectGroups.All().SingleOrDefault(g => g.ID == p.ProjectGroupId);
-					}
-					catch(Exception e){
-						if(_projectGroups.All().Count() != 0){
-							throw new Exception("More than one project groups found with the given ID");
-						}
-						else
-						{
-							//The collection is empty
-							throw new KeyNotFoundException("There is no project group with the given ID");
-						}
+					ProjectGroup pGroup = _projectGroups.GetGroupByID(p.ProjectGroupId.Value);
 
-					}
 					if(!theProjectGroups.ContainsKey((int)p.ProjectGroupId)){
 						theProjectGroups.Add((int)p.ProjectGroupId, new ProjectGroupData(pGroup.ID, pGroup.GradedProjectsCount));
 					}
@@ -745,18 +724,7 @@ namespace CoursesAPI.Services.Services
 
 						ProjectGroup currentProjectGroup = null;
 						//See if the projectgroup exists
-						try
-						{
-							currentProjectGroup = _projectGroups.All().SingleOrDefault(p => p.ID == currentID);
-						}
-						catch (Exception e)
-						{
-							if (_projectGroups.All().Count() != 0)
-							{
-								throw new KeyNotFoundException("No project group found with the given ID(" + currentID + ")");
-							}
-							//The collection is just empty
-						}
+					    currentProjectGroup = _projectGroups.GetGroupByID(currentID);
 
 						if (!projectGroups.ContainsKey(currentID))
 						{

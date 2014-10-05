@@ -12,13 +12,20 @@ namespace CoursesAPI.Services.Extensions
     {
         public static ProjectGroup GetGroupByID(this IRepository<ProjectGroup> repo, int id)
         {
-            var group = repo.All().SingleOrDefault(c => c.ID == id);
-
-            if (group == null)
+            try
             {
-                throw new KeyNotFoundException("No projectGroup found with this ID: " + id);
+                var group = repo.All().SingleOrDefault(c => c.ID == id);
+
+                if (group == null)
+                {
+                    throw new KeyNotFoundException("No projectGroup found with this ID: " + id);
+                }
+                return group;
             }
-            return group;
+            catch (Exception)
+            {
+                throw new Exception("Found two Project-Groups with same id: " + id);
+            }
         }
     }
 }

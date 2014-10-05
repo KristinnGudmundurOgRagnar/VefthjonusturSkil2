@@ -65,10 +65,10 @@ namespace CoursesAPI.Controllers
         /// <param name="courseInstanceID">The Id of the courseInstance, gotten from the URL</param>
         /// <param name="ProjectId">The Id of the project, gotten from the URL</param>
         [HttpDelete]
-        [Route("project/{projectId:int}")]
-        public void DeleteProject(int courseInstanceId, int projectId)
+        [Route("project")]
+        public void DeleteProject(int courseInstanceId, DeleteProjectViewModel model)
         {
-            _service.RemoveProjectFromCourse(courseInstanceId, projectId);
+            _service.RemoveProjectFromCourse(courseInstanceId, model);
         }
 
         /// <summary>

@@ -12,13 +12,21 @@ namespace CoursesAPI.Services.Extensions
     {
         public static CourseInstance GetCourseByID(this IRepository<CourseInstance> repo, int id)
         {
-            var course = repo.All().SingleOrDefault(c => c.ID == id);
-
-            if (course == null)
+            try
             {
-                throw new KeyNotFoundException("No course instance found with this ID: " + id);
+                var course = repo.All().SingleOrDefault(c => c.ID == id);
+
+                if (course == null)
+                {
+                    throw new KeyNotFoundException("No course instance found with this ID: " + id);
+                }
+
+                return course;
             }
-            return course;
+            catch(Exception)
+            {
+                throw new Exception("Found two courseInstances with same id: " + id);
+            }
         }
     }
 }

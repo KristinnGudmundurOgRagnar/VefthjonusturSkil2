@@ -8,6 +8,10 @@ namespace CoursesAPI.Models
 {
 	public class GradeDTO
 	{
+        /// <summary>
+        /// The SSN of the student
+        /// </summary>
+        public String SSN { get; set; }
 		/// <summary>
 		/// The grade of the student
 		/// </summary>

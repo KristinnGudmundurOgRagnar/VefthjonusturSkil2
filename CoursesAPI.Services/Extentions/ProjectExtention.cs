@@ -10,6 +10,12 @@ namespace CoursesAPI.Services.Extensions
 {
     public static class ProjectExtention
     {
+        /// <summary>
+        /// An extention method to get all Projects for the given Id
+        /// </summary>
+        /// <param name="repo">the repository to search in</param>
+        /// <param name="id">the id to look for</param>
+        /// <returns>Project</returns>
         public static Project GetProjectByID(this IRepository<Project> repo, int id)
         {
             try

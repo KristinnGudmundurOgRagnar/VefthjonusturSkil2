@@ -11,6 +11,9 @@ using CoursesAPI.Services.Extensions;
 
 namespace CoursesAPI.Services.Services
 {
+    /// <summary>
+    /// The Course and project service for our controlers
+    /// </summary>
 	public class CoursesServiceProvider
 	{
 		#region Database collections
@@ -345,7 +348,7 @@ namespace CoursesAPI.Services.Services
         /// Removes project from a given course
         /// </summary>
         /// <param name="courseId">Id of the course</param>
-        /// <param name="projectId">Id of the project</param>
+        /// <param name="model">model of the project</param>
         public void RemoveProjectFromCourse(int courseId, DeleteProjectViewModel model)
         {
             var course = _courseInstances.GetCourseByID(courseId);
@@ -506,7 +509,7 @@ namespace CoursesAPI.Services.Services
 				{
 					currentProject = _projects.All().SingleOrDefault(p => p.ID == projectId && p.CourseInstanceId == courseInstanceId);
 				}
-				catch(Exception e){
+				catch(Exception){
 					throw new Exception("More than one project found with the given ID");
 				}
 				if(currentProject == null){
@@ -566,7 +569,7 @@ namespace CoursesAPI.Services.Services
 				theGrade = _grades.All().SingleOrDefault(g => g.ProjectId == projectID
 																&& g.PersonSSN == viewModel.PersonSSN);
 			}
-			catch(Exception e){
+			catch(Exception){
 				//There are more than one grade that fit the criteria
 				if(_grades.All().Count() != 0){
 					throw new Exception("The given person already has more than one grade for the given project");
@@ -701,7 +704,7 @@ namespace CoursesAPI.Services.Services
 				{
 					currentProject = _projects.All().SingleOrDefault(p => p.ID == comp.ProjectId);
 				}
-				catch(Exception e){
+				catch(Exception){
 					if(_projects.All().Count() != 0){
 						throw new Exception("There are more than one projects with the given ID");
 					}
@@ -823,7 +826,7 @@ namespace CoursesAPI.Services.Services
 				reg = _personRegistrations.All().Single(r => r.CourseInstanceId == courseInstanceID
 																		&& r.PersonSSN == personSSN);
 			}
-			catch(Exception e){
+			catch(Exception){
 				if(_personRegistrations.All().Count() != 0){
 					throw new Exception("The given student is registered more than once into the given course");
 				}

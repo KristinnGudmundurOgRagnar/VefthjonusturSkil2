@@ -11,22 +11,26 @@ namespace CoursesAPI.Models
         /// <summary>
         /// Name of Course
         /// </summary>
-        public String Name;
+        public String Name                      { get; set; }
+
 		/// <summary>
 		/// Id of projectgroup
 		/// </summary>
-        public int? ProjectGroupId;
+        public int? ProjectGroupId              { get; set; }
+
         /// <summary>
 		/// Id of onlyhigherthan
         /// </summary>
-		public int ? OnlyHigherThanProjectId;
+        public int? OnlyHigherThanProjectId     { get; set; }
+
 		/// <summary>
 		/// weight of project
 		/// </summary>
-        public int Weight;
+        public int Weight                       { get; set; }
+
         /// <summary>
 		/// Minimum grade to pass course
         /// </summary>
-		public int ? MinGradeToPassCourse;
+        public int? MinGradeToPassCourse        { get; set; }
     }
 }

@@ -8,7 +8,14 @@ namespace CoursesAPI.Models
 {
 	public class AddGradeViewModel
 	{
-		public int? Grade { get; set; }
+        /// <summary>
+        /// The Grade for the project
+        /// </summary>
+		public int? Grade       { get; set; }
+
+        /// <summary>
+        /// the SSN of the student to be graded
+        /// </summary>
 		public String PersonSSN { get; set; }
 	}
 }

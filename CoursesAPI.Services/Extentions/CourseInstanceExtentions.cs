@@ -10,6 +10,12 @@ namespace CoursesAPI.Services.Extensions
 {
     public static class CourseInstanceExtentions
     {
+        /// <summary>
+        /// An extention method to get all courses for the given Id
+        /// </summary>
+        /// <param name="repo">the repository to search in</param>
+        /// <param name="id">the id to look for</param>
+        /// <returns>CourseInstance</returns>
         public static CourseInstance GetCourseByID(this IRepository<CourseInstance> repo, int id)
         {
             try

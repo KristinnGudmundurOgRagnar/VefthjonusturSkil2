@@ -10,6 +10,12 @@ namespace CoursesAPI.Services.Extensions
 {
     public static class ProjectGroupExtention
     {
+        /// <summary>
+        /// An extention method to get all Project-Groups for the given Id
+        /// </summary>
+        /// <param name="repo">the repository to search in</param>
+        /// <param name="id">the id to look for</param>
+        /// <returns>ProjectGroup</returns>
         public static ProjectGroup GetGroupByID(this IRepository<ProjectGroup> repo, int id)
         {
             try

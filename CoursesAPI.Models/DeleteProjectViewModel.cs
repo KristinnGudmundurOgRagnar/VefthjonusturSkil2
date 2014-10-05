@@ -8,7 +8,9 @@ namespace CoursesAPI.Models
 {
     public class DeleteProjectViewModel
     {
-        //id of project to delete
+        /// <summary>
+        /// Id of project to delete
+        /// </summary>
         public int Id { get; set; }
     }
 }

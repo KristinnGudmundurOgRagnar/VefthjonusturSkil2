@@ -8,10 +8,14 @@ namespace CoursesAPI.Models
 {
     public class AddProjectGroupViewModel
     {
-        //Name of ProjectGroup
-        public String Name { get; set; }
-        //number of top projects to be evaluated
-        public int? GradedProjectsCount { get; set; }
+        /// <summary>
+        /// Name of ProjectGroup
+        /// </summary>
+        public String Name              { get; set; }
 
+        /// <summary>
+        /// Number of top projects to be evaluated
+        /// </summary>
+        public int? GradedProjectsCount { get; set; }
     }
 }

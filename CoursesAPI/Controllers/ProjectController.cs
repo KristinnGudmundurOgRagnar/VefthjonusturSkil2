@@ -11,11 +11,17 @@ using CoursesAPI.Services.DataAccess;
 
 namespace CoursesAPI.Controllers
 {
+    /// <summary>
+    /// Controler for all project Api methods
+    /// </summary>
 	[RoutePrefix("api/courses/{courseInstanceID:int}")]
     public class ProjectController : ApiController
     {
 		private readonly CoursesServiceProvider _service;
 
+        /// <summary>
+        /// Constructor fecthes our CoursesServiceProvider
+        /// </summary>
 		public ProjectController()
 		{
 			_service = new CoursesServiceProvider(new UnitOfWork<AppDataContext>());
@@ -62,8 +68,8 @@ namespace CoursesAPI.Controllers
         /// <summary>
         /// deletes a project from the course
         /// </summary>
-        /// <param name="courseInstanceID">The Id of the courseInstance, gotten from the URL</param>
-        /// <param name="ProjectId">The Id of the project, gotten from the URL</param>
+        /// <param name="courseInstanceId">The Id of the courseInstance, gotten from the URL</param>
+        /// <param name="model">The project that is to be deleted, gotten from the request payload</param>
         [HttpDelete]
         [Route("project")]
         public void DeleteProject(int courseInstanceId, DeleteProjectViewModel model)
@@ -89,7 +95,7 @@ namespace CoursesAPI.Controllers
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="courseInstanceID">The Id of the courseInstance, gotten from the URL</param>
+        /// <param name="courseInstanceId">The Id of the courseInstance, gotten from the URL</param>
         /// <param name="model"></param>
         /// <returns>Status code, depending on the correctness of the payload</returns>
 		[HttpPut]
@@ -156,8 +162,8 @@ namespace CoursesAPI.Controllers
         /// <summary>
         /// gets a grade for a given person for a given project
         /// </summary>
-        /// <param name="courseInstanceID">The Id of the courseInstance, gotten from the URL</param>
-        /// <param name="projectID">The Id of the project, gotten from the URL</param>
+        /// <param name="courseInstanceId">The Id of the courseInstance, gotten from the URL</param>
+        /// <param name="projectId">The Id of the project, gotten from the URL</param>
         /// <param name="ssn">The ssn of the student, gotten from the URL</param>
         /// <returns>Status code, depending on the correctness of the payload</returns>
         [HttpGet]
@@ -185,7 +191,7 @@ namespace CoursesAPI.Controllers
         /// <summary>
         /// Gets the final grade
         /// </summary>
-        /// <param name="courseInstanceID">The Id of the courseInstance, gotten from the URL</param>
+        /// <param name="courseInstanceId">The Id of the courseInstance, gotten from the URL</param>
         /// <param name="personSSN">The SSN of the Student, gotten from the URL</param>
         /// <returns>Status code, depending on the correctness of the payload</returns>
 		[HttpGet]
@@ -221,7 +227,7 @@ namespace CoursesAPI.Controllers
         /// <summary>
         /// Gets the final grade for all students in course
         /// </summary>
-        /// <param name="courseInstanceID">The Id of the courseInstance, gotten from the URL</param>
+        /// <param name="courseInstanceId">The Id of the courseInstance, gotten from the URL</param>
         /// <returns>Status code, depending on the correctness of the payload</returns>
 		[HttpGet]
 		[Route("finalGrade/all")]
@@ -236,7 +242,7 @@ namespace CoursesAPI.Controllers
         /// <summary>
         /// Gets all grades for a given course
         /// </summary>
-        /// <param name="courseInstanceID">The Id of the courseInstance, gotten from the URL</param>
+        /// <param name="courseInstanceId">The Id of the courseInstance, gotten from the URL</param>
         /// <param name="projectId">The Id of the project, gotten from the URL</param>
         /// <returns>Status code, depending on the correctness of the payload</returns>
         [HttpGet]

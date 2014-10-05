@@ -369,7 +369,7 @@ namespace CoursesAPI.Services.Services
             }
         }
 
-        public int PrecentCompleted(int id, AddProjectViewModel model)
+        public int PercentCompleted(int id, AddProjectViewModel model)
         {
             CourseInstance theCourse = _courseInstances.All().SingleOrDefault(c => c.ID == id);
 

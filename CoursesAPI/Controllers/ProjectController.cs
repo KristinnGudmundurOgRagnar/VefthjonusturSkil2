@@ -44,10 +44,10 @@ namespace CoursesAPI.Controllers
         public HttpResponseMessage AddProject(int courseInstanceID, AddProjectViewModel model)
         {
 
-            if ((_service.PrecentCompleted(courseInstanceID, model)) > 100)
+            if ((_service.PercentCompleted(courseInstanceID, model)) > 100)
             {
                 throw new Exception("Cannot add project, total precent becomes: " +
-                                     (_service.PrecentCompleted(courseInstanceID, model)) + ", it cant be higher than 100");
+                                     (_service.PercentCompleted(courseInstanceID, model)) + ", it cant be higher than 100");
             }
 
             _service.AddProjectToCourse(courseInstanceID, model);

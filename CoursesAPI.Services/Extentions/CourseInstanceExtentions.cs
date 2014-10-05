@@ -16,7 +16,7 @@ namespace CoursesAPI.Services.Extensions
 
             if (course == null)
             {
-                throw new ArgumentException("Invalid course instance ID");
+                throw new ArgumentException("No course instance found with this ID");
             }
             return course;
         }

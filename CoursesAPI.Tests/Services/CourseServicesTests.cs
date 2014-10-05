@@ -1174,5 +1174,124 @@ namespace CoursesAPI.Tests.Services
 			Assert.AreEqual(2, currentProjectGroups.Count);
 			exceptionThrown = false;
 		}
+
+
+
+		[TestMethod]
+		public void TestMakeFinalGradeComposition()
+		{
+			List<FinalGradeComposition> theComps = null;
+			List<int> tempList = new List<int>();
+			List<int> theCompValues = new List<int>();
+			bool exceptionThrown = false;
+
+
+			//Assert the number of FinalGradeCompositions
+			try
+			{
+				theComps = _service.GetFinalGradeComps(2);
+			}
+			catch(Exception e){
+				exceptionThrown = true;
+			}
+
+			Assert.IsFalse(exceptionThrown);
+			Assert.AreEqual(3, theComps.Count);
+			exceptionThrown = false;
+
+
+			tempList.Clear();
+			tempList.Add(1);
+			tempList.Add(2);
+			tempList.Add(3);
+			tempList.Add(4);
+			//Try to set an invalid composition
+			try
+			{
+				_service.MakeFinalGradeComp(2, new AddFinalGradeCompositionViewModel
+				{
+					Projects = tempList
+				});
+			}
+			catch (Exception e)
+			{
+				exceptionThrown = true;
+			}
+
+			theComps = _service.GetFinalGradeComps(2);
+			foreach(FinalGradeComposition f in theComps){
+				theCompValues.Add(f.ProjectId);
+			}
+
+			Assert.IsTrue(exceptionThrown);
+			Assert.AreEqual(3, theComps.Count);
+			CollectionAssert.Contains(theCompValues, 1);
+			CollectionAssert.Contains(theCompValues, 2);
+			CollectionAssert.Contains(theCompValues, 3);
+			CollectionAssert.DoesNotContain(theCompValues, 4);
+			exceptionThrown = false;
+
+
+			theCompValues.Clear();
+			tempList.Clear();
+			tempList.Add(2);
+			tempList.Add(3);
+			tempList.Add(4);
+			//Try to set a valid composition
+			try
+			{
+				_service.MakeFinalGradeComp(2, new AddFinalGradeCompositionViewModel
+				{
+					Projects = tempList
+				});
+			}
+			catch (Exception e)
+			{
+				exceptionThrown = true;
+			}
+
+			theComps = _service.GetFinalGradeComps(2);
+			foreach (FinalGradeComposition f in theComps)
+			{
+				theCompValues.Add(f.ProjectId);
+			}
+
+			Assert.IsFalse(exceptionThrown);
+			Assert.AreEqual(3, theComps.Count);
+			CollectionAssert.DoesNotContain(theCompValues, 1);
+			exceptionThrown = false;
+
+
+			theCompValues.Clear();
+			tempList.Clear();
+			tempList.Add(1);
+			tempList.Add(4);
+			//Try to set a valid composition
+			try
+			{
+				_service.MakeFinalGradeComp(2, new AddFinalGradeCompositionViewModel
+				{
+					Projects = tempList
+				});
+			}
+			catch (Exception e)
+			{
+				exceptionThrown = true;
+			}
+
+			theComps = _service.GetFinalGradeComps(2);
+			foreach (FinalGradeComposition f in theComps)
+			{
+				theCompValues.Add(f.ProjectId);
+			}
+
+			Assert.IsFalse(exceptionThrown);
+			Assert.AreEqual(2, theComps.Count);
+			CollectionAssert.Contains(theCompValues, 1);
+			CollectionAssert.DoesNotContain(theCompValues, 2);
+			CollectionAssert.DoesNotContain(theCompValues, 3);
+			CollectionAssert.Contains(theCompValues, 4);
+			exceptionThrown = false;
+		}
 	}
 }

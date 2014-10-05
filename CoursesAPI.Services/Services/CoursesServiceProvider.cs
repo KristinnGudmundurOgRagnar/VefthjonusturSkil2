@@ -612,11 +612,29 @@ namespace CoursesAPI.Services.Services
             return result.ToList();
         }
 
-
+		/// <summary>
+		/// Returns a list of all the ProjectGroups
+		/// </summary>
+		/// <returns>A list of all the ProjectGroups</returns>
 		public List<ProjectGroup> GetProjectGroups()
 		{
 			var result = from p in _projectGroups.All()
 						 select p;
+
+			return result.ToList();
+		}
+
+
+		/// <summary>
+		/// Returns all FinalGradeCompositions for a given course instance
+		/// </summary>
+		/// <param name="courseInstanceId">The id of the course instance</param>
+		/// <returns>A list of FinalGradeCompositions</returns>
+		public List<FinalGradeComposition> GetFinalGradeComps(int courseInstanceId)
+		{
+			var result = from f in _finalGradeComps.All()
+						 where f.CourseInstanceId == courseInstanceId
+						 select f;
 
 			return result.ToList();
 		}

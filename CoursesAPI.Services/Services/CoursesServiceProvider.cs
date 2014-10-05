@@ -312,11 +312,17 @@ namespace CoursesAPI.Services.Services
         /// <param name="model">Viewmodel containing objects to put in the current project</param>
         public void AddProjectToCourse(int id, AddProjectViewModel model)
         {
+            if ((PercentCompleted(id, model)) > 100)
+            {
+                throw new ApplicationException("Cannot add project, total precent becomes: " +
+                                     (PercentCompleted(id, model)) + ", it cant be higher than 100");
+            }
+
             var course = _courseInstances.All().SingleOrDefault(c => c.ID == id);
 
             if(course == null)
             {
-                throw new ArgumentException("Invalid course instance id");
+                throw new KeyNotFoundException("No course instance found with this ID");
             }
 
             
@@ -324,7 +330,7 @@ namespace CoursesAPI.Services.Services
 
             if(projectGroup == null && model.ProjectGroupId != null)
             {
-                throw new ArgumentException("Invalid project-group id");
+                throw new KeyNotFoundException("No group found with this ID");
             }
 
             Project project = new Project
@@ -352,7 +358,7 @@ namespace CoursesAPI.Services.Services
 
             if (course == null)
             {
-                throw new ArgumentException("Invalid course instance id");
+                throw new ArgumentException("No course instance found with this ID");
             }
 
             try

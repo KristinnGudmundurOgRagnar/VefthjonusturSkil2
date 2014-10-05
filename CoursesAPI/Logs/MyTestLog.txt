@@ -560,3 +560,383 @@ Created - Content-type='application/json; charset=utf-8', content-length=unknown
 0 - 
 0 - 
 0 - 
+0 - 
+0 - 
+0 - http://localhost:12298/api/courses/5/project
+0 - 
+0 - Route='MS_SubRoutes:System.Web.Http.Routing.IHttpRouteData[]'
+0 - Project
+0 - 
+0 - 
+0 - 
+0 - 
+0 - http://localhost:12298/api/courses/5/project
+0 - 
+0 - Route='MS_SubRoutes:System.Web.Http.Routing.IHttpRouteData[]'
+0 - Project
+0 - 
+0 - 
+0 - CoursesAPI.Controllers.ProjectController
+0 - CoursesAPI.Controllers.ProjectController
+0 - 
+0 - 
+0 - Selected action 'AddProject(Int32 courseInstanceID, AddProjectViewModel model)'
+0 - 
+0 - Binding parameter 'courseInstanceID'
+0 - Parameter 'courseInstanceID' bound to the value '5'
+0 - Binding parameter 'model'
+0 - Type='AddProjectViewModel', content-type='application/json'
+0 - Value read='CoursesAPI.Models.AddProjectViewModel'
+0 - Parameter 'model' bound to the value 'CoursesAPI.Models.AddProjectViewModel'
+0 - Model state is valid. Values: courseInstanceID=5, model=CoursesAPI.Models.AddProjectViewModel
+0 - Action='AddProject(courseInstanceID=5, model=CoursesAPI.Models.AddProjectViewModel)'
+0 - Invoking action 'AddProject(courseInstanceID=5, model=CoursesAPI.Models.AddProjectViewModel)'
+0 - 
+0 - 
+0 - 
+0 - 
+0 - 
+0 - 
+0 - 
+0 - 
+0 - 
+0 - 
+0 - 
+0 - http://localhost:12298/api/courses/5/project
+0 - 
+0 - Route='MS_SubRoutes:System.Web.Http.Routing.IHttpRouteData[]'
+0 - Project
+0 - 
+0 - 
+0 - CoursesAPI.Controllers.ProjectController
+0 - CoursesAPI.Controllers.ProjectController
+0 - 
+0 - 
+0 - Selected action 'AddProject(Int32 courseInstanceID, AddProjectViewModel model)'
+0 - 
+0 - Binding parameter 'courseInstanceID'
+0 - Parameter 'courseInstanceID' bound to the value '5'
+0 - Binding parameter 'model'
+0 - Type='AddProjectViewModel', content-type='application/json'
+0 - Value read='CoursesAPI.Models.AddProjectViewModel'
+0 - Parameter 'model' bound to the value 'CoursesAPI.Models.AddProjectViewModel'
+0 - Model state is valid. Values: courseInstanceID=5, model=CoursesAPI.Models.AddProjectViewModel
+0 - Action='AddProject(courseInstanceID=5, model=CoursesAPI.Models.AddProjectViewModel)'
+0 - Invoking action 'AddProject(courseInstanceID=5, model=CoursesAPI.Models.AddProjectViewModel)'
+0 - Type='String', formatters=[JsonMediaTypeFormatterTracer, XmlMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer]
+0 - Obtaining formatter of type 'JsonMediaTypeFormatter' for type='String', mediaType='application/json; charset=utf-8'
+0 - Will use same 'JsonMediaTypeFormatter' formatter
+0 - Selected formatter='JsonMediaTypeFormatter', content-type='application/json; charset=utf-8'
+0 - Action returned 'StatusCode: 404, ReasonPhrase: 'Not Found', Version: 1.1, Content: System.Net.Http.ObjectContent`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}'
+NotFound - 
+NotFound - 
+NotFound - 
+NotFound - Content-type='application/json; charset=utf-8', content-length=unknown
+0 - Value='No course instance found with this ID', type='String', content-type='application/json; charset=utf-8'
+0 - 
+0 - 
+0 - 
+0 - http://localhost:12298/api/courses/2/project
+0 - 
+0 - Route='MS_SubRoutes:System.Web.Http.Routing.IHttpRouteData[]'
+0 - Project
+0 - 
+0 - 
+0 - CoursesAPI.Controllers.ProjectController
+0 - CoursesAPI.Controllers.ProjectController
+0 - 
+0 - 
+0 - Selected action 'AddProject(Int32 courseInstanceID, AddProjectViewModel model)'
+0 - 
+0 - Binding parameter 'courseInstanceID'
+0 - Parameter 'courseInstanceID' bound to the value '2'
+0 - Binding parameter 'model'
+0 - Type='AddProjectViewModel', content-type='application/json'
+0 - Value read='CoursesAPI.Models.AddProjectViewModel'
+0 - Parameter 'model' bound to the value 'CoursesAPI.Models.AddProjectViewModel'
+0 - Model state is valid. Values: courseInstanceID=2, model=CoursesAPI.Models.AddProjectViewModel
+0 - Action='AddProject(courseInstanceID=2, model=CoursesAPI.Models.AddProjectViewModel)'
+0 - Invoking action 'AddProject(courseInstanceID=2, model=CoursesAPI.Models.AddProjectViewModel)'
+0 - 
+0 - 
+0 - 
+0 - 
+0 - 
+0 - 
+0 - 
+0 - 
+0 - 
+0 - 
+0 - 
+0 - http://localhost:12298/api/courses/2/project
+0 - 
+0 - Route='MS_SubRoutes:System.Web.Http.Routing.IHttpRouteData[]'
+0 - Project
+0 - 
+0 - 
+0 - CoursesAPI.Controllers.ProjectController
+0 - CoursesAPI.Controllers.ProjectController
+0 - 
+0 - 
+0 - Selected action 'AddProject(Int32 courseInstanceID, AddProjectViewModel model)'
+0 - 
+0 - Binding parameter 'courseInstanceID'
+0 - Parameter 'courseInstanceID' bound to the value '2'
+0 - Binding parameter 'model'
+0 - Type='AddProjectViewModel', content-type='application/json'
+0 - Value read='CoursesAPI.Models.AddProjectViewModel'
+0 - Parameter 'model' bound to the value 'CoursesAPI.Models.AddProjectViewModel'
+0 - Model state is valid. Values: courseInstanceID=2, model=CoursesAPI.Models.AddProjectViewModel
+0 - Action='AddProject(courseInstanceID=2, model=CoursesAPI.Models.AddProjectViewModel)'
+0 - Invoking action 'AddProject(courseInstanceID=2, model=CoursesAPI.Models.AddProjectViewModel)'
+0 - Type='String', formatters=[JsonMediaTypeFormatterTracer, XmlMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer]
+0 - Obtaining formatter of type 'JsonMediaTypeFormatter' for type='String', mediaType='application/json; charset=utf-8'
+0 - Will use same 'JsonMediaTypeFormatter' formatter
+0 - Selected formatter='JsonMediaTypeFormatter', content-type='application/json; charset=utf-8'
+0 - Action returned 'StatusCode: 400, ReasonPhrase: 'Bad Request', Version: 1.1, Content: System.Net.Http.ObjectContent`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}'
+BadRequest - 
+BadRequest - 
+BadRequest - 
+BadRequest - Content-type='application/json; charset=utf-8', content-length=unknown
+0 - Value='Cannot add project, total precent becomes: 1100, it cant be higher than 100', type='String', content-type='application/json; charset=utf-8'
+0 - 
+0 - 
+0 - 
+0 - 
+0 - 
+0 - http://localhost:12298/api/courses/2/project
+0 - 
+0 - Route='MS_SubRoutes:System.Web.Http.Routing.IHttpRouteData[]'
+0 - Project
+0 - 
+0 - 
+0 - CoursesAPI.Controllers.ProjectController
+0 - CoursesAPI.Controllers.ProjectController
+0 - 
+0 - 
+0 - Selected action 'AddProject(Int32 courseInstanceID, AddProjectViewModel model)'
+0 - 
+0 - Binding parameter 'courseInstanceID'
+0 - Parameter 'courseInstanceID' bound to the value '2'
+0 - Binding parameter 'model'
+0 - Type='AddProjectViewModel', content-type='application/json'
+0 - Value read='CoursesAPI.Models.AddProjectViewModel'
+0 - Parameter 'model' bound to the value 'CoursesAPI.Models.AddProjectViewModel'
+0 - Model state is valid. Values: courseInstanceID=2, model=CoursesAPI.Models.AddProjectViewModel
+0 - Action='AddProject(courseInstanceID=2, model=CoursesAPI.Models.AddProjectViewModel)'
+0 - Invoking action 'AddProject(courseInstanceID=2, model=CoursesAPI.Models.AddProjectViewModel)'
+0 - Type='String', formatters=[JsonMediaTypeFormatterTracer, XmlMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer]
+0 - Obtaining formatter of type 'JsonMediaTypeFormatter' for type='String', mediaType='application/json; charset=utf-8'
+0 - Will use same 'JsonMediaTypeFormatter' formatter
+0 - Selected formatter='JsonMediaTypeFormatter', content-type='application/json; charset=utf-8'
+0 - Action returned 'StatusCode: 400, ReasonPhrase: 'Bad Request', Version: 1.1, Content: System.Net.Http.ObjectContent`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}'
+BadRequest - 
+BadRequest - 
+BadRequest - 
+BadRequest - Content-type='application/json; charset=utf-8', content-length=unknown
+0 - Value='Specified argument was out of the range of valid values.
+Parameter name: Cannot add project, total precent becomes: 1100, it cant be higher than 100', type='String', content-type='application/json; charset=utf-8'
+0 - 
+0 - 
+0 - 
+0 - 
+0 - 
+0 - http://localhost:12298/api/courses/2/project
+0 - 
+0 - Route='MS_SubRoutes:System.Web.Http.Routing.IHttpRouteData[]'
+0 - Project
+0 - 
+0 - 
+0 - CoursesAPI.Controllers.ProjectController
+0 - CoursesAPI.Controllers.ProjectController
+0 - 
+0 - 
+0 - Selected action 'AddProject(Int32 courseInstanceID, AddProjectViewModel model)'
+0 - 
+0 - Binding parameter 'courseInstanceID'
+0 - Parameter 'courseInstanceID' bound to the value '2'
+0 - Binding parameter 'model'
+0 - Type='AddProjectViewModel', content-type='application/json'
+0 - Value read='CoursesAPI.Models.AddProjectViewModel'
+0 - Parameter 'model' bound to the value 'CoursesAPI.Models.AddProjectViewModel'
+0 - Model state is valid. Values: courseInstanceID=2, model=CoursesAPI.Models.AddProjectViewModel
+0 - Action='AddProject(courseInstanceID=2, model=CoursesAPI.Models.AddProjectViewModel)'
+0 - Invoking action 'AddProject(courseInstanceID=2, model=CoursesAPI.Models.AddProjectViewModel)'
+0 - Type='String', formatters=[JsonMediaTypeFormatterTracer, XmlMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer]
+0 - Obtaining formatter of type 'JsonMediaTypeFormatter' for type='String', mediaType='application/json; charset=utf-8'
+0 - Will use same 'JsonMediaTypeFormatter' formatter
+0 - Selected formatter='JsonMediaTypeFormatter', content-type='application/json; charset=utf-8'
+0 - Action returned 'StatusCode: 400, ReasonPhrase: 'Bad Request', Version: 1.1, Content: System.Net.Http.ObjectContent`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}'
+BadRequest - 
+BadRequest - 
+BadRequest - 
+BadRequest - Content-type='application/json; charset=utf-8', content-length=unknown
+0 - Value='Cannot add project, total precent becomes: 1100, it cant be higher than 100', type='String', content-type='application/json; charset=utf-8'
+0 - 
+0 - 
+0 - 
+0 - http://localhost:12298/api/courses/2/project
+0 - 
+0 - Route='MS_SubRoutes:System.Web.Http.Routing.IHttpRouteData[]'
+0 - Project
+0 - 
+0 - 
+0 - CoursesAPI.Controllers.ProjectController
+0 - CoursesAPI.Controllers.ProjectController
+0 - 
+0 - 
+0 - Selected action 'AddProject(Int32 courseInstanceID, AddProjectViewModel model)'
+0 - 
+0 - Binding parameter 'courseInstanceID'
+0 - Parameter 'courseInstanceID' bound to the value '2'
+0 - Binding parameter 'model'
+0 - Type='AddProjectViewModel', content-type='application/json'
+0 - Value read='CoursesAPI.Models.AddProjectViewModel'
+0 - Parameter 'model' bound to the value 'CoursesAPI.Models.AddProjectViewModel'
+0 - Model state is valid. Values: courseInstanceID=2, model=CoursesAPI.Models.AddProjectViewModel
+0 - Action='AddProject(courseInstanceID=2, model=CoursesAPI.Models.AddProjectViewModel)'
+0 - Invoking action 'AddProject(courseInstanceID=2, model=CoursesAPI.Models.AddProjectViewModel)'
+0 - Type='String', formatters=[JsonMediaTypeFormatterTracer, XmlMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer]
+0 - Obtaining formatter of type 'JsonMediaTypeFormatter' for type='String', mediaType='application/json; charset=utf-8'
+0 - Will use same 'JsonMediaTypeFormatter' formatter
+0 - Selected formatter='JsonMediaTypeFormatter', content-type='application/json; charset=utf-8'
+0 - Action returned 'StatusCode: 400, ReasonPhrase: 'Bad Request', Version: 1.1, Content: System.Net.Http.ObjectContent`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}'
+BadRequest - 
+BadRequest - 
+BadRequest - 
+BadRequest - Content-type='application/json; charset=utf-8', content-length=unknown
+0 - Value='Specified argument was out of the range of valid values.
+Parameter name: Cannot add project, total precent becomes: 1100, it cant be higher than 100', type='String', content-type='application/json; charset=utf-8'
+0 - 
+0 - 
+0 - 
+0 - 
+0 - 
+0 - http://localhost:12298/api/courses/2/project
+0 - 
+0 - Route='MS_SubRoutes:System.Web.Http.Routing.IHttpRouteData[]'
+0 - Project
+0 - 
+0 - 
+0 - CoursesAPI.Controllers.ProjectController
+0 - CoursesAPI.Controllers.ProjectController
+0 - 
+0 - 
+0 - Selected action 'AddProject(Int32 courseInstanceID, AddProjectViewModel model)'
+0 - 
+0 - Binding parameter 'courseInstanceID'
+0 - Parameter 'courseInstanceID' bound to the value '2'
+0 - Binding parameter 'model'
+0 - Type='AddProjectViewModel', content-type='application/json'
+0 - Value read='CoursesAPI.Models.AddProjectViewModel'
+0 - Parameter 'model' bound to the value 'CoursesAPI.Models.AddProjectViewModel'
+0 - Model state is valid. Values: courseInstanceID=2, model=CoursesAPI.Models.AddProjectViewModel
+0 - Action='AddProject(courseInstanceID=2, model=CoursesAPI.Models.AddProjectViewModel)'
+0 - Invoking action 'AddProject(courseInstanceID=2, model=CoursesAPI.Models.AddProjectViewModel)'
+0 - Type='String', formatters=[JsonMediaTypeFormatterTracer, XmlMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer]
+0 - Obtaining formatter of type 'JsonMediaTypeFormatter' for type='String', mediaType='application/json; charset=utf-8'
+0 - Will use same 'JsonMediaTypeFormatter' formatter
+0 - Selected formatter='JsonMediaTypeFormatter', content-type='application/json; charset=utf-8'
+0 - Action returned 'StatusCode: 400, ReasonPhrase: 'Bad Request', Version: 1.1, Content: System.Net.Http.ObjectContent`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}'
+BadRequest - 
+BadRequest - 
+BadRequest - 
+BadRequest - Content-type='application/json; charset=utf-8', content-length=unknown
+0 - Value='Cannot add project, total precent becomes: 1100, it cant be higher than 100', type='String', content-type='application/json; charset=utf-8'
+0 - 
+0 - 
+0 - 
+0 - 
+0 - 
+0 - http://localhost:12298/api/courses/2/project
+0 - 
+0 - Route='MS_SubRoutes:System.Web.Http.Routing.IHttpRouteData[]'
+0 - Project
+0 - 
+0 - 
+0 - CoursesAPI.Controllers.ProjectController
+0 - CoursesAPI.Controllers.ProjectController
+0 - 
+0 - 
+0 - Selected action 'AddProject(Int32 courseInstanceID, AddProjectViewModel model)'
+0 - 
+0 - Binding parameter 'courseInstanceID'
+0 - Parameter 'courseInstanceID' bound to the value '2'
+0 - Binding parameter 'model'
+0 - Type='AddProjectViewModel', content-type='application/json'
+0 - Value read='CoursesAPI.Models.AddProjectViewModel'
+0 - Parameter 'model' bound to the value 'CoursesAPI.Models.AddProjectViewModel'
+0 - Model state is valid. Values: courseInstanceID=2, model=CoursesAPI.Models.AddProjectViewModel
+0 - Action='AddProject(courseInstanceID=2, model=CoursesAPI.Models.AddProjectViewModel)'
+0 - Invoking action 'AddProject(courseInstanceID=2, model=CoursesAPI.Models.AddProjectViewModel)'
+0 - Type='String', formatters=[JsonMediaTypeFormatterTracer, XmlMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer]
+0 - Obtaining formatter of type 'JsonMediaTypeFormatter' for type='String', mediaType='application/json; charset=utf-8'
+0 - Will use same 'JsonMediaTypeFormatter' formatter
+0 - Selected formatter='JsonMediaTypeFormatter', content-type='application/json; charset=utf-8'
+0 - Action returned 'StatusCode: 400, ReasonPhrase: 'Bad Request', Version: 1.1, Content: System.Net.Http.ObjectContent`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}'
+BadRequest - 
+BadRequest - 
+BadRequest - 
+BadRequest - Content-type='application/json; charset=utf-8', content-length=unknown
+0 - Value='Cannot add project, total precent becomes: 1100, it cant be higher than 100', type='String', content-type='application/json; charset=utf-8'
+0 - 
+0 - 
+0 - 
+0 - http://localhost:12298/api/courses/2/project
+0 - 
+0 - Route='MS_SubRoutes:System.Web.Http.Routing.IHttpRouteData[]'
+0 - Project
+0 - 
+0 - 
+0 - CoursesAPI.Controllers.ProjectController
+0 - CoursesAPI.Controllers.ProjectController
+0 - 
+0 - 
+0 - Selected action 'AddProject(Int32 courseInstanceID, AddProjectViewModel model)'
+0 - 
+0 - Binding parameter 'courseInstanceID'
+0 - Parameter 'courseInstanceID' bound to the value '2'
+0 - Binding parameter 'model'
+0 - Type='AddProjectViewModel', content-type='application/json'
+0 - Value read='CoursesAPI.Models.AddProjectViewModel'
+0 - Parameter 'model' bound to the value 'CoursesAPI.Models.AddProjectViewModel'
+0 - Model state is valid. Values: courseInstanceID=2, model=CoursesAPI.Models.AddProjectViewModel
+0 - Action='AddProject(courseInstanceID=2, model=CoursesAPI.Models.AddProjectViewModel)'
+0 - Invoking action 'AddProject(courseInstanceID=2, model=CoursesAPI.Models.AddProjectViewModel)'
+0 - Type='String', formatters=[JsonMediaTypeFormatterTracer, XmlMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer, FormUrlEncodedMediaTypeFormatterTracer]
+0 - Obtaining formatter of type 'JsonMediaTypeFormatter' for type='String', mediaType='application/json; charset=utf-8'
+0 - Will use same 'JsonMediaTypeFormatter' formatter
+0 - Selected formatter='JsonMediaTypeFormatter', content-type='application/json; charset=utf-8'
+0 - Action returned 'StatusCode: 400, ReasonPhrase: 'Bad Request', Version: 1.1, Content: System.Net.Http.ObjectContent`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}'
+BadRequest - 
+BadRequest - 
+BadRequest - 
+BadRequest - Content-type='application/json; charset=utf-8', content-length=unknown
+0 - Value='Cannot add project, total precent becomes: 200, it cant be higher than 100', type='String', content-type='application/json; charset=utf-8'
+0 - 
+0 - 
+0 - 

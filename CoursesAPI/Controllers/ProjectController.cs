@@ -43,14 +43,18 @@ namespace CoursesAPI.Controllers
         [Route("project")]
         public HttpResponseMessage AddProject(int courseInstanceID, AddProjectViewModel model)
         {
-
-            if ((_service.PercentCompleted(courseInstanceID, model)) > 100)
+            try
             {
-                throw new Exception("Cannot add project, total precent becomes: " +
-                                     (_service.PercentCompleted(courseInstanceID, model)) + ", it cant be higher than 100");
+                _service.AddProjectToCourse(courseInstanceID, model);
             }
-
-            _service.AddProjectToCourse(courseInstanceID, model);
+            catch (KeyNotFoundException e)
+            {
+                return Request.CreateResponse(System.Net.HttpStatusCode.NotFound, e.Message);
+            }
+            catch (ApplicationException e)
+            {
+                return Request.CreateResponse(System.Net.HttpStatusCode.BadRequest, e.Message);
+            }
 
             return Request.CreateResponse(System.Net.HttpStatusCode.Created);
         }

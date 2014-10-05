@@ -2501,7 +2501,6 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\LastBuild.log" />
     <Content Include="Views\SearchHelp.inc.php" />
     <Content Include="Views\SearchHelp.php" />
     <Content Include="Views\Web.Config" />

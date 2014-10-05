@@ -600,9 +600,7 @@ namespace CoursesAPI.Services.Services
                          where pro.CourseInstanceId == id
                          select pro;
 
-            var resultlist = result.ToList();
-
-            return resultlist;
+            return result.ToList();
         }
 
         /// <summary>

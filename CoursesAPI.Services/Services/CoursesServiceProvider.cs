@@ -901,7 +901,7 @@ namespace CoursesAPI.Services.Services
 
             // Create a new list containing all the grades from the project
             List<GradeDTO> result = new List<GradeDTO>();
-
+			
             foreach(String reg in personsRegistered)
             {
                 result.Add(GetProjectGrade(courseInstanceId, projectId, reg));

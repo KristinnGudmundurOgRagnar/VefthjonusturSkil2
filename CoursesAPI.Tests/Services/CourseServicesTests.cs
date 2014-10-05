@@ -694,13 +694,13 @@ namespace CoursesAPI.Tests.Services
 			}
 
 			Assert.IsFalse(exceptionThrown);
-			Assert.AreEqual(finalGrade.Grade, 0);
-			Assert.AreEqual(finalGrade.NumberOfStudents, 1);
-			Assert.AreEqual(finalGrade.PercentageComplete, 100);
-			Assert.AreEqual(finalGrade.PositionLower, 1);
-			Assert.AreEqual(finalGrade.PositionUpper, 1);
-			Assert.AreEqual(finalGrade.PersonSSN, personSSN1);
-			Assert.AreEqual(finalGrade.Status, "OK");
+			Assert.AreEqual(0, finalGrade.Grade);
+			Assert.AreEqual(1, finalGrade.NumberOfStudents);
+			Assert.AreEqual(100, finalGrade.PercentageComplete);
+			Assert.AreEqual(1, finalGrade.PositionLower);
+			Assert.AreEqual(1, finalGrade.PositionUpper);
+			Assert.AreEqual(personSSN1, finalGrade.PersonSSN);
+			Assert.AreEqual("OK", finalGrade.Status);
 			exceptionThrown = false;
 
 
@@ -729,13 +729,13 @@ namespace CoursesAPI.Tests.Services
 			}
 
 			Assert.IsFalse(exceptionThrown);
-			Assert.AreEqual(finalGrade.Grade, 10);
-			Assert.AreEqual(finalGrade.NumberOfStudents, 3);
-			Assert.AreEqual(finalGrade.PercentageComplete, 100);
-			Assert.AreEqual(finalGrade.PositionLower, 1);
-			Assert.AreEqual(finalGrade.PositionUpper, 1);
-			Assert.AreEqual(finalGrade.PersonSSN, personSSN2);
-			Assert.AreEqual(finalGrade.Status, "OK");
+			Assert.AreEqual(10, finalGrade.Grade);
+			Assert.AreEqual(3, finalGrade.NumberOfStudents);
+			Assert.AreEqual(100, finalGrade.PercentageComplete);
+			Assert.AreEqual(1, finalGrade.PositionLower);
+			Assert.AreEqual(1, finalGrade.PositionUpper);
+			Assert.AreEqual(personSSN2, finalGrade.PersonSSN);
+			Assert.AreEqual("OK", finalGrade.Status);
 			exceptionThrown = false;
 
 
@@ -750,14 +750,55 @@ namespace CoursesAPI.Tests.Services
 			}
 
 			Assert.IsFalse(exceptionThrown);
-			Assert.AreEqual(finalGrade.Grade, 0);
-			Assert.AreEqual(finalGrade.NumberOfStudents, 3);
-			Assert.AreEqual(finalGrade.PercentageComplete, 0);
-			Assert.AreEqual(finalGrade.PositionLower, 3);
-			Assert.AreEqual(finalGrade.PositionUpper, 2);
-			Assert.AreEqual(finalGrade.PersonSSN, personSSN3);
-			Assert.AreEqual(finalGrade.Status, "OK");
+			Assert.AreEqual(0, finalGrade.Grade);
+			Assert.AreEqual(3, finalGrade.NumberOfStudents);
+			Assert.AreEqual(0, finalGrade.PercentageComplete);
+			Assert.AreEqual(3, finalGrade.PositionLower);
+			Assert.AreEqual(2, finalGrade.PositionUpper);
+			Assert.AreEqual(personSSN3, finalGrade.PersonSSN);
+			Assert.AreEqual("OK", finalGrade.Status);
+			exceptionThrown = false;
 
+
+			//Try to get a final grade from a course with complicated projects and a student who has 10 in everything
+			try
+			{
+				finalGrade = _service.GetFinalGradeForOneStudent(4, personSSN2);
+			}
+			catch (Exception e)
+			{
+				exceptionThrown = true;
+			}
+
+			Assert.IsFalse(exceptionThrown);
+			Assert.AreEqual(10, finalGrade.Grade);
+			Assert.AreEqual(3, finalGrade.NumberOfStudents);
+			Assert.AreEqual(100, finalGrade.PercentageComplete);
+			Assert.AreEqual(1, finalGrade.PositionLower);
+			Assert.AreEqual(1, finalGrade.PositionUpper);
+			Assert.AreEqual(personSSN2, finalGrade.PersonSSN);
+			Assert.AreEqual("OK", finalGrade.Status);
+			exceptionThrown = false;
+
+
+			//Try to get a final grade from a course with complicated projects and a student who has 0 in everything
+			try
+			{
+				finalGrade = _service.GetFinalGradeForOneStudent(4, personSSN1);
+			}
+			catch (Exception e)
+			{
+				exceptionThrown = true;
+			}
+
+			Assert.IsFalse(exceptionThrown);
+			Assert.AreEqual(0, finalGrade.Grade);
+			Assert.AreEqual(3, finalGrade.NumberOfStudents);
+			Assert.AreEqual(100, finalGrade.PercentageComplete);
+			Assert.AreEqual(3, finalGrade.PositionLower);
+			Assert.AreEqual(2, finalGrade.PositionUpper);
+			Assert.AreEqual(personSSN1, finalGrade.PersonSSN);
+			Assert.AreEqual("OK", finalGrade.Status);
 
 		}
 	}

@@ -578,8 +578,8 @@ namespace CoursesAPI.Services.Services
 				throw new MissingFieldException("A \"PersonSSN\" field is required");
 			}
 
-			if(viewModel.Grade < 0 || viewModel.Grade > 100){
-				throw new ArgumentException("The grade must be an integer value  between 0 and 100");
+			if(viewModel.Grade < 0){
+				throw new ArgumentException("The grade must be a positive integer value (A perfect score is 100)");
 			}
 			
 			//See if the courseInstance exists
@@ -873,6 +873,9 @@ namespace CoursesAPI.Services.Services
 			returnValue.Grade = Math.Round(returnValue.Grade, MidpointRounding.AwayFromZero);
 			returnValue.Grade /= 2;
 
+			if(returnValue.Grade > 10){
+				returnValue.Grade = 10;
+			}
 			return returnValue;
 		}
 
